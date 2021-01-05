@@ -1,1 +1,1 @@
-# beacon-ja
+# beacon-support

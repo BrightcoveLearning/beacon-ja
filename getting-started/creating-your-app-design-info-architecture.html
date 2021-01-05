@@ -1,0 +1,1080 @@
+﻿<!DOCTYPE html>
+<html lang="ja">
+  <head>
+    <meta charset="utf-8" />
+    <meta
+      name="viewport"
+      content="width=device-width, initial-scale=1, shrink-to-fit=no"
+    />
+    <meta name="description" content="" />
+
+    <title>アプリケーション設計の作成-情報アーキテクチャ</title>
+    <link rel="apple-touch-icon" sizes="180x180" href="/apple-touch-icon.png" />
+    <link rel="icon" type="image/png" sizes="32x32" href="/favicon-32x32.png" />
+    <link rel="icon" type="image/png" sizes="16x16" href="/favicon-16x16.png" />
+    <link rel="manifest" href="/site.webmanifest" />
+    <link data-react-helmet="true" rel="preload" as="font" href="https://files.brightcove.com/fonts/balto/baltoweb-ultra.eot" type="font/eot">
+    <link data-react-helmet="true" rel="preload" as="font" href="https://files.brightcove.com/fonts/balto/baltoweb-ultra.woff" type="font/woff">
+    <link data-react-helmet="true" rel="preload" as="font" href="https://files.brightcove.com/fonts/balto/baltoweb-super.eot" type="font/eot">
+    <link data-react-helmet="true" rel="preload" as="font" href="https://files.brightcove.com/fonts/balto/baltoweb-super.woff" type="font/woff">
+    <link data-react-helmet="true" rel="preload" as="font" href="https://files.brightcove.com/fonts/balto/baltoweb-black.eot" type="font/eot">
+    <link data-react-helmet="true" rel="preload" as="font" href="https://files.brightcove.com/fonts/balto/baltoweb-black.woff" type="font/woff">
+    <link data-react-helmet="true" rel="preload" as="font" href="https://files.brightcove.com/fonts/balto/baltoweb-bold.eot" type="font/eot">
+    <link data-react-helmet="true" rel="preload" as="font" href="https://files.brightcove.com/fonts/balto/baltoweb-bold.woff" type="font/woff">
+    <link data-react-helmet="true" rel="preload" as="font" href="https://files.brightcove.com/fonts/balto/baltoweb-medium.eot" type="font/eot">
+    <link data-react-helmet="true" rel="preload" as="font" href="https://files.brightcove.com/fonts/balto/baltoweb-medium.woff" type="font/woff">
+    <link data-react-helmet="true" rel="preload" as="style" href="https://fonts.googleapis.com/css2?family=Public+Sans:wght@400;500&amp;display=swap">
+      <link
+      rel="stylesheet"
+      href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css"
+      integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T"
+      crossorigin="anonymous"
+    />
+    <link
+      rel="stylesheet"
+      href="https://support.brightcove.com/site-assets/css/site/prism.css"
+    />
+    <link
+      rel="stylesheet"
+      href="https://support.brightcove.com/site-assets/css/site/styles.css"
+    />
+    <link
+      rel="stylesheet"
+      href="https://support.brightcove.com/site-assets/css/site/landing-page.css"
+    />
+    <link
+      rel="stylesheet"
+      href="https://support.brightcove.com/site-assets/css/site/tabs.css"
+    />
+    <link rel="stylesheet" href="/assets/css/local.css" />
+    <link
+      href="https://fonts.googleapis.com/css?family=Lato&display=swap"
+      rel="stylesheet"
+    />
+    <link
+      href="https://fonts.googleapis.com/css?family=Source+Code+Pro&display=swap"
+      rel="stylesheet"
+    />
+    <script
+      src="https://kit.fontawesome.com/381443caa8.js"
+      crossorigin="anonymous"
+    ></script>
+    <script src="https://support.brightcove.com/site-assets/js/site/google-analytics.js"></script>
+    <script src="/assets/js/sajari-head.js"></script>
+  </head>
+
+  <body class="body"></body>
+</html>
+
+<header>
+  <div class="div-header">
+    <a href="/"><img class="product-logo" src="https://support.brightcove.com/site-assets/images/site/product-logos/Beacon_Logo.svg" alt="製品ロゴ" style="max-height: 100px;max-width: 232px;"/></a>
+<!-- GTranslate: https://gtranslate.io/ -->
+<select onchange="doGTranslate(this);"><option value="">言語の選択</option><option value="en|en" translate="No">English</option><option value="en|zh-TW" translate="No">繁體中文</option><option value="en|fr" translate="No">Français</option><option value="en|de" translate="No">Deutsche</option><option value="en|ja" translate="No">日本語</option><option value="en|ko" translate="No">한국어</option><option value="en|es" translate="No">Español</option></select>
+
+<script>
+/* <![CDATA[ */
+function doGTranslate(lang_pair) {if(lang_pair.value)lang_pair=lang_pair.value;if(lang_pair=='')return;var lang=lang_pair.split('|')[1];var plang=location.hostname.split('.')[0];if(plang.length !=2 && plang.toLowerCase() != 'zh-cn' && plang.toLowerCase() != 'zh-tw')plang='en';location.href=location.protocol+'//'+(lang == 'en' ? '' : lang+'.')+location.hostname.replace('www.', '').replace(RegExp('^' + plang + '\\.'), '')+location.pathname+location.search;}
+/* ]]> */
+</script>
+
+    <select id="site_select" class="bcls-select" style="margin-right: 1rem;">
+      <option value="">ブライトコーブのその他のドキュメント</option>
+      
+        
+          <option value="https://support.brightcove.com">ドキュメントホーム</option>
+        
+      
+        
+          <option value="https://audience.support.brightcove.com">Brightcove Audience</option>
+        
+      
+        
+          <option value="https://beacon.support.brightcove.com">ブライトコーブビーコン</option>
+        
+      
+        
+          <option value="https://campaign.support.brightcove.com">ブライトコーブキャンペーン</option>
+        
+      
+        
+          <option value="https://engage.support.brightcove.com">Brightcove Engage</option>
+        
+      
+        
+          <option value="https://live.support.brightcove.com">Brightcove Live</option>
+        
+      
+        
+          <option value="https://gallery.support.brightcove.com">Brightcove Gallery</option>
+        
+      
+        
+          <option value="https://ssai.support.brightcove.com">Brightcove SSAI</option>
+        
+      
+        
+          <option value="https://social.support.brightcove.com">ブライトコーブソーシャル</option>
+        
+      
+        
+          <option value="https://studio.support.brightcove.com">Video Cloud Studio</option>
+        
+      
+        
+          <option value="https://player.support.brightcove.com">ブライトコーブのプレーヤー開発</option>
+        
+      
+        
+          <option value="https://apis.support.brightcove.com">Video CloudプラットフォームAPI</option>
+        
+      
+        
+          <option value="https://sdks.support.brightcove.com">ビデオクラウドデバイス SDK</option>
+        
+      
+        
+          <option value="https://integrations.support.brightcove.com">統合および CMS コネクタ</option>
+        
+      
+        
+          <option value="https://general.support.brightcove.com">ビデオクラウドの一般情報</option>
+        
+      
+        
+          <option value="https://zencoder.support.brightcove.com">Zencoder</option>
+        
+      
+    </select>
+
+
+    <span class="secondary-nav"><a href="https://supportportal.brightcove.com/s/login/?"><img src="https://support.brightcove.com/site-assets/images/site/support.png" alt="サポート"/> サポートへのお問い合わせ</a> <span style="vertical-align: top;margin-left:1em;margin-right:1em;">|</span> <a href="https://status.brightcove.com/"><img src="https://support.brightcove.com/site-assets/images/site/status.png" alt="システムステータス"/> システムステータス</a></span> <br/>
+    
+  </div>
+  <nav aria-label="breadcrumb">
+    <ol class="breadcrumb arr-right">
+      
+      <li class="breadcrumb-item"><a href="/">ホーム</a></li>
+      
+      
+      
+      <li class="breadcrumb-item"><a href="/getting-started/">新しいVideo Cloud Studioの基礎</a></li>
+      
+      <li class="breadcrumb-item active" aria-current="page">アプリケーション設計の作成-情報アーキテクチャ</li>
+    </ol>
+  </nav>
+</header>
+<div class="container">
+  <div class="row">
+    <div class="col-sm-3 left-side-bar">
+      <nav class="sidenav" id="side_nav">
+        
+        
+        <h5><a href="/index.html">ホーム</a></h5>
+        
+        
+        
+        <h5 class="submenu-header"><a href="/getting-started/index.html">はじめに<strong> + </strong></a></h5>
+        <ul class="sidenav-submenu" style="display:none;">
+          
+          
+          <li><a href="/getting-started/learning-guide-bc-beacon.html">学習ガイド</a></li>
+          
+          
+          
+          <li><a href="/getting-started/implementation-phases.html">実装フェーズ</a></li>
+          
+          
+          
+          <li><a href="/getting-started/app-design-considerations.html">アプリケーション設計に関する考慮事項</a></li>
+          
+          
+          
+          <li><a href="/getting-started/creating-your-app-design-info-architecture.html">アプリデザイン-情報アーキテクチャ</a></li>
+          
+          
+          
+          <li><a href="/getting-started/creating-your-app-design-layout-options.html">アプリデザイン-レイアウトオプション</a></li>
+          
+          
+          
+          <li><a href="/getting-started/design-best-practices.html">設計のベストプラクティス</a></li>
+          
+          
+        </ul>
+        
+        
+        
+        <h5 class="submenu-header"><a href="/syncing-with-video-cloud/index.html">ビデオクラウドと同期<strong> + </strong></a></h5>
+        <ul class="sidenav-submenu" style="display:none;">
+          
+          
+          <li><a href="/syncing-with-video-cloud/vc-custom-fields.html">Video Cloud カスタム項目の作成</a></li>
+          
+          
+          
+          <li><a href="/syncing-with-video-cloud/forcing-a-sync.html">同期を強制する</a></li>
+          
+          
+        </ul>
+        
+        
+        
+        <h5 class="submenu-header"><a href="/using-brightcove-beacon/index.html"><strong>ブライトコーブのビーコンの使用+ </strong></a></h5>
+        <ul class="sidenav-submenu" style="display:none;">
+          
+          
+          <li><a href="/using-brightcove-beacon/adding-to-page.html">ページにカルーセルを追加する</a></li>
+          
+          
+          
+          <li><a href="/using-brightcove-beacon/creating-a-channel.html">チャンネルの作成</a></li>
+          
+          
+          
+          <li><a href="/using-brightcove-beacon/electronic-program-guides.html">電子プログラムガイド (EPG) の作成</a></li>
+          
+          
+          
+          <li><a href="/using-brightcove-beacon/creating-a-page.html">新しいページの作成</a></li>
+          
+          
+          
+          <li><a href="/using-brightcove-beacon/creating-a-playlist.html">プレイリストを作成する</a></li>
+          
+          
+          
+          <li><a href="/using-brightcove-beacon/creating-subscription-package.html">サブスクリプションパッケージの作成</a></li>
+          
+          
+          
+          <li><a href="/using-brightcove-beacon/promo-codes.html">プロモーションコードの作成</a></li>
+          
+          
+          
+          <li><a href="/using-brightcove-beacon/series-seasons-episodes.html">シリーズ/シーズン/エピソードの作成</a></li>
+          
+          
+          
+          <li><a href="/using-brightcove-beacon/configuring-server-side-ad-settings.html">サーバーサイド広告設定の構成</a></li>
+          
+          
+          
+          <li><a href="/using-brightcove-beacon/implementing-authvod.html">AuthVOD の実装</a></li>
+          
+          
+          
+          <li><a href="/using-brightcove-beacon/live-ssai.html">ライブSSAIの実装</a></li>
+          
+          
+          
+          <li><a href="/using-brightcove-beacon/vod-ssai.html">VOD SSAIの実装</a></li>
+          
+          
+          
+          <li><a href="/using-brightcove-beacon/including-non-configurable-pages.html">設定できないページを含める</a></li>
+          
+          
+          
+          <li><a href="/using-brightcove-beacon/introducing-pages.html">ページの紹介</a></li>
+          
+          
+          
+          <li><a href="/using-brightcove-beacon/streaming-live-event.html">ライブイベントのストリーミング</a></li>
+          
+          
+          
+          <li><a href="/using-brightcove-beacon/streaming-vods-to-a-channel.html">チャンネルへのVOD のストリーミング</a></li>
+          
+          
+          
+          <li><a href="/using-brightcove-beacon/monetization-options.html">収益化オプションについて</a></li>
+          
+          
+          
+          <li><a href="/using-brightcove-beacon/using-subscription-package.html">サブスクリプションパッケージの使用</a></li>
+          
+          
+          
+          <li><a href="/using-brightcove-beacon/tools.html">ツールの使用</a></li>
+          
+          
+          
+          <li><a href="/using-brightcove-beacon/viewing-analytics-data.html">分析データの表示</a></li>
+          
+          
+        </ul>
+        
+        
+        
+        <h5 class="submenu-header"><a href="/creating-your-apps/index.html">アプリの作成<strong> + </strong></a></h5>
+        <ul class="sidenav-submenu" style="display:none;">
+          
+          
+          <li class="submenu-header">
+            <a href="/creating-your-apps/android/index.html">アンドロイド<strong> + </strong></a>
+            <ul class="sidenav-subsubmenu" style="display:none;">
+              
+              <li><a href="/creating-your-apps/android/submitting-to-android.html">Android ストアに新しいアプリを送信する</a></li>
+              
+              <li><a href="/creating-your-apps/android/updating-android-apps-to-bcb.html">Android アプリをブライトコーブビーコンにアップデートする</a></li>
+              
+              <li><a href="/creating-your-apps/android/adding-subscriptions-in-android.html">Android へのサブスクリプションの追加</a></li>
+              
+              <li><a href="/creating-your-apps/android/improving-relevance-android.html">Android Play ストアでの検索の関連性の向上</a></li>
+              
+              <li><a href="/creating-your-apps/android/installing-android-test-build.html">Androidテストビルドのインストール</a></li>
+              
+            </ul>
+          </li>
+          
+          
+          
+          <li class="submenu-header">
+            <a href="/creating-your-apps/fire-tv/index.html">Fire TV <strong> + </strong></a>
+            <ul class="sidenav-subsubmenu" style="display:none;">
+              
+              <li><a href="/creating-your-apps/fire-tv/installing-fire-tv-test-build.html">Fire TVテストビルドのインストール</a></li>
+              
+              <li><a href="/creating-your-apps/fire-tv/submitting-to-amazon.html">Amazonストアに送信する</a></li>
+              
+            </ul>
+          </li>
+          
+          
+          
+          <li class="submenu-header">
+            <a href="/creating-your-apps/ios-tvos/index.html">iOS/tvOS <strong> + </strong></a>
+            <ul class="sidenav-subsubmenu" style="display:none;">
+              
+              <li><a href="/creating-your-apps/ios-tvos/installing-ios-test-build.html">iOS/tvOS テストビルドのインストール</a></li>
+              
+              <li><a href="/creating-your-apps/ios-tvos/submitting-to-apple.html">アップルストアに提出する</a></li>
+              
+            </ul>
+          </li>
+          
+          
+          
+          <li class="submenu-header">
+            <a href="/creating-your-apps/panasonic/index.html">パナソニック<strong> + </strong></a>
+            <ul class="sidenav-subsubmenu" style="display:none;">
+              
+              <li><a href="/creating-your-apps/panasonic/submitting-to-panasonic.html">パナソニックストアへの提出</a></li>
+              
+            </ul>
+          </li>
+          
+          
+          
+          <li class="submenu-header">
+            <a href="/creating-your-apps/roku/index.html">ろく<strong> + </strong></a>
+            <ul class="sidenav-subsubmenu" style="display:none;">
+              
+              <li><a href="/creating-your-apps/roku/configuring-inchannel-products.html">Rokuでのチャネル内製品の設定</a></li>
+              
+              <li><a href="/creating-your-apps/roku/installing-roku-test-build.html">Roku テストビルドのインストール</a></li>
+              
+              <li><a href="/creating-your-apps/roku/submitting-to-roku.html">ロクストアへの提出</a></li>
+              
+            </ul>
+          </li>
+          
+          
+          
+          <li class="submenu-header">
+            <a href="/creating-your-apps/samsung/index.html">サムスン<strong> + </strong></a>
+            <ul class="sidenav-subsubmenu" style="display:none;">
+              
+              <li><a href="/creating-your-apps/samsung/samsung-partner.html">サムスンのパートナーになる</a></li>
+              
+              <li><a href="/creating-your-apps/samsung/submitting-to-samsung.html">サムスンストアへの提出</a></li>
+              
+            </ul>
+          </li>
+          
+          
+          
+          <li><a href="/creating-your-apps/common-required-info.html">共通の必須情報</a></li>
+          
+          
+          
+          <li><a href="/creating-your-apps/device-apps-validation-guide.html">デバイスアプリ検証ガイド</a></li>
+          
+          
+        </ul>
+        
+        
+        
+        <h5 class="submenu-header"><a href="/references/index.html">参考文献<strong> + </strong></a></h5>
+        <ul class="sidenav-submenu" style="display:none;">
+          
+          
+          <li><a href="/references/common-configuration-settings.html">一般的な構成設定</a></li>
+          
+          
+          
+          <li><a href="/references/creating-stripe-account.html">Stripeアカウントの作成</a></li>
+          
+          
+          
+          <li><a href="/references/glossary.html">用語集</a></li>
+          
+          
+          
+          <li><a href="/references/image-requirements.html">画像とその仕様</a></li>
+          
+          
+          
+          <li><a href="/references/known-issues.html">既知の問題</a></li>
+          
+          
+          
+          <li><a href="/references/product-updates.html">製品のアップデート</a></li>
+          
+          
+        </ul>
+        
+        
+        
+        <h5 class="submenu-header"><a href="/training/index.html"><strong>トレーニング+ </strong></a></h5>
+        <ul class="sidenav-submenu" style="display:none;">
+          
+          
+          <li><a href="/training/training-demand-custom-fields.html">Video Cloud ビデオ/カスタムフィールドの使用</a></li>
+          
+          
+          
+          <li><a href="/training/training-demand-design-layout.html">アプリケーションレイアウトの設計</a></li>
+          
+          
+          
+          <li><a href="/training/training-demand-playlists.html">プレイリストの作成と使用</a></li>
+          
+          
+          
+          <li><a href="/training/training-demand-series-seasons-episodes.html">シリーズ、季節、エピソードの作成</a></li>
+          
+          
+          
+          <li><a href="/training/training-demand-vod-ssai.html">VOD サーバーサイド広告の実装</a></li>
+          
+          
+          
+          <li><a href="/training/training-demand-publish-android-app.html">PlayストアでAndroidアプリを公開する</a></li>
+          
+          
+          
+          <li><a href="/training/training-demand-viewing-analytics.html">分析データの表示</a></li>
+          
+          
+        </ul>
+        
+        
+        
+        <h5 class="submenu-header"><a href="/support/index.html"><strong>サポート+ </strong></a></h5>
+        <ul class="sidenav-submenu" style="display:none;">
+          
+          
+          <li><a href="/support/brightcove-answer.html">ブライトコーブの回答</a></li>
+          
+          
+          
+          <li><a href="/support/viewing-brightcove-system-status-page.html">ブライトコーブのシステムステータスページの表示</a></li>
+          
+          
+          
+          <li><a href="/support/contact-sales.html">営業へのお問い合わせ</a></li>
+          
+          
+          
+          <li><a href="/support/opening-case-with-brightcove-support.html">サポートケースを開く</a></li>
+          
+          
+        </ul>
+        
+        
+      </nav>
+    </div>
+    <div class="col-lg-7" style="background-color: white;color: #333333;margin-top: -1em;margin-bottom: -1em;padding-bottom:1em;">
+      <!-- bootstrap layout -->
+<p id="bc_veggie_burger_wrapper" style="display: none;"><img id="bc_veggie_burger" src="/assets/images/feather/menu.svg" alt="ナビゲーションメニュー"/></p>
+
+<!-- search bar -->
+<div id="nav-search-box" style="margin-top: 1rem;"></div>
+<!-- in-page navigation for narrow screens -->
+<details class="centered-inpage-nav" id="centered_inpage_nav">
+  <summary><h6 class="toc">ページコンテンツ</h6></summary>
+  <nav id="centered_toc"></nav>
+  <ul id="centered_in_page_toc" class="list-none"></ul>
+</details>
+<!-- open in new tab/window -->
+<a id="open_new_tab" href="#" target="_blank" style="display: none;"><img src="/assets/images/feather/external-link.svg" alt="新しいタブで開く" style="margin-top:4em;width: 1.5em;"/></a>
+
+
+<style media="screen">
+    .small_image p {
+        color: red;
+    }
+</style>
+
+<link href="/assets/css/splide.min.css" rel="stylesheet" />
+
+<style media="screen">
+    .splide {
+        background-color: #dcf3fb;
+        padding: 1em;
+    }
+</style>
+
+<article class="bcls-article">
+    <h1>アプリケーション設計の作成-情報アーキテクチャ</h1>
+    <summary>
+        このトピックでは、一連の質問に答え、スプレッドシートに回答を記録することで、アプリに表示される動画、動画がどのようにグループ化されているか、動画が表示される順序を決定するのに役立ちます。
+    </summary>
+    <section class="bcls-section">
+        <h2 id="Introduction">はじめに</h2>
+        <p>
+            このドキュメントでは、Brightcove Beacon エクスペリエンスでどのような動画を表示すべきか、およびそれらの動画がどのように整理されるかについて、一連の質問について説明します。これらの質問に答えた結果は、ブライトコーブのビーコンエクスペリエンスのアプリケーション設計を構築するのに役立ちます。あなたのアプリのために定義したいものの非常に簡単な例をここに写真に示します：
+        </p>
+        <figure class="bcls-figure">
+            <img class="bcls-image" src="/assets/images/getting-started/creating-app-design/top-level-example.png" alt=""/>
+        </figure>
+        <p>
+            OTT アプリ用の UX の設計経験がない可能性があります。このドキュメントの最後のセクション「<a href="#Is_guidance_available">ガイダンスはありますか？」</a>には、ベンダーのアドバイスのリストが表示されます。UIを設計する前に、そのガイダンスを読み、検討することをお勧めします。
+        </p>
+    </section>
+
+    <section class="bcls-section">
+        <h2 id="Structure_of_a_page">ページの構造</h2>
+        <p>
+            カテゴリを選択する前に、ページがどのように構築されているかを高レベルに理解しておくと便利です。アプリのページは、次のもので構成されています。
+        </p>
+        <ul>
+            <li>
+                <strong>プレイリスト</strong> :関連動画のグループ。動画を結びつける関係は、アプリ作成者であるユーザーによって定義されます。
+            </li>
+            <li>
+                <strong>ブロック</strong> :同じレイアウトを使用するプレイリストのセット。リスト、タブ、またはドロップダウンにブロックを配置できます。
+            </li>
+            <li>
+                <strong>レイアウト</strong> :ブロック内の各プレイリストを表示する方法の設定。あなたは、プレゼンテーションの他のいくつかのプロパティの中で、タイルのアスペクト比、画面上のアセットの数、要素の数を設定することができます。
+            </li>
+        </ul>
+        <p>
+            いくつかの例は、それらの定義を明確にするのに役立ちます。下のスクリーンショットは、ページ上の 3 つのブロックを示しています。各ブロックの右側には設定が表示されます。
+        </p>
+        <figure class="bcls-figure">
+            <img class="bcls-image" src="/assets/images/getting-started/creating-app-design/page-block-playlist-web-app-labels-in.png" alt=""/>
+        </figure>
+        <!--     <p>Details for the page are in the following table:</p>
+    <table class="bcls-table">
+      <thead class="bcls-table__head">
+        <tr>
+          <th>Block Number</th>
+          <th>Block Type</th>
+          <th>Layout Type</th>
+          <th>Playlist(s)</th>
+        </tr>
+      </thead>
+      <tbody class="bcls-table__body">
+        <tr>
+          <td>1</td>
+          <td>single-block</td>
+          <td>Featured Banner Labels In</td>
+          <td>Scenic Florida Coast</td>
+        </tr>
+        <tr>
+          <td>2</td>
+          <td>tabbed_block</td>
+          <td>Carousel Landscape Labels In</td>
+          <td>
+            Scenic Oregon Coast
+            <br />
+            Travel Show
+            <br />
+            VC Cooking Show
+          </td>
+        </tr>
+        <tr>
+          <td>3</td>
+          <td>single-block</td>
+          <td>Grid 3 Columns Landscape Labels In</td>
+          <td>Home & Garden</td>
+        </tr>
+      </tbody>
+    </table>
+ -->
+        <p>
+            さまざまな可能性を示す理由は、この時点でブロック、レイアウト、プレイリストを決定させるのではなく、再生リストを使用してコンテンツを整理する方法を決めるときに表示するオプションを表示することです。
+        </p>
+        <!--     <aside class="bcls-aside bcls-aside--information language-editable">
+      For full information on laying out your app using blocks, layouts and
+      playlists, see the
+      <a href="/using-brightcove-beacon/creating_custom_video_page.html">
+        Creating a Customized Video Display Page
+      </a>
+      document .
+    </aside> -->
+    </section>
+
+    <section class="bcls-section">
+        <h2 id="Recording_your_categories_selections">
+            カテゴリ/選択内容の記録
+        </h2>
+        <p>
+            このドキュメントで作業する決定は、スプレッドシートに記録します。スプレッドシートを準備するには、次の手順に従います。
+        </p>
+        <ol class="bcls-tasklist">
+            <li>
+                このリンクをクリックしてテンプレートをダウンロードしてください: <a href="https://solutions.brightcove.com/bcls/bcbeacon/app-design-info-architecture.xlsx"> app-design-info-architecture.xlsx </a> .それが保存される場所を覚えておいてください。
+            </li>
+            <li>Google スプレッドシートアプリから空白のスプレッドシートを開きます。</li>
+            <li>
+                Google スプレッドシートのメニューから [ <strong>ファイル] [&gt; インポート</strong> ] を選択します。
+            </li>
+            <li>
+                表示されるダイアログから、次に示すように、まず [ <strong>アップロード</strong> ] <strong>を選択し、[デバイスからファイルを選択</strong> ] ボタンをクリックします。
+                <figure class="bcls-figure">
+                    <img class="bcls-image" src="/assets/images/getting-started/creating-app-design/import-upload.png" alt=""/>
+                </figure>
+            </li>
+            <li>
+                ダウンロードした Excel ファイルを見つけて選択し、[ <strong>開く</strong> ] をクリックします。
+            </li>
+            <li>
+                表示される [ <strong>ファイルのインポート</strong> ] ダイアログで、[ <strong>スプレッドシートの置換</strong> ] を選択し、[ <strong>データのインポート</strong> ] ボタンをクリックします。
+                <figure class="bcls-figure">
+                    <img class="bcls-image" src="/assets/images/getting-started/creating-app-design/import-file-dialog.png" alt=""/>
+                </figure>
+            </li>
+            <li>
+                スプレッドシートをインポートすると、次のような内容が表示されます。
+                <figure class="bcls-figure">
+                    <img class="bcls-image" src="/assets/images/getting-started/creating-app-design/imported-info-architecture.png" alt=""/>
+                </figure>
+            </li>
+        </ol>
+        <p>
+            スプレッドシートには、このドキュメントの質問に対する回答を記録します。
+        </p>
+        <p>
+            このプロセスの最後に、完成したGoogleシートをブライトコーブの担当者と共有し、エクスペリエンスの設定を支援します。
+        </p>
+    </section>
+
+    <section class="bcls-section">
+        <h2 id="How_to_organize_your_content">
+            コンテンツを整理する方法
+        </h2>
+        <p>
+            ビデオアセットを効果的にプレゼンテーションするには、それらのアセットのカテゴリを考慮する必要があります。カテゴリは、各カテゴリのグループ化ルールを定義するビデオのグループです。これらのカテゴリはプレイリストとして実装され、その使用は続行セクションに示されています。カテゴリを支える原動力は、顧客が希望する動画を、論理的かつ迅速に見つけることができるかどうかです。
+        </p>
+        <h3>カテゴリの種類</h3>
+        <p>選択できるカテゴリには、次の 2 種類があります。</p>
+        <ul>
+            <li>
+                <strong>手動で構築</strong> :これらは、選択したカテゴリと、Video Cloud Studio プレイリストで割り当てられる動画です。
+            </li>
+            <li>
+                <strong>ブライトコーブビーコン Automated </strong> :これらは、Brightcove Beacon が自動的に作成するカテゴリです。3つは次のとおりです。<em>最近見た</em>、<em>最も見た</em>、<em>お気に入り</em>。これらのカテゴリの詳細については、このドキュメントの次のセクションを参照してください。
+            </li>
+        </ul>
+        <h3> 例</h3>
+        <p>
+            ここでは、カテゴリを選択することの意味に重点を置くために、いくつかの例を示しています。
+        </p>
+        <p><strong>最初の例</strong></p>
+        <p>ページの上部にある例がどのように表示されるかを説明します。</p>
+        <figure class="bcls-figure">
+            <img class="bcls-image" src="/assets/images/getting-started/creating-app-design/top-level-example.png" alt=""/>
+        </figure>
+        <p>カテゴリは次のとおりです。</p>
+        <ul>
+            <li>美しいフロリダ海岸</li>
+            <li>美しいオレゴン海岸</li>
+            <li>トラベルショー</li>
+            <li>VCクッキングショー</li>
+        </ul>
+        <aside class="bcls-aside bcls-aside--information language-editable">
+            実際のUIでは、カテゴリは常に大文字で表示されます。
+        </aside>
+
+        <p><strong>映画カテゴリ</strong></p>
+        <p>
+            Wikipediaで撮影した映画のカテゴリ、またはジャンルを以下に示します。
+        </p>
+        <ul>
+            <li>アクション</li>
+            <li>アドベンチャー</li>
+            <li>コメディー</li>
+            <li>犯罪</li>
+            <li>ドラマ</li>
+            <li>ファンタジー</li>
+        </ul>
+        <p>
+            それはあなたの顧客のためのカテゴリとしてだけでなく、ジャンルが働いているかもしれません。一方、お客様の顧客は特別な関心を持っている場合があり、次のことがより適切です。
+        </p>
+        <ul>
+            <li>アニメ化</li>
+            <li>フィルム・ノワール</li>
+            <li>ドキュメンタリー</li>
+            <li>カルトクラシック</li>
+            <li>サイレント映画</li>
+        </ul>
+
+        <p><strong>カレッジ陸上競技</strong></p>
+        <p>
+            それはトップレベルのカテゴリの大量である可能性があります。例えば、347 のディビジョン1（一般的には大）の学校があります。アプリリストのホーム画面を347校すべて表示できますが、一部の顧客はその長いリストをスクロールしすぎて、ユーザーエクスペリエンスが低下します。特定の動画セットを簡単に検索するために、サブカテゴリ、またはサブカテゴリのサブカテゴリを使用することができます。以下に、大学陸上競技場に使用可能なカテゴリの構造の一部を示します。ここでは、構造は、<em>会議-&gt; 学校-&gt; スポーツの組織パターンに従います</em>。
+        </p>
+        <ul>
+            <li>
+                サウスイースタン会議
+                <ul>
+                    <li>
+                        フロリダ
+                        <ul>
+                            <li>フットボール</li>
+                            <li>バスケットボール</li>
+                            <li>バレーボール</li>
+                            <li>...</li>
+                        </ul>
+                    </li>
+                    <li>
+                        ジョージア
+                        <ul>
+                            <li>フットボール</li>
+                            <li>バスケットボール</li>
+                            <li>バレーボール</li>
+                            <li>...</li>
+                        </ul>
+                    </li>
+                    <li>...</li>
+                </ul>
+            </li>
+            <li>
+                Pac-12 会議
+                <ul>
+                    <li>
+                        アリゾナ
+                        <ul>
+                            <li>フットボール</li>
+                            <li>バスケットボール</li>
+                            <li>バレーボール</li>
+                            <li>...</li>
+                        </ul>
+                    </li>
+                    <li>
+                        オレゴン
+                        <ul>
+                            <li>フットボール</li>
+                            <li>バスケットボール</li>
+                            <li>バレーボール</li>
+                            <li>...</li>
+                        </ul>
+                    </li>
+                    <li>...</li>
+                </ul>
+            </li>
+            <li>...</li>
+        </ul>
+        <p>
+            顧客にとって会議ではなく、スポーツが最も重要なと思われる場合は、「<em>スポーツ-&gt; 会議-&gt; 学校</em>」の組織パターンに従って分類を変更することもできます。
+        </p>
+        <h3>あなたのカテゴリ</h3>
+        <p>
+            例から、カテゴリと組織構造の決定は、単純な、または非常に複雑なタスクである可能性があります。最適な設計のためには、コンテンツと顧客の両方を考慮する必要があります。あなたのビデオのためのあなたの組織構造とカテゴリについて考えるには時間がかかることが不可欠です。
+        </p>
+        <h3>カテゴリを記録する</h3>
+        <p>
+            カテゴリを決めたので、スプレッドシートに入力します。アプリに表示される順序で、それらを入力します。スプレッドシートで、セル B1、B2 の順に順番に注文したカテゴリを入力します。簡単な例は次のように表示されます。
+        </p>
+        <figure class="bcls-figure">
+            <img class="bcls-image" src="/assets/images/getting-started/creating-app-design/spreadsheet-categories-entered.png" alt=""/>
+        </figure>
+        <p>
+            このスクリーンショットに示すように、<strong>「風光明媚なオレゴンコースト」</strong>、<strong>「トラベルショー」</strong>、<strong>「VCクッキングショー」</strong>のタブを使用して、プレイリストの一部をグループ化することをお勧めします。
+        </p>
+        <figure class="bcls-figure">
+            <img class="bcls-image" src="/assets/images/getting-started/creating-app-design/tabbed-block.png" alt=""/>
+        </figure>
+        <p>
+            アプリに一度に 1 つのみが表示されるようにプレイリストを表示し、視聴者が他のユーザーを表示するように動作する必要がある場合は、次に示すように、スプレッドシートで水平に配置してスプレッドシートでこれを表現します。
+        </p>
+        <figure class="bcls-figure">
+            <img class="bcls-image" src="/assets/images/getting-started/creating-app-design/spreadsheet-categories-horizontal-group.png" alt=""/>
+        </figure>
+    </section>
+
+    <section class="bcls-section">
+        <h2 id="What_Brightcove_Beacon_built_categories_do_you_want">
+            Brightcove Beacon が構築したカテゴリは何ですか？
+        </h2>
+        <p>
+            Brightcove Beacon には、含めるかどうかを選択できる 3 つのカテゴリがあります。非対応形式:
+        </p>
+        <ul>
+            <li>
+                最近視聴した-最新のブックマークを含む上位 20 の動画
+            </li>
+            <li>
+                最も視聴された動画-ブックマークに基づく上位 20 の動画
+            </li>
+            <li>
+                お気に入り-このカテゴリは、顧客がビデオアセットをお気に入りにマークすると、動的に構築されます。
+            </li>
+        </ul>
+        <p>
+            ここで、目的の Brightcove Beacon カテゴリをリストに追加し、そのカテゴリを表示したい位置に追加します。追加用のスペースを作るには、[ <strong> &gt; 行を上に挿入</strong> ] メニューコマンドまたは [ <strong> &gt; 下に行を挿入</strong> ] メニューコマンドを使用する必要があります。変更された例は、次のように表示されます。
+        </p>
+        <figure class="bcls-figure">
+            <img class="bcls-image" src="/assets/images/getting-started/creating-app-design/spreadsheet-prebuilt-added.png" alt=""/>
+        </figure>
+    </section>
+
+    <section class="bcls-section">
+        <h2 id="Do_you_want_to_feature_a_video_or_videos">
+            あなたはビデオやビデオを特集したいですか？
+        </h2>
+        <p>
+            あなたは、ビデオまたはビデオのセットをフィーチャーすることができます。おすすめの動画がアプリの上部に表示され、動画のサムネイルが大きくなります。ここでは、6つの動画が紹介されたアプリが表示されます（カルーセルの下のドットで動画の数を確認できます）。
+        </p>
+        <figure class="bcls-figure">
+            <img class="bcls-image" src="/assets/images/getting-started/creating-app-design/featured-videos.png" alt="注目のビデオ"/>
+        </figure>
+        <p>
+            スプレッドシートで、[ <strong>特注したいもの (ある場合)] を見つけます。</strong>セル。その質問の右側にあるセルに、何かあれば、あなたが紹介したいものを詳しく説明してください。
+        </p>
+    </section>
+    <section class="bcls-section">
+        <h2 id="Moving_forward">前進する</h2>
+        <p>
+            これでこのタスクは完了です。Brightcove Beacon Experience の構築時には、後でブライトコーブの担当者に提出するために作業しているスプレッドシートを保存してください。
+        </p>
+        <p>
+            アプリケーション設計を定義していない場合は、「<a href="/getting-started/creating-your-app-design-layout-options.html">アプリケーションデザインの作成」-「レイアウトオプション」の順に選択し、アプリケーション設計を定義する他の部分を完了し</a>、特定のアプリケーションの画面レイアウトの選択を完了する必要があります。
+        </p>
+    </section>
+</article>
+
+<script src="https://cdn.jsdelivr.net/npm/@splidejs/splide@1.2.5/dist/js/splide.min.js"></script>
+
+<script>
+    var mySplide = new Splide('.splide', {
+        width: '60%',
+        perPage: 2,
+        perMove: 1,
+    })
+    mySplide.mount()
+
+    var mySplide2 = new Splide('.splide2', {
+        width: '60%',
+        perPage: 2,
+        perMove: 1,
+    })
+    mySplide2.mount()
+
+    var mySplide3 = new Splide('.splide3', {
+        width: '90%',
+        perPage: 2,
+        perMove: 1,
+        arrows: false,
+    })
+    mySplide3.mount()
+
+    var mySplide4 = new Splide('.splide4', {
+        width: '90%',
+        perPage: 2,
+        perMove: 1,
+    })
+    mySplide4.mount()
+
+    var mySplide5 = new Splide('.splide5', {
+        width: '90%',
+        perPage: 2,
+        perMove: 1,
+    })
+    mySplide5.mount()
+
+    var mySplide6 = new Splide('.splide6', {
+        width: '60%',
+        perPage: 2,
+        perMove: 1,
+    })
+    mySplide6.mount()
+
+    var mySplide7 = new Splide('.splide7', {
+        width: '60%',
+        perPage: 2,
+        perMove: 1,
+        arrows: false,
+    })
+    mySplide7.mount()
+</script>
+<!-- complete bootstrap layout -->
+    </div>
+    <div class="col-sm-2 right-side-bar">
+      
+      <nav class="right-side-nav" id="right_side_nav">
+        <h6 class="toc">ページコンテンツ</h6>
+        <ul id="in_page_nav" class="list-none"></ul>
+      </nav>
+      
+    </div>
+  </div>
+</div>
+
+<hr>
+<div class="last-updated">
+  ページ最終更新日 2020 年 10 月 29 日
+</div>
+
+
+
+<footer class="bcls-footer" role="contentinfo">
+  <div class="row">
+    <div class="region region-footer-top-center col-md-12">
+      <nav role="navigation" aria-labelledby="block-brightcovesupport-menu" id="block-brightcovesupport" class="footer-menu">
+
+        <h2>ブライトコーブサポート</h2>
+
+        <ul class="menu">
+          <li>
+            <a href="https://status.brightcove.com">システムステータス</a>
+          </li>
+          <li>
+            <a href="https://supportportal.brightcove.com/s/login/?">サポートへのお問い合わせ</a>
+          </li>
+          <li>
+            <a href="https://support.brightcove.com/">ドキュメンテーション</a>
+          </li>
+        </ul>
+
+      </nav>
+      <nav role="navigation" aria-labelledby="block-training-menu" id="block-training" class="footer-menu">
+
+        <h2>トレーニング</h2>
+
+        <ul class="menu">
+          <li>
+            <a href="https://studio.support.brightcove.com/training/online-training-courses.html">オンラインコース</a>
+          </li>
+          <li>
+            <a href="https://studio.support.brightcove.com/training/register-training.html">コースに登録する</a>
+          </li>
+          <li>
+            <a href="https://university.brightcove.com/">Brightcove University</a>
+          </li>
+        </ul>
+
+      </nav>
+      <nav role="navigation" aria-labelledby="block-brightcove-menu" class="footer-menu">
+
+        <h2>Brightcove</h2>
+
+        <ul class="menu">
+          <li>
+            <a href="https://www.brightcove.com">Brightcove.com</a>
+          </li>
+          <li>
+            <a href="https://supportportal.brightcove.com/s/login/?">お問合せ</a>
+          </li>
+        </ul>
+      </nav>
+    </div>
+  </div>
+  <div class="row">
+    <div class="region region-footer-bottom-center col-md-12">
+      <div class="bcls-copyright footer-menu">
+        <table>
+          <tr>
+            <td>
+              <div id="bc_copyright" class="field field--name-field-copyright-year field--type-string field--label-hidden field--item" style="float: left;"> Brightcove Inc. All rights reserved.</div>
+            </td>
+            <td><a href="https://www.brightcove.com/en/legal/privacy">プライバシー</a> | <a href="https://www.brightcove.com/en/terms-and-conditions">利用規約</a></td>
+            <td>
+              <div class="gf-links-cols footer-menu">
+                <div class="gf-social"><a href="https://www.linkedin.com/company/16439" title="LinkedIn" newtab="newtab" class="gf-social-linkedin"><i class="fab fa-linkedin-in" style="font-size: 1.5rem;"></i></a><a href="https://twitter.com/brightcove" title="Twitter" newtab="newtab" class="gf-social-twitter"><i class="fab fa-twitter" style="font-size: 1.5rem;"></i></a><a href="https://www.facebook.com/Brightcove" title="Facebook" newtab="newtab" class="gf-social-facebook"><i class="fab fa-facebook-f" style="font-size: 1.5rem;"></i></a>
+                </div>
+              </div>
+            </td>
+          </tr>
+        </table>
+      </div>
+    </div>
+  </div>
+</footer>
+<div id="talla_wrapper">
+  <p style="text-align: right;position: relative;"><button style="background:rgb(2, 28, 146);color:Snow;padding:.3rem;position:fixed;right:0;bottom:1em;z-index:9999999" onclick="javascript:displayChat()">質問ですか? </button> </p>
+  <div id="talla_chat">
+</div>
+</div>
+<script>
+      
+  var searchBox = sajari.init({
+    mode: "search-box",
+    project: "1588255093746585379", // Set this to your project.
+    collection: "brightcove-documenation", // Set this to your collection.
+    instantPipeline: "autocomplete", // Pipeline used as you type
+    inputPlaceholder: "Search", // Input element placeholder
+    maxSuggestions: 5, // Maximum number of suggestions to show
+    attachSearchBox: document.getElementById("nav-search-box") // DOM element to attach to
+  });
+  
+    searchBox("sub", "pipeline.search-sent", function (_, query) {
+      window.location = "/search.html?q=" + encodeURIComponent(query.q);
+    });
+  
+
+</script>
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.0/jquery.min.js" crossorigin="anonymous"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js" integrity="sha384-UO2eT0CpHqdSJQ6hJty5KVphtPhzWj9WO1clHTMGa3JDZwrnQq4sF86dIHNDz0W1" crossorigin="anonymous"></script>
+  <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js" integrity="sha384-JjSmVgyd0p3pXB1rRibZUAYoIIy6OrQ6VrjIEaFf/nJGzIxFDsf4x0xIM+B07jRM" crossorigin="anonymous"></script>
+  <script src="https://support.brightcove.com/site-assets/js/site/https-fix.js"></script>
+  <script src="https://support.brightcove.com/site-assets/js/site/setDate.js"></script>
+  
+  <script src="https://support.brightcove.com/site-assets/js/site/prism.js"></script>
+  
+  <script src="https://support.brightcove.com/site-assets/js/site/site.js"></script>
+  <script src="https://support.brightcove.com/site-assets/js/site/tabs.js"></script>
+  <script src="https://support.brightcove.com/site-assets/js/site/toc.js"></script>
+  <script src="/assets/js/sites_nav.js"></script>
+  <script src="https://support.brightcove.com/site-assets/js/site/bcls-utils.js"></script>
+  <script src="https://support.brightcove.com/site-assets/js/site/local-link-fix.js"></script>
+  <script src="/assets/js/feedback.js"></script>
+  
+  <script src="/assets/js/sajari-search-foot.js"></script>
+  
+  <!-- <script src="/assets/js/sajari-index.js"></script> -->
+  <script src="https://assets.talla.com/latest/embeddedjs/talla.js"></script>
+  <script src="/assets/js/talla-init.js"></script>
+  <style>
+    a.sj-paginator__page-number.sj-paginator__page-number--current.css-so0ov7 {
+      background-color: lightblue;
+    }
+    div.sj-tabs__tab {
+      margin-top: 3rem;
+      margin-left: .3rem;
+      border-top-left-radius: .4rem;
+      border-top-right-radius: .4rem;
+      background-color:#e8e8e8;
+    }
+
+    div.sj-tabs__tab.sj-tabs__tab--selected {
+      border-bottom-color: crimson;
+      background-color: #f8f8f8;
+    }
+
+    p.sj-results__result__description.css-p9jvyt {
+      font-size: 1rem;
+    }
+
+    .sj-result__text.css-31l7gp h3 {
+      color: navy;
+      font-size: 1.4rem;
+    }
+    </style>
+
+</body>
+
+</html>
