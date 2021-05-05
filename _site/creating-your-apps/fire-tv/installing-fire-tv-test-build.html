@@ -1,0 +1,818 @@
+﻿<!DOCTYPE html>
+<html lang="ja">
+  <head>
+    <meta charset="utf-8" />
+    <meta
+      name="viewport"
+      content="width=device-width, initial-scale=1, shrink-to-fit=no"
+    />
+    <meta name="description" content="このトピックでは、Fire TV 用 Brightcove Beacon アプリのテストビルドをインストールする方法について説明します。" />
+
+    <title>Fire TVテストビルドのインストール</title>
+    <link rel="apple-touch-icon" sizes="180x180" href="/apple-touch-icon.png" />
+    <link rel="icon" type="image/png" sizes="32x32" href="/favicon-32x32.png" />
+    <link rel="icon" type="image/png" sizes="16x16" href="/favicon-16x16.png" />
+    <link rel="manifest" href="/site.webmanifest" />
+    <link data-react-helmet="true" rel="preload" as="style" href="https://fonts.googleapis.com/css2?family=Public+Sans:wght@400;500&amp;display=swap">
+      <link
+      rel="stylesheet"
+      href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css"
+      integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T"
+      crossorigin="anonymous"
+    />
+    <link
+      rel="stylesheet"
+      href="https://support.brightcove.com/site-assets/css/site/prism.css"
+    />
+    <link
+      rel="stylesheet"
+      href="https://support.brightcove.com/site-assets/css/site/styles.css"
+    />
+    <link
+      rel="stylesheet"
+      href="https://support.brightcove.com/site-assets/css/site/landing-page.css"
+    />
+    <link
+      rel="stylesheet"
+      href="https://support.brightcove.com/site-assets/css/site/tabs.css"
+    />
+    <link rel="stylesheet" href="/assets/css/local.css" />
+    <link
+      href="https://fonts.googleapis.com/css?family=Lato&display=swap"
+      rel="stylesheet"
+    />
+    <link
+      href="https://fonts.googleapis.com/css?family=Source+Code+Pro&display=swap"
+      rel="stylesheet"
+    />
+    <script
+      src="https://kit.fontawesome.com/381443caa8.js"
+      crossorigin="anonymous"
+    ></script>
+    <script src="https://support.brightcove.com/site-assets/js/site/google-analytics.js"></script>
+    <script src="/assets/js/sajari-head.js"></script>
+  </head>
+
+  <body class="body"></body>
+</html>
+
+<header>
+  <div class="div-header">
+    <a href="/"><img class="product-logo" src="https://support.brightcove.com/site-assets/images/site/product-logos/Beacon_Logo.svg" alt="製品ロゴ" style="max-height: 100px;max-width: 232px;"/></a>
+<!-- GTranslate: https://gtranslate.io/ -->
+<select onchange="doGTranslate(this);"><option value="">言語の選択</option><option value="en|en" translate="No">English</option><option value="en|zh-TW" translate="No">繁體中文</option><option value="en|fr" translate="No">Français</option><option value="en|de" translate="No">Deutsche</option><option value="en|ja" translate="No">日本語</option><option value="en|ko" translate="No">한국어</option><option value="en|es" translate="No">Español</option></select>
+
+<script>
+/* <![CDATA[ */
+function doGTranslate(lang_pair) {if(lang_pair.value)lang_pair=lang_pair.value;if(lang_pair=='')return;var lang=lang_pair.split('|')[1];var plang=location.hostname.split('.')[0];if(plang.length !=2 && plang.toLowerCase() != 'zh-cn' && plang.toLowerCase() != 'zh-tw')plang='en';location.href=location.protocol+'//'+(lang == 'en' ? '' : lang+'.')+location.hostname.replace('www.', '').replace(RegExp('^' + plang + '\\.'), '')+location.pathname+location.search;}
+/* ]]> */
+</script>
+
+
+
+    <span class="secondary-nav"><a href="https://supportportal.brightcove.com/s/login/?"><img src="https://support.brightcove.com/site-assets/images/site/support.png" alt="サポート"/> サポートへのお問い合わせ</a> <span style="vertical-align: top;margin-left:1em;margin-right:1em;">|</span> <a href="https://status.brightcove.com/"><img src="https://support.brightcove.com/site-assets/images/site/status.png" alt="システムステータス"/> システムステータス</a></span> <br/>
+    
+  </div>
+  <nav aria-label="breadcrumb">
+    <ol class="breadcrumb arr-right">
+      
+      <li class="breadcrumb-item"><a href="/">ホーム</a></li>
+      
+      
+      
+      <li class="breadcrumb-item"><a href="/creating-your-apps/fire-tv/">ファイヤーテレビ</a></li>
+      
+      <li class="breadcrumb-item active" aria-current="page">Fire TVテストビルドのインストール</li>
+    </ol>
+  </nav>
+</header>
+<div class="container">
+  <div class="row">
+          <div class="col-sm-3 left-side-bar">
+        <select id="site_select" class="bcls-select" style="margin-right: 1rem;">
+          <option value="">Brightcove ブのその他のドキュメント</option>
+          
+            
+              <option value="https://support.brightcove.com">ドキュメントホーム</option>
+            
+          
+            
+              <option value="https://audience.support.brightcove.com">Brightcove Audience</option>
+            
+          
+            
+              <option value="https://beacon.support.brightcove.com">Brightcove ブビーコン</option>
+            
+          
+            
+              <option value="https://campaign.support.brightcove.com">Brightcove ブキャンペーン</option>
+            
+          
+            
+              <option value="https://engage.support.brightcove.com">Brightcove Engage</option>
+            
+          
+            
+              <option value="https://live.support.brightcove.com">Brightcove ブ・ライブ</option>
+            
+          
+            
+              <option value="https://gallery.support.brightcove.com">Brightcove ブギャラリー</option>
+            
+          
+            
+              <option value="https://ssai.support.brightcove.com">Brightcove SSAI</option>
+            
+          
+            
+              <option value="https://social.support.brightcove.com">Brightcove ブソーシャル</option>
+            
+          
+            
+              <option value="https://studio.support.brightcove.com">Video Cloud Studio</option>
+            
+          
+            
+              <option value="https://player.support.brightcove.com">Brightcove ブのプレーヤー開発</option>
+            
+          
+            
+              <option value="https://apis.support.brightcove.com">Video CloudプラットフォームAPI</option>
+            
+          
+            
+              <option value="https://sdks.support.brightcove.com">ビデオクラウドデバイス SDK</option>
+            
+          
+            
+              <option value="https://integrations.support.brightcove.com">統合および CMS コネクタ</option>
+            
+          
+            
+              <option value="https://general.support.brightcove.com">ビデオクラウドの一般情報</option>
+            
+          
+            
+              <option value="https://zencoder.support.brightcove.com">Zencoder</option>
+            
+          
+        </select>
+
+      <nav class="sidenav" id="side_nav">
+        
+        
+        <h5><a href="/index.html">ホーム</a></h5>
+        
+        
+        
+        <h5 class="submenu-header"><a href="/getting-started/index.html">はじめに<strong> + </strong></a></h5>
+        <ul class="sidenav-submenu" style="display:none;">
+          
+          
+          <li><a href="/getting-started/learning-guide-bc-beacon.html">学習ガイド</a></li>
+          
+          
+          
+          <li><a href="/getting-started/implementation-phases.html">実装フェーズ</a></li>
+          
+          
+          
+          <li><a href="/getting-started/app-design-considerations.html">アプリケーション設計に関する考慮事項</a></li>
+          
+          
+          
+          <li><a href="/getting-started/creating-your-app-design-info-architecture.html">アプリデザイン-情報アーキテクチャ</a></li>
+          
+          
+          
+          <li><a href="/getting-started/creating-your-app-design-layout-options.html">アプリデザイン-レイアウトオプション</a></li>
+          
+          
+          
+          <li><a href="/getting-started/design-best-practices.html">設計のベストプラクティス</a></li>
+          
+          
+        </ul>
+        
+        
+        
+        <h5 class="submenu-header"><a href="/syncing-with-video-cloud/index.html">ビデオクラウドと同期<strong> + </strong></a></h5>
+        <ul class="sidenav-submenu" style="display:none;">
+          
+          
+          <li><a href="/syncing-with-video-cloud/vc-custom-fields.html">Video Cloud カスタム項目の作成</a></li>
+          
+          
+          
+          <li><a href="/syncing-with-video-cloud/forcing-a-sync.html">同期を強制する</a></li>
+          
+          
+        </ul>
+        
+        
+        
+        <h5 class="submenu-header"><a href="/using-brightcove-beacon/index.html"><strong>Brightcove ブのビーコンの使用+ </strong></a></h5>
+        <ul class="sidenav-submenu" style="display:none;">
+          
+          
+          <li><a href="/using-brightcove-beacon/adding-to-page.html">ページにカルーセルを追加する</a></li>
+          
+          
+          
+          <li><a href="/using-brightcove-beacon/creating-a-channel.html">チャンネルの作成</a></li>
+          
+          
+          
+          <li><a href="/using-brightcove-beacon/electronic-program-guides.html">電子プログラムガイド (EPG) の作成</a></li>
+          
+          
+          
+          <li><a href="/using-brightcove-beacon/creating-a-page.html">新しいページの作成</a></li>
+          
+          
+          
+          <li><a href="/using-brightcove-beacon/creating-a-playlist.html">プレイリストを作成する</a></li>
+          
+          
+          
+          <li><a href="/using-brightcove-beacon/creating-subscription-package.html">サブスクリプションパッケージの作成</a></li>
+          
+          
+          
+          <li><a href="/using-brightcove-beacon/promo-codes.html">プロモーションコードの作成</a></li>
+          
+          
+          
+          <li><a href="/using-brightcove-beacon/series-seasons-episodes.html">シリーズ/シーズン/エピソードの作成</a></li>
+          
+          
+          
+          <li><a href="/using-brightcove-beacon/configuring-server-side-ad-settings.html">サーバーサイド広告設定の構成</a></li>
+          
+          
+          
+          <li><a href="/using-brightcove-beacon/implementing-authvod.html">AuthVOD の実装</a></li>
+          
+          
+          
+          <li><a href="/using-brightcove-beacon/live-ssai.html">ライブSSAIの実装</a></li>
+          
+          
+          
+          <li><a href="/using-brightcove-beacon/vod-ssai.html">VOD SSAIの実装</a></li>
+          
+          
+          
+          <li><a href="/using-brightcove-beacon/including-non-configurable-pages.html">設定できないページを含める</a></li>
+          
+          
+          
+          <li><a href="/using-brightcove-beacon/introducing-pages.html">ページの紹介</a></li>
+          
+          
+          
+          <li><a href="/using-brightcove-beacon/streaming-live-event.html">ライブイベントのストリーミング</a></li>
+          
+          
+          
+          <li><a href="/using-brightcove-beacon/streaming-vods-to-a-channel.html">チャンネルへのVOD のストリーミング</a></li>
+          
+          
+          
+          <li><a href="/using-brightcove-beacon/monetization-options.html">収益化オプションについて</a></li>
+          
+          
+          
+          <li><a href="/using-brightcove-beacon/using-subscription-package.html">サブスクリプションパッケージの使用</a></li>
+          
+          
+          
+          <li><a href="/using-brightcove-beacon/tools.html">ツールの使用</a></li>
+          
+          
+          
+          <li><a href="/using-brightcove-beacon/viewing-analytics-data.html">分析データの表示</a></li>
+          
+          
+        </ul>
+        
+        
+        
+        <h5 class="submenu-header"><a href="/creating-your-apps/index.html">アプリの作成<strong> + </strong></a></h5>
+        <ul class="sidenav-submenu" style="display:none;">
+          
+          
+          <li class="submenu-header">
+            <a href="/creating-your-apps/android/index.html">アンドロイド<strong> + </strong></a>
+            <ul class="sidenav-subsubmenu" style="display:none;">
+              
+              <li><a href="/creating-your-apps/android/submitting-to-android.html">Android ストアに新しいアプリを送信する</a></li>
+              
+              <li><a href="/creating-your-apps/android/updating-android-apps-to-bcb.html">Android アプリをBrightcove ブビーコンにアップデートする</a></li>
+              
+              <li><a href="/creating-your-apps/android/adding-subscriptions-in-android.html">Android へのサブスクリプションの追加</a></li>
+              
+              <li><a href="/creating-your-apps/android/improving-relevance-android.html">Android Play ストアでの検索の関連性の向上</a></li>
+              
+              <li><a href="/creating-your-apps/android/installing-android-test-build.html">Androidテストビルドのインストール</a></li>
+              
+            </ul>
+          </li>
+          
+          
+          
+          <li class="submenu-header">
+            <a href="/creating-your-apps/fire-tv/index.html">Fire TV <strong> + </strong></a>
+            <ul class="sidenav-subsubmenu" style="display:none;">
+              
+              <li><a href="/creating-your-apps/fire-tv/installing-fire-tv-test-build.html">Fire TVテストビルドのインストール</a></li>
+              
+              <li><a href="/creating-your-apps/fire-tv/submitting-to-amazon.html">Amazonストアに送信する</a></li>
+              
+            </ul>
+          </li>
+          
+          
+          
+          <li class="submenu-header">
+            <a href="/creating-your-apps/ios-tvos/index.html">iOS/tvOS <strong> + </strong></a>
+            <ul class="sidenav-subsubmenu" style="display:none;">
+              
+              <li><a href="/creating-your-apps/ios-tvos/installing-ios-test-build.html">iOS/tvOS テストビルドのインストール</a></li>
+              
+              <li><a href="/creating-your-apps/ios-tvos/submitting-to-apple.html">アップルストアに提出する</a></li>
+              
+            </ul>
+          </li>
+          
+          
+          
+          <li class="submenu-header">
+            <a href="/creating-your-apps/panasonic/index.html">パナソニック<strong> + </strong></a>
+            <ul class="sidenav-subsubmenu" style="display:none;">
+              
+              <li><a href="/creating-your-apps/panasonic/submitting-to-panasonic.html">パナソニックストアへの提出</a></li>
+              
+            </ul>
+          </li>
+          
+          
+          
+          <li class="submenu-header">
+            <a href="/creating-your-apps/roku/index.html">ろく<strong> + </strong></a>
+            <ul class="sidenav-subsubmenu" style="display:none;">
+              
+              <li><a href="/creating-your-apps/roku/configuring-inchannel-products.html">Rokuでのチャネル内製品の設定</a></li>
+              
+              <li><a href="/creating-your-apps/roku/installing-roku-test-build.html">Roku テストビルドのインストール</a></li>
+              
+              <li><a href="/creating-your-apps/roku/submitting-to-roku.html">ロクストアへの提出</a></li>
+              
+            </ul>
+          </li>
+          
+          
+          
+          <li class="submenu-header">
+            <a href="/creating-your-apps/samsung/index.html">サムスン<strong> + </strong></a>
+            <ul class="sidenav-subsubmenu" style="display:none;">
+              
+              <li><a href="/creating-your-apps/samsung/samsung-partner.html">サムスンのパートナーになる</a></li>
+              
+              <li><a href="/creating-your-apps/samsung/submitting-to-samsung.html">サムスンストアへの提出</a></li>
+              
+            </ul>
+          </li>
+          
+          
+          
+          <li><a href="/creating-your-apps/common-required-info.html">共通の必須情報</a></li>
+          
+          
+          
+          <li><a href="/creating-your-apps/device-apps-validation-guide.html">デバイスアプリ検証ガイド</a></li>
+          
+          
+        </ul>
+        
+        
+        
+        <h5 class="submenu-header"><a href="/references/index.html">参考文献<strong> + </strong></a></h5>
+        <ul class="sidenav-submenu" style="display:none;">
+          
+          
+          <li><a href="/references/common-configuration-settings.html">一般的な構成設定</a></li>
+          
+          
+          
+          <li><a href="/references/creating-stripe-account.html">Stripeアカウントの作成</a></li>
+          
+          
+          
+          <li><a href="/references/glossary.html">用語集</a></li>
+          
+          
+          
+          <li><a href="/references/image-requirements.html">画像とその仕様</a></li>
+          
+          
+          
+          <li><a href="/references/known-issues.html">既知の問題</a></li>
+          
+          
+          
+          <li><a href="/references/product-updates.html">製品のアップデート</a></li>
+          
+          
+        </ul>
+        
+        
+        
+        <h5 class="submenu-header"><a href="/training/index.html"><strong>トレーニング+ </strong></a></h5>
+        <ul class="sidenav-submenu" style="display:none;">
+          
+          
+          <li><a href="/training/training-demand-custom-fields.html">Video Cloud ビデオ/カスタムフィールドの使用</a></li>
+          
+          
+          
+          <li><a href="/training/training-demand-design-layout.html">アプリケーションレイアウトの設計</a></li>
+          
+          
+          
+          <li><a href="/training/training-demand-playlists.html">プレイリストの作成と使用</a></li>
+          
+          
+          
+          <li><a href="/training/training-demand-series-seasons-episodes.html">シリーズ、季節、エピソードの作成</a></li>
+          
+          
+          
+          <li><a href="/training/training-demand-vod-ssai.html">VOD サーバーサイド広告の実装</a></li>
+          
+          
+          
+          <li><a href="/training/training-demand-publish-android-app.html">PlayストアでAndroidアプリを公開する</a></li>
+          
+          
+          
+          <li><a href="/training/training-demand-viewing-analytics.html">分析データの表示</a></li>
+          
+          
+        </ul>
+        
+        
+        
+        <h5 class="submenu-header"><a href="/support/index.html"><strong>サポート+ </strong></a></h5>
+        <ul class="sidenav-submenu" style="display:none;">
+          
+          
+          
+          
+          
+          
+          <li><a href="/support/viewing-brightcove-system-status-page.html">Brightcove ブのシステムステータスページの表示</a></li>
+          
+          
+          
+          <li><a href="/support/contact-sales.html">営業へのお問い合わせ</a></li>
+          
+          
+          
+          <li><a href="/support/opening-case-with-brightcove-support.html">サポートケースを開く</a></li>
+          
+          
+        </ul>
+        
+        
+      </nav>
+    </div>
+    <div class="col-lg-7" style="background-color: white;color: #333333;margin-top: -1em;margin-bottom: -1em;padding-bottom:1em;">
+      <!-- bootstrap layout -->
+<p id="bc_veggie_burger_wrapper" style="display: none;"><img id="bc_veggie_burger" src="/assets/images/feather/menu.svg" alt="ナビゲーションメニュー"/></p>
+
+<!-- search bar -->
+<div id="nav-search-box" style="margin-top: 1rem;"></div>
+<!-- in-page navigation for narrow screens -->
+<details class="centered-inpage-nav" id="centered_inpage_nav">
+  <summary><h6 class="toc">ページコンテンツ</h6></summary>
+  <nav id="centered_toc"></nav>
+  <ul id="centered_in_page_toc" class="list-none"></ul>
+</details>
+<!-- open in new tab/window -->
+<a id="open_new_tab" href="#" target="_blank" style="display: none;"><img src="/assets/images/feather/external-link.svg" alt="新しいタブで開く" style="margin-top:4em;width: 1.5em;"/></a>
+
+
+<h1>Fire TVテストビルドのインストール</h1>
+<article class="bcls-article">
+  <summary>このトピックでは、Fire TV 用 Brightcove Beacon アプリのテストビルドをインストールする方法について説明します。</summary>
+  <section class="bcls-section">
+    <h2 id="Introduction">はじめに</h2>
+    <p>
+      このドキュメントでは、アプリをテストする前にアプリの提出プロセスを実行する必要がないように、テストビルドをインストールする方法について説明します。
+    </p>
+    <aside class="bcls-aside bcls-aside--information">
+      Fire TV デバイスに Brightcove Beacon アプリをインストールするには、次のものが必要です。
+      <ul>
+        <li>Fire TVデバイスで開発者モードが有効になります。</li>
+        <li>Androidデバッグブリッジ（adb）がコンピュータにインストールされています。</li>
+      </ul>
+      <p>サブスクリプションやイベント支払いなど、アプリ内部の支払い方法をテストする場合は、<a href="https://beacon.support.brightcove.com/creating-your-apps/fire-tv/installing-fire-tv-test-build.html#install-with-live-service"> Live App Testing のインストール手順に従ってください</a>。</p>
+    </aside>
+
+    <p>プロセスの概要は次のとおりです。</p>
+    <ol>
+      <li>Amazon Fire TV端末でデバッグを有効にします。</li>
+      <li>
+        Androidデバッグブリッジ（adb）からFire TVデバイスに接続します。
+      </li>
+      <li>Brightcove ビーコンアプリをインストールします。</li>
+      <li>Brightcove ビーコンアプリを実行します。</li>
+    </ol>
+  </section>
+
+  <section class="bcls-section">
+    <h2 id="enabling-debugging">Amazon Fire TVでのデバッグの有効化</h2>
+    <p>
+      Fire TVデバイスでデバッグを有効にするには、以下の手順に従ってください。
+    </p>
+
+    <ol class="bcls-tasklist">
+      <li>
+        Fire TVのメイン画面で、[ <strong>設定</strong> ] を選択します。
+      </li>
+      <li>
+        [ <strong>デバイス] (または [My Fire TV]) </strong><strong> [&gt; 開発者オプション] </strong>を選択します。
+      </li>
+      <li>[ <strong> ADB デバッグ</strong> ] をオンにします。</li>
+      <li>[ <strong>不明なソースからのアプリ</strong> ] をオンにします。</li>
+    </ol>
+  </section>
+
+  <section class="bcls-section">
+    <h2 id="connecting-adb">Androidデバッグブリッジ（adb）経由で接続する</h2>
+    <p>
+      アプリをインストール、テスト、デバッグするには、Android Debug Bridge（adb）を使用してコンピュータを Amazon Fire TV デバイスに接続する必要があります。adbを有効にする方法の詳細については、<a href="https://developer.amazon.com/docs/fire-tv/connecting-adb-to-device.html" target="_blank">Amazon</a>および<a href="https://developer.android.com/studio/command-line/adb.html" target="_blank">Android</a>のドキュメントに従ってください。
+    </p>
+  </section>
+
+  <section class="bcls-section">
+    <h2 id="installing-firetv">Brightcove ブビーコンアプリをインストールする</h2>
+    <p>
+      Amazon アプリストアに送信する前に Brightcove Beacon アプリをインストールしてテストするには、Android デバッグブリッジ（adb）を使用する必要があります。
+    </p>
+    <p>
+      独自のアプリをインストールする (Appstore の外) は、アプリをサイドローディングと呼ぶことがあります。
+    </p>
+    <aside class="bcls-aside bcls-aside--information">
+      以下の手順を実行するには、<em> adbを使用して開発用コンピュータをFire </em> TVデバイスに接続している必要があります。
+    </aside>
+    <ol class="bcls-tasklist">
+      <li>ターミナルまたはコマンドラインを開きます。</li>
+      <li>
+        次のコマンドを入力します。ここで、<code translate="No">path-to-apk-file</code>はアプリの APK へのファイルシステムパスです。
+        <pre
+          class="line-numbers"
+        ><code class="“language-bash”">adb インストールパス-APK ファイル</code></pre>
+      </li>
+      <li>
+        インストールが成功した場合、adb は次のようなメッセージで応答します。
+        <pre class="line-numbers"><code class="“language-bash”">
+                        764 KB/秒 (0.277秒で217246バイト)
+                        pkg: /data/local/tmp/HelloWorld.apk
+                        成功
+                    </code></pre>
+      </li>
+      <li>
+        デバイスにすでに存在するアプリを再インストールするには、<code translate="No">-r</code>オプションを使用してアプリを再インストールできます。
+        <pre class="line-numbers"><code class="“language-bash”">
+                        adb インストール-rパスからapkファイルへのパス
+                    </code></pre>
+      </li>
+    </ol>
+  </section>
+  <section class="bcls-section">
+    <h2 id="running-firetv">Brightcove ブのビーコンアプリの実行</h2>
+    <p>
+      サイドロードされたアプリは、[ <strong>最近使った項目</strong> ] 行と [ <strong>アプリ</strong> ] セクションの [ <strong>マイライブラリ</strong> ] 行の両方に表示されます。アプリは、[ <strong>設定</strong> ] メニューでも確認できます。
+    </p>
+    <ol class="bcls-tasklist">
+      <li>
+        Amazon Fire TVのメイン画面から、<strong>設定</strong>&gt;<strong>アプリケーション</strong>&gt;<strong>インストール済みアプリケーションの管理</strong>を選択します。
+      </li>
+      <li>Brightcove ブのビーコンアプリを選択します。</li>
+      <li>[ <strong>アプリケーションの起動</strong> ] を選択します。</li>
+    </ol>
+  </section>
+
+  <section class="bcls-section">
+    <h2 id="install-with-live-service">AmazonライブアプリテストサービスでのFire TVアプリのインストール</h2>
+
+    <p>このセクションでは、Amazon Live アプリテストサービスで Fire TV アプリをインストールしてテストする方法について説明します。</p>
+    <aside class="bcls-aside bcls-aside--information">サブスクリプションやイベント支払いなど、アプリ内部の支払い方法をテストする場合は、このインストール手順を使用します。</aside>
+    <p>端末に Fire TV アプリをインストールするには、Brightcove ブからのライブアプリテストの招待メールが必要です。</p>
+    <aside class="bcls-aside bcls-aside--information">Live App Testing の招待メールが届かない場合は、<a href="https://www.amazon.com/gp/gss/ccp/" target="_blank">このリンクをたどり</a>、<strong>次のカテゴリからマーケティングメールを送信するオプションを選択して、Appstore のマーケティングコミュニケーションを有効にし</strong>、<strong>保存</strong>。
+
+      <p>マーケティングコミュニケーションプリファレンスの設定後、変更は次のメール招待テストと後続のすべての招待テストから始まります。</p></aside>
+    <p>ライブアプリテストに参加するための招待メールを受け取ったら、以下の手順を実行してください。</p>
+    <ol class="bcls-tasklist-restart">
+      <li>招待メールで、テストするマーケットプレイスのリンクをクリックします
+        <figure class="bcls-figure">
+          <img class="bcls-image--no-border" alt="" width="" height="" src="/assets/images/creating-your-apps/firetv-installation/1-install-email.png"/>
+        </figure>
+        <p>リンクをクリックすると、指定したマーケットプレイスの Brightcove ビーコンアプリのリテールページが開きます。</p>
+      </li>
+      <li>アプリ小売ページの [ <strong>配信先:</strong> ] ドロップダウンメニューから、Brightcove Beacon アプリケーションをインストールするデバイスを選択します。
+        <figure class="bcls-figure">
+          <img class="bcls-image--no-border" alt="" width="" height="" src="/assets/images/creating-your-apps/firetv-installation/2-app-installation.png"/>
+        </figure>
+      </li>
+      <li>テスターの現在のマーケットプレイスで特定のデバイスが使用できない場合、そのデバイスはドロップダウンメニューに表示されません。特定のマーケットプレイスでアプリがターゲットとするデバイスがない場合は、アプリの小売ページにあるドロップダウンメニューが [ <strong>続行</strong> ] ボタンに置き換えられます。
+        <figure class="bcls-figure">
+          <img class="bcls-image--no-border" alt="" width="200" height="200" src="/assets/images/creating-your-apps/firetv-installation/3-continue-button.png"/>
+        </figure>
+      </li>
+      <li>指定したデバイスに Brightcove Beacon アプリケーションをインストールします。アプリがターゲットとするAmazonアカウントに関連付けた端末の数だけテストできます。</li>
+      <li>
+        Amazon Fire TVのメイン画面から、<strong>設定</strong>&gt;<strong>アプリケーション</strong>&gt;<strong>インストール済みアプリケーションの管理</strong>を選択します。
+      </li>
+      <li>Brightcove ブのビーコンアプリを選択します。</li>
+      <li>[ <strong>アプリケーションの起動</strong> ] を選択します。</li>
+    </ol>
+  </section>
+
+  <section class="bcls-section">
+    <h2 id="running-firetv">Brightcove ブビーコンアプリのアンインストール</h2>
+
+    <p>Fire TVデバイスからアプリをアンインストールするには、次の手順に従います。</p>
+    <ol class="bcls-tasklist-restart">
+      <li>
+        Fire TVのメイン画面から、<strong>設定</strong>&gt;<strong>アプリケーション</strong>&gt;<strong>インストール済みアプリケーションの管理</strong>を選択します。
+      </li>
+      <li>Brightcove ブのビーコンアプリを選択します。</li>
+      <li><strong>アンインストール</strong>&gt;<strong>アンインストール</strong>を選択します</li>
+    </ol>
+  </section>
+  <section class="bcls-section">
+    <h2 id="additional-resources">その他のリソース</h2>
+<p>詳細については、以下の Amazon ドキュメントを参照してください。 </p>
+<p><a href="https://developer.amazon.com/docs/app-testing/live-app-testing-faq.html" target="_blank">ライブアプリテストに関する Amazon よくある質問</a></p>
+
+
+    </section>
+</article>
+
+<!-- complete bootstrap layout -->
+    </div>
+    <div class="col-sm-2 right-side-bar">
+      
+      <nav class="right-side-nav" id="right_side_nav">
+        <h6 class="toc">ページコンテンツ</h6>
+        <ul id="in_page_nav" class="list-none"></ul>
+      </nav>
+      
+    </div>
+  </div>
+</div>
+
+<hr>
+<footer class="bcls-footer" role="contentinfo">  <div class="row">
+    <div class="region region-footer-top-center col-md-12">
+      <nav role="navigation" aria-labelledby="block-brightcovesupport-menu" id="block-brightcovesupport" class="footer-menu">
+
+        <h2>Brightcove ブサポート</h2>
+
+        <ul class="menu">
+          <li>
+            <a href="https://status.brightcove.com">システムステータス</a>
+          </li>
+          <li>
+            <a href="https://supportportal.brightcove.com/s/login/?">サポートへのお問い合わせ</a>
+          </li>
+          <li>
+            <a href="https://support.brightcove.com/">ドキュメンテーション</a>
+          </li>
+        </ul>
+
+      </nav>
+      <nav role="navigation" aria-labelledby="block-training-menu" id="block-training" class="footer-menu">
+
+        <h2>トレーニング</h2>
+
+        <ul class="menu">
+          <li>
+            <a href="https://studio.support.brightcove.com/training/online-training-courses.html">オンラインコース</a>
+          </li>
+          <li>
+            <a href="https://studio.support.brightcove.com/training/register-training.html">コースに登録する</a>
+          </li>
+          <li>
+            <a href="https://university.brightcove.com/">Brightcove University</a>
+          </li>
+        </ul>
+
+      </nav>
+      <nav role="navigation" aria-labelledby="block-brightcove-menu" class="footer-menu">
+
+        <h2>Brightcove</h2>
+
+        <ul class="menu">
+          <li>
+            <a href="https://www.brightcove.com">Brightcove.com</a>
+          </li>
+          <li>
+            <a href="https://supportportal.brightcove.com/s/login/?">お問合せ</a>
+          </li>
+        </ul>
+      </nav>
+    </div>
+  </div>
+  <div class="row">
+    <div class="region region-footer-bottom-center col-md-12">
+      <div class="bcls-copyright footer-menu">
+        <table>
+          <tr>
+            <td>
+              <div id="bc_copyright" class="field field--name-field-copyright-year field--type-string field--label-hidden field--item" style="float: left;"> Brightcove Inc. All rights reserved.</div>
+            </td>
+            <td><a href="https://www.brightcove.com/en/legal/privacy">プライバシー</a> | <a href="https://www.brightcove.com/en/terms-and-conditions">利用規約</a></td>
+            <td>
+              <div class="gf-links-cols footer-menu">
+                <div class="gf-social"><a href="https://www.linkedin.com/company/16439" title="LinkedIn" newtab="newtab" class="gf-social-linkedin"><i class="fab fa-linkedin-in" style="font-size: 1.5rem;"></i></a><a href="https://twitter.com/brightcove" title="Twitter" newtab="newtab" class="gf-social-twitter"><i class="fab fa-twitter" style="font-size: 1.5rem;"></i></a><a href="https://www.facebook.com/Brightcove" title="Facebook" newtab="newtab" class="gf-social-facebook"><i class="fab fa-facebook-f" style="font-size: 1.5rem;"></i></a>
+                </div>
+              </div>
+            </td>
+          </tr>
+        </table>
+      </div>
+    </div>
+  </div>
+</footer>
+
+<script>
+      
+  var searchBox = sajari.init({
+    mode: "search-box",
+    project: "1588255093746585379", // Set this to your project.
+    collection: "brightcove-documenation", // Set this to your collection.
+    instantPipeline: "autocomplete", // Pipeline used as you type
+    inputPlaceholder: "Search", // Input element placeholder
+    maxSuggestions: 5, // Maximum number of suggestions to show
+    attachSearchBox: document.getElementById("nav-search-box") // DOM element to attach to
+  });
+  
+    searchBox("sub", "pipeline.search-sent", function (_, query) {
+      window.location = "/search.html?q=" + encodeURIComponent(query.q);
+    });
+  
+
+</script>
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.0/jquery.min.js" crossorigin="anonymous"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js" integrity="sha384-UO2eT0CpHqdSJQ6hJty5KVphtPhzWj9WO1clHTMGa3JDZwrnQq4sF86dIHNDz0W1" crossorigin="anonymous"></script>
+  <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js" integrity="sha384-JjSmVgyd0p3pXB1rRibZUAYoIIy6OrQ6VrjIEaFf/nJGzIxFDsf4x0xIM+B07jRM" crossorigin="anonymous"></script>
+  <script src="https://support.brightcove.com/site-assets/js/site/https-fix.js"></script>
+  <script src="https://support.brightcove.com/site-assets/js/site/setDate.js"></script>
+  
+  <script src="https://support.brightcove.com/site-assets/js/site/prism.js"></script>
+  
+  <script src="https://support.brightcove.com/site-assets/js/site/site.js"></script>
+  <script src="https://support.brightcove.com/site-assets/js/site/tabs.js"></script>
+  <script src="https://support.brightcove.com/site-assets/js/site/toc.js"></script>
+  <script src="/assets/js/sites_nav.js"></script>
+  <script src="https://support.brightcove.com/site-assets/js/site/bcls-utils.js"></script>
+  <script src="https://support.brightcove.com/site-assets/js/site/local-link-fix.js"></script>
+  <script src="/assets/js/feedback.js"></script>
+  
+  <script src="/assets/js/sajari-search-foot.js"></script>
+  
+  <!-- <script src="/assets/js/sajari-index.js"></script> -->
+  <style>
+    a.sj-paginator__page-number.sj-paginator__page-number--current.css-so0ov7 {
+      background-color: lightblue;
+    }
+    div.sj-tabs__tab {
+      margin-top: 3rem;
+      margin-left: .3rem;
+      border-top-left-radius: .4rem;
+      border-top-right-radius: .4rem;
+      background-color:#e8e8e8;
+    }
+
+    div.sj-tabs__tab.sj-tabs__tab--selected {
+      border-bottom-color: crimson;
+      background-color: #f8f8f8;
+    }
+
+    p.sj-results__result__description.css-p9jvyt {
+      font-size: 1rem;
+    }
+
+    .sj-result__text.css-31l7gp h3 {
+      color: navy;
+      font-size: 1.4rem;
+    }
+    </style>
+
+</body>
+
+</html>

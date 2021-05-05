@@ -1,0 +1,1126 @@
+﻿<!DOCTYPE html>
+<html lang="ja">
+  <head>
+    <meta charset="utf-8" />
+    <meta
+      name="viewport"
+      content="width=device-width, initial-scale=1, shrink-to-fit=no"
+    />
+    <meta name="description" content="このトピックでは、Samsung ストアにデバイスアプリを送信する方法を学びます。" />
+
+    <title>Samsung ストアへのアプリの提出</title>
+    <link rel="apple-touch-icon" sizes="180x180" href="/apple-touch-icon.png" />
+    <link rel="icon" type="image/png" sizes="32x32" href="/favicon-32x32.png" />
+    <link rel="icon" type="image/png" sizes="16x16" href="/favicon-16x16.png" />
+    <link rel="manifest" href="/site.webmanifest" />
+    <link data-react-helmet="true" rel="preload" as="style" href="https://fonts.googleapis.com/css2?family=Public+Sans:wght@400;500&amp;display=swap">
+      <link
+      rel="stylesheet"
+      href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css"
+      integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T"
+      crossorigin="anonymous"
+    />
+    <link
+      rel="stylesheet"
+      href="https://support.brightcove.com/site-assets/css/site/prism.css"
+    />
+    <link
+      rel="stylesheet"
+      href="https://support.brightcove.com/site-assets/css/site/styles.css"
+    />
+    <link
+      rel="stylesheet"
+      href="https://support.brightcove.com/site-assets/css/site/landing-page.css"
+    />
+    <link
+      rel="stylesheet"
+      href="https://support.brightcove.com/site-assets/css/site/tabs.css"
+    />
+    <link rel="stylesheet" href="/assets/css/local.css" />
+    <link
+      href="https://fonts.googleapis.com/css?family=Lato&display=swap"
+      rel="stylesheet"
+    />
+    <link
+      href="https://fonts.googleapis.com/css?family=Source+Code+Pro&display=swap"
+      rel="stylesheet"
+    />
+    <script
+      src="https://kit.fontawesome.com/381443caa8.js"
+      crossorigin="anonymous"
+    ></script>
+    <script src="https://support.brightcove.com/site-assets/js/site/google-analytics.js"></script>
+    <script src="/assets/js/sajari-head.js"></script>
+  </head>
+
+  <body class="body"></body>
+</html>
+
+<header>
+  <div class="div-header">
+    <a href="/"><img class="product-logo" src="https://support.brightcove.com/site-assets/images/site/product-logos/Beacon_Logo.svg" alt="製品ロゴ" style="max-height: 100px;max-width: 232px;"/></a>
+<!-- GTranslate: https://gtranslate.io/ -->
+<select onchange="doGTranslate(this);"><option value="">言語の選択</option><option value="en|en" translate="No">English</option><option value="en|zh-TW" translate="No">繁體中文</option><option value="en|fr" translate="No">Français</option><option value="en|de" translate="No">Deutsche</option><option value="en|ja" translate="No">日本語</option><option value="en|ko" translate="No">한국어</option><option value="en|es" translate="No">Español</option></select>
+
+<script>
+/* <![CDATA[ */
+function doGTranslate(lang_pair) {if(lang_pair.value)lang_pair=lang_pair.value;if(lang_pair=='')return;var lang=lang_pair.split('|')[1];var plang=location.hostname.split('.')[0];if(plang.length !=2 && plang.toLowerCase() != 'zh-cn' && plang.toLowerCase() != 'zh-tw')plang='en';location.href=location.protocol+'//'+(lang == 'en' ? '' : lang+'.')+location.hostname.replace('www.', '').replace(RegExp('^' + plang + '\\.'), '')+location.pathname+location.search;}
+/* ]]> */
+</script>
+
+
+
+    <span class="secondary-nav"><a href="https://supportportal.brightcove.com/s/login/?"><img src="https://support.brightcove.com/site-assets/images/site/support.png" alt="サポート"/> サポートへのお問い合わせ</a> <span style="vertical-align: top;margin-left:1em;margin-right:1em;">|</span> <a href="https://status.brightcove.com/"><img src="https://support.brightcove.com/site-assets/images/site/status.png" alt="システムステータス"/> システムステータス</a></span> <br/>
+    
+  </div>
+  <nav aria-label="breadcrumb">
+    <ol class="breadcrumb arr-right">
+      
+      <li class="breadcrumb-item"><a href="/">ホーム</a></li>
+      
+      
+      
+      <li class="breadcrumb-item"><a href="/creating-your-apps/samsung/">サムスン</a></li>
+      
+      <li class="breadcrumb-item active" aria-current="page">Samsung ストアへのアプリの提出</li>
+    </ol>
+  </nav>
+</header>
+<div class="container">
+  <div class="row">
+          <div class="col-sm-3 left-side-bar">
+        <select id="site_select" class="bcls-select" style="margin-right: 1rem;">
+          <option value="">Brightcove ブのその他のドキュメント</option>
+          
+            
+              <option value="https://support.brightcove.com">ドキュメントホーム</option>
+            
+          
+            
+              <option value="https://audience.support.brightcove.com">Brightcove Audience</option>
+            
+          
+            
+              <option value="https://beacon.support.brightcove.com">Brightcove ブビーコン</option>
+            
+          
+            
+              <option value="https://campaign.support.brightcove.com">Brightcove ブキャンペーン</option>
+            
+          
+            
+              <option value="https://engage.support.brightcove.com">Brightcove Engage</option>
+            
+          
+            
+              <option value="https://live.support.brightcove.com">Brightcove ブ・ライブ</option>
+            
+          
+            
+              <option value="https://gallery.support.brightcove.com">Brightcove ブギャラリー</option>
+            
+          
+            
+              <option value="https://ssai.support.brightcove.com">Brightcove SSAI</option>
+            
+          
+            
+              <option value="https://social.support.brightcove.com">Brightcove ブソーシャル</option>
+            
+          
+            
+              <option value="https://studio.support.brightcove.com">Video Cloud Studio</option>
+            
+          
+            
+              <option value="https://player.support.brightcove.com">Brightcove ブのプレーヤー開発</option>
+            
+          
+            
+              <option value="https://apis.support.brightcove.com">Video CloudプラットフォームAPI</option>
+            
+          
+            
+              <option value="https://sdks.support.brightcove.com">ビデオクラウドデバイス SDK</option>
+            
+          
+            
+              <option value="https://integrations.support.brightcove.com">統合および CMS コネクタ</option>
+            
+          
+            
+              <option value="https://general.support.brightcove.com">ビデオクラウドの一般情報</option>
+            
+          
+            
+              <option value="https://zencoder.support.brightcove.com">Zencoder</option>
+            
+          
+        </select>
+
+      <nav class="sidenav" id="side_nav">
+        
+        
+        <h5><a href="/index.html">ホーム</a></h5>
+        
+        
+        
+        <h5 class="submenu-header"><a href="/getting-started/index.html">はじめに<strong> + </strong></a></h5>
+        <ul class="sidenav-submenu" style="display:none;">
+          
+          
+          <li><a href="/getting-started/learning-guide-bc-beacon.html">学習ガイド</a></li>
+          
+          
+          
+          <li><a href="/getting-started/implementation-phases.html">実装フェーズ</a></li>
+          
+          
+          
+          <li><a href="/getting-started/app-design-considerations.html">アプリケーション設計に関する考慮事項</a></li>
+          
+          
+          
+          <li><a href="/getting-started/creating-your-app-design-info-architecture.html">アプリデザイン-情報アーキテクチャ</a></li>
+          
+          
+          
+          <li><a href="/getting-started/creating-your-app-design-layout-options.html">アプリデザイン-レイアウトオプション</a></li>
+          
+          
+          
+          <li><a href="/getting-started/design-best-practices.html">設計のベストプラクティス</a></li>
+          
+          
+        </ul>
+        
+        
+        
+        <h5 class="submenu-header"><a href="/syncing-with-video-cloud/index.html">ビデオクラウドと同期<strong> + </strong></a></h5>
+        <ul class="sidenav-submenu" style="display:none;">
+          
+          
+          <li><a href="/syncing-with-video-cloud/vc-custom-fields.html">Video Cloud カスタム項目の作成</a></li>
+          
+          
+          
+          <li><a href="/syncing-with-video-cloud/forcing-a-sync.html">同期を強制する</a></li>
+          
+          
+        </ul>
+        
+        
+        
+        <h5 class="submenu-header"><a href="/using-brightcove-beacon/index.html"><strong>Brightcove ブのビーコンの使用+ </strong></a></h5>
+        <ul class="sidenav-submenu" style="display:none;">
+          
+          
+          <li><a href="/using-brightcove-beacon/adding-to-page.html">ページにカルーセルを追加する</a></li>
+          
+          
+          
+          <li><a href="/using-brightcove-beacon/creating-a-channel.html">チャンネルの作成</a></li>
+          
+          
+          
+          <li><a href="/using-brightcove-beacon/electronic-program-guides.html">電子プログラムガイド (EPG) の作成</a></li>
+          
+          
+          
+          <li><a href="/using-brightcove-beacon/creating-a-page.html">新しいページの作成</a></li>
+          
+          
+          
+          <li><a href="/using-brightcove-beacon/creating-a-playlist.html">プレイリストを作成する</a></li>
+          
+          
+          
+          <li><a href="/using-brightcove-beacon/creating-subscription-package.html">サブスクリプションパッケージの作成</a></li>
+          
+          
+          
+          <li><a href="/using-brightcove-beacon/promo-codes.html">プロモーションコードの作成</a></li>
+          
+          
+          
+          <li><a href="/using-brightcove-beacon/series-seasons-episodes.html">シリーズ/シーズン/エピソードの作成</a></li>
+          
+          
+          
+          <li><a href="/using-brightcove-beacon/configuring-server-side-ad-settings.html">サーバーサイド広告設定の構成</a></li>
+          
+          
+          
+          <li><a href="/using-brightcove-beacon/implementing-authvod.html">AuthVOD の実装</a></li>
+          
+          
+          
+          <li><a href="/using-brightcove-beacon/live-ssai.html">ライブSSAIの実装</a></li>
+          
+          
+          
+          <li><a href="/using-brightcove-beacon/vod-ssai.html">VOD SSAIの実装</a></li>
+          
+          
+          
+          <li><a href="/using-brightcove-beacon/including-non-configurable-pages.html">設定できないページを含める</a></li>
+          
+          
+          
+          <li><a href="/using-brightcove-beacon/introducing-pages.html">ページの紹介</a></li>
+          
+          
+          
+          <li><a href="/using-brightcove-beacon/streaming-live-event.html">ライブイベントのストリーミング</a></li>
+          
+          
+          
+          <li><a href="/using-brightcove-beacon/streaming-vods-to-a-channel.html">チャンネルへのVOD のストリーミング</a></li>
+          
+          
+          
+          <li><a href="/using-brightcove-beacon/monetization-options.html">収益化オプションについて</a></li>
+          
+          
+          
+          <li><a href="/using-brightcove-beacon/using-subscription-package.html">サブスクリプションパッケージの使用</a></li>
+          
+          
+          
+          <li><a href="/using-brightcove-beacon/tools.html">ツールの使用</a></li>
+          
+          
+          
+          <li><a href="/using-brightcove-beacon/viewing-analytics-data.html">分析データの表示</a></li>
+          
+          
+        </ul>
+        
+        
+        
+        <h5 class="submenu-header"><a href="/creating-your-apps/index.html">アプリの作成<strong> + </strong></a></h5>
+        <ul class="sidenav-submenu" style="display:none;">
+          
+          
+          <li class="submenu-header">
+            <a href="/creating-your-apps/android/index.html">アンドロイド<strong> + </strong></a>
+            <ul class="sidenav-subsubmenu" style="display:none;">
+              
+              <li><a href="/creating-your-apps/android/submitting-to-android.html">Android ストアに新しいアプリを送信する</a></li>
+              
+              <li><a href="/creating-your-apps/android/updating-android-apps-to-bcb.html">Android アプリをBrightcove ブビーコンにアップデートする</a></li>
+              
+              <li><a href="/creating-your-apps/android/adding-subscriptions-in-android.html">Android へのサブスクリプションの追加</a></li>
+              
+              <li><a href="/creating-your-apps/android/improving-relevance-android.html">Android Play ストアでの検索の関連性の向上</a></li>
+              
+              <li><a href="/creating-your-apps/android/installing-android-test-build.html">Androidテストビルドのインストール</a></li>
+              
+            </ul>
+          </li>
+          
+          
+          
+          <li class="submenu-header">
+            <a href="/creating-your-apps/fire-tv/index.html">Fire TV <strong> + </strong></a>
+            <ul class="sidenav-subsubmenu" style="display:none;">
+              
+              <li><a href="/creating-your-apps/fire-tv/installing-fire-tv-test-build.html">Fire TVテストビルドのインストール</a></li>
+              
+              <li><a href="/creating-your-apps/fire-tv/submitting-to-amazon.html">Amazonストアに送信する</a></li>
+              
+            </ul>
+          </li>
+          
+          
+          
+          <li class="submenu-header">
+            <a href="/creating-your-apps/ios-tvos/index.html">iOS/tvOS <strong> + </strong></a>
+            <ul class="sidenav-subsubmenu" style="display:none;">
+              
+              <li><a href="/creating-your-apps/ios-tvos/installing-ios-test-build.html">iOS/tvOS テストビルドのインストール</a></li>
+              
+              <li><a href="/creating-your-apps/ios-tvos/submitting-to-apple.html">アップルストアに提出する</a></li>
+              
+            </ul>
+          </li>
+          
+          
+          
+          <li class="submenu-header">
+            <a href="/creating-your-apps/panasonic/index.html">パナソニック<strong> + </strong></a>
+            <ul class="sidenav-subsubmenu" style="display:none;">
+              
+              <li><a href="/creating-your-apps/panasonic/submitting-to-panasonic.html">パナソニックストアへの提出</a></li>
+              
+            </ul>
+          </li>
+          
+          
+          
+          <li class="submenu-header">
+            <a href="/creating-your-apps/roku/index.html">ろく<strong> + </strong></a>
+            <ul class="sidenav-subsubmenu" style="display:none;">
+              
+              <li><a href="/creating-your-apps/roku/configuring-inchannel-products.html">Rokuでのチャネル内製品の設定</a></li>
+              
+              <li><a href="/creating-your-apps/roku/installing-roku-test-build.html">Roku テストビルドのインストール</a></li>
+              
+              <li><a href="/creating-your-apps/roku/submitting-to-roku.html">ロクストアへの提出</a></li>
+              
+            </ul>
+          </li>
+          
+          
+          
+          <li class="submenu-header">
+            <a href="/creating-your-apps/samsung/index.html">サムスン<strong> + </strong></a>
+            <ul class="sidenav-subsubmenu" style="display:none;">
+              
+              <li><a href="/creating-your-apps/samsung/samsung-partner.html">サムスンのパートナーになる</a></li>
+              
+              <li><a href="/creating-your-apps/samsung/submitting-to-samsung.html">サムスンストアへの提出</a></li>
+              
+            </ul>
+          </li>
+          
+          
+          
+          <li><a href="/creating-your-apps/common-required-info.html">共通の必須情報</a></li>
+          
+          
+          
+          <li><a href="/creating-your-apps/device-apps-validation-guide.html">デバイスアプリ検証ガイド</a></li>
+          
+          
+        </ul>
+        
+        
+        
+        <h5 class="submenu-header"><a href="/references/index.html">参考文献<strong> + </strong></a></h5>
+        <ul class="sidenav-submenu" style="display:none;">
+          
+          
+          <li><a href="/references/common-configuration-settings.html">一般的な構成設定</a></li>
+          
+          
+          
+          <li><a href="/references/creating-stripe-account.html">Stripeアカウントの作成</a></li>
+          
+          
+          
+          <li><a href="/references/glossary.html">用語集</a></li>
+          
+          
+          
+          <li><a href="/references/image-requirements.html">画像とその仕様</a></li>
+          
+          
+          
+          <li><a href="/references/known-issues.html">既知の問題</a></li>
+          
+          
+          
+          <li><a href="/references/product-updates.html">製品のアップデート</a></li>
+          
+          
+        </ul>
+        
+        
+        
+        <h5 class="submenu-header"><a href="/training/index.html"><strong>トレーニング+ </strong></a></h5>
+        <ul class="sidenav-submenu" style="display:none;">
+          
+          
+          <li><a href="/training/training-demand-custom-fields.html">Video Cloud ビデオ/カスタムフィールドの使用</a></li>
+          
+          
+          
+          <li><a href="/training/training-demand-design-layout.html">アプリケーションレイアウトの設計</a></li>
+          
+          
+          
+          <li><a href="/training/training-demand-playlists.html">プレイリストの作成と使用</a></li>
+          
+          
+          
+          <li><a href="/training/training-demand-series-seasons-episodes.html">シリーズ、季節、エピソードの作成</a></li>
+          
+          
+          
+          <li><a href="/training/training-demand-vod-ssai.html">VOD サーバーサイド広告の実装</a></li>
+          
+          
+          
+          <li><a href="/training/training-demand-publish-android-app.html">PlayストアでAndroidアプリを公開する</a></li>
+          
+          
+          
+          <li><a href="/training/training-demand-viewing-analytics.html">分析データの表示</a></li>
+          
+          
+        </ul>
+        
+        
+        
+        <h5 class="submenu-header"><a href="/support/index.html"><strong>サポート+ </strong></a></h5>
+        <ul class="sidenav-submenu" style="display:none;">
+          
+          
+          
+          
+          
+          
+          <li><a href="/support/viewing-brightcove-system-status-page.html">Brightcove ブのシステムステータスページの表示</a></li>
+          
+          
+          
+          <li><a href="/support/contact-sales.html">営業へのお問い合わせ</a></li>
+          
+          
+          
+          <li><a href="/support/opening-case-with-brightcove-support.html">サポートケースを開く</a></li>
+          
+          
+        </ul>
+        
+        
+      </nav>
+    </div>
+    <div class="col-lg-7" style="background-color: white;color: #333333;margin-top: -1em;margin-bottom: -1em;padding-bottom:1em;">
+      <!-- bootstrap layout -->
+<p id="bc_veggie_burger_wrapper" style="display: none;"><img id="bc_veggie_burger" src="/assets/images/feather/menu.svg" alt="ナビゲーションメニュー"/></p>
+
+<!-- search bar -->
+<div id="nav-search-box" style="margin-top: 1rem;"></div>
+<!-- in-page navigation for narrow screens -->
+<details class="centered-inpage-nav" id="centered_inpage_nav">
+  <summary><h6 class="toc">ページコンテンツ</h6></summary>
+  <nav id="centered_toc"></nav>
+  <ul id="centered_in_page_toc" class="list-none"></ul>
+</details>
+<!-- open in new tab/window -->
+<a id="open_new_tab" href="#" target="_blank" style="display: none;"><img src="/assets/images/feather/external-link.svg" alt="新しいタブで開く" style="margin-top:4em;width: 1.5em;"/></a>
+
+
+<h1>Samsung ストアへのアプリの提出</h1>
+<article class="bcls-article">
+  <summary>このトピックでは、Samsung ストアにデバイスアプリを送信する方法を学びます。</summary>
+
+  <section class="bcls-section">
+    <h2 id="Introduction">はじめに</h2>
+    <p>
+      Brightcove Beacon では、生成されたデバイスアプリを受け取り、Samsung App Store に追加することができます。
+    </p>
+    <ul>
+      <li>
+        店舗詳細: <a href="http://seller.samsungapps.com/tv/app/registration/list"> http://seller.samsungapps.com/tv/app/registration/list </a>
+      </li>
+      <li>
+        開発者の概要: <a href="https://developer.samsung.com/galaxy-store"> https://developer.samsung.com/galaxy-store </a>
+      </li>
+      <li>
+        開発者アカウントのセットアップ: <a href="https://program.developer.samsung.com/sign-in/"> https://program.developer.samsung.com/sign-in/ </a>
+      </li>
+      <li>
+        申込登録情報: <a href="https://developer.samsung.com/smarttv/develop/distribute/seller-office/applications/application-registration.html"> https://developer.samsung.com/smarttv/develop/distribute/seller-office/applications/application-registration.html </a>
+      </li>
+      <li>承認のための推奨リードタイム:三週間</li>
+    </ul>
+    <aside class="bcls-aside bcls-aside--tip">米国外でアプリを起動する場合、または特定の API にアクセスする場合は、Samsung Apps TV パートナーシップが必要です。詳細については、「<a href="/creating-your-apps/samsung/samsung-partner.html">サムスンのパートナーになる</a>」ドキュメントを参照してください。</aside>
+    <h3>サムスンの必要な情報:</h3>
+    <ul>
+      <li>
+        適用
+        <ul>
+          <li>Tizen — ウィジェットファイル</li>
+        </ul>
+      </li>
+      <li>説明</li>
+      <li>16モデルグループのアイコン</li>
+      <li>
+        ロゴアセット
+        <ul>
+          <li>透明度付き</li>
+          <li>1920x1080 ピクセル 32 ビット</li>
+          <li>300kbでPNG (RGBA)</li>
+        </ul>
+      </li>
+      <li>
+        背景画像
+        <ul>
+          <li>1920×1080 ピクセル 24 ビット</li>
+          <li>300kbでPNG (RGBA)</li>
+        </ul>
+      </li>
+      <li>レガシーモデルグループのアイコン</li>
+      <li>
+        アイコン
+        <ul>
+          <li>512x423 ピクセル</li>
+          <li>300kb</li>
+        </ul>
+      </li>
+      <li>スクリーンショット画像 (x4)</li>
+      <li>1280x720または1920x1080ピクセル、500kb</li>
+      <li>説明</li>
+      <li>
+        PowerPoint 提出ドキュメント — 送信時にポータルにアップロードする必要があります
+      </li>
+    </ul>
+  </section>
+
+  <section class="bcls-section">
+    <h2 id="Getting_started">入門編</h2>
+    <p>Samsungの開発者ページにアクセスするには、次の手順に従います。</p>
+
+    <ol class="bcls-tasklist-restart">
+      <li>
+        <p>
+          ブラウザで、<a href="https://seller.samsungapps.com/tv"> Samsungサインインページに移動します</a>。
+        </p>
+        <figure class="bcls-figure">
+          <img class="bcls-image--no-border" src="/assets/images/creating-your-apps/samsung/samsung-login.png" alt="サムスンのサインイン"/>
+          <figcaption class="bcls-caption--image">サムスンのサインイン</figcaption>
+        </figure>
+      </li>
+      <li>
+        <p>
+          アカウントでサインインするか、新しいアカウントを作成します。
+        </p>
+      </li>
+      <li>
+        <p>
+          登録時に、Samsungにパートナーアカウントを要求して、世界中にアプリを送信できるようにする必要があります。それ以外の場合は、特定の場所に制限されます。
+        </p>
+        <figure class="bcls-figure">
+          <img class="bcls-image--no-border" src="/assets/images/creating-your-apps/samsung/partner.png" alt="パートナーアカウント"/>
+          <figcaption class="bcls-caption--image">パートナーアカウント</figcaption>
+        </figure>
+      </li>
+    </ol>
+  </section>
+  <section class="bcls-section">
+    <h2 id="Registering_your_app">アプリを登録する</h2>
+    <p>Samsungにアプリを登録します。</p>
+
+    <ol class="bcls-tasklist-restart">
+      <li>
+        <p>
+          ホームページから、[ <strong> Web アプリケーションの登録</strong> ] ボタンを選択します。
+        </p>
+        <figure class="bcls-figure">
+          <img class="bcls-image--no-border" src="/assets/images/creating-your-apps/samsung/register-app/app-register.png" alt="アプリの登録"/>
+          <figcaption class="bcls-caption--image">アプリの登録</figcaption>
+        </figure>
+      </li>
+      <li>
+        <p>
+          アプリを送信する前に、完了する必要がある一連の手順が表示されます。
+        </p>
+        <figure class="bcls-figure">
+          <img class="bcls-image--no-border" src="/assets/images/creating-your-apps/samsung/register-app/register-steps.png" alt="登録手順"/>
+          <figcaption class="bcls-caption--image">
+            登録手順
+          </figcaption>
+        </figure>
+      </li>
+      <li>
+        <p>
+          最初に、<strong>アプリケーション名を入力します</strong>。これはあなたのアプリ ID で、管理目的でのみ使用されます。表示されたアプリタイトルは後で入力されます。
+        </p>
+        <figure class="bcls-figure">
+          <img class="bcls-image--no-border" src="/assets/images/creating-your-apps/samsung/register-app/app-name.png" alt="アプリケーション名"/>
+          <figcaption class="bcls-caption--image">アプリケーション名</figcaption>
+        </figure>
+      </li>
+    </ol>
+  </section>
+
+  <section class="bcls-section">
+    <h2 id="Basic_information">基本情報</h2>
+    <p>
+      テレビアプリに関する基本情報を入力します。これは、ユーザーに表示される情報です。
+    </p>
+
+    <ol class="bcls-tasklist-restart">
+      <li>
+        <p>
+          [基本テレビアプリ情報] で、次のフィールド値を入力します。
+        </p>
+        <figure class="bcls-figure">
+          <img class="bcls-image--no-border" src="/assets/images/creating-your-apps/samsung/register-app/basic-info.png" alt="基本情報"/>
+          <figcaption class="bcls-caption--image">基本情報</figcaption>
+        </figure>
+        <ul>
+          <li>
+            <strong>出品者名</strong> -出品者の名前を入力します。これはあなたの会社名かもしれません。
+          </li>
+          <li>
+            <strong>サポート電子メール</strong> -ユーザーにサポートの質問を送信するメールアドレス
+          </li>
+          <li>
+            <strong>出品者のホームページ-会社のホームページURLを入力します</strong>。
+          </li>
+          <li><strong>代表者</strong> -あなたの代表者の名前</li>
+          <li><strong>電話番号</strong> -会社の連絡先電話番号</li>
+          <li><strong>住所</strong> -会社の住所</li>
+          <li>
+            <strong>アプリ画像</strong> -通常、Brightcove ブがアイコン画像を追加します。スクリーンショットの画像は、アプリ自体から取得されます。4枚のスクリーンショットが必要な場合があります：
+            <ul>
+              <li>ホームページ用 1</li>
+              <li>詳細ページの場合は 1</li>
+              <li>プレーヤーの場合は1。</li>
+              <li>設定の場合は 1</li>
+            </ul>
+            <p>
+              次に、アプリケーションで使用するスクリーンショットを選択できます。
+            </p>
+          </li>
+        </ul>
+      </li>
+      <li>
+        <p>アプリの言語を 1 つ以上選択します。</p>
+        <ul>
+          <li>
+            <strong>言語</strong> -アプリのタイトル、説明、タグ情報の言語です。複数の言語を選択できます。
+          </li>
+          <li>
+            <strong>テレビで提供される情報</strong> -ここでは、[言語] フィールドで選択した言語が表示されます。最初の言語がデフォルトとして設定されます。言語ごとにこれらのフィールド値を入力します。
+            <ul>
+              <li>
+                アプリのタイトル-アプリのタイトル。言語ごとに同じアプリタイトルを使用してください。それらは言語間で一致する必要があります。（例「BCアプリ」）
+              </li>
+              <li>
+                説明:各言語の言語固有の説明を入力します。
+              </li>
+              <li>
+                タグ-アプリを検索するキーワードを入力します (例:「BC、BCアプリ、アプリ」
+              </li>
+            </ul>
+          </li>
+        </ul>
+        <figure class="bcls-figure">
+          <img class="bcls-image--no-border" src="/assets/images/creating-your-apps/samsung/register-app/language-info.png" alt="言語情報"/>
+          <figcaption class="bcls-caption--image">
+            言語情報
+          </figcaption>
+        </figure>
+      </li>
+      <li>
+        <p>ページ上の残りのフィールドに進みます。</p>
+        <ul>
+          <li>
+            <strong>カテゴリ</strong> -アプリのカテゴリを指定します (ビデオ、ゲーム、スポーツなど)。
+          </li>
+          <li>
+            <strong>評価</strong> -アプリケーションに適切な年齢グループを選択します。18歳以上のアプリケーションは、韓国、サウジアラビア、アラブ首長国連邦では提供されない場合があります。
+          </li>
+          <li>
+            <strong>国または地域</strong> -米国以外の国でアプリをサービスするには、パートナーである必要があります。まだサービスを行っていない場合は、リンクを選択してパートナーシップをリクエストしてください。アプリを表示する国を選択します。
+          </li>
+          <li>
+            <strong>評価認証</strong> -ブラジルにサービスを提供するには、適切な証明書をアップロードする必要があります。
+          </li>
+          <li>
+            <strong>プライバシーポリシー</strong> -アプリがユーザーから個人情報を収集するかどうかを指定します。
+          </li>
+        </ul>
+      </li>
+      <li>
+        <p>[ <strong>次へ</strong> ] ボタンを選択します。</p>
+      </li>
+    </ol>
+  </section>
+
+  <section class="bcls-section">
+    <h2 id="Test_information">テスト情報</h2>
+    <p>テレビアプリに関するテスト情報を入力します。</p>
+
+    <ol class="bcls-tasklist-restart">
+      <li>
+        <p>
+          [テスト情報] で、次のフィールド値を入力します。
+        </p>
+        <figure class="bcls-figure">
+          <img class="bcls-image--no-border" src="/assets/images/creating-your-apps/samsung/register-app/test-info.png" alt="テスト情報"/>
+          <figcaption class="bcls-caption--image">テスト情報</figcaption>
+        </figure>
+        <ul>
+          <li>
+            <strong>モデルグループ</strong> -テストするサムスンのスマートテレビプラットフォームを選択します。通常、現在のモデルに戻って3年目になるはずです。
+          </li>
+          <li>
+            <strong>リリース要求日</strong> -次のいずれかを選択します。
+            <ul>
+              <li>
+                Samsung QA テストに合格するとすぐにアプリをリリースします。
+              </li>
+              <li>
+                アプリのリリース日時を設定します。リクエスト日より前にSamsung QAテストに合格した場合にのみリリースされます。
+              </li>
+            </ul>
+          </li>
+        </ul>
+      </li>
+      <li>
+        <p>
+          テストノートを続行します。
+        </p>
+        <figure class="bcls-figure">
+          <img class="bcls-image--no-border" src="/assets/images/creating-your-apps/samsung/register-app/tester-notes.png" alt="テスターノート"/>
+          <figcaption class="bcls-caption--image">テスターノート</figcaption>
+        </figure>
+        <ul>
+          <li>
+            <strong>テスターへのメモ</strong> -アプリの新機能を指定するメモを含めます。サムスンのテスターは、これらのメモを見直します。
+          </li>
+          <li>
+            <strong>アプリの機能</strong> -アプリに適用されるすべての機能 (以下を含む) を選択します。
+            <ul>
+              <li>
+                キーボードまたはマウスをテレビに接続する必要があるかどうか
+              </li>
+              <li>
+                Smart View対応アプリ-スマートTVのプレビューサムネイルを有効にします。Brightcove ブでは、この機能を有効にすることをお勧めします。
+              </li>
+            </ul>
+          </li>
+          <li>
+            <strong>アプリ説明ファイル</strong> -アプリのすべてのページ、機能、オプションを一覧表示するドキュメントを作成します。これは、サムスンのテスターにテストするものの概要を与えます。テンプレートをダウンロードして開始してください。Brightcove ブは、このドキュメントのガイダンスを提供できます。
+            <aside class="bcls-aside bcls-aside--information language-editable">
+              テンプレートは、ハイライト表示されたリンクをクリックすると、<a href="https://developer.samsung.com/smarttv/develop/distribute/launch-checklist/application-ui-description.html"> SamsungのアプリケーションUIの説明ページからダウンロードできます</a>。
+              <figure class="bcls-figure">
+                <img class="bcls-image--no-border" src="/assets/images/creating-your-apps/samsung/template-download.png" alt="テンプレートのダウンロード"/>
+                <figcaption class="bcls-caption--image">
+                  テンプレートのダウンロードリンク
+                </figcaption>
+              </figure>
+            </aside>
+          </li>
+          <li>
+            <strong>キャプション</strong> -通常は、[ <strong>キャプションなし</strong> ] を選択します。この機能は字幕ではありませんが、主に米国で使用されているキャプションです。アプリが字幕を使用している場合でも、ここでは [ <strong>キャプションなし</strong> ] を選択します。
+          </li>
+        </ul>
+      </li>
+      <li>
+        <p>
+          プレイヤー仕様に進む:
+        </p>
+        <figure class="bcls-figure">
+          <img class="bcls-image--no-border" src="/assets/images/creating-your-apps/samsung/register-app/player-specs.png" alt="プレーヤー仕様"/>
+          <figcaption class="bcls-caption--image">
+            プレーヤー仕様
+          </figcaption>
+        </figure>
+        <p>プレイヤー情報に適切な値を選択します。</p>
+        <ul>
+          <li><strong>ビデオコーデック</strong></li>
+          <li><strong>コンテナ</strong></li>
+          <li><strong>ストリーミングエンジン</strong></li>
+          <li><strong>オーディオコーデック</strong></li>
+          <li><strong>DRM </strong></li>
+          <li><strong>プレーヤー API </strong></li>
+          <li><strong>その他</strong> -他のプレイヤー情報を入力する</li>
+        </ul>
+      </li>
+      <li>
+        <p>[ <strong>次へ</strong> ] ボタンを選択します。</p>
+      </li>
+    </ol>
+  </section>
+
+  <section class="bcls-section">
+    <h2 id="Pre_test">プレテスト</h2>
+    <p>プレテストは、アプリをテストできる場所です。</p>
+
+    <ol class="bcls-tasklist-restart">
+      <li>
+        <p>
+          Tizen Studioは、サムスンのストアに提出されるビルドを作成する場所です。アプリが内部に付いたzipファイルが表示されます。事前テストを実行すると、ストアにアプリを送信する前に、すべてが正常であることを確認できます。
+        </p>
+        <figure class="bcls-figure">
+          <img class="bcls-image--no-border" src="/assets/images/creating-your-apps/samsung/pretest/pre-test-ui.png" alt="プレテスト UI"/>
+          <figcaption class="bcls-caption--image">プレテスト UI</figcaption>
+        </figure>
+      </li>
+      <li>
+        <p>
+          Tizen Studio でアプリをテストします。プレテストでは、アプリの情報が不足しているかどうかがわかります。
+        </p>
+      </li>
+      <li>
+        <p>
+          アプリですべてが問題ないかどうかをBrightcove ブに知らせてください。問題が存在する場合は、[ <strong>テスト情報</strong> ] セクションを確認します。
+        </p>
+      </li>
+    </ol>
+  </section>
+
+  <section class="bcls-section">
+    <h2 id="Preview">プレビュー</h2>
+    <p>ストアに送信する前に、アプリをプレビューします。</p>
+
+    <ol class="bcls-tasklist-restart">
+      <li>
+        <p>
+          プレビューには、選択したSamsungモデルグループがすべて表示されます。<strong>ステータス列には</strong>、[ <strong>確認</strong> ]、[ <strong>テスト</strong> ]、[ <strong>起動済み</strong> ] などの値が表示されます。ステータスが [ <strong>起動済み</strong> ] の場合、アプリは本番ストアにあります。
+        </p>
+        <figure class="bcls-figure">
+          <img class="bcls-image--no-border" src="/assets/images/creating-your-apps/samsung/preview/models.png" alt="[モデル] 領域"/>
+          <figcaption class="bcls-caption--image">[モデル] 領域</figcaption>
+        </figure>
+      </li>
+    </ol>
+  </section>
+
+  <section class="bcls-section">
+    <h2 id="Submit">送信</h2>
+    <p>Samsung ストアにアプリを送信してください。</p>
+
+    <ol class="bcls-tasklist-restart">
+      <li>
+        <p>
+          準備ができたら、Samsungストアにアプリを提出することができます。
+        </p>
+        <figure class="bcls-figure">
+          <img class="bcls-image--no-border" src="/assets/images/creating-your-apps/samsung/submit/submit.png" alt="送信"/>
+          <figcaption class="bcls-caption--image">送信</figcaption>
+        </figure>
+      </li>
+    </ol>
+  </section>
+
+  <section class="bcls-section">
+    <h2 id="Smart_Hub_Preview">スマートハブプレビュー</h2>
+    <p>サムスンのスマートハブプレビュー機能を使用すると、スマートハブランチャーのアプリアイコンの上にビューアが移動すると、コンテンツが表示されます。これにより、新しいコンテンツとパーソナライズされたコンテンツの両方を宣伝できます。それがどのように機能するかは次のとおりです。</p>
+
+    <ul>
+      <li>
+        <p>
+          視聴者がアプリアイコンの上にカーソルを置くと、Smart Hub プレビューが表示されます。その後、視聴者はプレビュータイルを選択して、アプリ内のコンテンツを開くことができます。
+        </p>
+        <figure class="bcls-figure">
+          <img class="bcls-image--no-border" src="/assets/images/creating-your-apps/samsung/smart-hub-preview/preview-panel.png" alt="[プレビュー] パネル"/>
+          <figcaption class="bcls-caption--image">[プレビュー] パネル</figcaption>
+        </figure>
+      </li>
+      <li>
+        <p>
+          プレビューには、次の 2 種類があります。
+        </p>
+        <ul>
+          <li>
+            <strong>パブリックプレビュー</strong> -このオプションでは、すべてのビューアに同じプレビューコンテンツが表示されます。 
+          </li>
+          <li>
+            <p>
+             [ <strong>個人用プレビュー</strong> ]: このオプションでは、ビューアのパーソナライズされたプレビューコンテンツが表示されます。
+            </p>
+          </li>
+        </ul>
+        <p>
+          リモートでホストされる JSON ファイルを使用して、プレビューコンテンツを定義します。
+        </p>
+      </li>
+      <li>
+        <p>
+          プレビューコンテンツは、アプリのコンテンツに合わせてカスタマイズできます。
+        </p>
+        <ul>
+          <li>
+            <strong>ビデオ</strong> -人気の動画、再生の再開、マイプレイリスト 
+          </li>
+          <li>
+            <strong>スポーツ</strong> -今週のトップゲーム、私のチーム 
+          </li>
+          <li>
+            <strong>ニュース</strong> -今日の見出し、地元の天気 
+          </li>
+          <li>
+            <p>
+              <strong>ゲーム</strong> -トップゲーム、最近プレイした 
+            </p>
+          </li>
+        </ul>
+      </li>
+      <li>
+        <p>
+          詳細については、<a href="https://developer.samsung.com/smarttv/develop/guides/smart-hub-preview.html">サムスンのスマートハブプレビューのドキュメントを参照してください</a>。
+        </p>
+      </li>
+    </ul>
+  </section>
+
+  <section class="bcls-section">
+    <h2 id="Helpful_hints">役立つヒント</h2>
+    <p>Samsungにアプリを提出する際には、次のことが役立ちます。</p>
+    <ul>
+      <li>
+        アカウントに新しいユーザーを追加する必要がある場合は、[ <strong> &gt; メンバーシップグループ管理</strong> ] オプションを使用して追加できます。
+        <figure class="bcls-figure">
+          <img class="bcls-image--no-border" src="/assets/images/creating-your-apps/samsung/group-management.png" alt="グループ管理"/>
+          <figcaption class="bcls-caption--image">新しいユーザーの追加</figcaption>
+        </figure>
+      </li>
+      <li>
+        電子メールアドレスの前にスペースを置かないように注意してください。場合によっては、それらは取り除かれず、アプリの送信プロセスで失敗の原因となることもあります。
+      </li>
+    </ul>
+  </section>
+</article>
+
+<!-- complete bootstrap layout -->
+    </div>
+    <div class="col-sm-2 right-side-bar">
+      
+      <nav class="right-side-nav" id="right_side_nav">
+        <h6 class="toc">ページコンテンツ</h6>
+        <ul id="in_page_nav" class="list-none"></ul>
+      </nav>
+      
+    </div>
+  </div>
+</div>
+
+<hr>
+<footer class="bcls-footer" role="contentinfo">  <div class="row">
+    <div class="region region-footer-top-center col-md-12">
+      <nav role="navigation" aria-labelledby="block-brightcovesupport-menu" id="block-brightcovesupport" class="footer-menu">
+
+        <h2>Brightcove ブサポート</h2>
+
+        <ul class="menu">
+          <li>
+            <a href="https://status.brightcove.com">システムステータス</a>
+          </li>
+          <li>
+            <a href="https://supportportal.brightcove.com/s/login/?">サポートへのお問い合わせ</a>
+          </li>
+          <li>
+            <a href="https://support.brightcove.com/">ドキュメンテーション</a>
+          </li>
+        </ul>
+
+      </nav>
+      <nav role="navigation" aria-labelledby="block-training-menu" id="block-training" class="footer-menu">
+
+        <h2>トレーニング</h2>
+
+        <ul class="menu">
+          <li>
+            <a href="https://studio.support.brightcove.com/training/online-training-courses.html">オンラインコース</a>
+          </li>
+          <li>
+            <a href="https://studio.support.brightcove.com/training/register-training.html">コースに登録する</a>
+          </li>
+          <li>
+            <a href="https://university.brightcove.com/">Brightcove University</a>
+          </li>
+        </ul>
+
+      </nav>
+      <nav role="navigation" aria-labelledby="block-brightcove-menu" class="footer-menu">
+
+        <h2>Brightcove</h2>
+
+        <ul class="menu">
+          <li>
+            <a href="https://www.brightcove.com">Brightcove.com</a>
+          </li>
+          <li>
+            <a href="https://supportportal.brightcove.com/s/login/?">お問合せ</a>
+          </li>
+        </ul>
+      </nav>
+    </div>
+  </div>
+  <div class="row">
+    <div class="region region-footer-bottom-center col-md-12">
+      <div class="bcls-copyright footer-menu">
+        <table>
+          <tr>
+            <td>
+              <div id="bc_copyright" class="field field--name-field-copyright-year field--type-string field--label-hidden field--item" style="float: left;"> Brightcove Inc. All rights reserved.</div>
+            </td>
+            <td><a href="https://www.brightcove.com/en/legal/privacy">プライバシー</a> | <a href="https://www.brightcove.com/en/terms-and-conditions">利用規約</a></td>
+            <td>
+              <div class="gf-links-cols footer-menu">
+                <div class="gf-social"><a href="https://www.linkedin.com/company/16439" title="LinkedIn" newtab="newtab" class="gf-social-linkedin"><i class="fab fa-linkedin-in" style="font-size: 1.5rem;"></i></a><a href="https://twitter.com/brightcove" title="Twitter" newtab="newtab" class="gf-social-twitter"><i class="fab fa-twitter" style="font-size: 1.5rem;"></i></a><a href="https://www.facebook.com/Brightcove" title="Facebook" newtab="newtab" class="gf-social-facebook"><i class="fab fa-facebook-f" style="font-size: 1.5rem;"></i></a>
+                </div>
+              </div>
+            </td>
+          </tr>
+        </table>
+      </div>
+    </div>
+  </div>
+</footer>
+
+<script>
+      
+  var searchBox = sajari.init({
+    mode: "search-box",
+    project: "1588255093746585379", // Set this to your project.
+    collection: "brightcove-documenation", // Set this to your collection.
+    instantPipeline: "autocomplete", // Pipeline used as you type
+    inputPlaceholder: "Search", // Input element placeholder
+    maxSuggestions: 5, // Maximum number of suggestions to show
+    attachSearchBox: document.getElementById("nav-search-box") // DOM element to attach to
+  });
+  
+    searchBox("sub", "pipeline.search-sent", function (_, query) {
+      window.location = "/search.html?q=" + encodeURIComponent(query.q);
+    });
+  
+
+</script>
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.0/jquery.min.js" crossorigin="anonymous"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js" integrity="sha384-UO2eT0CpHqdSJQ6hJty5KVphtPhzWj9WO1clHTMGa3JDZwrnQq4sF86dIHNDz0W1" crossorigin="anonymous"></script>
+  <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js" integrity="sha384-JjSmVgyd0p3pXB1rRibZUAYoIIy6OrQ6VrjIEaFf/nJGzIxFDsf4x0xIM+B07jRM" crossorigin="anonymous"></script>
+  <script src="https://support.brightcove.com/site-assets/js/site/https-fix.js"></script>
+  <script src="https://support.brightcove.com/site-assets/js/site/setDate.js"></script>
+  
+  <script src="https://support.brightcove.com/site-assets/js/site/prism.js"></script>
+  
+  <script src="https://support.brightcove.com/site-assets/js/site/site.js"></script>
+  <script src="https://support.brightcove.com/site-assets/js/site/tabs.js"></script>
+  <script src="https://support.brightcove.com/site-assets/js/site/toc.js"></script>
+  <script src="/assets/js/sites_nav.js"></script>
+  <script src="https://support.brightcove.com/site-assets/js/site/bcls-utils.js"></script>
+  <script src="https://support.brightcove.com/site-assets/js/site/local-link-fix.js"></script>
+  <script src="/assets/js/feedback.js"></script>
+  
+  <script src="/assets/js/sajari-search-foot.js"></script>
+  
+  <!-- <script src="/assets/js/sajari-index.js"></script> -->
+  <style>
+    a.sj-paginator__page-number.sj-paginator__page-number--current.css-so0ov7 {
+      background-color: lightblue;
+    }
+    div.sj-tabs__tab {
+      margin-top: 3rem;
+      margin-left: .3rem;
+      border-top-left-radius: .4rem;
+      border-top-right-radius: .4rem;
+      background-color:#e8e8e8;
+    }
+
+    div.sj-tabs__tab.sj-tabs__tab--selected {
+      border-bottom-color: crimson;
+      background-color: #f8f8f8;
+    }
+
+    p.sj-results__result__description.css-p9jvyt {
+      font-size: 1rem;
+    }
+
+    .sj-result__text.css-31l7gp h3 {
+      color: navy;
+      font-size: 1.4rem;
+    }
+    </style>
+
+</body>
+
+</html>

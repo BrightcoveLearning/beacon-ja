@@ -1,0 +1,1348 @@
+﻿<!DOCTYPE html>
+<html lang="ja">
+  <head>
+    <meta charset="utf-8" />
+    <meta
+      name="viewport"
+      content="width=device-width, initial-scale=1, shrink-to-fit=no"
+    />
+    <meta name="description" content="このトピックでは、関連する季節やエピソードを含むシリーズを作成する方法を学びます。" />
+
+    <title>シリーズ/シーズン/エピソードの作成</title>
+    <link rel="apple-touch-icon" sizes="180x180" href="/apple-touch-icon.png" />
+    <link rel="icon" type="image/png" sizes="32x32" href="/favicon-32x32.png" />
+    <link rel="icon" type="image/png" sizes="16x16" href="/favicon-16x16.png" />
+    <link rel="manifest" href="/site.webmanifest" />
+    <link data-react-helmet="true" rel="preload" as="style" href="https://fonts.googleapis.com/css2?family=Public+Sans:wght@400;500&amp;display=swap">
+      <link
+      rel="stylesheet"
+      href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css"
+      integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T"
+      crossorigin="anonymous"
+    />
+    <link
+      rel="stylesheet"
+      href="https://support.brightcove.com/site-assets/css/site/prism.css"
+    />
+    <link
+      rel="stylesheet"
+      href="https://support.brightcove.com/site-assets/css/site/styles.css"
+    />
+    <link
+      rel="stylesheet"
+      href="https://support.brightcove.com/site-assets/css/site/landing-page.css"
+    />
+    <link
+      rel="stylesheet"
+      href="https://support.brightcove.com/site-assets/css/site/tabs.css"
+    />
+    <link rel="stylesheet" href="/assets/css/local.css" />
+    <link
+      href="https://fonts.googleapis.com/css?family=Lato&display=swap"
+      rel="stylesheet"
+    />
+    <link
+      href="https://fonts.googleapis.com/css?family=Source+Code+Pro&display=swap"
+      rel="stylesheet"
+    />
+    <script
+      src="https://kit.fontawesome.com/381443caa8.js"
+      crossorigin="anonymous"
+    ></script>
+    <script src="https://support.brightcove.com/site-assets/js/site/google-analytics.js"></script>
+    <script src="/assets/js/sajari-head.js"></script>
+  </head>
+
+  <body class="body"></body>
+</html>
+
+<header>
+  <div class="div-header">
+    <a href="/"><img class="product-logo" src="https://support.brightcove.com/site-assets/images/site/product-logos/Beacon_Logo.svg" alt="製品ロゴ" style="max-height: 100px;max-width: 232px;"/></a>
+<!-- GTranslate: https://gtranslate.io/ -->
+<select onchange="doGTranslate(this);"><option value="">言語の選択</option><option value="en|en" translate="No">English</option><option value="en|zh-TW" translate="No">繁體中文</option><option value="en|fr" translate="No">Français</option><option value="en|de" translate="No">Deutsche</option><option value="en|ja" translate="No">日本語</option><option value="en|ko" translate="No">한국어</option><option value="en|es" translate="No">Español</option></select>
+
+<script>
+/* <![CDATA[ */
+function doGTranslate(lang_pair) {if(lang_pair.value)lang_pair=lang_pair.value;if(lang_pair=='')return;var lang=lang_pair.split('|')[1];var plang=location.hostname.split('.')[0];if(plang.length !=2 && plang.toLowerCase() != 'zh-cn' && plang.toLowerCase() != 'zh-tw')plang='en';location.href=location.protocol+'//'+(lang == 'en' ? '' : lang+'.')+location.hostname.replace('www.', '').replace(RegExp('^' + plang + '\\.'), '')+location.pathname+location.search;}
+/* ]]> */
+</script>
+
+
+
+    <span class="secondary-nav"><a href="https://supportportal.brightcove.com/s/login/?"><img src="https://support.brightcove.com/site-assets/images/site/support.png" alt="サポート"/> サポートへのお問い合わせ</a> <span style="vertical-align: top;margin-left:1em;margin-right:1em;">|</span> <a href="https://status.brightcove.com/"><img src="https://support.brightcove.com/site-assets/images/site/status.png" alt="システムステータス"/> システムステータス</a></span> <br/>
+    
+  </div>
+  <nav aria-label="breadcrumb">
+    <ol class="breadcrumb arr-right">
+      
+      <li class="breadcrumb-item"><a href="/">ホーム</a></li>
+      
+      
+      
+      <li class="breadcrumb-item"><a href="/using-brightcove-beacon/">Brightcove ブのビーコンを使用する</a></li>
+      
+      <li class="breadcrumb-item active" aria-current="page">シリーズ/シーズン/エピソードの作成</li>
+    </ol>
+  </nav>
+</header>
+<div class="container">
+  <div class="row">
+          <div class="col-sm-3 left-side-bar">
+        <select id="site_select" class="bcls-select" style="margin-right: 1rem;">
+          <option value="">Brightcove ブのその他のドキュメント</option>
+          
+            
+              <option value="https://support.brightcove.com">ドキュメントホーム</option>
+            
+          
+            
+              <option value="https://audience.support.brightcove.com">Brightcove Audience</option>
+            
+          
+            
+              <option value="https://beacon.support.brightcove.com">Brightcove ブビーコン</option>
+            
+          
+            
+              <option value="https://campaign.support.brightcove.com">Brightcove ブキャンペーン</option>
+            
+          
+            
+              <option value="https://engage.support.brightcove.com">Brightcove Engage</option>
+            
+          
+            
+              <option value="https://live.support.brightcove.com">Brightcove ブ・ライブ</option>
+            
+          
+            
+              <option value="https://gallery.support.brightcove.com">Brightcove ブギャラリー</option>
+            
+          
+            
+              <option value="https://ssai.support.brightcove.com">Brightcove SSAI</option>
+            
+          
+            
+              <option value="https://social.support.brightcove.com">Brightcove ブソーシャル</option>
+            
+          
+            
+              <option value="https://studio.support.brightcove.com">Video Cloud Studio</option>
+            
+          
+            
+              <option value="https://player.support.brightcove.com">Brightcove ブのプレーヤー開発</option>
+            
+          
+            
+              <option value="https://apis.support.brightcove.com">Video CloudプラットフォームAPI</option>
+            
+          
+            
+              <option value="https://sdks.support.brightcove.com">ビデオクラウドデバイス SDK</option>
+            
+          
+            
+              <option value="https://integrations.support.brightcove.com">統合および CMS コネクタ</option>
+            
+          
+            
+              <option value="https://general.support.brightcove.com">ビデオクラウドの一般情報</option>
+            
+          
+            
+              <option value="https://zencoder.support.brightcove.com">Zencoder</option>
+            
+          
+        </select>
+
+      <nav class="sidenav" id="side_nav">
+        
+        
+        <h5><a href="/index.html">ホーム</a></h5>
+        
+        
+        
+        <h5 class="submenu-header"><a href="/getting-started/index.html">はじめに<strong> + </strong></a></h5>
+        <ul class="sidenav-submenu" style="display:none;">
+          
+          
+          <li><a href="/getting-started/learning-guide-bc-beacon.html">学習ガイド</a></li>
+          
+          
+          
+          <li><a href="/getting-started/implementation-phases.html">実装フェーズ</a></li>
+          
+          
+          
+          <li><a href="/getting-started/app-design-considerations.html">アプリケーション設計に関する考慮事項</a></li>
+          
+          
+          
+          <li><a href="/getting-started/creating-your-app-design-info-architecture.html">アプリデザイン-情報アーキテクチャ</a></li>
+          
+          
+          
+          <li><a href="/getting-started/creating-your-app-design-layout-options.html">アプリデザイン-レイアウトオプション</a></li>
+          
+          
+          
+          <li><a href="/getting-started/design-best-practices.html">設計のベストプラクティス</a></li>
+          
+          
+        </ul>
+        
+        
+        
+        <h5 class="submenu-header"><a href="/syncing-with-video-cloud/index.html">ビデオクラウドと同期<strong> + </strong></a></h5>
+        <ul class="sidenav-submenu" style="display:none;">
+          
+          
+          <li><a href="/syncing-with-video-cloud/vc-custom-fields.html">Video Cloud カスタム項目の作成</a></li>
+          
+          
+          
+          <li><a href="/syncing-with-video-cloud/forcing-a-sync.html">同期を強制する</a></li>
+          
+          
+        </ul>
+        
+        
+        
+        <h5 class="submenu-header"><a href="/using-brightcove-beacon/index.html"><strong>Brightcove ブのビーコンの使用+ </strong></a></h5>
+        <ul class="sidenav-submenu" style="display:none;">
+          
+          
+          <li><a href="/using-brightcove-beacon/adding-to-page.html">ページにカルーセルを追加する</a></li>
+          
+          
+          
+          <li><a href="/using-brightcove-beacon/creating-a-channel.html">チャンネルの作成</a></li>
+          
+          
+          
+          <li><a href="/using-brightcove-beacon/electronic-program-guides.html">電子プログラムガイド (EPG) の作成</a></li>
+          
+          
+          
+          <li><a href="/using-brightcove-beacon/creating-a-page.html">新しいページの作成</a></li>
+          
+          
+          
+          <li><a href="/using-brightcove-beacon/creating-a-playlist.html">プレイリストを作成する</a></li>
+          
+          
+          
+          <li><a href="/using-brightcove-beacon/creating-subscription-package.html">サブスクリプションパッケージの作成</a></li>
+          
+          
+          
+          <li><a href="/using-brightcove-beacon/promo-codes.html">プロモーションコードの作成</a></li>
+          
+          
+          
+          <li><a href="/using-brightcove-beacon/series-seasons-episodes.html">シリーズ/シーズン/エピソードの作成</a></li>
+          
+          
+          
+          <li><a href="/using-brightcove-beacon/configuring-server-side-ad-settings.html">サーバーサイド広告設定の構成</a></li>
+          
+          
+          
+          <li><a href="/using-brightcove-beacon/implementing-authvod.html">AuthVOD の実装</a></li>
+          
+          
+          
+          <li><a href="/using-brightcove-beacon/live-ssai.html">ライブSSAIの実装</a></li>
+          
+          
+          
+          <li><a href="/using-brightcove-beacon/vod-ssai.html">VOD SSAIの実装</a></li>
+          
+          
+          
+          <li><a href="/using-brightcove-beacon/including-non-configurable-pages.html">設定できないページを含める</a></li>
+          
+          
+          
+          <li><a href="/using-brightcove-beacon/introducing-pages.html">ページの紹介</a></li>
+          
+          
+          
+          <li><a href="/using-brightcove-beacon/streaming-live-event.html">ライブイベントのストリーミング</a></li>
+          
+          
+          
+          <li><a href="/using-brightcove-beacon/streaming-vods-to-a-channel.html">チャンネルへのVOD のストリーミング</a></li>
+          
+          
+          
+          <li><a href="/using-brightcove-beacon/monetization-options.html">収益化オプションについて</a></li>
+          
+          
+          
+          <li><a href="/using-brightcove-beacon/using-subscription-package.html">サブスクリプションパッケージの使用</a></li>
+          
+          
+          
+          <li><a href="/using-brightcove-beacon/tools.html">ツールの使用</a></li>
+          
+          
+          
+          <li><a href="/using-brightcove-beacon/viewing-analytics-data.html">分析データの表示</a></li>
+          
+          
+        </ul>
+        
+        
+        
+        <h5 class="submenu-header"><a href="/creating-your-apps/index.html">アプリの作成<strong> + </strong></a></h5>
+        <ul class="sidenav-submenu" style="display:none;">
+          
+          
+          <li class="submenu-header">
+            <a href="/creating-your-apps/android/index.html">アンドロイド<strong> + </strong></a>
+            <ul class="sidenav-subsubmenu" style="display:none;">
+              
+              <li><a href="/creating-your-apps/android/submitting-to-android.html">Android ストアに新しいアプリを送信する</a></li>
+              
+              <li><a href="/creating-your-apps/android/updating-android-apps-to-bcb.html">Android アプリをBrightcove ブビーコンにアップデートする</a></li>
+              
+              <li><a href="/creating-your-apps/android/adding-subscriptions-in-android.html">Android へのサブスクリプションの追加</a></li>
+              
+              <li><a href="/creating-your-apps/android/improving-relevance-android.html">Android Play ストアでの検索の関連性の向上</a></li>
+              
+              <li><a href="/creating-your-apps/android/installing-android-test-build.html">Androidテストビルドのインストール</a></li>
+              
+            </ul>
+          </li>
+          
+          
+          
+          <li class="submenu-header">
+            <a href="/creating-your-apps/fire-tv/index.html">Fire TV <strong> + </strong></a>
+            <ul class="sidenav-subsubmenu" style="display:none;">
+              
+              <li><a href="/creating-your-apps/fire-tv/installing-fire-tv-test-build.html">Fire TVテストビルドのインストール</a></li>
+              
+              <li><a href="/creating-your-apps/fire-tv/submitting-to-amazon.html">Amazonストアに送信する</a></li>
+              
+            </ul>
+          </li>
+          
+          
+          
+          <li class="submenu-header">
+            <a href="/creating-your-apps/ios-tvos/index.html">iOS/tvOS <strong> + </strong></a>
+            <ul class="sidenav-subsubmenu" style="display:none;">
+              
+              <li><a href="/creating-your-apps/ios-tvos/installing-ios-test-build.html">iOS/tvOS テストビルドのインストール</a></li>
+              
+              <li><a href="/creating-your-apps/ios-tvos/submitting-to-apple.html">アップルストアに提出する</a></li>
+              
+            </ul>
+          </li>
+          
+          
+          
+          <li class="submenu-header">
+            <a href="/creating-your-apps/panasonic/index.html">パナソニック<strong> + </strong></a>
+            <ul class="sidenav-subsubmenu" style="display:none;">
+              
+              <li><a href="/creating-your-apps/panasonic/submitting-to-panasonic.html">パナソニックストアへの提出</a></li>
+              
+            </ul>
+          </li>
+          
+          
+          
+          <li class="submenu-header">
+            <a href="/creating-your-apps/roku/index.html">ろく<strong> + </strong></a>
+            <ul class="sidenav-subsubmenu" style="display:none;">
+              
+              <li><a href="/creating-your-apps/roku/configuring-inchannel-products.html">Rokuでのチャネル内製品の設定</a></li>
+              
+              <li><a href="/creating-your-apps/roku/installing-roku-test-build.html">Roku テストビルドのインストール</a></li>
+              
+              <li><a href="/creating-your-apps/roku/submitting-to-roku.html">ロクストアへの提出</a></li>
+              
+            </ul>
+          </li>
+          
+          
+          
+          <li class="submenu-header">
+            <a href="/creating-your-apps/samsung/index.html">サムスン<strong> + </strong></a>
+            <ul class="sidenav-subsubmenu" style="display:none;">
+              
+              <li><a href="/creating-your-apps/samsung/samsung-partner.html">サムスンのパートナーになる</a></li>
+              
+              <li><a href="/creating-your-apps/samsung/submitting-to-samsung.html">サムスンストアへの提出</a></li>
+              
+            </ul>
+          </li>
+          
+          
+          
+          <li><a href="/creating-your-apps/common-required-info.html">共通の必須情報</a></li>
+          
+          
+          
+          <li><a href="/creating-your-apps/device-apps-validation-guide.html">デバイスアプリ検証ガイド</a></li>
+          
+          
+        </ul>
+        
+        
+        
+        <h5 class="submenu-header"><a href="/references/index.html">参考文献<strong> + </strong></a></h5>
+        <ul class="sidenav-submenu" style="display:none;">
+          
+          
+          <li><a href="/references/common-configuration-settings.html">一般的な構成設定</a></li>
+          
+          
+          
+          <li><a href="/references/creating-stripe-account.html">Stripeアカウントの作成</a></li>
+          
+          
+          
+          <li><a href="/references/glossary.html">用語集</a></li>
+          
+          
+          
+          <li><a href="/references/image-requirements.html">画像とその仕様</a></li>
+          
+          
+          
+          <li><a href="/references/known-issues.html">既知の問題</a></li>
+          
+          
+          
+          <li><a href="/references/product-updates.html">製品のアップデート</a></li>
+          
+          
+        </ul>
+        
+        
+        
+        <h5 class="submenu-header"><a href="/training/index.html"><strong>トレーニング+ </strong></a></h5>
+        <ul class="sidenav-submenu" style="display:none;">
+          
+          
+          <li><a href="/training/training-demand-custom-fields.html">Video Cloud ビデオ/カスタムフィールドの使用</a></li>
+          
+          
+          
+          <li><a href="/training/training-demand-design-layout.html">アプリケーションレイアウトの設計</a></li>
+          
+          
+          
+          <li><a href="/training/training-demand-playlists.html">プレイリストの作成と使用</a></li>
+          
+          
+          
+          <li><a href="/training/training-demand-series-seasons-episodes.html">シリーズ、季節、エピソードの作成</a></li>
+          
+          
+          
+          <li><a href="/training/training-demand-vod-ssai.html">VOD サーバーサイド広告の実装</a></li>
+          
+          
+          
+          <li><a href="/training/training-demand-publish-android-app.html">PlayストアでAndroidアプリを公開する</a></li>
+          
+          
+          
+          <li><a href="/training/training-demand-viewing-analytics.html">分析データの表示</a></li>
+          
+          
+        </ul>
+        
+        
+        
+        <h5 class="submenu-header"><a href="/support/index.html"><strong>サポート+ </strong></a></h5>
+        <ul class="sidenav-submenu" style="display:none;">
+          
+          
+          
+          
+          
+          
+          <li><a href="/support/viewing-brightcove-system-status-page.html">Brightcove ブのシステムステータスページの表示</a></li>
+          
+          
+          
+          <li><a href="/support/contact-sales.html">営業へのお問い合わせ</a></li>
+          
+          
+          
+          <li><a href="/support/opening-case-with-brightcove-support.html">サポートケースを開く</a></li>
+          
+          
+        </ul>
+        
+        
+      </nav>
+    </div>
+    <div class="col-lg-7" style="background-color: white;color: #333333;margin-top: -1em;margin-bottom: -1em;padding-bottom:1em;">
+      <!-- bootstrap layout -->
+<p id="bc_veggie_burger_wrapper" style="display: none;"><img id="bc_veggie_burger" src="/assets/images/feather/menu.svg" alt="ナビゲーションメニュー"/></p>
+
+<!-- search bar -->
+<div id="nav-search-box" style="margin-top: 1rem;"></div>
+<!-- in-page navigation for narrow screens -->
+<details class="centered-inpage-nav" id="centered_inpage_nav">
+  <summary><h6 class="toc">ページコンテンツ</h6></summary>
+  <nav id="centered_toc"></nav>
+  <ul id="centered_in_page_toc" class="list-none"></ul>
+</details>
+<!-- open in new tab/window -->
+<a id="open_new_tab" href="#" target="_blank" style="display: none;"><img src="/assets/images/feather/external-link.svg" alt="新しいタブで開く" style="margin-top:4em;width: 1.5em;"/></a>
+
+
+<h1>シリーズ/シーズン/エピソードの作成</h1>
+<article class="bcls-article">
+    <summary>このトピックでは、関連する季節やエピソードを含むシリーズを作成する方法を学びます。</summary>
+    <section class="bcls-section">
+        <h2 id="Overview">概要</h2>
+        <p><strong>シリーズは</strong>、通常、共通のテーマを共有する特定の順序で表示される関連ビデオのコレクションです。シリーズを作成するときは、シリーズ、その季節、および関連するエピソード間の関係を定義する必要があります。</p>
+        <p><strong>シーズンとは</strong>、設定された期間をカバーする動画のグループです。各シリーズには、1 つ以上の季節を指定できます。</p>
+        <p><strong>エピソードは</strong>、個々のビデオです。これは特定の映画と考えることができます。</p>
+        <p>シリーズと季節を定義し、エピソードを摂取すると、それらを Brightcove Beacon アプリケーションで使用できます。これを行うには、次の手順を実行します。</p>
+
+        <ol class="bcls-tasklist">
+            <li>
+                <h4>シリーズ（Brightcove ブビーコン）</h4>
+                <p>Brightcove ブビーコンで、シリーズを作成します。ここでは、シリーズの名前を指定し、在庫状況や画像などの情報を提供します。</p>
+            </li>
+            <li>
+                <h4>シーズンズ (Brightcove ブビーコン)</h4>
+                <p>Brightcove ブビーコンで、シリーズに関連する季節を作成します。シーズンが属するシリーズを選択することに加えて、シリーズに類似した情報を提供します。</p>
+            </li>
+            <li>
+                <h4>エピソード (ビデオクラウド)</h4>
+                <p>Brightcove ブビーコンのエピソードコンテンツの真実は、Video Cloud にあります。</p>
+                <p>
+                    Video Cloud Studio で、カスタムフィールドに指定された値を使用して、ビデオエピソードを対応するシーズンに割り当てます。これらのカスタムフィールドは次のとおりです。
+                </p>
+                <ul>
+                    <li><code translate="No">beacon.episode.number</code></li>
+                    <li><code translate="No">beacon.episode.seasonNumber</code></li>
+                    <li><code translate="No">beacon.episode.serieName</code></li>
+                </ul>
+            </li>
+            <li>
+                <p>Brightcove Beacon に戻り、動画エピソードを取り込みましょう。</p>
+            </li>
+        </ol>
+    </section>
+
+    <section class="bcls-section">
+        <h2 id="Relationship">関係</h2>
+        <p>
+            次の図は、シリーズとその季節とエピソードの関係を示しています。
+        </p>
+        <figure class="bcls-figure">
+            <img class="bcls-image" src="/assets/images/syncing-with-vc/vc-custom-fields/beacon-series-season-episode.png" alt=""/>
+        </figure>
+    </section>
+
+    <section class="bcls-section">
+        <h2 id="Creating_a_series">シリーズの作成</h2>
+        <p>シリーズを作成するには、次の手順に従います。</p>
+        <ol class="bcls-tasklist-restart">
+            <li>Brightcove ブビーコンにログインし、[ <strong>プログラム</strong> ] を選択します。</li>
+            <li>左側のナビゲーションで、[ <strong>シリーズ</strong> ] を選択します。</li>
+            <li>[ <strong>新しいシリーズを追加</strong> ] ボタンをクリックします。</li>
+            <li>
+                <p>[ <strong>基本データ</strong> ] タブで、次のように入力します。</p>
+                <table class="bcls-table">
+                    <thead class="bcls-table__head">
+                        <tr>
+                            <th>フォームフィールド名</th>
+                            <th>説明/要件</th>
+                        </tr>
+                    </thead>
+                    <tbody class="bcls-table__body">
+                        <tr>
+                            <td>名前</td>
+                            <td>
+                                シリーズの識別子、顧客向けの名前は、<strong>後のテキストデータセクションに記載されています</strong>
+                            </td>
+                        </tr>
+                        <tr>
+                            <td>製作年</td>
+                            <td>
+                                シリーズが制作された年。この情報は [ <strong>詳細情報</strong> ] 画面に表示されます。
+                            </td>
+                        </tr>
+                        <tr>
+                            <td>製作国</td>
+                            <td>
+                                シリーズが制作されている国。この情報は [ <strong>詳細情報</strong> ] 画面に表示されます
+                            </td>
+                        </tr>
+                        <tr>
+                            <td>ジャンル</td>
+                            <td>
+                                シリーズのジャンル。必要に応じてジャンルを作成できることに注意してください。
+                                <figure class="bcls-figure">
+                                    <img class="bcls-image" src="/assets/images/using-bcb/series-seasons-episodes/make-genres.png" alt="ジャンルを作る"/>
+                                </figure>
+                            </td>
+                        </tr>
+                        <tr>
+                            <td>サブジャンル</td>
+                            <td>完了しない、このデータは使用されません</td>
+                        </tr>
+                        <tr>
+                            <td>ジャンル言語プレビュー</td>
+                            <td>プレビューの言語</td>
+                        </tr>
+                        <tr>
+                            <td>エピソードのソートタイプ</td>
+                            <td>アプリのユーザーインターフェイスでエピソードを並べ替える方法</td>
+                        </tr>
+                        <tr>
+                            <td>キャスト</td>
+                            <td>
+                                <strong>CAST </strong>の下のメタデータが [ <strong>詳細情報</strong> ] 画面に表示されます。
+                            </td>
+                        </tr>
+                    </tbody>
+                </table>
+            </li>
+            <li>[ <strong>テキストデータ</strong> ] タブをクリックします。</li>
+            <li>
+                <em>タイトル</em>（シリーズの名前は視聴者の名前）、<em>説明</em>、<em>およびあらすじを入力します</em>。このデータは Brightcove Beacon アプリに表示されます。
+            </li>
+            <li>[ <strong>非テキストデータ</strong> ] タブをクリックします。</li>
+            <li>
+                次のイメージを指定します (以下の要件に一致します)。
+                <ul>
+                    <li><strong>ポートレートポスター</strong> (必須)</li>
+                    <li><strong>風景ポスター</strong> (必須)</li>
+                    <li><strong>サムネイル</strong></li>
+                    <li><strong>ワイドバナー</strong>（必須）</li>
+                </ul>
+                <p>指定しない場合、サムネイル画像はポートレートポスターから生成されます。</p>
+                <table class="bcls-table">
+                    <thead class="bcls-table__head">
+                        <tr>
+                            <th>画像</th>
+                            <th>要件</th>
+                        </tr>
+                    </thead>
+                    <tbody class="bcls-table__body">
+                        <tr>
+                            <td>ポートレートポスター</td>
+                            <td>
+                                <p>JPEG 画像 (2:3)</p>
+                                <table>
+                                    <tr>
+                                        <td>最小構成</td>
+                                        <td>幅:1000px</td>
+                                        <td>高さ:1500px</td>
+                                    </tr>
+                                    <tr>
+                                        <td>[最大]</td>
+                                        <td>幅:2000px</td>
+                                        <td>高さ:3000px</td>
+                                    </tr>
+                                </table>
+                            </td>
+                        </tr>
+                        <tr>
+                            <td>風景ポスター</td>
+                            <td>
+                                <p>JPEG 画像 (16:9)</p>
+                                <table>
+                                    <tr>
+                                        <td>最小構成</td>
+                                        <td>幅:1000px</td>
+                                        <td>高さ:563px</td>
+                                    </tr>
+                                    <tr>
+                                        <td>[最大]</td>
+                                        <td>幅:4000px</td>
+                                        <td>高さ:2250px</td>
+                                    </tr>
+                                </table>
+                            </td>
+                        </tr>
+                        <tr>
+                            <td>サムネイル</td>
+                            <td>
+                                JPEG 画像 (4:3)
+                            </td>
+                        </tr>
+                        <tr>
+                            <td>ワイドバナー</td>
+                            <td>
+                                JPEG 画像 (21:9)
+                                <table>
+                                    <tr>
+                                        <td>最小構成</td>
+                                        <td>幅:1000px</td>
+                                        <td>高さ:428px</td>
+                                    </tr>
+                                    <tr>
+                                        <td>[最大]</td>
+                                        <td>幅:4000px</td>
+                                        <td>高さ:1714px</td>
+                                    </tr>
+                                </table>
+                            </td>
+                        </tr>
+                    </tbody>
+                </table>
+            </li>
+            <li>
+                [ <strong>タグ</strong> ] タブの情報は現時点では使用されないため、このタブには情報を入力しないでください。
+            </li>
+            <li>
+                [ <strong>メタデータ</strong> ] タブの情報は現時点では使用されないため、このタブには情報を入力しないでください。
+            </li>
+            <li>
+                [ <strong>ストリーム</strong> ] タブをクリックします。ここでは、シリーズの予告編を選択します。次のスクリーンショットは、そのトレーラーを選択するプロセスを案内します。
+                <figure class="bcls-figure">
+                    <img class="bcls-image" src="/assets/images/using-bcb/series-seasons-episodes/streams-tab.png" alt="ストリームタブ"/>
+                </figure>
+            </li>
+            <li>
+                <strong>プロバイダを選択します</strong>。ほとんどの場合、Brightcove Video Cloud アカウントを参照するプロバイダーは 1 つだけです。
+            </li>
+            <li>
+                <strong>ストリームビデオ ID </strong>については、Studio から予告編のビデオ ID を取得し、テキストボックスに配置します。
+            </li>
+            <li>
+                <strong>[ ストリームの種類] </strong>が [ <em>トレーラー</em> ] に設定されていることを確認します。
+            </li>
+            <li>
+                [ <strong> DRM タイプ] と [</strong><strong>ストリーム形式</strong> ] の値を変更する必要はありません。
+            </li>
+            <li>
+                次に示すように、[ <strong>権利とスケジュール</strong> ] タブをクリックします。
+                <figure class="bcls-figure">
+                    <img class="bcls-image" src="/assets/images/using-bcb/series-seasons-episodes/rights-scheduling-tab.png" alt="権限とスケジューリング"/>
+                </figure>
+            </li>
+            <li>
+                <p>
+                    次のフィールドの値を追加します。
+                </p>
+                <table class="bcls-table">
+                    <thead class="bcls-table__head">
+                        <tr>
+                            <th>フィールド</th>
+                            <th>必須</th>
+                            <th>注</th>
+                        </tr>
+                    </thead>
+                    <tbody class="bcls-table__body">
+                        <tr>
+                            <td>ステータス</td>
+                            <td>はい</td>
+                            <td>
+                                次のいずれかのタイプを選択します。
+                                <ul>
+                                    <li>
+                                        公開済み
+                                    </li>
+                                    <li>
+                                        未公開
+                                    </li>
+                                </ul>
+                            </td>
+                        </tr>
+                        <tr>
+                            <td>権利タイプ</td>
+                            <td>はい</td>
+                            <td>
+                                オプションから、シリーズに適切な値を選択します。
+                                <ul>
+                                    <li>広告-AVOD</li>
+                                    <li>無料</li>
+                                    <li>サブスクリプション-SVOD</li>
+                                </ul>
+                            </td>
+                        </tr>
+                        <tr>
+                            <td>開始時刻</td>
+                            <td>はい</td>
+                            <td>シリーズが利用可能になる開始日をスケジュールする</td>
+                        </tr>
+                        <tr>
+                            <td>終了時刻</td>
+                            <td>はい</td>
+                            <td>
+                                シリーズがなくなる終了日をスケジュールする
+                            </td>
+                        </tr>
+                        <tr>
+                            <td>最大ストリーム数</td>
+                            <td>はい</td>
+                            <td>
+                                同じアカウントからシリーズを視聴できるストリームの最大数を設定します
+                            </td>
+                        </tr>
+                        <tr>
+                            <td>公開するデバイス</td>
+                            <td>はい</td>
+                            <td>
+                                公開するデバイスを追加します。[ <strong> Select]/[Select All Devices </strong> ] を選択して、使用可能なデバイスのリストを表示します
+                            </td>
+                        </tr>
+                        <tr>
+                            <td>許可された場所</td>
+                            <td>はい</td>
+                            <td>
+                                <p>制限がない場合は、コンテンツをストリーミングする場所を選択します。[ <em> World </em> ] と入力します。</p>
+                                <aside class="bcls-aside bcls-aside--information language-editable">
+                                    <p>許可された場所を 1 つ以上指定しないと、アプリから次のメッセージが表示されることがあります。</p>
+                                    <figure class="bcls-figure">
+                                        <img class="bcls-image" src="/assets/images/using-bcb/series-seasons-episodes/no-content.jpg" alt="コンテンツなし"/>
+                                    </figure>
+                                </aside>
+                            </td>
+                        </tr>
+                        <tr>
+                            <td>拒否された場所</td>
+                            <td>いいえ</td>
+                            <td>
+                                コンテンツをストリーミングしたくない場所を選択してください
+                            </td>
+                        </tr>
+                    </tbody>
+                </table>
+            </li>
+            <li>
+                「<strong>新規シリーズを作成</strong>」ボタンをクリックして、シリーズ情報を保存します。
+            </li>
+        </ol>
+        <p>
+            これでシリーズが作成されました。次のステップは、このシリーズに属する1つ以上のシーズンを作成することです。次のセクションでは、そのプロセスを進めます。
+        </p>
+    </section>
+
+    <section class="bcls-section">
+        <h2 id="Creating_seasons">季節を作成する</h2>
+        <p>シーズンを作成するには、次の手順に従います。</p>
+        <ol class="bcls-tasklist-restart">
+            <li>Brightcove ブビーコンにログインし、[ <strong>プログラム</strong> ] を選択します。</li>
+            <li>左側のナビゲーションで、[ <strong> Seasons </strong> ] を選択します。</li>
+            <li><strong>新しいシーズンを追加ボタンをクリックします</strong>。</li>
+            <li>
+                [ <strong>基本データ</strong> ] タブで、次のように入力します。
+                <table class="bcls-table">
+                    <thead class="bcls-table__head">
+                        <tr>
+                            <th>フォームフィールド名</th>
+                            <th>説明/要件</th>
+                        </tr>
+                    </thead>
+                    <tbody class="bcls-table__body">
+                        <tr>
+                            <td>シリーズを選択</td>
+                            <td>
+                                ドロップダウンには、作成したシリーズが表示されます。今シーズンが属するシリーズを選択してください。
+                            </td>
+                        </tr>
+                        <tr>
+                            <td>名前</td>
+                            <td>
+                                シリーズの識別子、顧客向けの名前は、<strong>後のテキストデータセクションに記載されています</strong>
+                            </td>
+                        </tr>
+                        <tr>
+                            <td>シーズン数</td>
+                            <td>
+                                これは、シリーズ内のシーズンシーケンスを表す整数値である必要があります。この番号は、Video Cloud からエピソードビデオを取り込むときに使用されます。
+                            </td>
+                        </tr>
+                        <tr>
+                            <td>製作年</td>
+                            <td>
+                                シーズンが制作された年。この情報は [ <strong>詳細情報</strong> ] 画面に表示されます。
+                            </td>
+                        </tr>
+                        <tr>
+                            <td>製作国</td>
+                            <td>
+                                シーズンが制作される国。この情報は [ <strong>詳細情報</strong> ] 画面に表示されます。
+                            </td>
+                        </tr>
+                    </tbody>
+                </table>
+            </li>
+            <li>[ <strong>テキストデータ</strong> ] タブをクリックします。</li>
+            <li>
+                <em>シーズンのタイトル</em>、<em>説明</em>、<em>あらすじを記入してください</em>。このデータは Brightcove Beacon アプリに表示されます。
+                <aside class="bcls-aside bcls-aside--tip language-editable">
+                    <em>シーズンタイトルには</em>「<em>シーズン 1 </em>」のような名前を入力できますが、シリーズに個別のシーズンに関するトピックがある場合は、その方がよい選択となります。例えば、大陸のシリーズでは、各シーズンが大陸に焦点を当てて、季節のための良い名前は、<em>ヨーロッパ</em>、<em>アフリカ</em>、<em>アジアなどです</em>。
+                </aside>
+            </li>
+            <li>[ <strong>非テキストデータ</strong> ] タブをクリックします。</li>
+            <li>
+                シーズンでは、以下の画像を入力してください（以下の要件に一致します）。
+                <ul>
+                    <li><strong>ポートレートポスター</strong> (必須)</li>
+                    <li><strong>風景ポスター</strong> (必須)</li>
+                    <li><strong>サムネイル</strong></li>
+                    <li><strong>ワイドバナー</strong>（必須）</li>
+                </ul>
+                <p>指定しない場合、サムネイル画像はポートレートポスターから生成されます。</p>
+                <table class="bcls-table">
+                    <thead class="bcls-table__head">
+                        <tr>
+                            <th>画像</th>
+                            <th>要件</th>
+                        </tr>
+                    </thead>
+                    <tbody class="bcls-table__body">
+                        <tr>
+                            <td>ポートレートポスター</td>
+                            <td>
+                                <p>JPEG 画像 (2:3)</p>
+                                <table>
+                                    <tr>
+                                        <td>最小構成</td>
+                                        <td>幅:1000px</td>
+                                        <td>高さ:1500px</td>
+                                    </tr>
+                                    <tr>
+                                        <td>[最大]</td>
+                                        <td>幅:2000px</td>
+                                        <td>高さ:3000px</td>
+                                    </tr>
+                                </table>
+                            </td>
+                        </tr>
+                        <tr>
+                            <td>風景ポスター</td>
+                            <td>
+                                <p>JPEG 画像 (16:9)</p>
+                                <table>
+                                    <tr>
+                                        <td>最小構成</td>
+                                        <td>幅:1000px</td>
+                                        <td>高さ:563px</td>
+                                    </tr>
+                                    <tr>
+                                        <td>[最大]</td>
+                                        <td>幅:4000px</td>
+                                        <td>高さ:2250px</td>
+                                    </tr>
+                                </table>
+                            </td>
+                        </tr>
+                        <tr>
+                            <td>サムネイル</td>
+                            <td>
+                                JPEG 画像 (4:3)
+                            </td>
+                        </tr>
+                        <tr>
+                            <td>ワイドバナー</td>
+                            <td>
+                                JPEG 画像 (21:9)
+                                <table>
+                                    <tr>
+                                        <td>最小構成</td>
+                                        <td>幅:1000px</td>
+                                        <td>高さ:428px</td>
+                                    </tr>
+                                    <tr>
+                                        <td>[最大]</td>
+                                        <td>幅:4000px</td>
+                                        <td>高さ:1714px</td>
+                                    </tr>
+                                </table>
+                            </td>
+                        </tr>
+                    </tbody>
+                </table>
+
+            </li>
+            <li>
+                [ <strong>タグ</strong> ] タブの情報は現時点では使用されないため、このタブには情報を入力しないでください。
+            </li>
+            <li>
+                [ <strong>メタデータ</strong> ] タブの情報は現時点では使用されないため、このタブには情報を入力しないでください。
+            </li>
+            <li>
+                「<strong>ストリーム</strong>」タブをクリックして、シーズンの予告編を選択します。
+            </li>
+            <li>
+                <strong>プロバイダを選択します</strong>。ほとんどの場合、Brightcove Video Cloud アカウントを参照するプロバイダーは 1 つだけです。
+            </li>
+            <li>[ <strong>新しいストリームを追加</strong> ] ボタンをクリックします。</li>
+            <li>
+                <strong>ストリームビデオ ID </strong>については、Studio から予告編のビデオ ID を取得し、テキストボックスに配置します。
+            </li>
+            <li>
+                <strong>[ ストリームの種類] </strong>が [ <em>トレーラー</em> ] に設定されていることを確認します。
+            </li>
+            <li>
+                [ <strong> DRM タイプ] と [</strong><strong>ストリーム形式</strong> ] の値を変更する必要はありません。
+            </li>
+            <li>
+                ここに示すように、[ <strong>権利とスケジュール</strong> ] タブをクリックします。
+                <figure class="bcls-figure">
+                    <img class="bcls-image" src="/assets/images/using-bcb/series-seasons-episodes/rights-scheduling-tab-season.png" alt="権限とスケジューリング"/>
+                </figure>
+            </li>
+            <li>
+                <p>
+                    次のフィールドの値を追加します。
+                </p>
+                <table class="bcls-table">
+                    <thead class="bcls-table__head">
+                        <tr>
+                            <th>フィールド</th>
+                            <th>必須</th>
+                            <th>注</th>
+                        </tr>
+                    </thead>
+                    <tbody class="bcls-table__body">
+                        <tr>
+                            <td>ステータス</td>
+                            <td>はい</td>
+                            <td>
+                                次のいずれかのタイプを選択します。
+                                <ul>
+                                    <li>
+                                        公開済み
+                                    </li>
+                                    <li>
+                                        未公開
+                                    </li>
+                                </ul>
+                            </td>
+                        </tr>
+                        <tr>
+                            <td>権利タイプ</td>
+                            <td>はい</td>
+                            <td>
+                                オプションから、季節に適した値を選択します。
+                                <ul>
+                                    <li>広告-AVOD</li>
+                                    <li>無料</li>
+                                    <li>継承</li>
+                                    <li>サブスクリプション-SVOD</li>
+                                </ul>
+                                <p>
+                                    <em>継承とは</em>、今シーズンが属するシリーズから権利が継承されることを意味します。
+                                </p>
+                            </td>
+                        </tr>
+                        <tr>
+                            <td>開始時刻</td>
+                            <td>はい</td>
+                            <td>今シーズンの開始日が利用可能になる予定です</td>
+                        </tr>
+                        <tr>
+                            <td>終了時刻</td>
+                            <td>はい</td>
+                            <td>
+                                今シーズンがなくなる終了日をスケジュールする
+                            </td>
+                        </tr>
+                        <tr>
+                            <td>最大ストリーム数</td>
+                            <td>はい</td>
+                            <td>
+                                同じアカウントからシーズンを視聴できるストリームの最大数
+                            </td>
+                        </tr>
+                        <tr>
+                            <td>公開するデバイス</td>
+                            <td>はい</td>
+                            <td>
+                                公開するデバイスを追加します。[ <strong> Select/Unselect All Devices </strong> ] を選択して、使用可能なデバイスのリストを表示します。
+                            </td>
+                        </tr>
+                        <tr>
+                            <td>許可された場所</td>
+                            <td>はい</td>
+                            <td>
+                                <p>制限がない場合は、コンテンツをストリーミングする場所を選択します。[ <em> World </em> ] と入力します。</p>
+                                <aside class="bcls-aside bcls-aside--information language-editable">
+                                    <p>許可された場所を 1 つ以上指定しないと、アプリから次のメッセージが表示されることがあります。</p>
+                                    <figure class="bcls-figure">
+                                        <img class="bcls-image" src="/assets/images/using-bcb/series-seasons-episodes/no-content.jpg" alt="コンテンツなし"/>
+                                    </figure>
+                                </aside>
+                            </td>
+                        </tr>
+                        <tr>
+                            <td>拒否された場所</td>
+                            <td>いいえ</td>
+                            <td>
+                                コンテンツをストリーミングしない場所を選択します。制限がない場合は、<em> World </em>と入力します。
+                            </td>
+                        </tr>
+                    </tbody>
+                </table>
+            </li>
+            <li>
+                「<strong>新しいシーズンを作成」ボタンをクリックして、シーズン情報を保存してください</strong>。
+            </li>
+        </ol>
+        <p>
+            これで、シーズンの 1 つが作成されました。必要に応じて、シリーズのシーズンをさらに作成します。次のステップでは、Video Cloud からBrightcove ブビーコンにエピソード動画を取り込みます。次のセクションでは、そのプロセスを進めます。
+        </p>
+    </section>
+
+    <section class="bcls-section">
+        <h2 id="Ingesting_episodes">エピソードの取り込み</h2>
+        <p>
+            シリーズの作成と関連シーズンは Brightcove Beacon で実行されますが、シリーズのエピソードの作成は Video Cloud Studio で行われます。各エピソード動画のカスタムフィールドでシリーズとシーズンに関する値を割り当てて、それらの動画を Brightcove Beacon に取り込みます。
+        </p>
+        <aside class="bcls-aside bcls-aside--tip language-editable">Brightcove ブ Beacon エピソードのコンテンツの真実は Video Cloud に存在することを覚えておいてください。Brightcove Beacon でエピソードに加えた変更は、Video Cloud からコンテンツを取り込むときに上書きされます。</aside>
+
+        <h3>前提条件</h3>
+        <p>次の手順に進む前に、次のことを完了していることを確認してください。</p>
+        <ol class="bcls-tasklist-restart">
+            <li>ビデオクラウドスタジオにログインします。</li>
+            <li>
+                <p>ページ上部にあるドロップダウンメニューから、[ <strong>アップロード</strong> ] を選択します。</p>
+                <figure class="bcls-figure">
+                    <img class="bcls-image" src="/assets/images/using-bcb/series-seasons-episodes/upload-module.png" alt="モジュールをアップロード"/>
+                </figure>
+            </li>
+            <li>エピソードの動画をアップロードします。</li>
+            <li>
+                <p>ページの上部にあるドロップダウンメニューから、[ <strong> MEDIA </strong> ] を選択します。</p>
+                <figure class="bcls-figure">
+                    <img class="bcls-image" src="/assets/images/using-bcb/series-seasons-episodes/media-module.png" alt="Mediaモジュール"/>
+                </figure>
+            </li>
+            <li><a href="/references/image-requirements.html">画像とその仕様書に記載されているように、エピソードのビデオ画像を更新します</a>。</li>
+            <li>
+                <p>ナビゲーションヘッダーで、[ <strong>管理</strong> ]、[ <strong>ビデオフィールド</strong> ] の順にクリックします。</p>
+                <aside class="bcls-aside bcls-aside--information language-editable">
+                    [管理者] メニューにアクセスするには、<strong>アカウント管理者である必要があります</strong>。
+                </aside>
+                <figure class="bcls-figure">
+                    <img class="bcls-image" src="/assets/images/using-bcb/series-seasons-episodes/video-fields.png" alt="ビデオフィールド"/>
+                </figure>
+            </li>
+            <li>動画を Brightcove Beacon に取り込むのに必要なカスタム項目を作成します。詳細については、「<a href="/syncing-with-video-cloud/vc-custom-fields.html"> Video Cloud カスタム項目の作成</a>」ドキュメントを参照してください。</li>
+        </ol>
+        <h3>ステップ</h3>
+        <p>エピソード動画を Brightcove Beacon に取り込むには、次の手順に従います。</p>
+        <ol class="bcls-tasklist-restart">
+            <li>ビデオクラウドスタジオに戻ります。</li>
+            <li>
+                ページの上部にあるドロップダウンメニューから、[ <strong> MEDIA </strong> ] を選択します。
+            </li>
+            <li>
+                <p>エピソードの動画のタイトルをクリックして、動画のプロパティページに入ります。</p>
+                <figure class="bcls-figure">
+                    <img class="bcls-image" src="/assets/images/using-bcb/series-seasons-episodes/video-link.png" alt="ビデオリンク"/>
+                </figure>
+            </li>
+            <li>
+                右側に [ <strong>カスタムフィールド] </strong>セクションが表示されるまで下にスクロールします。
+            </li>
+            <li>[<strong>編集</strong>]ボタンをクリックします。</li>
+            <li>
+                エピソードに関連付けられている 3 つのカスタムフィールドを見つけます。
+                <figure class="bcls-figure">
+                    <img class="bcls-image" src="/assets/images/using-bcb/series-seasons-episodes/vc-custom-fields.png" alt="エピソードカスタムフィールド"/>
+                </figure>
+            </li>
+            <li>
+                エピソードビデオの場合は、対応するカスタムフィールドにエピソード番号、シーズン番号、シリーズ名を入力します。
+            </li>
+            <li>
+                ビデオに適切な値を入力したら、必ず [ <strong>保存</strong> ] ボタンをクリックします。
+            </li>
+            <li>
+                すべてのエピソード動画について、カスタムフィールドに値を繰り返します。
+            </li>
+            <li>Brightcove ブビーコンにログインします。</li>
+            <li>
+                トップメニューの [ <strong>ツール</strong> ] オプション ( <strong>レンチアイコン</strong> ) をクリックします。
+            </li>
+            <li>
+                <p>左側のメニューで [ <strong>取り込み</strong> ] オプションが選択されていることを確認します。</p>
+                <figure class="bcls-figure">
+                    <img class="bcls-image" src="/assets/images/using-bcb/series-seasons-episodes/beacon-ingest.png" alt="Brightcove ブのビーコンの摂取"/>
+                </figure>
+            </li>
+            <li>
+                [ <strong>Brightcove ブの動画を更新</strong> ] ボタンをクリックして、新しく設定されたエピソード動画を取り込むことができます。
+            </li>
+            <li>
+                <p>
+                    アプリをすぐに利用できるようにするには、左側のナビゲーションの [キャッシュ] オプションをクリックして Brightcove Beacon <strong>のキャッシュをクリアし</strong>、[ <strong>キャッシュを削除</strong> ] ボタンをクリックします。
+                </p>
+                <aside class="bcls-aside bcls-aside--information language-editable">
+                    Brightcove ビーコンツールオプションの使用の詳細については、<a href="/using-brightcove-beacon/tools.html">ツールの使用に関するドキュメントを参照してください</a>。
+                </aside>
+            </li>
+        </ol>
+        <p>
+            これで、シリーズの作成と、それに関連するシーズンとエピソードの情報は終了です。
+        </p>
+    </section>
+</article>
+<!-- complete bootstrap layout -->
+    </div>
+    <div class="col-sm-2 right-side-bar">
+      
+      <nav class="right-side-nav" id="right_side_nav">
+        <h6 class="toc">ページコンテンツ</h6>
+        <ul id="in_page_nav" class="list-none"></ul>
+      </nav>
+      
+    </div>
+  </div>
+</div>
+
+<hr>
+<footer class="bcls-footer" role="contentinfo">  <div class="row">
+    <div class="region region-footer-top-center col-md-12">
+      <nav role="navigation" aria-labelledby="block-brightcovesupport-menu" id="block-brightcovesupport" class="footer-menu">
+
+        <h2>Brightcove ブサポート</h2>
+
+        <ul class="menu">
+          <li>
+            <a href="https://status.brightcove.com">システムステータス</a>
+          </li>
+          <li>
+            <a href="https://supportportal.brightcove.com/s/login/?">サポートへのお問い合わせ</a>
+          </li>
+          <li>
+            <a href="https://support.brightcove.com/">ドキュメンテーション</a>
+          </li>
+        </ul>
+
+      </nav>
+      <nav role="navigation" aria-labelledby="block-training-menu" id="block-training" class="footer-menu">
+
+        <h2>トレーニング</h2>
+
+        <ul class="menu">
+          <li>
+            <a href="https://studio.support.brightcove.com/training/online-training-courses.html">オンラインコース</a>
+          </li>
+          <li>
+            <a href="https://studio.support.brightcove.com/training/register-training.html">コースに登録する</a>
+          </li>
+          <li>
+            <a href="https://university.brightcove.com/">Brightcove University</a>
+          </li>
+        </ul>
+
+      </nav>
+      <nav role="navigation" aria-labelledby="block-brightcove-menu" class="footer-menu">
+
+        <h2>Brightcove</h2>
+
+        <ul class="menu">
+          <li>
+            <a href="https://www.brightcove.com">Brightcove.com</a>
+          </li>
+          <li>
+            <a href="https://supportportal.brightcove.com/s/login/?">お問合せ</a>
+          </li>
+        </ul>
+      </nav>
+    </div>
+  </div>
+  <div class="row">
+    <div class="region region-footer-bottom-center col-md-12">
+      <div class="bcls-copyright footer-menu">
+        <table>
+          <tr>
+            <td>
+              <div id="bc_copyright" class="field field--name-field-copyright-year field--type-string field--label-hidden field--item" style="float: left;"> Brightcove Inc. All rights reserved.</div>
+            </td>
+            <td><a href="https://www.brightcove.com/en/legal/privacy">プライバシー</a> | <a href="https://www.brightcove.com/en/terms-and-conditions">利用規約</a></td>
+            <td>
+              <div class="gf-links-cols footer-menu">
+                <div class="gf-social"><a href="https://www.linkedin.com/company/16439" title="LinkedIn" newtab="newtab" class="gf-social-linkedin"><i class="fab fa-linkedin-in" style="font-size: 1.5rem;"></i></a><a href="https://twitter.com/brightcove" title="Twitter" newtab="newtab" class="gf-social-twitter"><i class="fab fa-twitter" style="font-size: 1.5rem;"></i></a><a href="https://www.facebook.com/Brightcove" title="Facebook" newtab="newtab" class="gf-social-facebook"><i class="fab fa-facebook-f" style="font-size: 1.5rem;"></i></a>
+                </div>
+              </div>
+            </td>
+          </tr>
+        </table>
+      </div>
+    </div>
+  </div>
+</footer>
+
+<script>
+      
+  var searchBox = sajari.init({
+    mode: "search-box",
+    project: "1588255093746585379", // Set this to your project.
+    collection: "brightcove-documenation", // Set this to your collection.
+    instantPipeline: "autocomplete", // Pipeline used as you type
+    inputPlaceholder: "Search", // Input element placeholder
+    maxSuggestions: 5, // Maximum number of suggestions to show
+    attachSearchBox: document.getElementById("nav-search-box") // DOM element to attach to
+  });
+  
+    searchBox("sub", "pipeline.search-sent", function (_, query) {
+      window.location = "/search.html?q=" + encodeURIComponent(query.q);
+    });
+  
+
+</script>
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.0/jquery.min.js" crossorigin="anonymous"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js" integrity="sha384-UO2eT0CpHqdSJQ6hJty5KVphtPhzWj9WO1clHTMGa3JDZwrnQq4sF86dIHNDz0W1" crossorigin="anonymous"></script>
+  <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js" integrity="sha384-JjSmVgyd0p3pXB1rRibZUAYoIIy6OrQ6VrjIEaFf/nJGzIxFDsf4x0xIM+B07jRM" crossorigin="anonymous"></script>
+  <script src="https://support.brightcove.com/site-assets/js/site/https-fix.js"></script>
+  <script src="https://support.brightcove.com/site-assets/js/site/setDate.js"></script>
+  
+  <script src="https://support.brightcove.com/site-assets/js/site/prism.js"></script>
+  
+  <script src="https://support.brightcove.com/site-assets/js/site/site.js"></script>
+  <script src="https://support.brightcove.com/site-assets/js/site/tabs.js"></script>
+  <script src="https://support.brightcove.com/site-assets/js/site/toc.js"></script>
+  <script src="/assets/js/sites_nav.js"></script>
+  <script src="https://support.brightcove.com/site-assets/js/site/bcls-utils.js"></script>
+  <script src="https://support.brightcove.com/site-assets/js/site/local-link-fix.js"></script>
+  <script src="/assets/js/feedback.js"></script>
+  
+  <script src="/assets/js/sajari-search-foot.js"></script>
+  
+  <!-- <script src="/assets/js/sajari-index.js"></script> -->
+  <style>
+    a.sj-paginator__page-number.sj-paginator__page-number--current.css-so0ov7 {
+      background-color: lightblue;
+    }
+    div.sj-tabs__tab {
+      margin-top: 3rem;
+      margin-left: .3rem;
+      border-top-left-radius: .4rem;
+      border-top-right-radius: .4rem;
+      background-color:#e8e8e8;
+    }
+
+    div.sj-tabs__tab.sj-tabs__tab--selected {
+      border-bottom-color: crimson;
+      background-color: #f8f8f8;
+    }
+
+    p.sj-results__result__description.css-p9jvyt {
+      font-size: 1rem;
+    }
+
+    .sj-result__text.css-31l7gp h3 {
+      color: navy;
+      font-size: 1.4rem;
+    }
+    </style>
+
+</body>
+
+</html>

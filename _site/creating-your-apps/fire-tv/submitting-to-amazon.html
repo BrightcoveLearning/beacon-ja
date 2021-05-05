@@ -1,0 +1,1276 @@
+﻿<!DOCTYPE html>
+<html lang="ja">
+  <head>
+    <meta charset="utf-8" />
+    <meta
+      name="viewport"
+      content="width=device-width, initial-scale=1, shrink-to-fit=no"
+    />
+    <meta name="description" content="このトピックでは、Fire TVアプリをAmazonアプリストアに送信する方法について説明します。" />
+
+    <title>Amazonアプリストアにアプリを送信する</title>
+    <link rel="apple-touch-icon" sizes="180x180" href="/apple-touch-icon.png" />
+    <link rel="icon" type="image/png" sizes="32x32" href="/favicon-32x32.png" />
+    <link rel="icon" type="image/png" sizes="16x16" href="/favicon-16x16.png" />
+    <link rel="manifest" href="/site.webmanifest" />
+    <link data-react-helmet="true" rel="preload" as="style" href="https://fonts.googleapis.com/css2?family=Public+Sans:wght@400;500&amp;display=swap">
+      <link
+      rel="stylesheet"
+      href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css"
+      integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T"
+      crossorigin="anonymous"
+    />
+    <link
+      rel="stylesheet"
+      href="https://support.brightcove.com/site-assets/css/site/prism.css"
+    />
+    <link
+      rel="stylesheet"
+      href="https://support.brightcove.com/site-assets/css/site/styles.css"
+    />
+    <link
+      rel="stylesheet"
+      href="https://support.brightcove.com/site-assets/css/site/landing-page.css"
+    />
+    <link
+      rel="stylesheet"
+      href="https://support.brightcove.com/site-assets/css/site/tabs.css"
+    />
+    <link rel="stylesheet" href="/assets/css/local.css" />
+    <link
+      href="https://fonts.googleapis.com/css?family=Lato&display=swap"
+      rel="stylesheet"
+    />
+    <link
+      href="https://fonts.googleapis.com/css?family=Source+Code+Pro&display=swap"
+      rel="stylesheet"
+    />
+    <script
+      src="https://kit.fontawesome.com/381443caa8.js"
+      crossorigin="anonymous"
+    ></script>
+    <script src="https://support.brightcove.com/site-assets/js/site/google-analytics.js"></script>
+    <script src="/assets/js/sajari-head.js"></script>
+  </head>
+
+  <body class="body"></body>
+</html>
+
+<header>
+  <div class="div-header">
+    <a href="/"><img class="product-logo" src="https://support.brightcove.com/site-assets/images/site/product-logos/Beacon_Logo.svg" alt="製品ロゴ" style="max-height: 100px;max-width: 232px;"/></a>
+<!-- GTranslate: https://gtranslate.io/ -->
+<select onchange="doGTranslate(this);"><option value="">言語の選択</option><option value="en|en" translate="No">English</option><option value="en|zh-TW" translate="No">繁體中文</option><option value="en|fr" translate="No">Français</option><option value="en|de" translate="No">Deutsche</option><option value="en|ja" translate="No">日本語</option><option value="en|ko" translate="No">한국어</option><option value="en|es" translate="No">Español</option></select>
+
+<script>
+/* <![CDATA[ */
+function doGTranslate(lang_pair) {if(lang_pair.value)lang_pair=lang_pair.value;if(lang_pair=='')return;var lang=lang_pair.split('|')[1];var plang=location.hostname.split('.')[0];if(plang.length !=2 && plang.toLowerCase() != 'zh-cn' && plang.toLowerCase() != 'zh-tw')plang='en';location.href=location.protocol+'//'+(lang == 'en' ? '' : lang+'.')+location.hostname.replace('www.', '').replace(RegExp('^' + plang + '\\.'), '')+location.pathname+location.search;}
+/* ]]> */
+</script>
+
+
+
+    <span class="secondary-nav"><a href="https://supportportal.brightcove.com/s/login/?"><img src="https://support.brightcove.com/site-assets/images/site/support.png" alt="サポート"/> サポートへのお問い合わせ</a> <span style="vertical-align: top;margin-left:1em;margin-right:1em;">|</span> <a href="https://status.brightcove.com/"><img src="https://support.brightcove.com/site-assets/images/site/status.png" alt="システムステータス"/> システムステータス</a></span> <br/>
+    
+  </div>
+  <nav aria-label="breadcrumb">
+    <ol class="breadcrumb arr-right">
+      
+      <li class="breadcrumb-item"><a href="/">ホーム</a></li>
+      
+      
+      
+      <li class="breadcrumb-item"><a href="/creating-your-apps/fire-tv/">ファイヤーテレビ</a></li>
+      
+      <li class="breadcrumb-item active" aria-current="page">Amazonアプリストアにアプリを送信する</li>
+    </ol>
+  </nav>
+</header>
+<div class="container">
+  <div class="row">
+          <div class="col-sm-3 left-side-bar">
+        <select id="site_select" class="bcls-select" style="margin-right: 1rem;">
+          <option value="">Brightcove ブのその他のドキュメント</option>
+          
+            
+              <option value="https://support.brightcove.com">ドキュメントホーム</option>
+            
+          
+            
+              <option value="https://audience.support.brightcove.com">Brightcove Audience</option>
+            
+          
+            
+              <option value="https://beacon.support.brightcove.com">Brightcove ブビーコン</option>
+            
+          
+            
+              <option value="https://campaign.support.brightcove.com">Brightcove ブキャンペーン</option>
+            
+          
+            
+              <option value="https://engage.support.brightcove.com">Brightcove Engage</option>
+            
+          
+            
+              <option value="https://live.support.brightcove.com">Brightcove ブ・ライブ</option>
+            
+          
+            
+              <option value="https://gallery.support.brightcove.com">Brightcove ブギャラリー</option>
+            
+          
+            
+              <option value="https://ssai.support.brightcove.com">Brightcove SSAI</option>
+            
+          
+            
+              <option value="https://social.support.brightcove.com">Brightcove ブソーシャル</option>
+            
+          
+            
+              <option value="https://studio.support.brightcove.com">Video Cloud Studio</option>
+            
+          
+            
+              <option value="https://player.support.brightcove.com">Brightcove ブのプレーヤー開発</option>
+            
+          
+            
+              <option value="https://apis.support.brightcove.com">Video CloudプラットフォームAPI</option>
+            
+          
+            
+              <option value="https://sdks.support.brightcove.com">ビデオクラウドデバイス SDK</option>
+            
+          
+            
+              <option value="https://integrations.support.brightcove.com">統合および CMS コネクタ</option>
+            
+          
+            
+              <option value="https://general.support.brightcove.com">ビデオクラウドの一般情報</option>
+            
+          
+            
+              <option value="https://zencoder.support.brightcove.com">Zencoder</option>
+            
+          
+        </select>
+
+      <nav class="sidenav" id="side_nav">
+        
+        
+        <h5><a href="/index.html">ホーム</a></h5>
+        
+        
+        
+        <h5 class="submenu-header"><a href="/getting-started/index.html">はじめに<strong> + </strong></a></h5>
+        <ul class="sidenav-submenu" style="display:none;">
+          
+          
+          <li><a href="/getting-started/learning-guide-bc-beacon.html">学習ガイド</a></li>
+          
+          
+          
+          <li><a href="/getting-started/implementation-phases.html">実装フェーズ</a></li>
+          
+          
+          
+          <li><a href="/getting-started/app-design-considerations.html">アプリケーション設計に関する考慮事項</a></li>
+          
+          
+          
+          <li><a href="/getting-started/creating-your-app-design-info-architecture.html">アプリデザイン-情報アーキテクチャ</a></li>
+          
+          
+          
+          <li><a href="/getting-started/creating-your-app-design-layout-options.html">アプリデザイン-レイアウトオプション</a></li>
+          
+          
+          
+          <li><a href="/getting-started/design-best-practices.html">設計のベストプラクティス</a></li>
+          
+          
+        </ul>
+        
+        
+        
+        <h5 class="submenu-header"><a href="/syncing-with-video-cloud/index.html">ビデオクラウドと同期<strong> + </strong></a></h5>
+        <ul class="sidenav-submenu" style="display:none;">
+          
+          
+          <li><a href="/syncing-with-video-cloud/vc-custom-fields.html">Video Cloud カスタム項目の作成</a></li>
+          
+          
+          
+          <li><a href="/syncing-with-video-cloud/forcing-a-sync.html">同期を強制する</a></li>
+          
+          
+        </ul>
+        
+        
+        
+        <h5 class="submenu-header"><a href="/using-brightcove-beacon/index.html"><strong>Brightcove ブのビーコンの使用+ </strong></a></h5>
+        <ul class="sidenav-submenu" style="display:none;">
+          
+          
+          <li><a href="/using-brightcove-beacon/adding-to-page.html">ページにカルーセルを追加する</a></li>
+          
+          
+          
+          <li><a href="/using-brightcove-beacon/creating-a-channel.html">チャンネルの作成</a></li>
+          
+          
+          
+          <li><a href="/using-brightcove-beacon/electronic-program-guides.html">電子プログラムガイド (EPG) の作成</a></li>
+          
+          
+          
+          <li><a href="/using-brightcove-beacon/creating-a-page.html">新しいページの作成</a></li>
+          
+          
+          
+          <li><a href="/using-brightcove-beacon/creating-a-playlist.html">プレイリストを作成する</a></li>
+          
+          
+          
+          <li><a href="/using-brightcove-beacon/creating-subscription-package.html">サブスクリプションパッケージの作成</a></li>
+          
+          
+          
+          <li><a href="/using-brightcove-beacon/promo-codes.html">プロモーションコードの作成</a></li>
+          
+          
+          
+          <li><a href="/using-brightcove-beacon/series-seasons-episodes.html">シリーズ/シーズン/エピソードの作成</a></li>
+          
+          
+          
+          <li><a href="/using-brightcove-beacon/configuring-server-side-ad-settings.html">サーバーサイド広告設定の構成</a></li>
+          
+          
+          
+          <li><a href="/using-brightcove-beacon/implementing-authvod.html">AuthVOD の実装</a></li>
+          
+          
+          
+          <li><a href="/using-brightcove-beacon/live-ssai.html">ライブSSAIの実装</a></li>
+          
+          
+          
+          <li><a href="/using-brightcove-beacon/vod-ssai.html">VOD SSAIの実装</a></li>
+          
+          
+          
+          <li><a href="/using-brightcove-beacon/including-non-configurable-pages.html">設定できないページを含める</a></li>
+          
+          
+          
+          <li><a href="/using-brightcove-beacon/introducing-pages.html">ページの紹介</a></li>
+          
+          
+          
+          <li><a href="/using-brightcove-beacon/streaming-live-event.html">ライブイベントのストリーミング</a></li>
+          
+          
+          
+          <li><a href="/using-brightcove-beacon/streaming-vods-to-a-channel.html">チャンネルへのVOD のストリーミング</a></li>
+          
+          
+          
+          <li><a href="/using-brightcove-beacon/monetization-options.html">収益化オプションについて</a></li>
+          
+          
+          
+          <li><a href="/using-brightcove-beacon/using-subscription-package.html">サブスクリプションパッケージの使用</a></li>
+          
+          
+          
+          <li><a href="/using-brightcove-beacon/tools.html">ツールの使用</a></li>
+          
+          
+          
+          <li><a href="/using-brightcove-beacon/viewing-analytics-data.html">分析データの表示</a></li>
+          
+          
+        </ul>
+        
+        
+        
+        <h5 class="submenu-header"><a href="/creating-your-apps/index.html">アプリの作成<strong> + </strong></a></h5>
+        <ul class="sidenav-submenu" style="display:none;">
+          
+          
+          <li class="submenu-header">
+            <a href="/creating-your-apps/android/index.html">アンドロイド<strong> + </strong></a>
+            <ul class="sidenav-subsubmenu" style="display:none;">
+              
+              <li><a href="/creating-your-apps/android/submitting-to-android.html">Android ストアに新しいアプリを送信する</a></li>
+              
+              <li><a href="/creating-your-apps/android/updating-android-apps-to-bcb.html">Android アプリをBrightcove ブビーコンにアップデートする</a></li>
+              
+              <li><a href="/creating-your-apps/android/adding-subscriptions-in-android.html">Android へのサブスクリプションの追加</a></li>
+              
+              <li><a href="/creating-your-apps/android/improving-relevance-android.html">Android Play ストアでの検索の関連性の向上</a></li>
+              
+              <li><a href="/creating-your-apps/android/installing-android-test-build.html">Androidテストビルドのインストール</a></li>
+              
+            </ul>
+          </li>
+          
+          
+          
+          <li class="submenu-header">
+            <a href="/creating-your-apps/fire-tv/index.html">Fire TV <strong> + </strong></a>
+            <ul class="sidenav-subsubmenu" style="display:none;">
+              
+              <li><a href="/creating-your-apps/fire-tv/installing-fire-tv-test-build.html">Fire TVテストビルドのインストール</a></li>
+              
+              <li><a href="/creating-your-apps/fire-tv/submitting-to-amazon.html">Amazonストアに送信する</a></li>
+              
+            </ul>
+          </li>
+          
+          
+          
+          <li class="submenu-header">
+            <a href="/creating-your-apps/ios-tvos/index.html">iOS/tvOS <strong> + </strong></a>
+            <ul class="sidenav-subsubmenu" style="display:none;">
+              
+              <li><a href="/creating-your-apps/ios-tvos/installing-ios-test-build.html">iOS/tvOS テストビルドのインストール</a></li>
+              
+              <li><a href="/creating-your-apps/ios-tvos/submitting-to-apple.html">アップルストアに提出する</a></li>
+              
+            </ul>
+          </li>
+          
+          
+          
+          <li class="submenu-header">
+            <a href="/creating-your-apps/panasonic/index.html">パナソニック<strong> + </strong></a>
+            <ul class="sidenav-subsubmenu" style="display:none;">
+              
+              <li><a href="/creating-your-apps/panasonic/submitting-to-panasonic.html">パナソニックストアへの提出</a></li>
+              
+            </ul>
+          </li>
+          
+          
+          
+          <li class="submenu-header">
+            <a href="/creating-your-apps/roku/index.html">ろく<strong> + </strong></a>
+            <ul class="sidenav-subsubmenu" style="display:none;">
+              
+              <li><a href="/creating-your-apps/roku/configuring-inchannel-products.html">Rokuでのチャネル内製品の設定</a></li>
+              
+              <li><a href="/creating-your-apps/roku/installing-roku-test-build.html">Roku テストビルドのインストール</a></li>
+              
+              <li><a href="/creating-your-apps/roku/submitting-to-roku.html">ロクストアへの提出</a></li>
+              
+            </ul>
+          </li>
+          
+          
+          
+          <li class="submenu-header">
+            <a href="/creating-your-apps/samsung/index.html">サムスン<strong> + </strong></a>
+            <ul class="sidenav-subsubmenu" style="display:none;">
+              
+              <li><a href="/creating-your-apps/samsung/samsung-partner.html">サムスンのパートナーになる</a></li>
+              
+              <li><a href="/creating-your-apps/samsung/submitting-to-samsung.html">サムスンストアへの提出</a></li>
+              
+            </ul>
+          </li>
+          
+          
+          
+          <li><a href="/creating-your-apps/common-required-info.html">共通の必須情報</a></li>
+          
+          
+          
+          <li><a href="/creating-your-apps/device-apps-validation-guide.html">デバイスアプリ検証ガイド</a></li>
+          
+          
+        </ul>
+        
+        
+        
+        <h5 class="submenu-header"><a href="/references/index.html">参考文献<strong> + </strong></a></h5>
+        <ul class="sidenav-submenu" style="display:none;">
+          
+          
+          <li><a href="/references/common-configuration-settings.html">一般的な構成設定</a></li>
+          
+          
+          
+          <li><a href="/references/creating-stripe-account.html">Stripeアカウントの作成</a></li>
+          
+          
+          
+          <li><a href="/references/glossary.html">用語集</a></li>
+          
+          
+          
+          <li><a href="/references/image-requirements.html">画像とその仕様</a></li>
+          
+          
+          
+          <li><a href="/references/known-issues.html">既知の問題</a></li>
+          
+          
+          
+          <li><a href="/references/product-updates.html">製品のアップデート</a></li>
+          
+          
+        </ul>
+        
+        
+        
+        <h5 class="submenu-header"><a href="/training/index.html"><strong>トレーニング+ </strong></a></h5>
+        <ul class="sidenav-submenu" style="display:none;">
+          
+          
+          <li><a href="/training/training-demand-custom-fields.html">Video Cloud ビデオ/カスタムフィールドの使用</a></li>
+          
+          
+          
+          <li><a href="/training/training-demand-design-layout.html">アプリケーションレイアウトの設計</a></li>
+          
+          
+          
+          <li><a href="/training/training-demand-playlists.html">プレイリストの作成と使用</a></li>
+          
+          
+          
+          <li><a href="/training/training-demand-series-seasons-episodes.html">シリーズ、季節、エピソードの作成</a></li>
+          
+          
+          
+          <li><a href="/training/training-demand-vod-ssai.html">VOD サーバーサイド広告の実装</a></li>
+          
+          
+          
+          <li><a href="/training/training-demand-publish-android-app.html">PlayストアでAndroidアプリを公開する</a></li>
+          
+          
+          
+          <li><a href="/training/training-demand-viewing-analytics.html">分析データの表示</a></li>
+          
+          
+        </ul>
+        
+        
+        
+        <h5 class="submenu-header"><a href="/support/index.html"><strong>サポート+ </strong></a></h5>
+        <ul class="sidenav-submenu" style="display:none;">
+          
+          
+          
+          
+          
+          
+          <li><a href="/support/viewing-brightcove-system-status-page.html">Brightcove ブのシステムステータスページの表示</a></li>
+          
+          
+          
+          <li><a href="/support/contact-sales.html">営業へのお問い合わせ</a></li>
+          
+          
+          
+          <li><a href="/support/opening-case-with-brightcove-support.html">サポートケースを開く</a></li>
+          
+          
+        </ul>
+        
+        
+      </nav>
+    </div>
+    <div class="col-lg-7" style="background-color: white;color: #333333;margin-top: -1em;margin-bottom: -1em;padding-bottom:1em;">
+      <!-- bootstrap layout -->
+<p id="bc_veggie_burger_wrapper" style="display: none;"><img id="bc_veggie_burger" src="/assets/images/feather/menu.svg" alt="ナビゲーションメニュー"/></p>
+
+<!-- search bar -->
+<div id="nav-search-box" style="margin-top: 1rem;"></div>
+<!-- in-page navigation for narrow screens -->
+<details class="centered-inpage-nav" id="centered_inpage_nav">
+  <summary><h6 class="toc">ページコンテンツ</h6></summary>
+  <nav id="centered_toc"></nav>
+  <ul id="centered_in_page_toc" class="list-none"></ul>
+</details>
+<!-- open in new tab/window -->
+<a id="open_new_tab" href="#" target="_blank" style="display: none;"><img src="/assets/images/feather/external-link.svg" alt="新しいタブで開く" style="margin-top:4em;width: 1.5em;"/></a>
+
+
+<h1>Amazonアプリストアにアプリを送信する</h1>
+<article class="bcls-article">
+  <summary>このトピックでは、Fire TVアプリをAmazonアプリストアに送信する方法について説明します。</summary>
+  <section class="bcls-section">
+    <h2 id="overview">概要</h2>
+    <p>
+      このドキュメントは、Brightcove Beacon アプリを Amazon アプリストアに送信する際に役立ちます。
+    </p>
+    <p>プロセスの概要は次のとおりです。</p>
+    <ol>
+      <li>Amazonデベロッパーコンソールで新しいAndroidアプリを追加します。</li>
+      <li>新しいFire TVアプリの可用性と価格を設定します。</li>
+      <li>
+        Amazonアプリストアで、Fire TVアプリの説明文を追加します。
+      </li>
+      <li>Fire TVアプリのアイコンと画像を追加します。</li>
+      <li>Fire TVアプリのコンテンツレーティングを選択します。</li>
+      <li>Brightcove ブが提供する APK ファイルをアップロードします。</li>
+    </ol>
+    <p>
+      このドキュメントの残りの部分では、上記の各手順について詳しく説明します。
+    </p>
+  </section>
+
+  <section class="bcls-section">
+    <h2 id="Amazon">アマゾンのリソース</h2>
+    <ul>
+      <li>
+        アプリストアの詳細: <a href="https://developer.amazon.com/home.html"> https://developer.amazon.com/home.html </a> (Amazonデベロッパーアカウントが必要-手数料なし)
+      </li>
+      <li>
+        Fire TV アプリ提出ガイド: <a href="https://developer.amazon.com/docs/fire-tv/submitting-your-app-to-the-amazon-appstore.html"> https://developer.amazon.com/docs/fire-tv/submitting-your-app-to-the-amazon-appstore.html </a>そしてより一般的には: <a href="https://developer.amazon.com/apps-and-games/app-submission"> https://developer.amazon.com/apps-and-games/app-submission </a>
+      </li>
+      <li>承認のための推奨リードタイム:三週間</li>
+    </ul>
+  </section>
+  <section class="bcls-section">
+    <h2 id="information_amazon">Amazonに必要な情報</h2>
+    <ul>
+      <li>Fire TVアプリのアイコン (1280 x 720px PNG (透明度なし))。</li>
+      <li>
+        3枚から10枚のスクリーンショットの間（1920 x 1080ピクセルJPGまたはPNG（風景、透明度なし）。
+        <ul>
+          <li>
+            これらの画像は、UI で表示したときに、歪んだり、引き伸ばしたり、ピクセル化したりすることはできません。
+          </li>
+          <li>
+            アプリを送信するときにFire TVのスクリーンショットを提供するか、すべてのデバイスでアプリを表すスクリーンショットを使用してください。
+          </li>
+          <li>
+            申請プロセスでAmazon Fire TV固有のスクリーンショットを提供しない場合、指定したスマートフォンやタブレットのスクリーンショットは、Fire TV App Storeでアプリを表すために使用されます。
+          </li>
+        </ul>
+      </li>
+      <li>
+        背景画像 1920 x 1080ピクセル JPG または PNG (横、透明度なし)。
+      </li>
+      <li>Brightcove ブから提供された APK パッケージ。</li>
+      <li>表示タイトル。</li>
+      <li>短い説明。</li>
+      <li>長い説明。</li>
+      <li>
+        製品機能の箇条書き（Fire TVアプリの主要機能を10個まで）。
+      </li>
+      <li>
+        キーワード (アプリの発見性を高めるために使用される検索用語)。
+      </li>
+    </ul>
+  </section>
+  <section class="bcls-section">
+    <h2 id="Submitting_your_first_FireTV">
+      FireTV アプリをAmazonアプリストアに送信する
+    </h2>
+    <p>
+      以下の手順に従って、FireTVアプリをAmazonアプリストアに送信してください。
+    </p>
+
+    <ol class="bcls-tasklist-restart">
+      <li>
+        <a href="https://developer.amazon.com/settings/console/home" target="_blank">Amazonデベロッパーコンソールに入ります</a>。コンソールを使用するには<a href="https://www.amazon.com/ap/register?clientContext=134-1654773-5582608&amp;openid.identity=http%3A%2F%2Fspecs.openid.net%2Fauth%2F2.0%2Fidentifier_select&amp;siteState=clientContext%3D131-8250356-2896517%2CsourceUrl%3Dhttps%253A%252F%252Fdeveloper.amazon.com%252Fsettings%252Fconsole%252Fregistration%253Freturn_to%253D%252Fapps-and-games%2Csignature%3DcFhxbzDeo5JuzCUqkMHotnfOUw0j3D&amp;marketPlaceId=ATVPDKIKX0DER&amp;language=en_US&amp;pageId=amzn_developer_portal&amp;openid.return_to=https%3A%2F%2Fdeveloper.amazon.com%2Fsettings%2Fconsole%2Fregistration%3Freturn_to%3D%252Fapps-and-games&amp;prevRID=Y35GF8Q90QBTXRBDCQHV&amp;openid.assoc_handle=mas_dev_portal&amp;openid.mode=checkid_setup&amp;prepopulatedLoginId=&amp;failedSignInCount=0&amp;openid.claimed_id=http%3A%2F%2Fspecs.openid.net%2Fauth%2F2.0%2Fidentifier_select&amp;openid.ns=http%3A%2F%2Fspecs.openid.net%2Fauth%2F2.0" target="_blank">、Amazonデベロッパーアカウントを作成する必要があります</a>。
+        <figure class="bcls-figure">
+          <img class="bcls-image--no-border" alt="" src="/assets/images/creating-your-apps/amazon/1-dev-console.png"/>
+        </figure>
+      </li>
+      <li>
+        <strong>Amazonアプリストアのセクションで</strong>、<strong>新しいアプリを追加ボタンをクリックします</strong>。
+      </li>
+      <li>
+        ドロップダウンメニューから、[ <strong> Android </strong> ] を選択します。（現時点では、Brightcove ブは、Fire TV アプリの提出用の Android バージョンのみをサポートしています）。
+        <figure class="bcls-figure">
+          <img class="bcls-image--no-border" alt="" width="400" height="700" src="/assets/images/creating-your-apps/amazon/2-add-new-app.png"/>
+        </figure>
+      </li>
+      <li>
+        「<strong>新規アプリの提出</strong>」フォームが表示されます。
+        <figure class="bcls-figure">
+          <img class="bcls-image--no-border" alt="" width="700" height="700" src="/assets/images/creating-your-apps/amazon/3-app-sub-form.png"/>
+        </figure>
+      </li>
+      <li><strong>アプリのタイトルを入力します。</strong></li>
+      <li>
+        <strong>アプリ SKU </strong>を選択します。これは、自分で定義するアプリに一意の文字列です。SKU (在庫管理単位) は、トラッキング目的でのアプリのIDになります (例: <em> com.amazon.example.myapp.v1 </em> )。
+      </li>
+      <li>
+        <strong>アプリのカテゴリを選択します</strong>。アプリを適切に分類することで、ユーザーはアプリをより簡単に検索できるようになり、アプリのダウンロード数が増加します。詳細については、<a href="https://developer.amazon.com/docs/app-submission/categories.html" target="_blank"> Amazonカテゴリーのドキュメントをご覧ください</a>。
+      </li>
+      <li>
+        [ <strong>既定のサポート情報を使用する</strong> ] チェックボックスをオンにするか、Fire TVアプリのカスタマーサポート連絡先に関するさまざまな情報 (電子メール、電話、Webサイト) を紹介することができます。
+      </li>
+      <li>[ <strong>保存</strong> ] ボタンをクリックします。</li>
+      <li>
+        保存すると、Fire TVアプリの設定と [ <strong>一般情報</strong> ] タブが表示されます。
+        <figure class="bcls-figure">
+          <img class="bcls-image--no-border" alt="" width="900" height="700" src="/assets/images/creating-your-apps/amazon/4-dashboard.png"/>
+        </figure>
+      </li>
+      <li>
+        このタブでは、<strong> Amazonによって自動的に生成されたアプリ提出APIキーと</strong>、Fire TVアプリの作成時に提供されるすべての情報を見ることができます。
+      </li>
+    </ol>
+  </section>
+  <section class="bcls-section">
+    <h2 id="Availability_&_Pricing">
+      在庫状況と価格情報を記入する
+    </h2>
+    <p>
+      このセクションでは、Fire TVアプリの価格と利用可能性を設定できます。選択する価格は、Brightcove Beacon プラットフォームで設定された価格と一致する必要があります。
+    </p>
+    <ol class="bcls-tasklist-restart">
+      <li>
+        [ <strong>在庫状況と価格</strong> ] タブをクリックします。
+        <figure class="bcls-figure">
+          <img class="bcls-image--no-border" alt="" src="/assets/images/creating-your-apps/amazon/5-availability-pricing.png"/>
+        </figure>
+      </li>
+      <li>
+        最初のセクションでは、Fire TVアプリを利用できる場所を選択できます。
+        <ul>
+          <li>
+            <strong>Amazonがアプリを販売しているすべての国と地域。</strong>
+          </li>
+          <li><strong>選択した国と地域でのみ使用できます。</strong></li>
+        </ul>
+      </li>
+      <li>
+        [ <strong>選択した国と地域のみ</strong> ] を選択した場合、このオプションでは、Amazon ストアでFire TVアプリを検索できる国または特定の地域を選択できます。以下に示す例では、<strong>「北米」</strong>のすべてと<strong>「ヨーロッパ」</strong>の3か国がFireTVアプリに選択されています。
+        <figure class="bcls-figure">
+          <img class="bcls-image--no-border" alt="" width="700" height="700" src="/assets/images/creating-your-apps/amazon/6-select-regions.png"/>
+        </figure>
+      </li>
+      <li>
+        地域から特定の国を選択するには、<strong> + 国/地域を選択ボタンをクリックします</strong>。
+      </li>
+      <li>
+        選択した地域から、Fire TVアプリを公開する国を選択します。
+        <figure class="bcls-figure">
+          <img class="bcls-image--no-border" alt="" width="500" height="600" src="/assets/images/creating-your-apps/amazon/7-select-countries.png"/>
+        </figure>
+      </li>
+      <li>[<strong>追加</strong>]ボタンをクリックします。</li>
+      <li>
+        次のオプションでは、FireTVアプリが<strong>無料</strong>か<strong>有料</strong>かを選択できます。通常、デフォルトの Brightcove ビーコンアプリは [ <strong>無料</strong> ] に設定されています。
+      </li>
+      <li>
+        [ <strong>支払済</strong> ] を選択した場合は<strong>、基準価格と通貨の種類を設定する必要があります</strong>。（Fire TV アプリに価格を割り当てる場合は、Brightcove ブビーコンのアカウント担当者にお問い合わせください）。
+        <figure class="bcls-figure">
+          <img class="bcls-image--no-border" alt="" width="700" height="400" src="/assets/images/creating-your-apps/amazon/8-price-app.png"/>
+        </figure>
+      </li>
+      <li>
+        （オプション）Fire TVアプリが承認されるとすぐに公開プロセスを開始するには、このフィールドを空白のままにします。公開プロセスの開始を将来の日時に延期するには、Fire TVアプリの公開日を割り当てます。
+        <figure class="bcls-figure">
+          <img class="bcls-image--no-border" alt="" width="700" height="400" src="/assets/images/creating-your-apps/amazon/9-publishing-time.png"/>
+        </figure>
+      </li>
+      <li>[ <strong>保存</strong> ] ボタンをクリックします。</li>
+    </ol>
+  </section>
+  <section class="bcls-section">
+    <h2 id="IAP_Subscription">
+      アプリ内購入 (IAP) サブスクリプションの作成
+    </h2>
+    <p>
+      このセクションでは、Fire TVアプリのアプリ内購入サブスクリプションを作成する方法について説明します。
+    </p>
+    <ol class="bcls-tasklist-restart">
+      <li>
+        <strong>在庫状況と価格設定を保存すると</strong>、[ <strong> IAPを追加</strong> ] (アプリ内課金) の追加フィールドが表示されます。
+      </li>
+      <li>
+        [ <strong> IAPを追加</strong> ] ボタンをクリックして、アプリ内購入をサブスクリプションとして追加します。
+        <figure class="bcls-figure">
+          <img class="bcls-image--no-border" alt="" width="700" height="400" src="/assets/images/creating-your-apps/amazon/10-in-app-purchase.png"/>
+        </figure>
+      </li>
+      <li>
+        [ <strong>アプリ内アイテム</strong> ] タブが表示されます。
+        <figure class="bcls-figure">
+          <img class="bcls-image--no-border" alt="" width="700" height="300" src="/assets/images/creating-your-apps/amazon/11-in-app-items.png"/>
+        </figure>
+      </li>
+      <li>
+        現時点では、そこにアプリ内アイテムはありません。1 つ作成するには、[ <strong>単一 IAP を追加</strong> ] ボタンをクリックします。
+      </li>
+      <li>
+        アプリ内購入には 3 種類あります。
+        <figure class="bcls-figure">
+          <img class="bcls-image--no-border" alt="" width="200" height="200" src="/assets/images/creating-your-apps/amazon/12-add-iap.png"/>
+        </figure>
+        <ul>
+          <li>
+            <strong>消耗品の追加:</strong>コンシューマブルには、アプリ内で販売するコンテンツのうち、アプリ内で消費されるあらゆる種類のコンテンツが含まれます。このタイプのコンテンツは、購入したデバイスでのみ使用できます。
+          </li>
+          <li>
+            <strong>エンタイトルメントを追加する:</strong>エンタイトルメントには、アクセス権を必要とするアプリ内で販売するあらゆる種類のコンテンツが含まれます。この種類のコンテンツは、お客様がAmazon Appsクライアントにログインしている場所であればどこでも利用できます。コンテンツに対するエンタイトルメントは期限切れになりません。
+          </li>
+          <li>
+            <strong>サブスクリプションの追加:</strong>サブスクリプションには、次のようなコンテンツの種類が含まれます。
+            <ul>
+              <li>エンタイトルメントを運ぶ</li>
+              <li>一定期間にバインドされているか</li>
+              <li>期間終了時に自動更新</li>
+              <li>
+                カスタマーの Amazon アカウントに登録されているすべての対象端末で利用可能
+              </li>
+            </ul>
+          </li>
+          アプリには複数のサブスクリプションを定義でき、各サブスクリプションには複数の期間を設定できます。
+        </ul>
+      </li>
+      <li>
+        ご希望の IAP を選択するか、Brightcove Beacon のアカウント担当者にお問い合わせいただき、お客様のコンテンツに最適なオプションについてご確認ください。
+      </li>
+      <li>
+        この例では、[ <strong>サブスクリプション</strong> ] が選択されています。
+        <figure class="bcls-figure">
+          <img class="bcls-image--no-border" alt="" width="700" height="400" src="/assets/images/creating-your-apps/amazon/13-subscription.png"/>
+        </figure>
+      </li>
+      <li><strong>新しいサブスクリプションにタイトルを付けます</strong>。</li>
+      <li>
+        <strong>SKUを選択します</strong>。SKU (在庫管理単位) は、<em>サブスクリプション.gold など、独自のトラッキング目的でサブスクリプションの</em> ID になります。
+      </li>
+      <li>[ <strong>保存</strong> ] ボタンをクリックします。</li>
+      <li>
+        IAPを保存すると、[ <strong>サブスクリプション期間</strong> ] タブが表示されます。
+        <figure class="bcls-figure">
+          <img class="bcls-image--no-border" alt="" width="700" height="300" src="/assets/images/creating-your-apps/amazon/14-subscription-details.png"/>
+        </figure>
+      </li>
+      <li>
+        <strong>サブスクリプション期間を選択します</strong>。サブスクリプションがユーザーに請求される時間を選択できます。たとえば<strong>、毎月、毎週、毎年など</strong>
+      </li>
+      <li>
+        <strong>SKUを選択します</strong>。SKU (在庫管理ユニット) は、独自のトラッキング目的での定期購読期間のIDになります。たとえば、<em>月間サブスクリプションなどです</em>。
+      </li>
+      <li>
+        （オプション）<strong>サブスクリプションの無料トライアルを行う場合に選択します</strong>。例は次のとおりです。<strong>7日、1ヶ月など</strong>
+        <figure class="bcls-figure">
+          <img class="bcls-image--no-border" alt="" width="500" height="300" src="/assets/images/creating-your-apps/amazon/14.5-free-trial.png"/>
+        </figure>
+      </li>
+      <li>
+        このサブスクリプションの課金を行うかどうかを選択します。充電の場合は、[ <strong>はい、私の基本希望小売価格...] を選択します。</strong>オプションを使用します。
+        <figure class="bcls-figure">
+          <img class="bcls-image--no-border" alt="" width="700" height="300" src="/assets/images/creating-your-apps/amazon/15-subscription-price.png"/>
+        </figure>
+      </li>
+      <li>サブスクリプションの価格と通貨の種類を入力します。</li>
+      <li>
+        [ <strong>計算価格</strong> ] 設定が表示され、出品者が希望小売価格を計算するか、手動で価格を設定するかを選択できます。
+        <figure class="bcls-figure">
+          <img class="bcls-image--no-border" alt="" width="700" height="300" src="/assets/images/creating-your-apps/amazon/16-currency-prices.png"/>
+        </figure>
+      </li>
+      <li>[ <strong>保存</strong> ] ボタンをクリックします。</li>
+      <li>
+        [ <strong>説明</strong> ] タブに移動し、新しいサブスクリプションに説明を追加します。
+        <figure class="bcls-figure">
+          <img class="bcls-image--no-border" alt="" width="700" height="300" src="/assets/images/creating-your-apps/amazon/18-subscription.png"/>
+        </figure>
+      </li>
+      <li>[ <strong>保存</strong> ] ボタンをクリックします。</li>
+      <li>
+        すべてのIAP設定が完了すると、[ <strong>アプリ内アイテムを提出</strong> ] ボタンが有効になります。ボタンをクリックして、承認のためにIAPをAmazonに送信します。
+        <figure class="bcls-figure">
+          <img class="bcls-image--no-border" alt="" width="700" height="400" src="/assets/images/creating-your-apps/amazon/19-submit-item.png"/>
+        </figure>
+      </li>
+      <li>
+        <strong>アプリ内アイテムを送信ボタンをクリックすると</strong>、<strong> IAPアイテムがアプリ内アイテムタブのリストに表示されます</strong>。
+        <figure class="bcls-figure">
+          <img class="bcls-image--no-border" alt="" width="700" height="300" src="/assets/images/creating-your-apps/amazon/20-subscription-approved.png"/>
+        </figure>
+      </li>
+    </ol>
+  </section>
+  <section class="bcls-section">
+    <h2 id="description_information">説明情報を入力します。</h2>
+    <p>
+      このセクションでは、Amazonストアのユーザーに表示されるすべてのFire TVアプリのテキスト説明を追加できます。
+    </p>
+    <ol class="bcls-tasklist-restart">
+      <li>
+        [ <strong>現在のバージョン</strong> ] タブをクリックし、Fire TVアプリのメニューから [ <strong>説明</strong> ] タブを選択します。
+        <figure class="bcls-figure">
+          <img class="bcls-image--no-border" alt="" width="700" height="300" src="/assets/images/creating-your-apps/amazon/21-subscription-menu.png"/>
+        </figure>
+        <figure class="bcls-figure">
+          <img class="bcls-image--no-border" alt="" width="700" height="300" src="/assets/images/creating-your-apps/amazon/21.5-text-descriptions.png"/>
+        </figure>
+      </li>
+      <li>
+        フォームで以下を入力します。
+        <ul>
+          <li>
+            <strong>短い説明</strong> :モバイルデバイスに表示されるアプリの簡単な説明。
+          </li>
+          <li>
+            <strong>長い説明</strong> :App Store ウェブサイトの、アプリのより長い説明。
+          </li>
+          <li>
+            <strong>製品機能の箇条書き</strong> :アプリには最大 10 個の主要機能、1 行に 1 つのフィーチャがあります。これらの機能は App Store の Web サイトに表示され、箇条書きリストとして書式設定されます。
+          </li>
+          <li>
+            （任意）<strong>キーワード</strong> :アプリの発見性を高めるために使用される検索語句、コンマまたは空白を使用して用語を区切ります。
+          </li>
+        </ul>
+      </li>
+      <li>
+        デフォルトでは、説明は英語で表示されますが、[ <strong>ローカライズされた説明を追加] ボタンをクリックすると翻訳を追加できます</strong>。
+        <figure class="bcls-figure">
+          <img class="bcls-image--no-border" alt="" width="700" height="300" src="/assets/images/creating-your-apps/amazon/22-translations.png"/>
+        </figure>
+      </li>
+      <li>
+        フォームが表示され、追加したい翻訳言語を選択できます。
+        <figure class="bcls-figure">
+          <img class="bcls-image--no-border" alt="" width="400" height="400" src="/assets/images/creating-your-apps/amazon/23-languages.png"/>
+        </figure>
+      </li>
+      <li>[<strong>追加</strong>]ボタンをクリックします。</li>
+      <li>
+        フォームの上部で、言語フォームから選択して、各言語の説明を追加することができます。
+        <figure class="bcls-figure">
+          <img class="bcls-image--no-border" alt="" width="700" height="400" src="/assets/images/creating-your-apps/amazon/24-spanish-description.png"/>
+        </figure>
+      </li>
+      <li>[ <strong>保存</strong> ] ボタンをクリックします。</li>
+    </ol>
+  </section>
+  <section class="bcls-section">
+    <h2 id="images_information">完全な画像とマルチメディア情報</h2>
+    <p>
+      このセクションでは、Fire TVアプリの画像をアップロードする方法について説明します。
+    </p>
+
+    <ol class="bcls-tasklist-restart">
+      <li>
+        [ <strong>イメージとマルチメディア</strong> ] タブをクリックします。
+        <figure class="bcls-figure">
+          <img class="bcls-image--no-border" alt="" width="700" height="400" src="/assets/images/creating-your-apps/amazon/25-images-media.png"/>
+        </figure>
+      </li>
+      <li>
+        [ <strong>テーブルと電話のアセット</strong> ] セクションをクリックします。アプリはタブレットやスマートフォンではなく、Fire TV向けですが、Amazonではこれらの画像を提供する必要があります。Fire TVアプリで使用するのと同じ画像サイズを使用できます。
+        <table class="bcls-table">
+          <thead class="bcls-table__head">
+            <tr>
+              <th>画像</th>
+              <th>要件</th>
+              <th>必須/オプション</th>
+            </tr>
+          </thead>
+          <tbody class="bcls-table__body">
+            <tr>
+              <td>アイコン</td>
+              <td>
+                PNG (透明度なし)
+                <table>
+                  <tr>
+                    <td>幅:1280PX</td>
+                    <td>高さ:720ピクセル。</td>
+                  </tr>
+                </table>
+              </td>
+              <td>
+                必須
+              </td>
+            </tr>
+            <tr>
+              <td>スクリーンショット</td>
+              <td>
+                3 から 10 JPG または PNG (透明度、横長なし)
+                <table>
+                  <tr>
+                    <td>幅:1920PX</td>
+                    <td>高さ:1080ピクセル</td>
+                  </tr>
+                </table>
+              </td>
+              <td>
+                必須
+              </td>
+            </tr>
+            <tr>
+              <td>背景画像</td>
+              <td>
+                JPG または PNG (透明度なし、横長)
+
+                <table>
+                  <tr>
+                    <td>幅:1920PX</td>
+                    <td>高さ:1080ピクセル</td>
+                  </tr>
+                </table>
+              </td>
+              <td>
+                必須
+              </td>
+            </tr>
+            <tr>
+              <td>注目のコンテンツロゴ</td>
+              <td>
+                PNG (透過表示オプション)
+                <table>
+                  <tr>
+                    <td>幅:640PX</td>
+                    <td>高さ:260ピクセル。</td>
+                  </tr>
+                </table>
+              </td>
+              <td>
+                オプション
+              </td>
+            </tr>
+            <tr>
+              <td>注目のコンテンツの背景</td>
+              <td>
+                JPG または PNG (透明度なし)
+                <table>
+                  <tr>
+                    <td>幅:1920PX</td>
+                    <td>高さ:720ピクセル。</td>
+                  </tr>
+                </table>
+              </td>
+              <td>
+                オプション
+              </td>
+            </tr>
+          </tbody>
+        </table>
+      </li>
+      <li>
+        右側のボックスをクリックして、<strong>アイコンの画像をアップロードします</strong>。
+        <figure class="bcls-figure">
+          <img class="bcls-image--no-border" alt="" width="700" height="300" src="/assets/images/creating-your-apps/amazon/26-upload-images.png"/>
+        </figure>
+      </li>
+      <li>
+        右側のボックスをクリックして、<strong>スクリーンショットの画像をアップロードします</strong>。
+      </li>
+      <li>
+        <strong>Fire TVのアセットセクションをクリックします</strong>。
+        <figure class="bcls-figure">
+          <img class="bcls-image--no-border" alt="" width="700" height="300" src="/assets/images/creating-your-apps/amazon/26.5-firetv-images.png"/>
+        </figure>
+      </li>
+      <li>
+        右側のボックスをクリックして、<strong>アプリアイコンの画像をアップロードします</strong>。
+      </li>
+      <li>
+        右側のボックスをクリックして、<strong>スクリーンショットの画像をアップロードします</strong>。
+      </li>
+      <li>
+        右側のボックスをクリックして、<strong>背景画像の画像をアップロードします</strong>。
+      </li>
+      <li>
+        （オプション）右側のボックスをクリックして、<strong>注目のコンテンツロゴの画像をアップロードします</strong>。
+      </li>
+      <li>
+        （オプション）右側のボックスをクリックして、<strong>おすすめコンテンツの背景の画像をアップロードします</strong>。
+      </li>
+      <li>
+        すべての画像がアップロードされたら、[ <strong>テレビで画像をプレビュー] ボタンをクリックして、Fire TVアプリがアプリストアでどのように見えるかを視覚化することができます</strong>。
+        <figure class="bcls-figure">
+          <img class="bcls-image--no-border" alt="" width="700" height="300" src="/assets/images/creating-your-apps/amazon/27-preview-image-button.png"/>
+        </figure>
+      </li>
+      <li>[ <strong>保存</strong> ] ボタンをクリックします。</li>
+    </ol>
+  </section>
+  <section class="bcls-section">
+    <h2 id="content_rating">完全なコンテンツレーティング情報</h2>
+    <p>
+      コンテンツレーティングセクションでは、Fire TVアプリで提示するコンテンツの種類を分類するように要求されます。Amazon の分類では、コンテンツを次の 3 つのタイプに分類します。
+    </p>
+    <ul>
+      <li>
+        <strong>中程度:</strong>一度またはまれに発生し、アプリの全体的な目的および/または意図の基本ではありません。
+      </li>
+      <li>
+        <strong>強い:</strong>定期的に発生し、アプリの全体的な目的および/または意図の基本です。
+      </li>
+      <li><strong>なし:</strong>アプリでは発生しません。</li>
+    </ul>
+
+    <p>
+      被験者の種類は<strong>、暴力、学術、漫画の暴力です</strong>。
+    </p>
+    <ol class="bcls-tasklist-restart">
+      <li>
+        [ <strong>コンテンツ評価</strong> ] タブをクリックします。
+        <figure class="bcls-figure">
+          <img class="bcls-image--no-border" alt="" width="700" height="300" src="/assets/images/creating-your-apps/amazon/28.5-content-rating-tab.png"/>
+        </figure>
+      </li>
+      <li>
+        各サブジェクトのカテゴリタイプを選択します。この情報はすべて、Fire TVアプリのコンテンツタイプに対応しています。答えがわからない場合は、Brightcove ブビーコンのアカウント担当者にお問い合わせください。
+        <figure class="bcls-figure">
+          <img class="bcls-image--no-border" alt="" width="700" height="300" src="/assets/images/creating-your-apps/amazon/29-category-subjects.png"/>
+        </figure>
+      </li>
+      <li>
+        [ <strong>追加情報</strong> ] セクションで、Fire TVアプリに含まれる機能に応じて<strong> [はい] または [</strong><strong>いいえ</strong> ] を選択します。この情報はすべて、Fire TVアプリが保持する可能性のある追加情報と機能に対応しています。答えがわからない場合は、Brightcove ブビーコンのアカウント担当者にお問い合わせください。
+        <figure class="bcls-figure">
+          <img class="bcls-image--no-border" alt="" width="700" height="300" src="/assets/images/creating-your-apps/amazon/30-additional-info.png"/>
+        </figure>
+      </li>
+      <li>
+        Fire TVアプリが個人情報を収集する場合は、<strong>プライバシーポリシーURLを追加して</strong>、ユーザーのプライバシーポリシーを確認する必要があります。
+        <figure class="bcls-figure">
+          <img class="bcls-image--no-border" alt="" width="700" height="300" src="/assets/images/creating-your-apps/amazon/31-policy-url.png"/>
+        </figure>
+      </li>
+      <li>[ <strong>保存</strong> ] ボタンをクリックします。</li>
+    </ol>
+  </section>
+  <section class="bcls-section">
+    <h2 id="apk_information">
+      完全なAndroidパッケージキット（APK）ファイル情報
+    </h2>
+    <p>
+      <strong>APKファイルセクションは</strong>、Androidアプリファイルをアップロードする場所です。APK はBrightcove ブから提供されます。
+    </p>
+    <ol class="bcls-tasklist-restart">
+      <li>
+        [ <strong> APK ファイル</strong> ] タブをクリックします。
+        <figure class="bcls-figure">
+          <img class="bcls-image--no-border" alt="" width="700" height="300" src="/assets/images/creating-your-apps/amazon/31.4-apk-tab.png"/>
+        </figure>
+      </li>
+      <li>
+        <strong>Amazon DRMを適用しますか？</strong>オプションで、[ <strong>いいえ</strong> ] を選択します。
+        <figure class="bcls-figure">
+          <img class="bcls-image--no-border" alt="" width="700" height="400" src="/assets/images/creating-your-apps/amazon/31.5-upload-apk.png"/>
+        </figure>
+      </li>
+      <li>
+        [ <strong> APK ファイル</strong> ] セクションで、右側のボックスをクリックし、Brightcove ブから提供された APK ファイルをアップロードします。
+      </li>
+      <li>
+        ファイルがアップロードされると、画面上でファイルを見ることができます。[ <strong>表示</strong> ] ボタンをクリックします。
+        <figure class="bcls-figure">
+          <img class="bcls-image--no-border" alt="" width="700" height="400" src="/assets/images/creating-your-apps/amazon/31.6-apk-file.png"/>
+        </figure>
+      </li>
+      <li>
+        <strong>デバイスサポートウィンドウが開き</strong>、Fire TVアプリがサポートされるデバイスを選択できます。
+        <figure class="bcls-figure">
+          <img class="bcls-image--no-border" alt="" width="400" height="300" src="/assets/images/creating-your-apps/amazon/31.7-unabled-devices.png"/>
+        </figure>
+      </li>
+      <li>
+        <strong>Amazon Fire TVタブをクリックし</strong>、すべてのデバイスを選択します。BrightcoveBeaconはAmazonFire TVでのみ使用できるため、<strong>[AmazonFireタブレットと電話]</strong>タブと<strong>[非Amazonデバイス]</strong>タブは選択しないでください。
+        <figure class="bcls-figure">
+          <img class="bcls-image--no-border" alt="" width="400" height="300" src="/assets/images/creating-your-apps/amazon/31.8-enabled-devices.png"/>
+        </figure>
+      </li>
+      <li>[ <strong>デバイスサポート</strong> ] ウィンドウを閉じます。</li>
+      <li>
+        [ <strong>その他の詳細の追加</strong> ] セクションで、リストから言語サポートを少なくとも 1 つ選択します。これは、ユーザーがサポートのために通信する言語です。
+        <figure class="bcls-figure">
+          <img class="bcls-image--no-border" alt="" width="700" height="500" src="/assets/images/creating-your-apps/amazon/32-language-support.png"/>
+        </figure>
+      </li>
+      <li>
+        [ <strong> Testing Restructions </strong> ] フィールドで、ビデオストリームをテストするために必要なログイン認証情報や、異なるサブスクリプションレベルの使用方法を説明するメモなど、Amazon のテストチームに特別な指示を提供します。
+        <figure class="bcls-figure">
+          <img class="bcls-image--no-border" alt="" width="700" height="400" src="/assets/images/creating-your-apps/amazon/33-testing-instructions.png"/>
+        </figure>
+      </li>
+      <li>
+        <strong>「ExportCompliance」</strong>および<strong>「UseAmazonMapsRedirection」</strong>チェックボックスをオンにします。
+        <figure class="bcls-figure">
+          <img class="bcls-image--no-border" alt="" width="700" height="400" src="/assets/images/creating-your-apps/amazon/34-checkbox.png"/>
+        </figure>
+      </li>
+      <li>[ <strong>保存</strong> ] ボタンをクリックします。</li>
+      <li>
+        保存すると、[ <strong>レビューステータス</strong> ] タブがメニューに表示されます。
+        <figure class="bcls-figure">
+          <img class="bcls-image--no-border" alt="" width="700" height="300" src="/assets/images/creating-your-apps/amazon/39-review-status.png"/>
+        </figure>
+      </li>
+      <li>
+        最後のアクティビティや送信履歴として、Fire TVアプリに関する情報を確認できます。エラーがない場合は、画面の左上隅にある [ <strong>アプリを送信</strong> ] ボタンをクリックして、Fire TVアプリを送信します。
+      </li>
+    </ol>
+
+    <p>
+      これで、AmazonがFire TVアプリを承認し、Amazonアプリストアで公開するまで待つだけです。
+    </p>
+  </section>
+</article>
+
+<!-- complete bootstrap layout -->
+    </div>
+    <div class="col-sm-2 right-side-bar">
+      
+      <nav class="right-side-nav" id="right_side_nav">
+        <h6 class="toc">ページコンテンツ</h6>
+        <ul id="in_page_nav" class="list-none"></ul>
+      </nav>
+      
+    </div>
+  </div>
+</div>
+
+<hr>
+<footer class="bcls-footer" role="contentinfo">  <div class="row">
+    <div class="region region-footer-top-center col-md-12">
+      <nav role="navigation" aria-labelledby="block-brightcovesupport-menu" id="block-brightcovesupport" class="footer-menu">
+
+        <h2>Brightcove ブサポート</h2>
+
+        <ul class="menu">
+          <li>
+            <a href="https://status.brightcove.com">システムステータス</a>
+          </li>
+          <li>
+            <a href="https://supportportal.brightcove.com/s/login/?">サポートへのお問い合わせ</a>
+          </li>
+          <li>
+            <a href="https://support.brightcove.com/">ドキュメンテーション</a>
+          </li>
+        </ul>
+
+      </nav>
+      <nav role="navigation" aria-labelledby="block-training-menu" id="block-training" class="footer-menu">
+
+        <h2>トレーニング</h2>
+
+        <ul class="menu">
+          <li>
+            <a href="https://studio.support.brightcove.com/training/online-training-courses.html">オンラインコース</a>
+          </li>
+          <li>
+            <a href="https://studio.support.brightcove.com/training/register-training.html">コースに登録する</a>
+          </li>
+          <li>
+            <a href="https://university.brightcove.com/">Brightcove University</a>
+          </li>
+        </ul>
+
+      </nav>
+      <nav role="navigation" aria-labelledby="block-brightcove-menu" class="footer-menu">
+
+        <h2>Brightcove</h2>
+
+        <ul class="menu">
+          <li>
+            <a href="https://www.brightcove.com">Brightcove.com</a>
+          </li>
+          <li>
+            <a href="https://supportportal.brightcove.com/s/login/?">お問合せ</a>
+          </li>
+        </ul>
+      </nav>
+    </div>
+  </div>
+  <div class="row">
+    <div class="region region-footer-bottom-center col-md-12">
+      <div class="bcls-copyright footer-menu">
+        <table>
+          <tr>
+            <td>
+              <div id="bc_copyright" class="field field--name-field-copyright-year field--type-string field--label-hidden field--item" style="float: left;"> Brightcove Inc. All rights reserved.</div>
+            </td>
+            <td><a href="https://www.brightcove.com/en/legal/privacy">プライバシー</a> | <a href="https://www.brightcove.com/en/terms-and-conditions">利用規約</a></td>
+            <td>
+              <div class="gf-links-cols footer-menu">
+                <div class="gf-social"><a href="https://www.linkedin.com/company/16439" title="LinkedIn" newtab="newtab" class="gf-social-linkedin"><i class="fab fa-linkedin-in" style="font-size: 1.5rem;"></i></a><a href="https://twitter.com/brightcove" title="Twitter" newtab="newtab" class="gf-social-twitter"><i class="fab fa-twitter" style="font-size: 1.5rem;"></i></a><a href="https://www.facebook.com/Brightcove" title="Facebook" newtab="newtab" class="gf-social-facebook"><i class="fab fa-facebook-f" style="font-size: 1.5rem;"></i></a>
+                </div>
+              </div>
+            </td>
+          </tr>
+        </table>
+      </div>
+    </div>
+  </div>
+</footer>
+
+<script>
+      
+  var searchBox = sajari.init({
+    mode: "search-box",
+    project: "1588255093746585379", // Set this to your project.
+    collection: "brightcove-documenation", // Set this to your collection.
+    instantPipeline: "autocomplete", // Pipeline used as you type
+    inputPlaceholder: "Search", // Input element placeholder
+    maxSuggestions: 5, // Maximum number of suggestions to show
+    attachSearchBox: document.getElementById("nav-search-box") // DOM element to attach to
+  });
+  
+    searchBox("sub", "pipeline.search-sent", function (_, query) {
+      window.location = "/search.html?q=" + encodeURIComponent(query.q);
+    });
+  
+
+</script>
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.0/jquery.min.js" crossorigin="anonymous"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js" integrity="sha384-UO2eT0CpHqdSJQ6hJty5KVphtPhzWj9WO1clHTMGa3JDZwrnQq4sF86dIHNDz0W1" crossorigin="anonymous"></script>
+  <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js" integrity="sha384-JjSmVgyd0p3pXB1rRibZUAYoIIy6OrQ6VrjIEaFf/nJGzIxFDsf4x0xIM+B07jRM" crossorigin="anonymous"></script>
+  <script src="https://support.brightcove.com/site-assets/js/site/https-fix.js"></script>
+  <script src="https://support.brightcove.com/site-assets/js/site/setDate.js"></script>
+  
+  <script src="https://support.brightcove.com/site-assets/js/site/prism.js"></script>
+  
+  <script src="https://support.brightcove.com/site-assets/js/site/site.js"></script>
+  <script src="https://support.brightcove.com/site-assets/js/site/tabs.js"></script>
+  <script src="https://support.brightcove.com/site-assets/js/site/toc.js"></script>
+  <script src="/assets/js/sites_nav.js"></script>
+  <script src="https://support.brightcove.com/site-assets/js/site/bcls-utils.js"></script>
+  <script src="https://support.brightcove.com/site-assets/js/site/local-link-fix.js"></script>
+  <script src="/assets/js/feedback.js"></script>
+  
+  <script src="/assets/js/sajari-search-foot.js"></script>
+  
+  <!-- <script src="/assets/js/sajari-index.js"></script> -->
+  <style>
+    a.sj-paginator__page-number.sj-paginator__page-number--current.css-so0ov7 {
+      background-color: lightblue;
+    }
+    div.sj-tabs__tab {
+      margin-top: 3rem;
+      margin-left: .3rem;
+      border-top-left-radius: .4rem;
+      border-top-right-radius: .4rem;
+      background-color:#e8e8e8;
+    }
+
+    div.sj-tabs__tab.sj-tabs__tab--selected {
+      border-bottom-color: crimson;
+      background-color: #f8f8f8;
+    }
+
+    p.sj-results__result__description.css-p9jvyt {
+      font-size: 1rem;
+    }
+
+    .sj-result__text.css-31l7gp h3 {
+      color: navy;
+      font-size: 1.4rem;
+    }
+    </style>
+
+</body>
+
+</html>
