@@ -1,0 +1,129 @@
+[submodule "_includes/s-jekyll-page-includes-ja"]
+	path = _includes/s-jekyll-page-includes-ja
+	url = https://github.com/BrightcoveLearning/s-jekyll-page-includes-ja
+[submodule "_includes/s-ott-plugins-ja"]
+	path = _includes/s-ott-plugins-ja
+	url = https://github.com/BrightcoveLearning/s-ott-plugins-ja
+[submodule "_includes/s-cloudplayout-ja"]
+	path = _includes/s-cloudplayout-ja
+	url = https://github.com/BrightcoveLearning/s-cloudplayout-ja
+[submodule "_includes/s-social-ja"]
+	path = _includes/s-social-ja
+	url = https://github.com/BrightcoveLearning/s-social-ja
+[submodule "_includes/s-admin-ja"]
+	path = _includes/s-admin-ja
+	url = https://github.com/BrightcoveLearning/s-admin-ja
+[submodule "_includes/s-players-ja"]
+	path = _includes/s-players-ja
+	url = https://github.com/BrightcoveLearning/s-players-ja
+[submodule "_includes/s-layout-ja"]
+	path = _includes/s-layout-ja
+	url = https://github.com/BrightcoveLearning/s-layout-ja
+[submodule "_includes/s-publish-ja"]
+	path = _includes/s-publish-ja
+	url = https://github.com/BrightcoveLearning/s-publish-ja
+[submodule "_includes/s-publishing-apps-ja"]
+	path = _includes/s-publishing-apps-ja
+	url = https://github.com/BrightcoveLearning/s-publishing-apps-ja
+[submodule "_includes/s-media-ja"]
+	path = _includes/s-media-ja
+	url = https://github.com/BrightcoveLearning/s-media-ja
+[submodule "_includes/s-analytics-ja"]
+	path = _includes/s-analytics-ja
+	url = https://github.com/BrightcoveLearning/s-analytics-ja
+[submodule "_includes/s-general-ja"]
+	path = _includes/s-general-ja
+	url = https://github.com/BrightcoveLearning/s-general-ja
+[submodule "_includes/s-support-ja"]
+	path = _includes/s-support-ja
+	url = https://github.com/BrightcoveLearning/s-support-ja
+[submodule "_includes/s-campaign-ja"]
+	path = _includes/s-campaign-ja
+	url = https://github.com/BrightcoveLearning/s-campaign-ja
+[submodule "_includes/s-monetization-ja"]
+	path = _includes/s-monetization-ja
+	url = https://github.com/BrightcoveLearning/s-monetization-ja
+[submodule "_includes/s-training-ja"]
+	path = _includes/s-training-ja
+	url = https://github.com/BrightcoveLearning/s-training-ja
+[submodule "_includes/s-audience-insights-ja"]
+	path = _includes/s-audience-insights-ja
+	url = https://github.com/BrightcoveLearning/s-audience-insights-ja
+[submodule "_includes/s-live-ja"]
+	path = _includes/s-live-ja
+	url = https://github.com/BrightcoveLearning/s-live-ja
+[submodule "_includes/s-web-conferencing-ja"]
+	path = _includes/s-web-conferencing-ja
+	url = https://github.com/BrightcoveLearning/s-web-conferencing-ja
+[submodule "s-scripts"]
+	path = s-scripts
+	url = https://github.com/BrightcoveLearning/s-scripts
+[submodule "assets/images/s-ott-plugins-img"]
+	path = assets/images/s-ott-plugins-img
+	url = https://github.com/BrightcoveLearning/s-ott-plugins-img
+[submodule "assets/images/s-cloudplayout-img"]
+	path = assets/images/s-cloudplayout-img
+	url = https://github.com/BrightcoveLearning/s-cloudplayout-img
+[submodule "assets/images/s-social-img"]
+	path = assets/images/s-social-img
+	url = https://github.com/BrightcoveLearning/s-social-img
+[submodule "assets/images/s-admin-img"]
+	path = assets/images/s-admin-img
+	url = https://github.com/BrightcoveLearning/s-admin-img
+[submodule "assets/images/s-players-img"]
+	path = assets/images/s-players-img
+	url = https://github.com/BrightcoveLearning/s-players-img
+[submodule "assets/images/s-layout-img"]
+	path = assets/images/s-layout-img
+	url = https://github.com/BrightcoveLearning/s-layout-img
+[submodule "assets/images/s-publish-img"]
+	path = assets/images/s-publish-img
+	url = https://github.com/BrightcoveLearning/s-publish-img
+[submodule "assets/images/s-publishing-apps-img"]
+	path = assets/images/s-publishing-apps-img
+	url = https://github.com/BrightcoveLearning/s-publishing-apps-img
+[submodule "assets/images/s-media-img"]
+	path = assets/images/s-media-img
+	url = https://github.com/BrightcoveLearning/s-media-img
+[submodule "assets/images/s-analytics-img"]
+	path = assets/images/s-analytics-img
+	url = https://github.com/BrightcoveLearning/s-analytics-img
+[submodule "assets/images/s-general-img"]
+	path = assets/images/s-general-img
+	url = https://github.com/BrightcoveLearning/s-general-img
+[submodule "assets/images/s-support-img"]
+	path = assets/images/s-support-img
+	url = https://github.com/BrightcoveLearning/s-support-img
+[submodule "assets/images/s-feather-img"]
+	path = assets/images/s-feather-img
+	url = https://github.com/BrightcoveLearning/s-feather-img
+[submodule "assets/images/s-campaign-img"]
+	path = assets/images/s-campaign-img
+	url = https://github.com/BrightcoveLearning/s-campaign-img
+[submodule "assets/images/s-monetization-img"]
+	path = assets/images/s-monetization-img
+	url = https://github.com/BrightcoveLearning/s-monetization-img
+[submodule "assets/images/s-training-img"]
+	path = assets/images/s-training-img
+	url = https://github.com/BrightcoveLearning/s-training-img
+[submodule "assets/images/s-audience-insights-img"]
+	path = assets/images/s-audience-insights-img
+	url = https://github.com/BrightcoveLearning/s-audience-insights-img
+[submodule "assets/images/s-live-img"]
+	path = assets/images/s-live-img
+	url = https://github.com/BrightcoveLearning/s-live-img
+[submodule "assets/images/s-web-conferencing-img"]
+	path = assets/images/s-web-conferencing-img
+	url = https://github.com/BrightcoveLearning/s-web-conferencing-img
+[submodule "assets/s-site-assets-favicons"]
+	path = assets/s-site-assets-favicons
+	url = https://github.com/BrightcoveLearning/s-site-assets-favicons
+[submodule "assets/s-site-assets-stylesheets"]
+	path = assets/s-site-assets-stylesheets
+	url = https://github.com/BrightcoveLearning/s-site-assets-stylesheets
+[submodule "assets/s-site-assets-scripts"]
+	path = assets/s-site-assets-scripts
+	url = https://github.com/BrightcoveLearning/s-site-assets-scripts
+[submodule "assets/s-site-assets-images"]
+	path = assets/s-site-assets-images
+	url = https://github.com/BrightcoveLearning/s-site-assets-images
