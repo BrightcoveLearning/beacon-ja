@@ -1,0 +1,237 @@
+---
+title: Offline Playback with Brightcove Beacon Apps
+description: In this topic, you will learn how to enable and use Offline Playback with your Brightcove Beacon apps.
+parent: Managing Media
+---
+
+<h1>{{ page.title }}</h1>
+<article class="bcls-article">
+  <summary>{{ page.description }}</summary>
+
+  <section class="bcls-section">
+    <h2 id="Introduction">Introduction</h2>
+    <p>Offline Playback allows users to download video content on their mobile device and watch it later when they are not connected. Not all videos may be available for offline playback. If a download button appears for the content, then users can download Episodes and Movies to watch later. </p>
+
+    <p>From the Brightcove Beacon app, you can access a list of all of your downloaded content. Here, you can play and delete your downloaded videos. When you are online, you can renew an expired asset.</p>
+
+    <figure class="bcls-figure">
+      <img
+        class="bcls-image--no-border"
+        alt="Download movie"
+        src="/assets/images/media/offline-playback/download-content.png"
+      />
+    </figure>
+
+    <h3>Features</h3>
+    <h4>Users</h4>
+    <ul>
+      <li>Content configured for Offline Playback will have a button for download</li>
+      <li>Download videos on iOS and Android apps for mobile devices and tablets</li>
+      <li>
+        Download both DRM-protected and clear (non-encrypted) videos and watch it when not connected
+        <ul>
+          <li>Content will play on the device if the viewer travels to another region that is not supported by the rights settings until they reconnect on the mobile or wifi network</li>
+        </ul>
+      </li>
+      <li>Ability to cancel, pause or delete a download</li>
+      <li>When download is complete, the network can be disconnected or unavailable and videos play from the device</li>
+      <li>Audio and subtitles should be available when the video is downloaded</li>
+      <li>Option to delete or renew an asset when it is expired</li>
+      <li>If the viewer's subscription becomes invalid for any reason, playback will be blocked when they reconnect to the network</li>
+      <li>If the user logs out their account in the device, downloaded videos will be deleted from the user device </li>
+    </ul>
+    <h4>Customers</h4>
+    <ul>
+      <li>You can select which individual videos are downloadable in Video Cloud, but they need to be part of a subscription/package that has download enabled.</li>
+      <!-- <li>You can set the duration of an asset availability in the Beacon CMS; it is automatically deleted from the device at the end of the window</li> -->
+      <li>Server-Side Ads (SSAI) ads are not delivered for content playing from the device</li>
+    </ul>
+  </section>
+
+  <section class="bcls-section">
+    <h2 id="Requirements">Requirements</h2>
+    <h3>Enable your account</h3>
+    <p>For Offline Playback do the following:</p>
+    <ul>
+      <li>Contact your Brightcove account manager to enable your Video Cloud Studio account for Offline Playback. Note that Offline Playback is a paid add-on.</li>
+      <li>
+        The onboarding team will enable your Brightcove Beacon account for Offline Playback
+        <ul>
+          <li>Apps can be configured to offer Offline Playback as a premium feature, available through a subscription</li>
+        </ul>
+      </li>
+    </ul>
+    <h3>Manage your content</h3>
+    <p>Make sure your content is available for Offline Playback:</p>
+    <ul>
+      <li>
+        <p>In Video Cloud Studio, ingest videos using an ingest profile that produces a downloadable asset (see steps below)</p>
+        <aside class="bcls-aside bcls-aside--information">Ingesting content with a downloadable asset will increase customer storage cost.</aside>
+      </li>
+      <li>In Video Cloud Studio, set videos to enable Offline Playback (see steps below)</li>
+      <li>In Beacon CMS, set which assets will be available for Offline Playback (see steps below)</li>
+    </ul>
+  </section>
+
+  <section class="bcls-section">
+    <h2 id="Setup_in_Video_Cloud_Studio">Setup in Video Cloud Studio</h2>
+    <p>Follow these steps to enable video assets for Offline Playback in Video Cloud Studio:</p>
+    <ol class="bcls-tasklist">
+      <li>
+       <p>When you upload or retranscode a video, make sure that you use an ingest profile that includes a downloadable asset (MP4).</p>
+        <aside class="bcls-aside bcls-aside--information">Ingesting content with a downloadable asset will increase customer storage cost.</aside>
+        <p>For example, your profile may be similar to this:</p>
+        <figure class="bcls-figure">
+          <img class="bcls-image" src="/assets/images/media/offline-playback/ingest-profile.png" alt="Ingest profile">
+        </figure>
+      </li>
+      <li>
+        <p>In the <strong>Media</strong> module, select a video asset that you want to enable for Offline Playback.</p>
+       </li>
+       <li>
+        <p>In the<strong> Video Information</strong> section, select <span class="button-blue-text"><i class="button-icon" data-feather="edit-3"></i>Edit</span>.</p>
+         <figure class="bcls-figure">
+           <img class="bcls-image" src="/assets/images/media/offline-playback/edit-video-info.png" alt="Edit video info">
+         </figure>
+       </li>
+       <li>
+        <p>Select <strong>Enable offline playback</strong>. You will do this for all downloadable assets.</p>
+         <figure class="bcls-figure">
+           <img class="bcls-image" src="/assets/images/media/offline-playback/enable-offline-box.png" alt="Enable offline checkbox">
+         </figure>
+       </li>
+       <li>Click <span class="button-blue">Save</span>.</li>
+    </ol>
+  </section>
+  
+  <section class="bcls-section">
+    <h2 id="Setup_in_Beacon_CMS">Setup in Beacon CMS</h2>
+    <p>Offline playback can be set in Beacon to support your business objectives.</p>
+    <!-- <p>Offline playback can be set in Beacon at several levels to support the business objectives of the content owner.</p> -->
+
+    <!-- <h3>Entire Account</h3>
+    <p>You can set Offline Playback for all assets in your account.</p>
+    <ol class="bcls-tasklist-restart">
+      <li>
+       <p>In Brightcove Beacon CMS, click <img class="bcls-image--no-border" alt="Gear icon" src="/assets/images/media/offline-playback/gear-icon.png" /> to display account settings.</p>
+        <figure class="bcls-figure">
+          <img class="bcls-image" src="/assets/images/media/offline-playback/beacon-cms-home.png" alt="Beacon CMS home">
+        </figure>
+      </li>
+      <li>In <strong>Settings</strong>, select <strong>Assets</strong>.</li>
+       <li>
+        <p>For <strong>Allow Downloads?</strong>, select <strong>Yes</strong>.</p>
+         <figure class="bcls-figure">
+           <img class="bcls-image" src="/assets/images/media/offline-playback/beacon-cms-assets.png" alt="Beacon CMS Assets">
+         </figure>
+       </li>
+       <li>
+         <p>Set the <strong>No. days assets remain available on device</strong></p>
+         This settting allows you to define the duration of availability for all of your assets. You can also set availability on the asset level.
+      </li>
+       <li>Click <strong>Save Setting</strong>.</li>
+    </ol> -->
+
+    <h3>Subscriptions</h3>
+    <p>You can offer Offline Playback as a premium feature to subscribers by enabling Offline Playback on subscription plan settings. Offline Playback will be available only to subscribers of that plan.</p>
+    <ol class="bcls-tasklist-restart">
+      <li>In Brightcove Beacon CMS, click <strong>Commerce</strong>.</li>
+      <li>
+       <p>Select <strong>SVOD/AuthVOD Plans</strong> and click on your package name.</p>
+        <figure class="bcls-figure">
+          <img class="bcls-image" src="/assets/images/media/offline-playback/beacon-cms-svod-plans.png" alt="SVOD/AuthVOD Plans">
+        </figure>
+      </li>
+       <li>
+        <p>For <strong>Allow Downloads?</strong>, select <strong>Yes</strong>.</p>
+         <figure class="bcls-figure">
+           <img class="bcls-image" src="/assets/images/media/offline-playback/beacon-cms-edit-pkg.png" alt="Edit package">
+         </figure>
+       </li>
+       <li>Click <strong>Edit Package</strong>.</li> 
+       <li>
+         For details about monetization plans, review the following:
+         <ul>
+           <li><a href="/monetization/general/creating-svod-plan.html">Creating an SVOD Plan</a></li>
+           <li><a href="/monetization/general/implementing-authvod.html">Implementing AuthVOD</a></li>
+         </ul>
+       </li>
+    </ol>
+
+    <!-- <h3>Content</h3>
+    <p>Individual assets can be made available for Offline Playback to all viewers by enabling Offline Playback on each asset in the <strong>Rights & Scheduling</strong> settings for series, seasons, episodes, movies and playlists.</p>
+    <h4>Movies</h4>
+    <ol class="bcls-tasklist-restart">
+      <li>In Brightcove Beacon CMS, select <strong>Movies</strong> and click on your movie name.
+        <figure class="bcls-figure">
+          <img class="bcls-image" src="/assets/images/media/offline-playback/beacon-cms-movies.png" alt="Movies">
+        </figure>
+      </li>
+      <li>Select the <strong>Rights & Scheduling</strong> tab.</li>
+       <li>
+        <p>For <strong>Allow Downloads?</strong>, select <strong>Yes</strong>.</p>
+         <figure class="bcls-figure">
+           <img class="bcls-image" src="/assets/images/media/offline-playback/beacon-cms-movie-rights.png" alt="Rights & Scheduling">
+         </figure>
+       </li>
+       <li>Click <strong>Update Movie</strong>.</li> 
+    </ol>
+
+    <h4>Playlists</h4>
+    <ol class="bcls-tasklist-restart">
+      <li>In Brightcove Beacon CMS, select <strong>Playlists</strong> and click on your playlist name.
+        <figure class="bcls-figure">
+          <img class="bcls-image" src="/assets/images/media/offline-playback/beacon-cms-playlists.png" alt="Playlists">
+        </figure>
+      </li>
+      <li>Select the <strong>Rights & Scheduling</strong> tab.</li>
+       <li>
+        <p>For <strong>Allow Downloads?</strong>, select <strong>Yes</strong>.</p>
+         <figure class="bcls-figure">
+           <img class="bcls-image" src="/assets/images/media/offline-playback/beacon-cms-pliaylist-rights.png" alt="Rights & Scheduling">
+         </figure>
+       </li>
+       <li>Click <strong>Save changes in Playlist</strong>.</li> 
+    </ol>
+  </section>
+
+  <h4>Series, seasons, episodes</h4>
+  <ol class="bcls-tasklist-restart">
+    <li>In Brightcove Beacon CMS, select <strong>Programs</strong> and click on your series name.
+      <figure class="bcls-figure">
+        <img class="bcls-image" src="/assets/images/media/offline-playback/beacon-cms-programs.png" alt="Programs">
+      </figure>
+    </li>
+    <li>Select the <strong>Rights & Scheduling</strong> tab.</li>
+     <li>
+      <p>For <strong>Allow Downloads?</strong>, select <strong>Yes</strong>.</p>
+       <figure class="bcls-figure">
+         <img class="bcls-image" src="/assets/images/media/offline-playback/beacon-cms-series-rights.png" alt="Rights & Scheduling">
+       </figure>
+     </li>
+     <li>Click <strong>Update Series</strong>.</li> 
+     <li>In the left navigation, select <strong>Seasons</strong> and enable <strong>Allow Downloads</strong> for any seasons that you want enabled.</li>
+     <li>In the left navigation, select <strong>Episodes</strong> and enable <strong>Allow Downloads</strong> for any episodes that you want enabled.</li>
+  </ol> -->
+</section>
+
+<section class="bcls-section">
+  <h2 id="Sync_and_clearing_cache">Sync and clear cache</h2>
+  <h3>Sync videos</h3>
+  <p>Your asset changes in Video Cloud Studio will be automatically synced with Beacon CMS.</p>
+  
+  <h3>Clear cache</h3>
+  <p>To see your changes right away in your Beacon app, refresh your app cache.</p>
+  <p>For details, see the <a href="https://beacon.support.brightcove.com/using-brightcove-beacon/tools.html">Using the Tools</a> document.</p>
+</section> 
+
+<section class="bcls-section">
+  <h2 id="Known_issues_and_limitations">Known issues and limitations</h2> 
+  <p>The following notes and limitations apply to the Offline Playback feature:</p>
+  <ul>
+    <li><a href="https://sdks.support.brightcove.com/features/offline-playback-native-player-sdks.html#Known_issues">Offline Playback with the Native Player SDKs</a></li>
+  </ul>
+ 
+</section> 
+
+</article>

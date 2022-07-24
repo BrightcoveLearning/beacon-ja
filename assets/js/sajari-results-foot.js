@@ -1,3 +1,7 @@
+---
+layout: null
+---
+
   var getUrlParam = function(e){var t = new RegExp("[?&]" + e.replace(/[\[\]]/g, "\\$&") + "(=([^&#]*)|&|#|$)"),a = t.exec(window.location.href);return a && a[2] ? decodeURIComponent(a[2].replace(/\+/g, " ")) : ""};
   var domain = location.hostname,
   site_domain,
@@ -11,7 +15,7 @@
   } else {
     lang = 'en-us';
   }
-  site_domain = lang_prefix + 'beacon.support.brightcove.com';
+  site_domain = lang_prefix + '{{ site.site_domain }}';
   filter = "domain='" + site_domain +  "'";
   lang_filter = "lang='" + lang + "'";
   console.log('filter', filter);
@@ -31,6 +35,6 @@
       maxSuggestions: 5, // Maximum number of suggestions to show.
       results: {"showImages": false }, // Configure the results.
       values: {"q.override": true, "resultsPerPage": "10","q": getUrlParam("q")}, // Set default values.
-      tabFilters: {defaultTab:"This Site",tabs:[{title:"This Site",filter:filter}, {title:"All Brightcove Documentation",filter:lang_filter}]}, // User selectable filters
+      tabFilters: {defaultTab:"This Site",tabs:[{title:"This Site",filter:filter}]}, // User selectable filters
       styling: { theme: { colors: { brand: { primary: "#333" }}}}
   });

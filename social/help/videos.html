@@ -1,0 +1,265 @@
+---
+title: Videos
+layout: help
+---
+<h1>Videos</h1>
+<article class="bcls-article">
+    <section class="bcls-section">
+        <p>Publish videos from your Video Cloud account to YouTube, Facebook and Twitter.</p>
+        <p>Before you can publish videos, you must create destinations for your social accounts. In the left navigation, click <strong>Destinations</strong>.</p>
+   
+        <details class="details-item">
+          <summary>Video rendition</summary>
+          <section class="bcls-section">
+            <p>To distribute videos to a social platform, videos should have at least one of the following:</p>
+            <ul>
+              <li>MP4 rendition</li>
+              <li>Video master</li>
+            </ul>
+            <p>Videos uploaded using one of the standard ingest profiles will save a master by default.</p>
+            <p>When Brightcove Social publishes a video to a social platform: </p>
+            <ul>
+              <li>Attempts to distribute the highest quality rendition that meets the rules of the social platform</li>
+              <li>If the rendition sent to the social platform is rejected, there is no attempt to send another rendition</li>
+            </ul>
+            <p>Rules to rank videos:</p>
+            <ul>
+              <li>MP4 assets are better than any other video container</li>
+              <li>The Video with the higher encoding rate is considered better</li>
+              <li>The video with the higher resolution is considered better</li>
+            </ul>
+          </section>
+        </details>
+
+        <details class="details-item">
+          <summary>Publish to social media</summary>
+          <section class="bcls-section">
+            <ol class="bcls-tasklist-restart">
+              <li>Select a video to publish.</li>
+              <li>Click <span class="button-blue">Publish</span>.</li>
+              <li>Select a social destination to publish to, or click <strong>Add New Destination</strong>.</li>
+              <li>Review the video metadata properties for each destination that you are publishing to.</li>
+              <li>Click <span class="button-blue">Publish to Destination</span>.</li>
+            </ol>
+            <p>Manually publishing videos is a one-time operation, and these videos will not receive metadata updates from the Social module after the initial upload.</p>
+          </section>
+        </details>
+
+        <details class="details-item">
+          <summary>Set YouTube properties</summary>
+          <section class="bcls-section">
+            <p>By default, videos up to 15 minutes long can be uploaded to YouTube.</p>
+            <p><strong>Video thumbnail source</strong></p>
+            <ul>
+              <li><strong>YouTube</strong> - YouTube will select a thumbnail</li>
+              <li><strong>Video Cloud </strong> - Use the Video Cloud thumbnail image as the YouTube thumbnail</li>
+              <li><strong>Custom Image</strong> - Browse and select a custom thumbnail image to use</li>
+            </ul>
+            <p>Checking <strong>Use for all destinations</strong> will use this thumbnail for all destinations currently being published to.</p>
+            <aside class="bcls-aside bcls-aside--information">Updates to thumbnail images in Studio will not update the thumbnail image on the YouTube side.</aside>
+            <p><strong>Post Info properties</strong></p>
+            <ul>
+              <li><strong>Title</strong> - Title of the video (defaults to Video Cloud title); YouTube supports up to 100 characters</li>
+              <li><strong>Description</strong> - Description of the video (defaults to Video Cloud short description); YouTube supports up to 5000 characters</li>
+              <li><strong>YouTube Category</strong> - Content category for the video</li>
+              <li><strong>Tags</strong> - Tags for the video (defaults to Video Cloud tags); you can use max 30 characters per tag, and the text field accepts up to 500 characters</li>
+            </ul>
+            <p><strong>Schedule properties</strong></p>
+            <ul>
+              <li><strong>Publish Immediately</strong> - To publish the video immediately</li>
+              <li><strong>Schedule Publish Date</strong> - To choose a publish date and time for the video</li>
+            </ul>
+            <aside class="bcls-aside bcls-aside--information">The schedule date and time are sent to YouTube only once, when the video is sent to YouTube. If the schedule date and/or time needs to be changed, they must be changed in YouTube.</aside>
+            <p><strong>Captions properties</strong></p>
+            <ul>
+              <li><strong>Use Video Cloud captions</strong> - Use captions associated with the video in Video Cloud</li>
+              <li><strong>No captions</strong> - No captions will be sent to YouTube</li>
+              <li><strong>Upload captions</strong> - Select a captions file, which should be in .VTT or .SRT format</li>
+            </ul>
+            <aside class="bcls-aside bcls-aside--information">Videos with closed captions clipped using Social will not have captions. You will need to upload new captions to the clipped video.</aside>
+            <p><strong>Visibility properties</strong></p>
+            <ul>
+              <li><strong>Public</strong> - Anyone can view the video</li>
+              <li><strong>Unlisted</strong> - Anyone who has the link to the video can view it</li>
+              <li><strong>Private</strong> - Video can only be seen by you and the users you select</li>
+            </ul>
+            <p>Selecting <strong>Notify subscribers when video is posted to YouTube</strong> may send a notification to your subscribers that the video was uploaded</p>
+            <p><strong>License properties</strong></p>
+            <ul>
+              <li><strong>Standard YouTube License</strong></li>
+              <li><strong>Creative Commons - Attribution</strong></li>  
+            </ul>
+
+            <p><a href="https://beacon-help.support.brightcove.com/social/publishing-videos-social-media-platforms.html#youtube" target="_blank">Learn more <img src="/assets/images/feather/external-link-blue.svg" alt="external link" style="width: .8rem;"></a></p>
+          </section>
+        </details>
+
+        <details class="details-item">
+          <summary>Set Facebook properties</summary>
+          <section class="bcls-section">
+            <p>Facebook does not allow .gif images. If your video is using a .gif for the thumbnail image, the publish to Facebook will fail.</p>
+            <p><strong>Video thumbnail source</strong></p>
+            <ul>
+              <li><strong>Facebook</strong> - Facebook will select a thumbnail</li>
+              <li><strong>Video Cloud </strong> - Use the Video Cloud thumbnail image as the Facebook thumbnail</li>
+              <li><strong>Custom Image</strong> - Browse and select a custom thumbnail image to use</li>
+            </ul>
+            <p>Checking <strong>Use for all destinations</strong> will use this thumbnail for all destinations currently being published to.</p>
+            <aside class="bcls-aside bcls-aside--information">Updates to thumbnail images in Studio will not update the thumbnail image on the Facebook side.</aside>
+            <p><strong>Post Info properties</strong></p>
+            <ul>
+              <li><strong>Title</strong> - Title of the video (defaults to Video Cloud title); Facebook will truncate after 65 characters</li>
+              <li><strong>Description</strong> - Description of the video (defaults to Video Cloud short description)</li>
+              <li><strong>Tags</strong> - Select a Facebook tag from the list; Note that Facebook manages the tags</li>
+              <li><strong>Facebook Category</strong> - Content category for the video</li>
+            </ul>
+            <p><strong>Schedule properties</strong></p>
+            <ul>
+              <li><strong>Publish Immediately</strong> - To publish the video immediately</li>
+              <li><strong>Schedule Publish Date</strong> - To choose a publish date and time for the video</li>
+            </ul>
+            <aside class="bcls-aside bcls-aside--information">The schedule date and time are sent to Facebook only once, when the video is sent to Facebook. If the schedule date and/or time needs to be changed, they must be changed in Facebook.</aside>
+            <p><strong>Captions properties</strong></p>
+            <ul>
+              <li><strong>Use Video Cloud captions</strong> - Use captions associated with the video in Video Cloud</li>
+              <li><strong>No captions</strong> - No captions will be sent to Facebook</li>
+              <li><strong>Upload captions</strong> - Select a captions file, which should be in .VTT or .SRT format</li>
+            </ul>
+            <aside class="bcls-aside bcls-aside--information">Facebook requires that the caption language include a country in addition to the language. e.g., en-US or en-UK.</aside>
+            <aside class="bcls-aside bcls-aside--information">Videos with closed captions clipped using Social will not have captions. You will need to upload new captions to the clipped video.</aside>
+            <p><strong>Target properties</strong></p>
+            <ul>
+              <li><strong>Audience Optimization Interests</strong> - Add tags to describe the interests of people who are most likely to enjoy your post</li>
+              <li><strong>Location Restrictions</strong> - Add countries to include or exclude from seeing the post</li>
+            </ul>
+            <p><strong>Monetize properties</strong></p>
+            <ul>
+              <li><strong>Who is your business partner for posts to this destination?</strong> - Add a business partner for branded content posts; As you type, a list of matching businesses will appear</li>
+              <li><strong>Allow business partner to boost posts</strong></li>
+            </ul>
+            <p><strong>Rights properties</strong></p>
+            <aside class="bcls-aside bcls-aside--information">Your Facebook account must have access to the Facebook Rights Manager for the Rights option to appear.</aside>
+            <ul>
+              <li><strong>Detect Matching Content</strong> - Check to enable Facebook rights management</li>
+              <li><strong>Specify Ownership</strong> - Specify copyright ownership on video, audio, or both</li>
+              <li><strong>Country Selection</strong> - Select <strong>Worldwide</strong>, <strong>Include Countries</strong> or <strong>Exclude Countries</strong></li>
+              <li><strong>Apply Match Rule</strong> - Determines the automatic actions to happen when people upload matched videos; Match Rules are managed inside of Facebook</li>
+              <li><strong>Grant Permission</strong> - Authorize certain people or Pages or Instagram accounts to have permission to post videos matching your content</li>
+            </ul> 
+            <p><strong>Distribution properties</strong></p>
+            <ul>
+              <li><strong>Show in News Feed</strong> - Shows video in News Feed</li>
+              <li><strong>Allow Embedding</strong> - Allow video embeds on third-party sites</li>
+              <li><strong>Add as Secret Video</strong> - Videos will be accessible only via a direct URL and are not searchable for people on Facebook</li>
+              <li><strong>Turn off Reactions, Comments and Shares </strong> - Disallows likes and comments</li>
+            </ul>
+            <p><strong>Tracking properties</strong></p>
+            <ul>
+              <li><strong>Leave Blank</strong> </li>
+              <li><strong>Use Video ID from Video Cloud</strong> </li>
+              <li><strong>Use Reference ID from Video Cloud, if present</strong> </li>
+
+            <p><a href="https://beacon-help.support.brightcove.com/social/publishing-videos-social-media-platforms.html#facebook" target="_blank">Learn more <img src="/assets/images/feather/external-link-blue.svg" alt="external link" style="width: .8rem;"></a></p>
+          </section>
+        </details>
+
+        <details class="details-item">
+          <summary>Set Twitter properties</summary>
+          <section class="bcls-section">
+            <p>After a video is published to Twitter, any updates to the source video in Studio will not update on Twitter.</p>
+            <p><strong>Post Info properties</strong></p>
+            <ul>
+              <li><strong>Post Info</strong> - Enter your Tweet content</li>
+            </ul>
+            <aside class="bcls-aside bcls-aside--information">Note that @mentions will be converted to #hashtags when being sent to Twitter.</aside>
+            <p>Default video properties for Twitter can be set by editing the destination.</p>
+
+            <p><a href="https://beacon-help.support.brightcove.com/social/creating-social-media-publishing-destinations.html#twitter_defaults" target="_blank">Learn more <img src="/assets/images/feather/external-link-blue.svg" alt="external link" style="width: .8rem;"></a></p>
+          </section>
+        </details>
+
+        <details class="details-item">
+          <summary>Create clip</summary>
+          <section class="bcls-section">
+            <p>Create video clips from existing videos in your Video Cloud account.</p>
+            <p>Clips can be used as short, teaser videos that can be posted to social media.</p>
+            <ol class="bcls-tasklist-restart">
+              <li>Select a video to clip.</li>
+              <li>Click <span class="button-blue">Create Clip</span>.</li>
+              <li>Drag the controls to define the clip duration.</li>
+              <li>Use the arrow keys to move frame by frame.</li>
+              <li>Click <span class="button-blue">Continue</span>.</li>
+            </ol>
+
+            <p><a href="https://beacon-help.support.brightcove.com/social/creating-video-clip-using-brightcove-social.html" target="_blank">Learn more <img src="/assets/images/feather/external-link-blue.svg" alt="external link" style="width: .8rem;"></a></p>
+          </section>
+        </details>
+
+        <details class="details-item">
+          <summary>Download video</summary>
+          <section class="bcls-section">
+            <p>You can copy a video URL or download a video source file (highest quality MP4 rendition).</p>
+            <aside class="bcls-aside bcls-aside--information">You cannot download videos that have DRM enabled.</aside>
+            <ol class="bcls-tasklist-restart">
+              <li>Select a video to download.</li>
+              <li>Click <span class="button-blue">Download</span>.</li>
+              <li>Copy the video URL or click the link to open the video in your browser.</li>
+              <li>Right click the video to save the source file locally.</li>
+              <li>Click <span class="button-blue">Close</span>.</li>
+            </ol>
+            <p>It is important to understand that URLs for renditions and images are not fixed.</p>
+            <p>The URL is not intended to be a long-lived, publicly-accessible URL that you would paste into a public social platform post.</p>
+          </section>
+        </details>
+
+        <details class="details-item">
+          <summary>View in media</summary>
+          <section class="bcls-section">
+            <p>You can copy a video URL or download a video source file (highest quality MP4 rendition).</p>
+            <aside class="bcls-aside bcls-aside--information">You cannot download videos that have DRM enabled.</aside>
+            <ol class="bcls-tasklist-restart">
+              <li>Select a video to view.</li>
+              <li>Click <span class="button-blue">View in Media</span>.</li>
+              <li>The Media module will open with the details of your selected video.</li>
+            </ol>
+          </section>
+        </details>
+
+        <details class="details-item">
+          <summary>Check status</summary>
+          <section class="bcls-section">
+            <p>Videos published to social media will display <strong>Check Status</strong> in the <strong>Status</strong> column.</p>
+            <ol class="bcls-tasklist-restart">
+              <li>Click <span class="button-blue">Check Status</span> for a video.</li>
+              <li>You will see a list of social destinations that the video was published to along with the status.</li>
+            </ol>
+          </section>
+        </details>
+
+        <details class="details-item">
+          <summary>Publish 360° videos</summary>
+          <section class="bcls-section">
+            <p>YouTube, Facebook, the Brightcove web Player, and the Brightcove SDKs support 360° video playback.</p>
+            <ol class="bcls-tasklist-restart">
+              <li>Upload your video to Video Cloud. For details, see <a href="https://beacon-help.support.brightcove.com/general/working-360deg-videos.html">Working with 360° Videos</a>.
+                <aside class="bcls-aside bcls-aside--information">When using the Social module to sync a 360° video, the ingest profile used to ingest the video must be configured to save the master file.</aside>
+              </li>
+              <li>Return to the Social module.</li>
+              <li>Select your video.</li>
+              <li>Click <span class="button-blue">Publish</span>.</li>
+              <li>Select a social destination to publish to, or click <strong>Add New Destination</strong>.</li>
+              <li>Review the video metadata properties for each destination that you are publishing to.</li>
+              <li>Click <span class="button-blue">Publish to Destination</span>.</li>
+            </ol>
+            <aside class="bcls-aside bcls-aside--information">Playback of 360° videos is limited to certain browsers.</aside>
+          </section>
+        </details>
+
+        <aside class="bcls-aside bcls-aside--information">Manually publishing videos is independent from Auto Sync. If a video is tagged to be published with Auto Sync, it will do so even if you have manually published the video.</aside>
+
+  </section>
+
+  <section class="bcls-section">
+    <h3><a href="https://beacon-help.support.brightcove.com/social/publishing-videos-social-media-platforms.html" target="_blank">Learn more <img src="/assets/images/feather/external-link-blue.svg" alt="external link" style="width: .8rem;"></a></h3>
+  </section>
+</article>
