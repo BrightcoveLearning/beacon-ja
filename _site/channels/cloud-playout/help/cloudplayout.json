@@ -1,0 +1,22 @@
+{
+  "url": "https://beacon-help.support.brightcove.com/channels/cloud-playout/help/index.html",
+  "children": {
+    "channel-edit": {
+      "children": {
+        "*": {
+          "url": "https://beacon-help.support.brightcove.com/channels/cloud-playout/help/channel-edit.html"
+        }
+      }
+    },
+    "channel": {
+      "children": {
+        "*": {
+          "url": "https://beacon-help.support.brightcove.com/channels/cloud-playout/help/channel.html"
+        }
+      }
+    },
+    "overlays": {
+          "url": "https://beacon-help.support.brightcove.com/channels/cloud-playout/help/overlays.html"
+    }
+  }
+}
