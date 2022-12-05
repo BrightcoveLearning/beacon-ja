@@ -1,942 +1,938 @@
 - section:
-  name: Home
+  name: ホーム
   url: /index.html
 - section:
-  name: Getting Started
+  name: 入門編
   url: /get-started/index.html
   docs:
-    - name: Brightcove Beacon Learning Guide
+    - name: Brightcoveビーコン学習ガイド
       url: /get-started/learning-guide-bc-beacon.html
-    - name: Implementation Phases
+    - name: 実装フェーズ
       url: /get-started/implementation-phases.html
-    - name: Getting Started with Beacon Studio
+    - name: BeaconStudioの使用開始
       url: /get-started/getting-started-beacon-studio.html
-    - name: When to Use Beacon Studio and/or Beacon Classic
+    - name: BeaconStudioまたはBeaconClassicを使用する場合
       url: /general/beacon-studio-or-classic.html
-    - name: App Design Best Practices
+    - name: アプリケーション設計のベストプラクティス
       url: /get-started/design-best-practices.html
-    - name: App Design Considerations
+    - name: アプリケーション設計に関する考慮事項
       url: /get-started/app-design-considerations.html
-    - name: Training
+    - name: トレーニング
       url: /get-started/training/index.html
-    - name: Learn the Basics
+    - name: 基本を学ぼう
       url: '/get-started/basics/index.html'
       docs:
-        - name: Layout
+        - name: レイアウト
           url: /get-started/basics/layout/index.html
           docs:
-            - name: Archiving Pages
+            - name: アーカイブページ
               url: /get-started/basics/layout/archiving-pages.html
-            - name: Configuring Calendar Restrictions
+            - name: 予定表の制約事項の設定
               url: /get-started/basics/layout/availability-date.html
-            - name: Configuring Device Restrictions
+            - name: デバイス制限の設定
               url: /get-started/basics/layout/availability-device.html
-            - name: Configuring Location Restrictions
+            - name: ロケーション制限の設定
               url: /get-started/basics/layout/availability-location.html
-            - name: Creating a Page
+            - name: ページの作成
               url: /get-started/basics/layout/creating-page.html
-        - name: Media
+        - name: メディア
           url: /get-started/basics/media/index.html
           docs:
-            - name: Activating Videos
+            - name: ビデオのアクティブ化
               url: /get-started/basics/media/activating-and-deactivating-video.html
-            - name: Adding an Episode to a Season
+            - name: シーズンへのエピソードの追加
               url: /get-started/basics/media/adding-episode-season.html
-            - name: Capturing Video Poster Images
+            - name: ビデオポスターイメージのキャプチャ
               url: /get-started/basics/media/capturing-video-poster-thumbnail-images.html
-            - name: Creating a Manual Playlist
+            - name: 手動プレイリストの作成
               url: /get-started/basics/media/creating-manual-playlist.html
-            - name: Creating a Season
+            - name: シーズンの作成
               url: /get-started/basics/media/creating-season.html
-            - name: Creating a Series
+            - name: シリーズの作成
               url: /get-started/basics/media/creating-series.html
-            - name: Creating a Smart Playlist
+            - name: スマートプレイリストの作成
               url: /get-started/basics/media/creating-smart-playlist.html
-            - name: Editing Basic Video Details
+            - name: 基本的なビデオ詳細の編集
               url: /get-started/basics/media/editing-basic-video-details.html
-            - name: Editing Multiple Videos
+            - name: 複数のビデオの編集
               url: /get-started/basics/media/editing-video-properties-multiple-videos.html
-            - name: Using Folders
+            - name: フォルダの使用
               url: /get-started/basics/media/organizing-videos-using-folders.html
-            - name: Uploading Video Images
+            - name: ビデオイメージのアップロード
               url: /get-started/basics/media/uploading-video-poster-thumbnail-images.html
-            - name: Uploading Videos
+            - name: 動画をアップロード中
               url: /get-started/basics/media/uploading-videos.html
-        - name: Players
+        - name: 選手一覧
           url: /get-started/basics/players/index.html
           docs:
-            - name: Creating a Player
+            - name: プレーヤーを作成する
               url: /get-started/basics/players/creating-player.html
-            - name: Creating a Playlist Player
+            - name: プレイリストプレーヤーの作成
               url: /get-started/basics/players/creating-playlist-player.html
-            - name: Styling Players
+            - name: プレーヤーのスタイリング
               url: /get-started/basics/players/styling-player.html
-        - name: Publish
+        - name: パブリッシュ
           url: /get-started/basics/publish/index.html
           docs:
-            - name: Publishing Playlists
+            - name: 再生リストのパブリッシュ
               url: /get-started/basics/publish/publishing-playlist-web.html
-            - name: Publishing Videos
+            - name: ビデオの公開
               url: /get-started/basics/publish/publishing-single-video-web.html
-        - name: Analytics
+        - name: アナリティクス
           url: /get-started/basics/analytics/index.html
           docs:
-            - name: Determining How Much of a Video is Watched
+            - name: ビデオの視聴量の決定
               url: /get-started/basics/analytics/determining-how-much-video-being-watched.html
-            - name: Determining Which Videos Have the Most Views
+            - name: 視聴回数の多い動画を特定する
               url: /get-started/basics/analytics/determining-which-videos-have-most-views.html
-        - name: Administration
+        - name: 管理
           url: /get-started/basics/admin/index.html
           docs:
-            - name: Adding Users to an Account
+            - name: アカウントへのユーザの追加
               url: /get-started/basics/admin/adding-user-account.html
 - section:
-  name: Managing Media
+  name: メディアの管理
   url: /media/index.html
   docs:
-    - name: Adding Audio Tracks to Videos
+    - name: ビデオへのオーディオトラックの追加
       url: /media/adding-audio-tracks-videos-using-media-module.html
-    - name: Adding Captions to Videos
+    - name: ビデオへのキャプションの追加
       url: /media/adding-captions-videos-using-media-module.html
-    - name: Adding Chapters to a Video
+    - name: ビデオへのチャプターの追加
       url: /media/adding-chapters-video.html
-    - name: Capturing Poster and Thumbnail Images
+    - name: ポスターとサムネイル画像のキャプチャ
       url: /media/capturing-poster-and-thumbnail-images.html
-    - name: Configuring Playlist Availability
+    - name: 再生リストのアベイラビリティの設定
       url: /media/configuring-playlist-availability.html
-    - name: Configuring Season Availability
+    - name: シーズンアベイラビリティの設定
       url: /media/configuring-season-availability.html
-    - name: Configuring Series Availability
+    - name: シリーズアベイラビリティの設定
       url: /media/configuring-series-availability.html
-    - name: Configuring Video Availability
+    - name: ビデオ可用性の設定
       url: /media/configuring-video-availability.html
-    - name: Creating and Managing Playlists
+    - name: プレイリストの作成と管理
       url: /media/creating-and-managing-playlists.html
-    - name: Creating and Managing Rule Sets
+    - name: ルールセットの作成と管理
       url: /media/creating-managing-rule-sets.html
-    - name: 'Creating Series, Seasons & Episodes'
+    - name: 'シリーズ、シーズンの作成 &amp; エピソード'
       url: /media/creating-series-seasons-episodes.html
-    - name: Downloading Videos
+    - name: ビデオのダウンロード
       url: /media/downloading-videos-video-cloud.html
-    - name: Editing Series Details
+    - name: シリーズ詳細の編集
       url: /media/editing-series-details.html
-    - name: Editing Video Details
+    - name: ビデオの詳細の編集
       url: /media/editing-video-properties-using-media-module.html
-    - name: Editing Details using Quick Edit
+    - name: クイック編集を使用した詳細の編集
       url: /media/editing-video-properties-using-quick-edit.html
-    - name: Editing Series Details
-      url: /media/editing-series-details.html
-    - name: Exporting Video Data
+    - name: シリーズ詳細の編集
       url: /media/exporting-video-data.html
-    - name: Generating Captions for Videos
+    - name: ビデオのキャプションの生成
       url: /media/generating-captions-videos.html
-    - name: Getting Started with the Media Module
+    - name: メディアモジュールの使用開始
       url: /media/getting-started-media-module.html
-    - name: Increasing the Quality of Poster Images
+    - name: ポスターイメージの品質向上
       url: /media/increasing-quality-poster-and-thumbnail-images.html
-    - name: Introduction to Playlists
+    - name: プレイリストの概要
       url: /media/introduction-playlists.html
-    - name: Managing Series
+    - name: シリーズの管理
       url: /media/managing-series.html
-    - name: Managing Videos
+    - name: ビデオを管理する
       url: /media/managing-videos.html
-    - name: Offline Playback
+    - name: オフライン再生
       url: /media/offline-playback-beacon.html
-    - name: Organizing Videos Using Folders
+    - name: フォルダを使用したビデオの整理
       url: /media/organizing-videos-using-folders.html
-    - name: 'Overview: Adding Captions to a Video'
+    - name: '概要:動画にキャプションを追加する'
       url: /media/overview-adding-captions-video.html
-    - name: Replacing a Video Source File
+    - name: ビデオソースファイルの置き換え
       url: /media/replacing-video-source-file.html
-    - name: Retranscoding Videos
+    - name: 動画の再トランスコーディング
       url: /media/retranscoding-videos-using-media-module.html
-    - name: Searching Videos and Playlists
+    - name: ビデオおよび再生リストの検索
       url: /media/how-search-videos-and-playlists-media-module.html
-    - name: Setting Required Fields
+    - name: 必須フィールドの設定
       url: /media/setting-required-fields-videos.html
-    - name: Sharing Videos
+    - name: ビデオの共有
       url: /media/media-sharing-using-media-module.html
-    - name: Styling Captions
+    - name: キャプションのスタイル設定
       url: /media/styling-captions.html
-    - name: Syncing with Video Cloud Catalog
+    - name: ビデオクラウドカタログとの同期
       url: /media/syncing-video-cloud-catalog.html
-    - name: Uploading Videos
+    - name: 動画をアップロード中
       url: /media/uploading-videos-using-upload-module.html
-    - name: Uploading Video Images
+    - name: ビデオイメージのアップロード
       url: /media/uploading-poster-and-thumbnail-images.html
-    - name: Uploading Videos Remote URLs
+    - name: ビデオリモートURLのアップロード
       url: /media/uploading-videos-remote-urls.html
-    - name: Using the Caption Editor
+    - name: キャプションエディタの使用
       url: /media/using-the-caption-editor.html
-    - name: Working with Cue Points
+    - name: キューポイントの操作
       url: /media/working-cue-points-media-module.html
-    - name: Working with Multi-Lingual Metadata
+    - name: 多言語メタデータの操作
       url: /media/working-multi-lingual-metadata.html
-    - name: Working with Remote Asset Videos
+    - name: リモートアセットビデオの操作
       url: /media/working-remote-asset-videos.html
 - section:
-  name: Managing Pages
+  name: ページの管理
   url: '/layout/index.html'
   docs:
-    - name: Getting Started with the Layout Module
+    - name: レイアウトモジュールのはじめに
       url: /layout/getting-started-layout-module.html
-    #- name: Configuring App Settings
+    #- name: アプリケーションの設定
     #  url: /layout/configuring-app-settings.html
-    - name: Configuring Page Availability
+    - name: ページアベイラビリティの設定
       url: /layout/configuring-page-availability.html
-    - name: Creating and Managing Pages
+    - name: ページの作成と管理
       url: /layout/creating-managing-pages.html
-    - name: Managing Linked Pages
+    - name: リンクされたページの管理
       url: /layout/managing-linked-pages.html
-    - name: Managing Playlists on Pages
+    - name: ページの再生リストの管理
       url: /layout/managing-playlists-on-pages.html
-    - name: Page Details Overview
+    - name: ページ詳細の概要
       url: /layout/page-details-overview.html
-    - name: Refreshing the App Cache
+    - name: アプリケーションキャッシュの更新
       url: /layout/clearing-cache.html
-    - name: Using Core Pages
+    - name: コアページの使用
       url: /layout/using-core-pages.html
-    - name: Using Page Layouts
+    - name: ページレイアウトの使用
       url: /layout/using-page-layouts.html
 - section:
-  name: Managing Channels
+  name: チャネルの管理
   url: '/channels/index.html'
   docs:
-    - name: Beacon Channels
+    - name: ビーコンチャネル
       url: /channels/beacon-channels/index.html
       docs:
-        - name: Creating a Beacon Channel
+        - name: ビーコンチャネルの作成
           url: /channels/beacon-channels/creating-a-channel.html
-        - name: Creating an EPG
+        - name: EPGの作成
           url: /channels/beacon-channels/electronic-program-guides.html
-        - name: Streaming VODs to a Channel
+        - name: チャネルへのVODのストリーミング
           url: /channels/beacon-channels/streaming-vods-to-a-channel.html
-    - name: Cloud Playout Channels
+    - name: クラウド再生チャネル
       url: /channels/cloud-playout/index.html
       docs:
-        - name: 'Overview: Cloud Playout'
+        - name: '概要:クラウドプレイアウト'
           url: /channels/cloud-playout/cloud-playout-overview.html
-        - name: Creating a Cloud Playout Channel
+        - name: クラウドプレイアウトチャネルの作成
           url: /channels/cloud-playout/cloud-playout-stream-vod.html
-        - name: Configuring S3 Buckets
+        - name: S3バケットの設定
           url: /channels/cloud-playout/configuring-s3-buckets.html
-        - name: Using Live Redundancy with Channels
+        - name: チャネルでのライブ冗長性の使用
           url: /channels/cloud-playout/channel-live-redundancy.html
-        - name: Managing the Channel Program
+        - name: チャネルプログラムの管理
           url: /channels/cloud-playout/cloud-playout-add-content.html
-        - name: Managing Slates
+        - name: スレートの管理
           url: /channels/cloud-playout/managing-slates.html
-        - name: Adding Static Image Overlays
+        - name: スタティックイメージオーバーレイの追加
           url: /channels/cloud-playout/static-image-overlays.html
-        - name: Adding Dynamic Overlays
+        - name: ダイナミックオーバーレイの追加
           url: /channels/cloud-playout/dynamic-overlays.html
-        - name: Adding Bumpers to Cloud Playout
+        - name: クラウドプレイアウトへのバンパーの追加
           url: /channels/cloud-playout/adding-bumpers-to-vod.html
-        - name: Importing Captions
+        - name: キャプションのインポート
           url: /channels/cloud-playout/import-captions.html
-        - name: Monetizing Cloud Playout
+        - name: クラウドプレイアウトの収益化
           url: /channels/cloud-playout/enabling-server-side-ads.html
-        - name: Adding Mid-Roll Ads to a Channel
+        - name: チャネルへのミッドロール広告の追加
           url: /channels/cloud-playout/mid-roll-ad-insertion.html
-        - name: Setting a Hard Start for a Channel
+        - name: チャネルのハードスタートの設定
           url: /channels/cloud-playout/hard-start.html
-        - name: Searching for Channels
+        - name: チャネルの検索
           url: /channels/cloud-playout/searching-for-channels.html
-        - name: Publishing a Cloud Playout Channel
+        - name: クラウド再生チャネルの公開
           url: /channels/cloud-playout/publish-channel-beacon.html
-        - name: Using Channel Actions
+        - name: チャネルアクションの使用
           url: /channels/cloud-playout/using-channel-actions.html
-        - name: Viewing Channel Output and Analytics
+        - name: チャネル出力と分析の表示
           url: /channels/cloud-playout/viewing-channel-output-and-analytics.html
-    #    - name: Generating the Channel Embed Code
+    #    - name: チャネル埋め込みコードの生成
     #      url: /channels/cloud-playout/generating-channel-embed-code.html
 - section:
-  name: Managing Players
+  name: プレーヤーの管理
   url: /players/index.html
   docs:
-    - name: Adding Thumbnail Seeking
+    - name: サムネール検索の追加
       url: /players/adding-thumbnail-seeking-player.html
-    - name: Configuring a Player Overlay
+    - name: プレーヤーオーバーレイの設定
       url: /players/configuring-player-overlay-using-overlay-plugin.html
-    - name: Configuring a Playlist Endscreen
+    - name: 再生リストの終了画面の設定
       url: /players/configuring-playlist-endscreen-using-plugin.html
-    - name: Configuring Adobe Analytics Event Tracking
+    - name: Adobe Analytics イベントトラッキングの設定
       url: /players/configuring-adobe-analytics-event-tracking.html
-    - name: Configuring Google Analytics Event Tracking
+    - name: Google アナリティクスのイベントトラッキングの設定
       url: /players/configuring-google-analytics-event-tracking.html
-    - name: Configuring Player Advertising
+    - name: プレーヤー広告の設定
       url: /players/configuring-player-advertising-using-players-module.html
-    - name: Configuring Player Content Restrictions
+    - name: プレーヤーコンテンツ制限の設定
       url: /players/configuring-player-content-restrictions.html
-    - name: Configuring Player Controls
+    - name: プレーヤーコントロールの設定
       url: /players/configuring-player-controls.html
-    - name: Configuring the Player Endscreen
+    - name: プレーヤーエンドスクリーンの設定
       url: /players/configuring-player-endscreen.html
-    - name: Configuring Player Localization
+    - name: プレーヤーローカリゼーションの設定
       url: /players/configuring-player-localization.html
-    - name: Configuring Player Playback Properties
+    - name: プレーヤーの再生プロパティの設定
       url: /players/configuring-player-playback-properties.html
-    - name: Configuring Player Plugins
+    - name: プレーヤープラグインの設定
       url: /players/configuring-player-plugins.html
-    - name: Configuring the Social Properties
+    - name: ソーシャルプロパティの設定
       url: /players/configuring-social-properties-player.html
-    - name: Generating Player Embed Code
+    - name: プレーヤー埋め込みコードの生成
       url: /players/generating-player-embed-code.html
-    - name: Getting Started with the Players Module
+    - name: プレイヤーズモジュールの開始にあたって
       url: /players/getting-started-players-module.html
-    - name: Setting Player Information Properties
+    - name: プレイヤー情報プロパティの設定
       url: /players/setting-player-information-properties.html
-    - name: Setting Player Properties
+    - name: プレーヤーのプロパティの設定
       url: /players/setting-player-properties.html
-    - name: Setting the Player Update Mode
+    - name: プレーヤーの更新モードの設定
       url: /players/setting-player-update-mode-and-version.html
-    - name: Styling Players
+    - name: プレーヤーのスタイリング
       url: /players/styling-players.html
 - section:
-  name: 'Monetizing Content'
+  name: 'コンテンツの収益化'
   url: '/monetization/index.html'
   docs:
-    - name: 'General'
+    - name: '将軍'
       url: '/monetization/general/index.html'
       docs:
-        - name: Creating a Stripe Account
+        - name: ストライプアカウントの作成
           url: /monetization/general/creating-stripe-account.html
-        - name: Creating an SVOD Plan
+        - name: SVODプランの作成
           url: /monetization/general/creating-svod-plan.html
-        - name: Creating Promo Coupons
+        - name: プロモクーポンの作成
           url: /monetization/general/promo-codes.html
-        - name: Custom Fields for Monetization
+        - name: 収益化のためのカスタムフィールド
           url: /monetization/general/vc-custom-fields.html
-        - name: Implementing AuthVOD
+        - name: AuthVODの実装
           url: /monetization/general/implementing-authvod.html
-        - name: Receiving In-App Purchase Notifications
+        - name: アプリケーション内購入通知の受信
           url: /monetization/general/receive-iap-notifications.html
-        - name: Resources for Monetization
+        - name: 収益化のためのリソース
           url: /monetization/general/resources.html
-        - name: Retrieving Stripe Subscription Info
+        - name: Stripeサブスクリプション情報の取得
           url: /monetization/general/stripe-custom-metadata.html
-        - name: Understanding Monetization Options
+        - name: 収益化オプションについて
           url: /monetization/general/monetization-options.html
-        - name: Using an SVOD Plan
+        - name: SVODプランの使用
           url: /monetization/general/using-svod-plan.html
-    - name: SSAI
+    - name: SSAI 
       url: '/monetization/ssai/index.html'
       docs:
-        - name: 'Creating an Advertisement'
+        - name: 'アドバタイズメントの作成'
           url: '/monetization/ssai/advertisement.html'
-        - name: 'Configuring Server-Side Ad Settings'
+        - name: 'サーバーサイド広告設定の構成'
           url: '/monetization/ssai/configuring-server-side-ad-settings.html'
-        - name: 'Implementing Live SSAI'
+        - name: 'LiveSSAIの実装'
           url: '/monetization/ssai/live-ssai.html'
-        - name: Implementing VOD SSAI
+        - name: VOD SSAIの実装
           url: '/monetization/ssai/vod-ssai.html'
-        - name: 'Beacon Apps Ad Targeting'
+        - name: 'ビーコンアプリ広告ターゲティング'
           url: '/monetization/ssai/beacon-apps-ad-targeting.html'
 - section:
-  name: 'Beacon Web Store'
+  name: 'ビーコンWebストア'
   url: '/beacon-web-store/index.html'
   docs:
-    - name: 'Overview: Brightcove Beacon Web Store'
+    - name: '概要:BrightcoveビーコンWebストア'
       url: '/beacon-web-store/beacon-webstore-overview.html'
-    - name: 'Integrating with the Beacon Web Store'
+    - name: 'BeaconWebStoreとの統合'
       url: '/beacon-web-store/integration-details.html'
-    - name: 'Beacon Store Webhook Reference'
+    - name: 'BeaconStoreWebhookリファレンス'
       url: '/beacon-web-store/beacon-store-webhook-reference.html'
 - section:
-  name: Reviewing Analytics
+  name: アナリティクスの確認
   url: /analytics/index.html
   docs:
-    - name: Using the Analytics Module
+    - name: 分析モジュールの使用
       url: /analytics/index.html
       docs:
-        - name: Getting Started with the Analytics Module
+        - name: Analyticsモジュールの使用を開始
           url: /analytics/getting-started-analytics-module.html
-        - name: Analytics Module UI Glossary
+        - name: 分析モジュールのUI用語集
           url: /analytics/analytics-module-ui-glossary.html
-        - name: How to Search for Videos
+        - name: 動画を検索する方法
           url: /analytics/how-search-videos-analytics-module.html
-        - name: 'FAQ: Analytics Module'
+        - name: 'よくある質問:分析モジュール'
           url: /analytics/faq-analytics-module.html
-    - name: Analytics Reports
+    - name: 分析レポート
       url: /analytics/index.html
       docs:
-        - name: Analytics Report Reference
+        - name: 分析レポートリファレンス
           url: /analytics/analytics-report-reference.html
-        - name: Creating Custom Analytics Reports
+        - name: カスタム分析レポートの作成
           url: /analytics/creating-custom-analytics-reports.html
-        - name: Engagement Report Reference
+        - name: エンゲージメントレポートのリファレンス
           url: /analytics/engagement-report-reference.html
-        - name: Managing Scheduled Reports
+        - name: スケジュールされたレポートの管理
           url: /analytics/managing-scheduled-reports.html
-        - name: Performance Report Reference
+        - name: パフォーマンスレポートリファレンス
           url: /analytics/performance-report-reference.html
-    - name: General Information
+    - name: 一般情報
       url: /analytics/index.html
       docs:
-        - name: Analytics Overview
+        - name: 分析の概要
           url: /analytics/analytics-overview.html
-        - name: Beacon Analytics Business Metrics
+        - name: BeaconAnalyticsビジネスメトリック
           url: /analytics/analytics-business-metrics.html
-        - name: Calculating Video Engagement Score
+        - name: ビデオエンゲージメントスコアの計算
           url: /analytics/calculating-video-engagement-score.html
-        - name: Exporting Data
+        - name: データのエクスポート
           url: /analytics/exporting-data-analytics-module.html
-        - name: Resources for Analytics
+        - name: 分析のためのリソース
           url: /analytics/resources.html
-        - name: SSAI Performance Analytics
+        - name: SSAIパフォーマンス分析
           url: /analytics/ssai-performance-data.html
-    - name: Third-Party Analytics
+    - name: サードパーティ分析
       url: /analytics/index.html
       docs:
-        - name: Google Analytics Self Configuration
+        - name: GoogleAnalyticsの自己構成
           url: /analytics/ga-self-configuration.html
-        - name: Reviewing Player Event Data in Google Analytics
+        - name: Google アナリティクスでのプレイヤーのイベントデータの確認
           url: /analytics/reviewing-player-event-data-google-analytics.html
-        - name: Viewing Analytics Data in Google Analytics
+        - name: GoogleAnalyticsでの分析データの表示
           url: /analytics/viewing-analytics-data-google.html
 - section:
-  name: Protecting Content
+  name: コンテンツの保護
   url: /protecting-content/index.html
   docs:
-    - name: DRM Output Protection Settings
+    - name: DRM 出力保護の設定
       url: /general/drm-output-protection-settings.html
-    - name: Forensic Watermarking
+    - name: フォレンジック·ウォーターマーク
       url: /protecting-content/forensic-watermarking-with-beacon.html
-    - name: Protecting Videos with HLS Encryption
+    - name: HLS 暗号化によるビデオの保護
       url: /general/protecting-videos-hls-encryption.html
 - section:
-  name: 'App Publishing and Behavior'
+  name: 'アプリケーションの公開と動作'
   url: '/publishing-apps/index.html'
   docs:
-    - name: 'General Information'
+    - name: '一般情報'
       url: '/publishing-apps/general/index.html'
       docs:
-        - name: 'Common Required Information for Submitting Apps'
+        - name: 'アプリケーションの送信に必要な一般的な情報'
           url: '/publishing-apps/general/common-required-info.html'
-        - name: 'Device Apps Validation Guide'
+        - name: 'デバイスアプリケーション検証ガイド'
           url: '/publishing-apps/general/device-apps-validation-guide.html'
-        - name: 'In-App Subscription Resources'
+        - name: 'アプリケーション内サブスクリプションリソース'
           url: '/publishing-apps/general/in-app-subscription-resources.html'
-        - name: 'Links to the App Stores Subscriptions'
+        - name: 'AppStoresサブスクリプションへのリンク'
           url: '/publishing-apps/general/links-subscriptions.html'
-        - name: 'Scheduling App Releases in the App Stores'
+        - name: 'AppStoreでのAppリリースのスケジューリング'
           url: '/publishing-apps/general/schedule-apps.html'
-    - name: 'App Behavior'
+    - name: 'アプリケーションの動作'
       url: '/publishing-apps/app-behavior/index.html'
       docs:
-        - name: 'Account Deletion'
+        - name: 'アカウントの削除'
           url: '/publishing-apps/app-behavior/account-deletion.html'
-        - name: 'Parental Controls'
+        - name: '保護者による制限'
           url: '/publishing-apps/app-behavior/parental-controls.html'
-    - name: 'Android'
+    - name: 'アンドロイド'
       url: '/publishing-apps/android/index.html'
       docs:
-        - name: 'Submitting New Apps to the Android Store'
+        - name: 'Androidストアへの新しいアプリケーションの送信'
           url: '/publishing-apps/android/submitting-to-android.html'
-        - name: 'Updating Android Apps to Brightcove Beacon'
+        - name: 'AndroidアプリケーションをBrightcove Beaconにアップデートする'
           url: '/publishing-apps/android/updating-android-apps-to-bcb.html'
-        - name: 'Adding Subscriptions to Android'
+        - name: 'Androidへのサブスクリプションの追加'
           url: '/publishing-apps/android/adding-subscriptions-in-android.html'
-        - name: 'Improving Search Relevance in the Android Play Store'
+        - name: 'AndroidPlayストアでの検索関連性の向上'
           url: '/publishing-apps/android/improving-relevance-android.html'
-        - name: 'Installing an Android Test Build'
+        - name: 'Androidテストビルドのインストール'
           url: '/publishing-apps/android/installing-android-test-build.html'
-        - name: 'Managing Google Subscriptions Part 1'
+        - name: 'Googleサブスクリプションの管理パート1'
           url: '/publishing-apps/android/managing-google-subscriptions-1.html'
-        - name: 'Managing Google Subscriptions Part 2'
+        - name: 'Googleサブスクリプションの管理パート2'
           url: '/publishing-apps/android/managing-google-subscriptions-2.html'
-    - name: 'Fire TV'
+    - name: 'ファイヤーテレビ'
       url: '/publishing-apps/fire-tv/index.html'
       docs:
-        - name: 'Add Brightcove Email to Amazon Account'
+        - name: 'AmazonアカウントにBrightcoveEメールを追加する'
           url: '/publishing-apps/fire-tv/add-bc-email.html'
-        - name: 'Installing a Fire TV Test Build'
+        - name: 'FireTVテストビルドのインストール'
           url: '/publishing-apps/fire-tv/installing-fire-tv-test-build.html'
-        - name: 'Submitting to the Amazon Store'
+        - name: 'Amazonストアへの送信'
           url: '/publishing-apps/fire-tv/submitting-to-amazon.html'
     - name: 'iOS/tvOS'
       url: '/publishing-apps/ios-tvos/index.html'
       docs:
-        - name: 'Account Deletion'
+        - name: 'アカウントの削除'
           url: '/publishing-apps/ios-tvos/account-deletion.html'
-        - name: 'FairPlay Certificate Registration'
+        - name: '公正取引証明書の登録'
           url: '/publishing-apps/ios-tvos/fairplay-certificate.html'
-        - name: 'Installing an iOS/tvOS Test Build'
+        - name: 'iOS/tvOSテストビルドのインストール'
           url: '/publishing-apps/ios-tvos/installing-ios-test-build.html'
-        - name: 'Resources'
+        - name: 'リソース'
           url: '/publishing-apps/ios-tvos/resources.html'
-        - name: 'Submitting to the Apple Store'
+        - name: 'AppleStoreへの送信'
           url: '/publishing-apps/ios-tvos/submitting-to-apple.html'
     - name: 'LG'
       url: '/publishing-apps/lg/index.html'
       docs:
-        - name: 'Submitting to the LG (webOS) Store'
+        - name: 'LG(webOS)Storeへの送信'
           url: '/publishing-apps/lg/submitting-to-lg.html'
-    #- name: 'Panasonic'
+    #- name: 'パナソニック'
     #  url: '/publishing-apps/panasonic/index.html'
     #  docs:
-    #    - name: 'Submitting to the Panasonic Store'
+    #    - name: 'PanasonicStoreへの送信'
     #      url: '/publishing-apps/panasonic/submitting-to-panasonic.html'
-    - name: 'Roku'
+    - name: 'ロク'
       url: '/publishing-apps/roku/index.html'
       docs:
-        - name: 'Add Brightcove User to Roku Account'
+        - name: 'BrightcoveユーザーをRokuアカウントに追加'
           url: '/publishing-apps/roku/add-bc-user.html'
-        - name: 'Configuring In-Channel Products in Roku'
+        - name: 'Rokuでのチャネル内製品の設定'
           url: '/publishing-apps/roku/configuring-inchannel-products.html'
-        - name: 'Installing a Roku Test Build'
+        - name: 'Rokuテストビルドのインストール'
           url: '/publishing-apps/roku/installing-roku-test-build.html'
-        - name: 'Submitting to the Roku Store'
+        - name: 'RokuStoreへの送信'
           url: '/publishing-apps/roku/submitting-to-roku.html'
-    - name: 'Samsung'
+    - name: 'サムスン'
       url: '/publishing-apps/samsung/index.html'
       docs:
-        - name: 'Becoming a Samsung Partner'
+        - name: 'サムスンのパートナーになる'
           url: '/publishing-apps/samsung/samsung-partner.html'
-        - name: 'Installing the Samsung Test Build'
+        - name: 'Samsungテストビルドのインストール'
           url: '/publishing-apps/samsung/installing-samsung-test-build.html'
-        - name: 'Submitting to the Samsung Store'
+        - name: 'SamsungStoreへの提出'
           url: '/publishing-apps/samsung/submitting-to-samsung.html'
 - section:
-  name: 'Publishing Videos & Players'
+  name: '動画とプレーヤーの公開'
   url: /publish/index.html
   docs:
-    - name: Adding a 3Play Media Interactive Transcript
+    - name: 3PlayMedia対話型トランスクリプトの追加
       url: /publish/adding-3play-media-interactive-transcript-video.html
-    - name: Adding an Application ID to the Embed Code
+    - name: 埋め込みコードへのアプリケーションIDの追加
       url: /publish/adding-application-id-player-embed-code.html
-    - name: Adding a Player to a Facebook Fan Page
+    - name: Facebookのファンページへのプレーヤーの追加
       url: /publish/adding-brightcove-player-facebook-fan-page.html
-    - name: Changing a Video in a Player
+    - name: プレーヤーでのビデオの変更
       url: /publish/changing-video-player-without-changing-embed-code.html
-    - name: Choosing the Correct Embed Code
+    - name: 正しい埋め込みコードの選択
       url: /publish/choosing-correct-embed-code.html
-    - name: Creating and Publishing High Quality Screencasts
+    - name: 高品質のスクリーンキャストの作成と公開
       url: /publish/creating-and-publishing-high-quality-screencasts.html
-    - name: Deep Linking
+    - name: ディープリンク
       url: /publish/deep-linking.html
-    - name: Driving Video Views Through Email
+    - name: 電子メールによるビデオビューの促進
       url: /publish/driving-video-views-through-email.html
-    - name: Dynamically Assigning Videos to a Player
+    - name: プレーヤーへのビデオの動的な割り当て
       url: /publish/dynamically-assigning-videos-player.html
-    - name: Embedding a Player on a Google Sites Page
+    - name: Googleサイトページへのプレーヤーの埋め込み
       url: /publish/embedding-brightcove-player-google-sites-page.html
-    - name: Publishing a Player in a Wordpress Page
+    - name: Wordpressページでのプレーヤーのパブリッシュ
       url: /publish/publishing-brightcove-player-wordpress-page.html
-    - name: Publishing Players in Facebook Instant Articles
+    - name: FacebookInstantArticlesでのプレイヤーの公開
       url: /publish/publishing-brightcove-players-facebook-instant-articles.html
-    - name: Publishing Players in Joomla
+    - name: Joomlaのパブリッシングプレーヤー
       url: /publish/publishing-brightcove-players-joomla.html
-    - name: Publishing a Video to Email
+    - name: 電子メールへのビデオの公開
       url: /publish/publishing-video-email.html
-    - name: Publishing Videos and Playlists
+    - name: 動画と再生リストの公開
       url: /publish/publishing-videos-and-playlists-media-module.html
-    - name: 'Step-by-Step:  Creating and Publishing a Player'
+    - name: 'ステップバイステップ:Playerの作成と公開'
       url: /publish/step-step-using-players-module-create-and-publish-player.html
-    - name: Using Multiple Players on One Page
+    - name: 1ページで複数のプレイヤーを使用する
       url: /publish/using-multiple-players-one-page.html
-    - name: Using Reference IDs
+    - name: 参照 ID の使用
       url: /publish/using-reference-ids.html
 - section:
-  name: Registered Users
+  name: 登録ユーザ
   url: /registered-users/index.html
   docs:
-    - name: Working with Registered Users
+    - name: 登録ユーザの操作
       url: /registered-users/working-with-registered-users.html
-    - name: Exporting Registered Users
+    - name: 登録ユーザのエクスポート
       url: /registered-users/export-registered-users.html
-    - name: Sending Push Notifications
+    - name: プッシュ通知の送信
       url: /registered-users/sending-push-notifications.html
 - section:
-  name: Social Sharing
+  name: ソーシャルシェアリング
   url: /social/index.html
   docs:
-    - name: Adding a Facebook Like Button to a Player
+    - name: Facebook の「いいね！」ボタンをプレーヤーに追加する
       url: /social/adding-facebook-button-brightcove-player.html
-    - name: Creating Publishing Destinations
+    - name: パブリッシュ先の作成
       url: /social/creating-social-media-publishing-destinations.html
-    - name: Creating a Video Clip
+    - name: ビデオクリップの作成
       url: /social/creating-video-clip-using-brightcove-social.html
-    - name: Enabling Longer Videos In YouTube
+    - name: YouTube で長い動画を有効にする
       url: /social/enabling-longer-videos-youtube.html
-    - name: Getting Started with Social
+    - name: ソーシャルネットワークサービスの利用を開始
       url: /social/getting-started-brightcove-social.html
-    - name: Publishing Videos to Social Media
+    - name: ソーシャルメディアへのビデオの公開
       url: /social/publishing-videos-social-media-platforms.html
-    - name: Reviewing Social Analytics
+    - name: ソーシャルアナリティクスの確認
       url: /social/reviewing-social-analytics.html
-    - name: Reviewing Social Engagement Analytics
+    - name: ソーシャルエンゲージメント分析の確認
       url: /social/reviewing-social-engagement-analytics.html
-    - name: Reviewing Social Views Analytics
+    - name: ソーシャルビュー分析の確認
       url: /social/reviewing-social-views-analytics.html
-    - name: Setting the Privacy Status for a Video
+    - name: 動画のプライバシーステータスの設定
       url: /social/setting-privacy-status-video.html
-    - name: Sharing Videos to Twitter Player Cards
+    - name: Twitterプレイヤーカードに動画を共有する
       url: /social/sharing-videos-twitter-player-cards.html
-    - name: Using Auto Sync
+    - name: 自動同期の使用
       url: /social/using-auto-sync-synchronize-videos-social-media-accounts.html
-    - name: Viewing Published Videos
+    - name: 公開されたビデオの表示
       url: /social/viewing-videos-published-social-media.html
 - section:
-  name: Live Streaming
+  name: ライブストリーミング
   url: /live/index.html
   docs:
-  - name: Getting Started
+  - name: 入門編
     url: /live/get-started/index.html
     docs:
-    - name: Delivering Live Streams
+    - name: ライブストリームの配信
       url: /live/get-started/delivering-live-streams.html
-    - name: "Brightcove Live: Best Practices"
+    - name: 「ブライトカバーライブ:ベストプラクティス」
       url: /live/get-started/live-module-guidelines-and-best-practices.html
-    - name: "Step-by-Step: SRT Live event"
+    - name: 「ステップ·バイ·ステップバイステップ:SRTライブイベント」
       url: /live/get-started/step-step-live-srt.html
-    - name: "Step-by-Step: Using the Live Module with OBS"
+    - name: 「ステップ·バイ·ステップバイステップ:OBSでライブモジュールを使用する方法"
       url: /live/get-started/step-step-using-live-module-open-broadcaster-software-obs.html
-    - name: "Step-by-Step: Using the Live Module with Wirecast"
+    - name: 「ステップ·バイ·ステップバイステップ:Wirecastでのライブモジュールの使用"
       url: /live/get-started/step-step-using-live-module-telestream-wirecast.html
-  - name: Using the Live Module
+  - name: ライブモジュールの使用
     url: /live/live-module/index.html
     docs:
-    - name: Client-Side Pre-roll Ads with Live SSAI
+    - name: ライブSSAIを使用したクライアント側のプリロール広告
       url: /live/live-module/client-side-preroll-with-live-ssai.html
-    - name: Creating and Managing Live Events using the Live Module
+    - name: ライブモジュールを使用したライブイベントの作成と管理
       url: /live/live-module/creating-and-managing-live-events-using-live-module.html
-    - name: Creating a Video Clip
+    - name: ビデオクリップの作成
       url: /live/live-module/creating-video-clip-using-live-module.html
-    - name: Implementing Server-Side Ads
+    - name: サーバ側広告の実装
       url: /live/live-module/implementing-server-side-ads-live-module.html
-    - name: Live Redundancy
+    - name: ライブ冗長性
       url: /live/live-module/live-redundancy.html
-    - name: Multi Language Audio
+    - name: 多言語オーディオ
       url: /live/live-module/multi-language-audio.html
-    - name: Playback Restrictions with Live Events
+    - name: ライブイベントでの再生の制約事項
       url: /live/live-module/playback-restrictions-live-module.html
-    - name: Reviewing Live Analytics
+    - name: ライブアナリティクスのレビュー
       url: /live/live-module/reviewing-live-analytics.html
-    - name: Scheduling Clips
+    - name: クリップのスケジューリング
       url: /live/live-module/scheduling-clips.html
-    - name: Scheduling Live Events
+    - name: ライブイベントのスケジューリング
       url: /live/live-module/scheduling-live-event.html
-    - name: Streaming to Facebook and YouTube
+    - name: FacebookおよびYouTubeへのストリーミング
       url: /live/live-module/using-live-rtmp-outputs-stream-facebook-and-youtube.html
-    - name: "Brightcove Live - Zoom Integration"
+    - name: 「BrightcoveLive-ズーム統合」
       url: /live/live-module/zoom-live-integration.html
-  - name: General Information
+  - name: 一般情報
     url: /live/general/index.html
     docs:
-    - name: Captions with Live Streams
+    - name: ライブストリームでのキャプション
       url: /live/general/captions-with-live-streams.html
-    - name: Forensic Watermarking with Live Streams
+    - name: ライブストリームを使用した法医学的ウォーターマーキング
       url: /live/general/forensic-watermarking-live.html
-    - name: Live DRM
+    - name: ライブDRM
       url: /live/general/live-drm.html
-    - name: Live Video Glossary
+    - name: ライブビデオ用語集
       url: /live/general/live-video-glossary.html
-    - name: Reducing Latency for Live Streams
+    - name: ライブストリームの遅延の低減
       url: /live/general/reducing-latency-live-streams.html
-    - name: Streaming a Live Event using Beacon Classic
+    - name: BeaconClassicを使用したライブイベントのストリーミング
       url: /live/general/streaming-live-event.html
-    - name: Supported Encoders for Live Events
+    - name: ライブイベントでサポートされるエンコーダ
       url: /live/general/supported-encoders-live-events.html
-  - name: Web Conferencing
+  - name: Web会議
     url: /live/web-conferencing/index.html
     docs:
-    - name: Hosting an Avaya Conference
+    - name: Avaya会議の開催
       url: /live/web-conferencing/host-avaya-conference-brightcove-live.html
-    - name: Hosting a Cisco Webex Conference
+    - name: CiscoWebex会議のホスティング
       url: /live/web-conferencing/host-cisco-webex-conference-brightcove-live.html
-    - name: Hosting an INXPO Event
+    - name: INXPOイベントのホスティング
       url: /live/web-conferencing/host-inxpo-live.html
-    - name: Hosting a Zoom Conference
-      url: /live/web-conferencing/host-zoom-conference-brightcove-live.html
 - section:
-  name: Styling & Appearance
+  name: スタイリング &amp; 外観
   url: /styling/index.html
   docs:
-    - name: Branding Brightcove Beacon Apps
+    - name: Brightcove Beaconアプリケーションのブランディング
       url: /styling/branding-beacon-apps.html
-    - name: Image Specifications
+    - name: イメージの仕様
       url: /styling/image-requirements.html
 - section:
-  name: Marketing Automation
+  name: マーケティングの自動化
   url: /campaign/index.html
   docs:
-  - name: Getting Started
+  - name: 入門編
     url: /campaign/get-started/index.html
     docs:
-      - name: Getting Started with Campaign
+      - name: キャンペーンの開始
         url: /campaign/get-started/getting-started-campaign-module.html
-      - name: Creating a Campaign-enabled Player
+      - name: キャンペーン対応プレーヤーの作成
         url: /campaign/general/creating-campaign-enabled-player.html
-      - name: Overview of Video Content Types
+      - name: ビデオコンテンツタイプの概要
         url: /campaign/get-started/overview-video-content-types.html
-      - name: Using the Chrome Extension
+      - name: Chrome 拡張機能を使用する
         url: /campaign/get-started/using-hud.html
-  - name: General Information
+  - name: 一般情報
     url: /campaign/general/index.html
     docs:
-      - name: Campaign FAQ
+      - name: キャンペーンFAQ
         url: /campaign/general/campaign-faq.html
-      - name: Campaign Fields and Data Definitions
+      - name: キャンペーンフィールドとデータ定義
         url: /campaign/general/campaign-fields-and-data-definitions.html
-      - name: Campaign Plugin FAQ
+      - name: キャンペーンプラグインFAQ
         url: /campaign/general/campaign-plugin-faq.html
-      - name: Configuring Campaign Settings
+      - name: キャンペーン設定の構成
         url: /campaign/general/configuring-campaign-settings.html
-      - name: Creating a Campaign-enabled Player
+      - name: キャンペーン対応プレーヤーの作成
         url: /campaign/general/creating-campaign-enabled-player.html
-      - name: Creating a Campaign Lead Form
+      - name: キャンペーンリードフォームの作成
         url: /campaign/general/creating-campaign-lead-form.html
-      - name: How Campaign Identifies Viewers
+      - name: キャンペーンによる視聴者の識別方法
         url: /campaign/general/how-campaign-module-identifies-viewers.html
-      - name: How Video Benchmark Score is Calculated
+      - name: 動画のベンチマークスコアの計算方法
         url: /campaign/general/how-vbs-calculated.html
-      - name: Overview of Video Content Types
+      - name: ビデオコンテンツタイプの概要
         url: /campaign/general/overview-video-content-types.html
-      - name: Publishing a Video to Email
+      - name: 電子メールへのビデオの公開
         url: /campaign/general/publishing-video-email-using-campaign-module.html
-      - name: Using Custom Metrics and Events
+      - name: カスタムメトリックスとイベントの使用
         url: /campaign/general/using-custom-metrics-and-events.html
-      - name: Viewing Player Events
+      - name: プレーヤーイベントの表示
         url: /campaign/general/viewing-player-events-campaign-module.html
-      - name: Viewing Video Activity
+      - name: ビデオアクティビティの表示
         url: /campaign/general/viewing-video-activity.html
-      - name: Viewing Viewer Profile Information
+      - name: ビューアープロファイル情報の表示
         url: /campaign/general/viewing-viewer-profile-information.html
-      - name: Working with UTM Fields
+      - name: UTMフィールドの操作
         url: /campaign/general/working-utm-fields-campaign-module.html
-  - name: Integrations
+  - name: 統合
     url: /campaign/integrations/index.html
     docs:
-      - name: Eloqua
+      - name: エロクア
         url: /campaign/integrations/eloqua/index.html
         docs:
-          - name: Creating Custom Lead Forms
+          - name: カスタムリードフォームの作成
             url: /campaign/integrations/eloqua/creating-custom-lead-forms-oracle-eloqua.html
-          - name: Eloqua Integration Testing Guide
+          - name: Eloqua 統合テストガイド
             url: /campaign/integrations/eloqua/eloqua-integration-testing-guide.html
-          - name: Embedding a Video on a Landing Page
+          - name: ランディングページへのビデオの埋め込み
             url: /campaign/integrations/eloqua/embedding-video-cloud-video-eloqua-landing-page.html
-          - name: Integrating with Oracle Eloqua
+          - name: OracleEloquaとの統合
             url: /campaign/integrations/eloqua/integrating-video-cloud-oracle-eloqua.html
-      - name: HubSpot
+      - name: HubSpot 
         url: /campaign/integrations/hubspot/index.html
         docs:
-          - name: Creating Custom Lead Forms
+          - name: カスタムリードフォームの作成
             url: /campaign/integrations/hubspot/creating-custom-lead-forms-hubspot.html
-          - name: HubSpot REST API Testing Guide
+          - name: HubSpotRESTAPIテストガイド
             url: /campaign/integrations/hubspot/hubspot-rest-api-integration-testing-guide.html
-          - name: 'Integrating with HubSpot (Client-Side APIs)'
+          - name: 'HubSpot（クライアント側API）との統合'
             url: /campaign/integrations/hubspot/integrating-video-cloud-hubspot-using-client-side-apis.html
-          - name: 'Integrating with HubSpot (REST APIs)'
+          - name: 'HubSpot（RESTAPI）との統合'
             url: /campaign/integrations/hubspot/integrating-video-cloud-hubspot-using-rest-apis.html
-      - name: Marketo
+      - name: マルケト
         url: /campaign/integrations/marketo/index.html
         docs:
-          - name: Creating Custom Lead Forms
+          - name: カスタムリードフォームの作成
             url: /campaign/integrations/marketo/creating-custom-lead-forms-marketo.html
-          - name: 'Integrating with Marketo (Munchkin)'
+          - name: 'Marketo(Munchkin)との統合'
             url: /campaign/integrations/marketo/integrating-video-cloud-marketo-using-munchkin.html
-          - name: 'Integrating with Marketo (REST APIs)'
+          - name: 'Marketo（RESTAPI）との統合'
             url: /campaign/integrations/marketo/integrating-video-cloud-marketo-using-rest-apis.html
-          - name: Marketo REST Integration Testing Guide
+          - name: Marketto REST 統合テストガイド
             url: /campaign/integrations/marketo/marketo-rest-integration-testing-guide.html
-      - name: Non-MAP
+      - name: 非MAP
         url: /campaign/integrations/non-map/index.html
         docs:
-          - name: Creating Custom Integrations
+          - name: カスタム連動の作成
             url: /campaign/integrations/non-map/creating-custom-integrations-campaign-module.html
-          - name: Integrating with Single Sign-On
+          - name: SingleSign-Onとの統合
             url: /campaign/integrations/non-map/integrating-campaign-single-sign.html
-          - name: Using Campaign to Track Viewers
+          - name: キャンペーンを使用したビューアの追跡
             url: /campaign/integrations/non-map/using-campaign-module-track-viewers.html
-      - name: Salesforce
+      - name: セールスフォース
         url: /campaign/integrations/salesforce/index.html
         docs:
-          - name: Creating Custom Lead Forms
+          - name: カスタムリードフォームの作成
             url: /campaign/integrations/salesforce/creating-custom-lead-forms-salesforce.html
-          - name: Creating Salesforce Object for Pardot
+          - name: Pardot用のSalesforceオブジェクトの作成
             url: /campaign/integrations/salesforce/creating-salesforce-object-pardot.html
-          - name: Integrating with Salesforce
+          - name: セールスフォースとの統合
             url: /campaign/integrations/salesforce/integrating-video-cloud-salesforce.html
-  - name: Administering Campaign
+  - name: キャンペーンの管理
     url: /campaign/admin/index.html
     docs:
-      - name: Exporting Data from Campaign
+      - name: キャンペーンからのデータのエクスポート
         url: /campaign/admin/exporting-campaign-data-campaign-module.html
-      - name: Exporting Gallery Lead Data
+      - name: ギャラリーリードデータのエクスポート
         url: /campaign/admin/exporting-gallery-lead-data.html
-      - name: Managing Viewer Data
+      - name: ビューアデータの管理
         url: /campaign/admin/managing-viewer-data.html
-      - name: Troubleshooting Campaign Issues
+      - name: キャンペーンの問題のトラブルシューティング
         url: /campaign/admin/troubleshooting-campaign-issues.html
-  - name: Developers (Audience API)
+  - name: 開発者(AudienceAPI)
     url: 'https://apis.support.brightcove.com/audience/index.html'
 - section:
-  name: Administering Accounts
+  name: アカウントの管理
   url: /admin/index.html
   docs:
-    - name: Configuring Language Settings
+    - name: 言語設定の構成
       url: /admin/configuring-language-settings.html
-    - name: Configuring Server-Side Ad Settings
+    - name: サーバーサイド広告設定の構成
       url: /admin/configuring-server-side-ad-settings.html
-    - name: Creating Custom Live Ingest Profiles
+    - name: カスタムライブ取り込みプロファイルの作成
       url: /admin/creating-custom-live-ingest-profiles.html
-    - name: Creating Custom Metadata Fields
+    - name: カスタムメタデータフィールドの作成
       url: /admin/creating-custom-metadata-fields.html
-    - name: Creating Ingest Profiles for Context Aware Encoding
+    - name: コンテキスト認識エンコーディングの取り込みプロファイルの作成
       url: /admin/creating-ingest-profiles-context-aware-encoding.html
-    - name: Creating Ingest Profiles for Dynamic Delivery
+    - name: 動的配信用の取り込みプロファイルの作成
       url: /admin/creating-ingest-profiles-dynamic-delivery.html
-    - name: Fields for Live Ingest Profiles
+    - name: ライブ取り込みプロファイルのフィールド
       url: /admin/fields-custom-live-ingest-profiles.html
-    - name: Ingest Profiles Best Practices
+    - name: プロファイルの取り込みに関するベストプラクティス
       url: /admin/ingest-profiles-best-practices.html
-    - name: Managing Account Information
+    - name: アカウント情報の管理
       url: /admin/managing-account-information.html
-    - name: Managing Account Settings
+    - name: アカウント設定の管理
       url: /admin/managing-account-settings.html
-    - name: Managing API Authentication Credentials
+    - name: API 認証資格情報の管理
       url: /admin/managing-api-authentication-credentials.html
-    - name: Managing Ingest Profiles
+    - name: 取り込みプロファイルの管理
       url: /admin/managing-ingest-profiles.html
-    - name: Managing Live Settings
+    - name: ライブ設定の管理
       url: /admin/managing-live-settings.html
-    - name: Managing Media Sharing Settings
+    - name: メディア共有設定の管理
       url: /admin/managing-media-sharing-settings.html
-    - name: Managing Profile Information
+    - name: プロファイル情報の管理
       url: /admin/managing-profile-information.html
-    - name: Managing Users
+    - name: ユーザーの管理
       url: /admin/managing-users.html
-    - name: 'Standard Ingest Profiles (DD & CAE)'
+    - name: '標準摂取プロファイル（DD） &amp; CAE)'
       url: /admin/standard-ingest-profiles-dynamic-delivery-and-context-aware-encoding.html
-    - name: Standard Live Ingest Profiles
+    - name: 標準ライブインジェストプロファイル
       url: /admin/standard-live-ingest-profiles.html
 - section:
-  name: 'General Information'
+  name: '一般情報'
   url: '/general/index.html'
   docs:
-    - name: 'References'
+    - name: '参考文献'
       url: '/general/references/index.html'
       docs:
-        - name: 'Best Practices: Transcoding and Uploading'
+        - name: 'ベストプラクティス：トランスコーディングとアップロード'
           url: /general/references/best-practices-video-creating-transcoding-and-uploading-workflow.html
-        - name: 'Common Required Information for Submitting Apps'
+        - name: 'アプリケーションの送信に必要な一般的な情報'
           url: '/publishing-apps/general/common-required-info.html'
-        - name: Glossary
+        - name: 用語集
           url: /general/references/glossary.html
-        - name: Known Issues
+        - name: 既知の問題
           url: /general/references/known-issues.html
-        - name: Making Your Video Content Indexable
+        - name: 動画コンテンツをインデックス可能にする
           url: /general/references/making-your-video-content-indexable.html
-        - name: Marketplace
+        - name: マーケットプレイス
           url: /general/references/marketplace.html
-        - name: Optimal Video Dimensions
+        - name: 最適なビデオ寸法
           url: /general/references/optimal-video-dimensions.html
-        - name: 'Overview: China Delivery Overview'
+        - name: '概要:中国配送の概要'
           url: /general/references/china-delivery-overview.html
-        - name: Product Release Notes
+        - name: 製品リリースノート
           url: /release-notes/product-updates.html
-        - name: Related Content
+        - name: 関連コンテンツ
           url: /general/references/related-content.html
-        - name: Remote Asset Limitations
+        - name: リモート資産の制限
           url: /general/references/remote-asset-limitations.html
-        - name: Resetting Your Studio Password
+        - name: スタジオパスワードのリセット
           url: /general/references/resetting-your-studio-password.html
-        - name: Supported Video and Audio Formats
+        - name: サポートされているビデオおよびオーディオ形式
           url: /general/references/supported-video-and-audio-formats-codecs-and-containers.html
-        - name: Video Source File Specs and Recommendations
+        - name: ビデオソースファイルの仕様と推奨事項
           url: /general/references/video-source-file-specifications-and-recommendations.html
-        - name: Using Multiple Languages
+        - name: 複数言語の使用
           url: /general/references/using-multiple-languages.html
-        - name: When to Use Beacon Studio / Beacon Classic
+        - name: BeaconStudio/BeaconClassicを使用する場合
           url: /general/references/beacon-studio-or-classic.html
-        - name: Working with 360° Videos
+        - name: 360° ビデオの操作
           url: /general/references/working-360deg-videos.html
-        - name: Working with Audio-Only Content
+        - name: 音声のみのコンテンツの操作
           url: /general/references/working-audio-content.html
-    - name: 'Architecture'
+    - name: 'アーキテクチャ'
       url: '/general/architecture/index.html'
       docs:
-        - name: Content Delivery Options
+        - name: コンテンツ配信オプション
           url: /general/architecture/content-delivery-options.html
-        - name: 'Domains and Ports for Video Cloud'
+        - name: 'ビデオクラウド用のドメインとポート'
           url: '/general/architecture/domains-and-ports-must-be-accessible-video-cloud.html'
-        - name: Overview of Context Aware Encoding
+        - name: コンテキスト認識エンコーディングの概要
           url: /general/architecture/overview-context-aware-encoding.html
-        - name: Overview of Dynamic Delivery
+        - name: 動的配信の概要
           url: /general/architecture/overview-dynamic-delivery.html
-    - name: 'Authentication'
+    - name: '[ 認証] '
       url: '/general/authentication/index.html'
       docs:
-        - name: Authentication Using OAuth
+        - name: OAuthを使用した認証
           url: /general/authentication/authentication-using-oauth.html
-        - name: Login Durations
+        - name: ログイン期間
           url: /general/authentication/login-durations.html
-        - name: 'OIDC Configuration and Testing'
+        - name: 'OIDCの設定とテスト'
           url: '/general/authentication/oidc-authentication-for-beacon.html'
-        - name: 'OIDC Example: Integrating with the Beacon Web Store'
+        - name: 'OIDCの例:BeaconWebStoreとの統合'
           url: '/beacon-web-store/integration-details.html'
-    - name: 'Content Protection'
+    - name: 'コンテンツ保護'
       url: '/general/content-protection/index.html'
       docs:
-        - name: DRM Output Protection Settings
+        - name: DRM 出力保護の設定
           url: /general/content-protection/drm-output-protection-settings.html
-        - name: 'Overview: Digital Rights Management (DRM)'
+        - name: '概要:デジタル著作権管理 (DRM) '
           url: /general/content-protection/overview-digital-rights-management-drm-video-cloud.html
-        - name: Protecting Videos with HLS Encryption
+        - name: HLS 暗号化によるビデオの保護
           url: /general/content-protection/protecting-videos-hls-encryption.html
-        - name: TLS for Media, Player, and API URLs
+        - name: メディア、プレーヤー、API の URL の TLS 
           url: /general/content-protection/tls-media-player-and-api-urls.html
-    - name: 'Cookie Consent'
+    - name: 'Cookieの同意'
       url: '/general/cookie-consent/index.html'
       docs:
-        - name: Managing Cookie Consent Using OneTrust
+        - name: 1つの信頼を使用したクッキー同意の管理
           url: /general/cookie-consent/managing-cookie-consent.html
-    - name: 'Notifications'
+    - name: 'お知らせ'
       url: '/general/notifications/index.html'
       docs:
-        - name: Sending App Notifications
+        - name: アプリケーション通知の送信
           url: /general/notifications/sending-app-notifications.html
 - section:
-  name: Beacon Plugins
+  name: ビーコンプラグイン
   url: /ott-plugins/index.html
   docs:
-    - name: 'Learning Guide: Beacon Plugins'
+    - name: '学習ガイド:ビーコンプラグイン'
       url: /ott-plugins/learning-guide-beacon-plugins.html
-    - name: Use JavaScript Modules for Plugins
+    - name: プラグインにJavaScriptモジュールを使用する
       url: /ott-plugins/javascript-modules-beacon-plugins.html
-    - name: Dispatch & Handle Events in Plugins
+    - name: ディスパッチ &amp; プラグインでのイベントの処理
       url: /ott-plugins/dispatching-handling-events.html
-    - name: Creating a Custom Page
+    - name: カスタムページの作成
       url: /ott-plugins/custom-page.html
-    - name: Implement Buttons and Event Handlers
+    - name: ボタンとイベントハンドラの実装
       url: /ott-plugins/buttons-and-events.html
-    - name: Implement Custom Sections
+    - name: カスタムセクションの実装
       url: /ott-plugins/custom-divs.html
-    - name: Implement the Side Panel
+    - name: サイドパネルの実装
       url: /ott-plugins/side-panel.html
-    - name: Implement User Events
+    - name: ユーザイベントの実装
       url: /ott-plugins/user-events.html
-    - name: Storing Data in a Separate Module
+    - name: 別のモジュールへのデータの保存
       url: /ott-plugins/data-module.html
-    - name: Working with Page Events
+    - name: ページイベントの操作
       url: /ott-plugins/working-with-page-events.html
 - section:
-  name: Release Notes
+  name: リリースノート
   url: /release-notes/index.html
   docs:
-    - name: Product Release Notes
+    - name: 製品リリースノート
       url: /release-notes/product-updates.html
 - section:
-  name: 'Support'
+  name: 'サポート'
   url: '/support/index.html'
   docs:
-    - name: 'Viewing the Brightcove System Status Page'
+    - name: 'Brightcoveのシステムステータスページの表示'
       url: '/support/viewing-brightcove-system-status-page.html'
-    - name: 'Opening a Support Case'
+    - name: 'サポートケースを開く'
       url: '/support/opening-case-with-brightcove-support.html'
-    - name: 'Reset Your Support Portal Password'
+    - name: 'サポートポータルパスワードのリセット'
       url: '/support/reset-support-portal-password.html'
-    - name: 'Contact Sales'
+    - name: '営業へのお問い合わせ'
       url: '/support/contact-sales.html'

@@ -1,18 +1,12 @@
 ---
-title: Protecting Content
-parent: Home
-description: Learn how to protect your video content from unauthorized viewing.
+title: コンテンツ親の保護:家 
+description:  ビデオコンテンツを不正な表示から保護する方法をご紹介します。
 ---
 
-<h1>{{ page.title }}</h1>
-<article class="landing-page-wrapper">
-  <summary>{{ page.description }}</summary>
-  <section>
-    <h2 id="Topics_in_this_section">Topics</h2>
+<h1>{{page.title}}</h1> <article class="landing-page-wrapper"> <summary>{{page.description}}</summary> <section>
+    <h2 id="Topics_in_this_section">トピック</h2>
     <ul>
-      {% for item in site.data.navigation %}
-      {% if item.name == page.title %}
-      {% for entry in item.docs %}
+      {% for item in site.data.navigation %} {% if item.name == page.title %} {% for entry in item.docs %}
       <li><a href="{{ entry.url }}">{{ entry.name }}</a> {% if entry.docs %}
         <ul>
           {% for subentry in entry.docs %}
@@ -21,9 +15,5 @@ description: Learn how to protect your video content from unauthorized viewing.
         </ul>
         {% endif %}
       </li>
-      {% endfor %}
-      {% endif %}
-      {% endfor %}
-    </ul>
-  </section>
-</article>
+      {% endfor %} {% endif %} {% endfor %}
+    </ul>  </section></article>

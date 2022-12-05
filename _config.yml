@@ -18,10 +18,10 @@
 # You can create any custom variable you would like, and they will be accessible
 # in the templates via {{ site.myvariable }}.
 
-title: Brightcove Beacon Documentation
+title:  Brightcove Beacon Documentation
 email: training@brightcove.com
-description: >- # this means to ignore newlines until "baseurl:"
-  Brightcove Beacon is a platform which enables you to create and configure a single media streaming experience which is then used across multiple platforms and devices. The documents in this domain are for Brightcove Beacon Studio, the newest version of Beacon. For documentation on the earlier version of Beacon see the documentation set for <a href="https://beacon.support.brightcove.com/index.html">Beacon Classic</a>.
+description:   >- # this means to ignore newlines until "baseurl:"
+  Brightcove Beacon は、複数のプラットフォームやデバイスで使用される単一のメディア ストリーミング エクスペリエンスを作成および構成できるプラットフォームです。このドメインのドキュメントは、Beacon の最新バージョンである Brightcove Beacon Studio 用です。以前のバージョンの Beacon に関するドキュメントについては、<a href="https://beacon.support.brightcove.com/index.html">Beacon Classic</a> のドキュメント セットを参照してください.
 
 # baseurl: "" # the subpath of your site, e.g. /blog
 site_url: 'https://ja.beacon-help.support.brightcove.com'
@@ -41,9 +41,6 @@ product_color: rgb(28, 185, 213)
 product_icon: "COVE004_Brightcove_Beacon_Logo_RGB_K.svg"
 search_id: '017969773216783359937:9ybe0wftqs0'
 feedbackify_id: '15610'
-talla_appID: '00c26be3-4421-41e6-bb00-1dee68740f67'
-talla_token: 'eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpYXQiOjE1ODI4MDQzNDF9.RYf2x65FXvdDURzM h00i76KfUrYlsDLsw6mVuEv6zmE'
-talla_knowledgegroup: 'd4105468-75a8-4bbb-89ac-33df9e3b5173'
 defaults:
   - scope:
       path: ''

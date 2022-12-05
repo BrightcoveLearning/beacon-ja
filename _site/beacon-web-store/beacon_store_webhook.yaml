@@ -1,18 +1,18 @@
 openapi: 3.0.0
 info:
   version: 1.0.1
-  title: Beacon Store Webhook Reference
+  title:  Beacon Store Webhook Reference
   license:
-    name: Brightcove
-  description: |-
+    name: ブライト·カバー
+  description:   |-
     Reference for the Brightcove Beacon Webhook.
 
     **Base URL**: https://beacon.brightcove.com/{project}
 
 
 tags:
-  - name: WebHook
-    description: |-
+  - name: ウェブフック
+    description:   |-
       Operations for creating/updating Beacon user entitlements
 paths:
   '/webhook/beacon':
@@ -20,12 +20,12 @@ paths:
       tags:
         - WebHook
       summary: Update user beacon store
-      description: 'Beacon Entitlement update'
+      description:   'Beacon Entitlement update'
       operationId: UpdateBeaconStore
       parameters:
         - $ref: '#/components/parameters/auth-token'
       requestBody:
-        description: body subscriptions
+        description:   body subscriptions
         content: {
           application/json: {
             schema: {
@@ -39,7 +39,7 @@ paths:
         required: true
       responses:
         '200':
-          description: '200'
+          description:   '200'
           content:
             application/json:
               schema:
@@ -50,7 +50,7 @@ paths:
                     success: true
                     message: 'All entitlements processed'
         '400':
-          description: '400'
+          description:   '400'
           content:
             application/json:
               schema:
@@ -81,7 +81,7 @@ paths:
                     message: 'No valid entitlements'
                   summary: Theres no valid entitlements to process
         '500':
-          description: '500'
+          description:   '500'
           content:
             application/json:
               schema:
@@ -113,56 +113,56 @@ components:
     BeaconRequestBody:
       properties:
         package_name:
-          description: Package name for subscriptions (SVOD), or the product SKU for TVOD (buy/rent)
+          description:   Package name for subscriptions (SVOD), or the product SKU for TVOD (buy/rent)
           type: string
           example: "GOLD_PACKAGE"
         payment_gateway:
-          description: Payment gateway (should be beaconstore)
+          description:   Payment gateway (should be beaconstore)
           type: string
           maxLength: 50
           example: "beaconstore"
         external_user_id:
-          description: user identifier (username if using Beacon UMS or sub id from access token for external UMS systems using OIDC integration)
+          description:   user identifier (username if using Beacon UMS or sub id from access token for external UMS systems using OIDC integration)
           type: string
           example: "john_smith@acme.co"
         transaction_id:
-          description: transaction id, unique value used for subscriptions mainly in order to update or create subscriptions
+          description:   transaction id, unique value used for subscriptions mainly in order to update or create subscriptions
           type: string
           maxLength: 191
           example: "XW85649"
         start_date:
-          description: Start date Unix timestamp
+          description:   Start date Unix timestamp
           type: integer
           minLength: 10
           maxLength: 13
           example: 1615998269
         end_date:
-          description: End date Unix timestamp (SVOD (new, renew, cancellation) and rent)
+          description:   End date Unix timestamp (SVOD (new, renew, cancellation) and rent)
           type: integer
           nullable: true
           minLength: 10
           maxLength: 13
           example: 1615998269
         trial_end_date:
-          description: Trial end date Unix timestamp ( only used when notification_type = new/renew and SVOD)
+          description:   Trial end date Unix timestamp ( only used when notification_type = new/renew and SVOD)
           type: integer
           nullable: true
           minLength: 10
           maxLength: 13
           example: 1615998269
         effective_cancellation_date:
-          description: Cancellation date Unix timestamp ( only when notification_type = cancellation)
+          description:   Cancellation date Unix timestamp ( only when notification_type = cancellation)
           type: integer
           nullable: true
           minLength: 10
           maxLength: 13
           example: 1615998269
         notification_type:
-          description: 'new,renew,cancellation,buy,rent'
+          description:   'new,renew,cancellation,buy,rent'
           type: string
           enum: [ new, renew, cancellation, buy, rent ]
         notification_date:
-          description: Notification date Unix timestamp
+          description:   Notification date Unix timestamp
           type: integer
           minLength: 10
           maxLength: 13
@@ -180,10 +180,10 @@ components:
           type: boolean
           example: true
         message:
-          description: "Informational message"
+          description:   "Informational message"
           type: string
           example: All subscriptions processed
-      title: "Beacon Success Response"
+      title:  "Beacon Success Response"
       type: object
     BeaconErrorResponse:
       properties:
@@ -191,19 +191,19 @@ components:
           type: boolean
           example: false
         errors:
-          description: errors description
+          description:   errors description
           type: string
         message:
-          description: error message
+          description:   error message
           type: string
           example: No Beacon Store defined
-      title: "Beacon Error Response"
+      title:  "Beacon Error Response"
       type: object
   parameters:
     ContentType:
-      name: Content-Type
+      name: コンテンツタイプ
       in: header
-      description: 'Content-Type: application/json'
+      description:   'Content-Type: application/json'
       required: true
       style: simple
       explode: false
@@ -212,9 +212,9 @@ components:
         default: application/json
       example: application/json
     auth-token:
-      name: auth-token
+      name: 認証処理された
       in: header
-      description: '{Webhook_Api_Key}'
+      description:   '{Webhook_Api_Key}'
       required: true
       style: simple
       explode: false

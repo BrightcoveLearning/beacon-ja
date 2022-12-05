@@ -1,132 +1,96 @@
 ---
-title: 'Streaming a Live Event using Beacon Classic'
-description: In this topic, you will learn how to stream a Live event in Brightcove Beacon.
-parent: General
-grandparent: Live Streaming
+title: 'BeaconClassicを使用したライブイベントのストリーミング' 
+description:  このトピックでは、Brightcove Beaconでライブイベントをストリーミングする方法について説明します。 
+parent: 一般的な祖父母
+grandparent:  ライブストリーミング
 ---
 
-<h1>{{ page.title }}</h1>
-<article class="bcls-article">
-  <summary>{{ page.description }}</summary>
-  <aside class="bcls-aside bcls-aside--information">NOTE: In this topic, some of the steps are performed in Beacon Classic.</aside>
 
-  <section class="bcls-section">
-    <h2 id="overview">Overview</h2>
+<h1>{{page.title}}</h1> <article class="bcls-article"> <summary>{{ page.description }}</summary> <aside class="bcls-aside bcls-aside--information">ノート：このトピックでは、手順の一部をBeaconClassicで実行します。</aside> <section class="bcls-section">
+    <h2 id="overview">概要</h2>
 
     <p>
-      To stream a Live event to your application, you must follow a series of
-      steps to connect your Beacon Studio Live account and Beacon Classic.
+      アプリケーションにライブイベントをストリーミングするには、一連の手順に従ってBeaconStudioLiveアカウントとBeaconClassicを接続する必要があります。
     </p>
-    <p>A high-level view of the process is:</p>
+    <p>プロセスの概要は次のとおりです。</p>
     <ol>
       <li>
-        In Beacon Classic, create an event and a playlist.
+        BeaconClassicで、イベントとプレイリストを作成します。
       </li>
       <li>
-        In Beacon Studio, access the Live module to create your event and obtain a
-        job ID.
+        BeaconStudioで、Liveモジュールにアクセスしてイベントを作成し、ジョブIDを取得します。
       </li>
       <li>
-        In Beacon Classic, register your live event using the job ID from
-        Beacon Studio.
+        BeaconClassicでは、BeaconStudioのジョブIDを使用してライブイベントを登録します。
       </li>
       <li>
-        The Live video will start streaming in the Beacon App.
+        ライブビデオがBeaconAppでストリーミングを開始します。
       </li>
     </ol>
     <p>
-      In the last section of this document you will see the steps to create a
-      different type of event in Live by using a Static Entry Point. This allows
-      for recurring live events that can be activated and deactivated and need
-      to be configured only once.
+      この文書の最後のセクションでは、静的エントリポイントを使用して Live で異なるタイプのイベントを作成する手順について説明します。これにより、アクティブ化および非アクティブ化が可能で、一度だけ構成する必要があるライブイベントを繰り返すことができます。
     </p>
     <p>
-      The rest of this document will provide details for each of the steps
-      above.
-    </p>
-  </section>
-
-  <section class="bcls-section">
-    <h2 id="create">Creating a Live event in Beacon Classic</h2>
-    <p>Follow these steps to create an Event in Beacon Classic.</p>
-
-    <aside class="bcls-aside bcls-aside--information">
-      Only activated accounts with <strong>Beacon Classic Live</strong> will
-      have the <strong>Playlists</strong> and <strong>Events</strong> available
-      in the tabs section. Please contact Brightcove Support in case you don't
-      have them activated.
-    </aside>
+      このドキュメントの残りの部分では、上記の各手順について詳しく説明します。
+    </p>  </section><section class="bcls-section">
+    <h2 id="create">BeaconClassicでのライブイベントの作成</h2>
+    <p>BeaconClassicでイベントを作成する手順は、次のとおりです。</p> <aside class="bcls-aside bcls-aside--information"> でアクティブ化されたアカウントのみ<strong>ビーコンクラシックライブ</strong>を持っています<strong>プレイリスト</strong>と<strong>イベント</strong>タブセクションで利用できます。アクティブ化されない場合は、Brightcoveサポートにお問い合わせください。 </aside>
     <ol class="bcls-tasklist">
       <li>
-        In Beacon Classic, click on the <strong>Events</strong> tab to start
-        the set up of an Event.
+        Beacon Classic で、<strong>イベント</strong>タブをクリックして、イベントのセットアップを開始します。
       </li>
       <li>
-        Click on <strong>Add a new Event</strong>.
-        <figure class="bcls-figure">
-          <img class="bcls-image--no-border" alt="" src="/assets/images/live/streaming-live-event/1-add-new-event.png" />
-        </figure>
+        クリック<strong>新しいイベントを追加</strong>. <figure class="bcls-figure"> <img class="bcls-image--no-border" alt="" src="/assets/images/live/streaming-live-event/1-add-new-event.png" /> </figure>
       </li>
       <li>
-        Give the Live event a <strong>Name</strong> and an
-        <strong>Event Start Date</strong>.
-        <figure class="bcls-figure">
-          <img class="bcls-image--no-border" alt="" src="/assets/images/live/streaming-live-event/2-beacon-basic-data.png" />
-        </figure>
+        ライブイベントに<strong>名前</strong>と<strong>イベント開始日</strong>. <figure class="bcls-figure"> <img class="bcls-image--no-border" alt="" src="/assets/images/live/streaming-live-event/2-beacon-basic-data.png" /> </figure>
       </li>
       <li>
-        In the <strong>Textual Data</strong> tab, fill in your event
-        information.
-        <figure class="bcls-figure">
-          <img class="bcls-image--no-border" alt="" src="/assets/images/live/streaming-live-event/3-beacon-textual-data.png" />
-        </figure>
+        の中に<strong>テキストデータ</strong>タブで、イベント情報を入力します。 <figure class="bcls-figure"> <img class="bcls-image--no-border" alt="" src="/assets/images/live/streaming-live-event/3-beacon-textual-data.png" /> </figure>
       </li>
-      <li>Click on the <strong>Non-Textual Data</strong> tab.</li>
+      <li>クリックしてください<strong>非テキストデータ</strong>タブ。</li>
       <li>
-        Supply an image for the <strong>Portrait Poster</strong> and
-        <strong>Landscape Poster</strong> matching the requirements below. You
-        DO NOT need to supply images for <strong>Thumbnail</strong> and
-        <strong>Wide banner</strong>.
+        の画像を提供します<strong>肖像ポスター</strong>と<strong>風景ポスター</strong>以下の要件に一致します。の画像を提供する必要はありません<strong>サムネイル</strong>と<strong>ワイドバナー</strong>.
         <table class="bcls-table">
           <thead class="bcls-table__head">
             <tr>
-              <th>Image</th>
-              <th>Requirements</th>
+              <th>イメージ</th>
+              <th>要件</th>
             </tr>
           </thead>
           <tbody class="bcls-table__body">
             <tr>
-              <td>Portrait Poster</td>
+              <td>ポートレートポスター</td>
               <td>
-                Poster image (2:3)
+                ポスター画像 (2:3)
                 <table>
                   <tr>
-                    <td>Minimum</td>
-                    <td>Width: 1000px</td>
-                    <td>Height: 563px</td>
+                    <td>最小構成</td>
+                    <td>幅:1000px</td>
+                    <td>高さ:563px</td>
                   </tr>
                   <tr>
-                    <td>Maximum</td>
-                    <td>Width: 4000px</td>
-                    <td>Height: 2250px</td>
+                    <td>[最大]</td>
+                    <td>幅:4000px</td>
+                    <td>高さ:2250px</td>
                   </tr>
                 </table>
               </td>
             </tr>
             <tr>
-              <td>Landscape Poster</td>
+              <td>風景ポスター</td>
               <td>
-                Landscape image (16:9)
+                風景画像 (16:9)
                 <table>
                   <tr>
-                    <td>Minimum</td>
-                    <td>Width: 1000px</td>
-                    <td>Height: 563px</td>
+                    <td>最小構成</td>
+                    <td>幅:1000px</td>
+                    <td>高さ:563px</td>
                   </tr>
                   <tr>
-                    <td>Maximum</td>
-                    <td>Width: 4000px</td>
-                    <td>Height: 2250px</td>
+                    <td>[最大]</td>
+                    <td>幅:4000px</td>
+                    <td>高さ:2250px</td>
                   </tr>
                 </table>
               </td>
@@ -135,528 +99,256 @@ grandparent: Live Streaming
         </table>
       </li>
       <li>
-        Click the <strong>Rights & Scheduling</strong> tab, as shown here:
-        <figure class="bcls-figure">
-          <img class="bcls-image--no-border" alt="" src="/assets/images/live/streaming-live-event/5-beacon-right-schedualing.png" />
-        </figure>
+        クリック<strong>権利とスケジュール</strong>タブ、次に示すように: <figure class="bcls-figure"> <img class="bcls-image--no-border" alt="" src="/assets/images/live/streaming-live-event/5-beacon-right-schedualing.png" /> </figure>
       </li>
       <li>
-        Add values for the following fields:
+        次のフィールドの値を追加します。
         <ul>
-          <li>
-            <strong>Rights Type</strong>: Choose the type of rights between
-            <em>Advertising</em>, <em>Subscription</em> or <em>Free</em>.
+          <li> <strong>権利タイプ</strong>:間の権利の種類を選択してください<em>広告</em>、<em>サブスクリプション</em>また<em>無料</em>.
           </li>
-          <li>
-            <strong>Start Time</strong>: Set the start date of your event.
+          <li> <strong>始まる時間</strong>:イベントの開始日を設定します。
           </li>
-          <li><strong>End Time</strong>: Set the end date of your event.</li>
-          <li>
-            <strong>Max Streams</strong>: Set the maximum number of streams
-            allowed to view the live event. The default number is 0 (zero).
+          <li><strong>終了時間</strong>:イベントの終了日を設定します。</li>
+          <li> <strong>最大ストリーム</strong>:ライブイベントを表示できるストリームの最大数を設定します。デフォルトの数値は 0 (ゼロ) です。
           </li>
-          <li>
-            <strong>Devices to publish</strong>: Add the devices to which you
-            wish to publish. Click
-            <strong>Select / Unselect All Devices</strong>
-            to see a list of available devices.
+          <li> <strong>公開するデバイス</strong>:公開するデバイスを追加します。クリック<strong>すべてのデバイスを選択/選択解除</strong>使用可能なデバイスのリストを表示します。
           </li>
-          <li>
-            <strong>Permitted locations</strong>: Select the locations where you
-            want to stream your content, if no restrictions enter
-            <em>World</em>.
+          <li> <strong>許可された場所</strong>:制限がない場合は、コンテンツをストリーミングする場所を選択します<em>世界</em>.
           </li>
-          <li>
-            <strong>Denied Locations</strong>: Select the locations where you DO
-            NOT want to stream your content.
+          <li> <strong>拒否された場所</strong>:コンテンツをストリーミングしない場所を選択します。
           </li>
         </ul>
       </li>
       <li>
-        Click the <strong>Create New Event</strong> button to create your event.
+        クリック<strong>新しいイベントを作成</strong>ボタンをクリックしてイベントを作成します。
       </li>
-    </ol>
-  </section>
-  <section class="bcls-section">
-    <h2 id="Playlist">Adding the Beacon Classic event to a playlist</h2>
+    </ol>  </section><section class="bcls-section">
+    <h2 id="Playlist">BeaconClassicイベントの再生リストへの追加</h2>
     <p>
-      Once you create an event, the next task is to add the event to a Playlist.
-      The following steps lead you through that process.
+      イベントを作成したら、次のタスクはイベントを再生リストに追加します。次の手順に従って、そのプロセスを進めます。
     </p>
     <ol class="bcls-tasklist">
       <li>
-        In Beacon Classic, click the <strong>Playlists</strong> tab.
-        <figure class="bcls-figure">
-          <img class="bcls-image--no-border" alt="" src="/assets/images/live/streaming-live-event/7-playlist-menu.png" />
-        </figure>
+        Beacon Classic で、<strong>プレイリスト</strong>タブ。 <figure class="bcls-figure"> <img class="bcls-image--no-border" alt="" src="/assets/images/live/streaming-live-event/7-playlist-menu.png" /> </figure>
       </li>
       <li>
-        Click on the <strong>Add new playlist</strong> button.
-        <aside class="bcls-aside bcls-aside--warning">
-          You need to create a playlist in Beacon Classic that will contain
-          your Live events. <strong>Do not</strong> use a playlist from Video
-          Cloud. Using a Video Cloud playlist may overwrite and delete your
-          Beacon Classic Live recordings.
-        </aside>
-        <figure class="bcls-figure">
-          <img class="bcls-image--no-border" alt="" src="/assets/images/live/streaming-live-event/8-playlist.png" />
-        </figure>
+        クリックしてください<strong>新しいプレイリストを追加</strong>ボタン。 <aside class="bcls-aside bcls-aside--warning"> ライブイベントを含むプレイリストをBeaconClassicで作成する必要があります。 <strong>しない</strong>Video Cloud のプレイリストを使用します。VideoCloudプレイリストを使用すると、BeaconClassicLiveレコーディングが上書きされ、削除される場合があります。 </aside> <figure class="bcls-figure"> <img class="bcls-image--no-border" alt="" src="/assets/images/live/streaming-live-event/8-playlist.png" /> </figure>
       </li>
 
       <li>
-        In <strong>Playlists</strong>, from the content type tabs, select the
-        <strong>Events</strong> tab.
-        <figure class="bcls-figure">
-          <img class="bcls-image--no-border" alt="" src="/assets/images/live/streaming-live-event/9-playlist-events.png" />
-        </figure>
+        の<strong>プレイリスト</strong>で、コンテンツ タイプのタブから、<strong>イベント</strong>タブ。 <figure class="bcls-figure"> <img class="bcls-image--no-border" alt="" src="/assets/images/live/streaming-live-event/9-playlist-events.png" /> </figure>
       </li>
 
       <li>
-        Look for your event in the contents list and click on the (+) button to
-        add it to the left playlist. You can position the order of the events in
-        the way you want them to be displayed in the app.
-        <figure class="bcls-figure">
-          <img class="bcls-image--no-border" alt="" src="/assets/images/live/streaming-live-event/10-playlist-select-event.png" />
-        </figure>
+        コンテンツリストでイベントを探し、(+) ボタンをクリックして左側のプレイリストに追加します。イベントの順序は、アプリに表示されるように配置できます。 <figure class="bcls-figure"> <img class="bcls-image--no-border" alt="" src="/assets/images/live/streaming-live-event/10-playlist-select-event.png" /> </figure>
       </li>
 
       <li>
-        Adjust the settings of your playlist (time, devices, location, etc.) in
-        the <strong>Rights & Scheduling</strong> tab, as you did with your
-        event.
-        <figure class="bcls-figure">
-          <img class="bcls-image--no-border" alt="" src="/assets/images/live/streaming-live-event/10.2-scheduling-playlist.png" />
-        </figure>
+        でプレイリストの設定 (時間、デバイス、場所など) を調整します。<strong>権利とスケジュール</strong>イベントで行ったように、タブ。 <figure class="bcls-figure"> <img class="bcls-image--no-border" alt="" src="/assets/images/live/streaming-live-event/10.2-scheduling-playlist.png" /> </figure>
       </li>
 
-      <li>Click on the <strong>Save changes in Playlist</strong> button.</li>
+      <li>クリックしてください<strong>変更をプレイリストに保存</strong>ボタン。</li>
 
       <li>
-        Click on the <strong>Tools</strong> (wrench) button in the upper right
-        of the screen. Then clear the cache.
-        <figure class="bcls-figure">
-          <img class="bcls-image--no-border" alt="" src="/assets/images/live/streaming-live-event/12-clear-cache.png" />
-        </figure>
+        クリックしてください<strong>ツール</strong>画面右上の（レンチ）ボタン。その後、キャッシュをクリアします。 <figure class="bcls-figure"> <img class="bcls-image--no-border" alt="" src="/assets/images/live/streaming-live-event/12-clear-cache.png" /> </figure>
       </li>
     </ol>
     <p>
-      At this point, your event is created as a container in the Brightcove
-      Beacon app as shown in the left image (the event names and pictures on the
-      image are for example purposes only), click on your event, and you will
-      see something similar to the image on the right. To actually start
-      streaming a Live video, you will need to set up your transmission in the
-      Beacon Studio Live Platform.
-    </p>
-    <figure class="bcls-figure">
-      <img class="bcls-image--no-border" alt="" src="/assets/images/live/streaming-live-event/13-beacon-apps-white.png" />
-    </figure>
-  </section>
-
-  <section class="bcls-section">
-    <h2 id="Live">Creating a Live event in Beacon Studio</h2>
+      この時点で、左側の画像に示すように Brightcove Beacon アプリのコンテナとしてイベントが作成されます（画像上のイベント名と画像は例示のみを目的としています）。イベントをクリックすると、右側に画像のようなものが表示されます。実際にライブビデオのストリーミングを開始するには、BeaconStudioLivePlatformで送信を設定する必要があります。
+    </p>     <figure class="bcls-figure"><img class="bcls-image--no-border" alt="" src="/assets/images/live/streaming-live-event/13-beacon-apps-white.png" /></figure></section><section class="bcls-section">
+    <h2 id="Live">BeaconStudioでのライブイベントの作成</h2>
     <p>
-      Follow these steps to create the actual live event that will be streamed
-      to the Beacon App.
+      BeaconAppにストリーミングされる実際のライブイベントを作成する手順は、次のとおりです。
     </p>
 
     <ol class="bcls-tasklist">
       <li>
-        Log in to Beacon Studio and click <strong>Live</strong> in the
-        in the primary navigation.
-        <figure class="bcls-figure">
-          <img class="bcls-image--no-border" alt="" src="/assets/images/live/streaming-live-event/beacon-studio.png" />
-        </figure>
+        Becon Studio にログインし、<strong>ライブ</strong>プライマリ ナビゲーションで。 <figure class="bcls-figure"> <img class="bcls-image--no-border" alt="" src="/assets/images/live/streaming-live-event/beacon-studio.png" /> </figure>
       </li>
       <li>
-        From the <strong>Manage Events</strong> page, click
-        <strong>Create Event</strong>. The
-        <strong>Create Live Event</strong> page will open.
-        <figure class="bcls-figure">
-          <img class="bcls-image--no-border" alt="" src="/assets/images/live/streaming-live-event/15-live-event.png" />
-        </figure>
+        から<strong>イベントの管理</strong>ページ、クリック<strong>イベントを作成</strong>.の<strong>ライブ イベントの作成</strong>ページが開きます。 <figure class="bcls-figure"> <img class="bcls-image--no-border" alt="" src="/assets/images/live/streaming-live-event/15-live-event.png" /> </figure>
       </li>
       <li>
-        Enter the event details.
+        イベントの詳細を入力します。
         <ul>
-          <li>
-            <strong>Event Name</strong> - Name for the event; this name will
-            also appear in the Media module if the live event is saved as a
-            video asset (max 255 characters)
+          <li> <strong>イベント名</strong>- イベントの名前;ライブ イベントがビデオ アセットとして保存されている場合、この名前は Media モジュールにも表示されます (最大 255 文字)。
           </li>
-          <li>
-            <strong>Short Description</strong> - Description of the event (max
-            250 characters)
+          <li> <strong>簡単な説明</strong>- イベントの説明 (最大 250 文字)
           </li>
-          <li>
-            <strong>Tags</strong> - Tags to associate with the event; tags will
-            be assigned to the video if the live event is saved as a video asset
-            (max 128 characters and 1200 tags)
+          <li> <strong>タグ</strong>- イベントに関連付けるタグ。ライブ イベントがビデオ アセットとして保存されている場合、タグがビデオに割り当てられます (最大 128 文字と 1200 タグ)。
           </li>
-          <li>
-            <strong>Reference ID</strong> - Reference ID for the event; must be
-            unique (max 150 characters)
+          <li> <strong>参照ID</strong> - イベントの参照 ID;一意である必要があります (最大 150 文字)
           </li>
         </ul>
       </li>
       <li>
-        Click <strong>Allowed</strong> if you wish to enable the live event to
-        be streamed to social media platforms, otherwise click
-        <strong>Not allowed</strong>. This can be done
-        <a href="https://live.support.brightcove.com/live-module/creating-and-managing-live-events-using-live-module.html#social">once the event has started streaming</a>
-        or by using the
-        <a href="https://live.support.brightcove.com/live-module/publishing-live-event-facebook.html">Social module</a>.
+        クリック<strong>許可された</strong>ライブ イベントをソーシャル メディア プラットフォームにストリーミングできるようにする場合は、<strong>禁止されている</strong>.これはできる<a href="https://live.support.brightcove.com/live-module/creating-and-managing-live-events-using-live-module.html#social">イベントのストリーミングが開始されたら</a>またはを使用して<a href="https://live.support.brightcove.com/live-module/publishing-live-event-facebook.html">社会モジュール</a>.
       </li>
       <li>
-        Select a <strong>Live Ingest Profile</strong>. The dropdown list will
-        list all Live ingest profiles. The ingest profile will control the
-        quality and number of live renditions that are created. Clicking the
-        <strong>Manage Profiles</strong> link will open the ingest profile
-        editor in another browser tab. Note that you must be an account
-        administrator to access the ingest profile editor. Click the
-        <strong>RENDITIONS</strong> link to view the renditions that will be
-        created using the selected ingest profile.
-        <aside class="bcls-aside bcls-aside--information">
-          The bitrate and billing details of the three tiers are as follows:
+        を選択<strong>ライブ取り込みプロファイル</strong>.ドロップダウンリストには、すべてのライブインジェストプロファイルが表示されます。取り込みプロファイルは、作成されるライブレンディションの品質と数を制御します。をクリックすると<strong>プロファイルの管理</strong>リンクをクリックすると、取り込みプロファイル エディターが別のブラウザー タブで開きます。インジェストプロファイルエディタにアクセスするには、アカウント管理者である必要があります。クリック<strong>レンディション</strong>リンクをクリックして、選択した取り込みプロファイルを使用して作成されるレンディションを表示します。 <aside class="bcls-aside bcls-aside--information"> 3 つの層のビットレートと請求の詳細は次のとおりです。
           <ul>
             <li>
-              Tier 1 allows up to 5,500 Kbps and is charged at 1.0x hours
+              階層 1 では 5,500 Kbps まで使用でき、1.0倍の時間で課金されます
             </li>
             <li>
-              Tier 2 allows up to 10,000 Kbps and is charged at 1.5x hours
+              階層 2 は 10,000 Kbps まで使用でき、1.5 倍の時間で課金されます。
             </li>
             <li>
-              Tier 3 allows up to 20,000 Kbps and is charged at 2.0x hours
+              階層 3 は 20,000 Kbps まで使用でき、2.0 倍の時間で課金されます。
             </li>
-          </ul>
-        </aside>
+          </ul> </aside>
       </li>
       <li>
-        Select <strong>Convert event to video asset when complete</strong> to
-        save a VOD version of the live event to your Beacon Studio account. When
-        this option is selected, the highest quality rendition from the selected
-        <strong>Live Ingest Profile</strong> is used as the source for the VOD
-        video. The default ingest profile for the account is used when creating
-        renditions.
-        <strong>Note that the VOD version is not available as soon as the live event
-          ends, the video will be available once the ingestion process is
-          complete.</strong>
-        <aside class="bcls-aside bcls-aside--information">
-          Note: This option is not supported when using a recurring event.
-        </aside>
+        選択する<strong>完了時にイベントをビデオ アセットに変換する</strong>ライブ イベントの VOD バージョンを Beacon Studio アカウントに保存します。このオプションを選択すると、選択した<strong>ライブ取り込みプロファイル</strong>VODビデオのソースとして使用されます。レンディションの作成時には、アカウントのデフォルトの取り込みプロファイルが使用されます。 <strong>ライブイベントが終了するとすぐにVODバージョンが利用できないので、取り込みプロセスが完了するとビデオが利用可能になります。</strong> <aside class="bcls-aside bcls-aside--information"> 注:このオプションは、定期的なイベントを使用する場合はサポートされません。 </aside>
       </li>
       <li>
-        Click <strong>ADVANCED OPTIONS</strong> and view the advanced options.
-        Only one of which will need your attention.
+        クリック<strong>高度なオプション</strong>高度なオプションを表示します。そのうちの1つだけがあなたの注意を必要とします。
       </li>
       <li>
-        Click in the
-        <strong>Enable stream status notifications</strong> checkbox and add the
-        notifications URL from Beacon Classic CMS (your Brightcove Support
-        representative will provide this URL).
-
-        <figure class="bcls-figure">
-          <img class="bcls-image--no-border" alt="" src="/assets/images/live/streaming-live-event/16-enable-notifications.png" />
-        </figure>
+        をクリックします。<strong>ストリーム ステータス通知を有効にする</strong>チェックボックスをオンにして、Beacon Classic CMS からの通知 URL を追加します（Brightcove サポート担当者がこの URL を提供します）。 <figure class="bcls-figure"> <img class="bcls-image--no-border" alt="" src="/assets/images/live/streaming-live-event/16-enable-notifications.png" /> </figure>
       </li>
       <li>
-        Click <strong>Create Event</strong> to start the live event. The Control
-        Room page will open with details about the live event including the
-        <strong>Streaming Endpoint (RTMP URL)</strong> and
-        <strong>Stream Name</strong> which will be used by your encoder. It will
-        take about a minute to process your streams.
-        <aside class="bcls-aside bcls-aside--information">
-          To start streaming in the Live platform, you will need an Encoder, for
-          information on how to use an encoder please read the following the
-          documentation:
-          <p>
-            <a href="https://live.support.brightcove.com/get-started/step-step-using-live-module-telestream-wirecast.html" target="_blank">Step-by-Step: Using the Live Module with Telestream Wirecast</a>
+        クリック<strong>イベントを作成</strong>ライブイベントを開始します。コントロール ルームのページが開き、ライブ イベントの詳細が表示されます。<strong>ストリーミング エンドポイント (RTMP URL)</strong>と<strong>ストリーム名</strong>これはエンコーダーによって使用されます。ストリーム処理の所要時間は約1分間です。 <aside class="bcls-aside bcls-aside--information"> ライブプラットフォームでストリーミングを開始するには、エンコーダが必要です。エンコーダの使用方法については、次のドキュメントを参照してください。
+          <p> <a href="https://live.support.brightcove.com/get-started/step-step-using-live-module-telestream-wirecast.html" target="_blank">ステップバイステップ:ライブモジュールと三ストリームWirecastの使用</a>
           </p>
-          <p>
-            <a href="https://live.support.brightcove.com/get-started/step-step-using-live-module-open-broadcaster-software-obs.html" target="_blank">Step-by-Step: Using the Live Module with Open Broadcaster
-              Software (OBS)</a>
-          </p>
-        </aside>
+          <p> <a href="https://live.support.brightcove.com/get-started/step-step-using-live-module-open-broadcaster-software-obs.html" target="_blank">ステップバイステップ:オープンブロードキャスタソフトウェア (OBS) でのライブモジュールの使用</a>
+          </p> </aside>
       </li>
       <li>
-        In the <strong>Control Room</strong>, copy the
-        <strong>Job Id</strong> and the <strong>Video ID</strong> from the
-        <strong>Test Event</strong> panel, you will need both to configure the
-        Live event in the Beacon Classic platform settings.
-        <figure class="bcls-figure">
-          <img class="bcls-image--no-border" alt="" src="/assets/images/live/streaming-live-event/16.2-control-room.png" />
-        </figure>
+        の中に<strong>制御室</strong>、コピー<strong>ジョブ ID</strong>そしてその<strong>動画 ID</strong>から<strong>テストイベント</strong>パネルでは、ビーコン クラシック プラットフォーム設定でライブ イベントを構成するために両方が必要になります。 <figure class="bcls-figure"> <img class="bcls-image--no-border" alt="" src="/assets/images/live/streaming-live-event/16.2-control-room.png" /> </figure>
       </li>
       <li>
-        Next, go back to Beacon Classic and click in the
-        <strong>Event</strong> tab. Select the event you previously created
-        there, and in the <strong>Basic Data</strong> settings paste the
-        <em>Job ID</em> of your Live event.
-        <figure class="bcls-figure">
-          <img class="bcls-image--no-border" alt="" src="/assets/images/live/streaming-live-event/17-beacon-job-id.png" />
-        </figure>
+        次に、Becon Classic に戻り、<strong>イベント</strong>タブ。そこで以前に作成したイベントを選択し、<strong>基本データ</strong>設定を貼り付けます<em>ジョブ ID</em>あなたのライブイベントの。 <figure class="bcls-figure"> <img class="bcls-image--no-border" alt="" src="/assets/images/live/streaming-live-event/17-beacon-job-id.png" /> </figure>
       </li>
       <li>
-        Go to the <strong>Streams</strong> tab and create a new stream by
-        clicking in the <strong> + Add new stream</strong> button.
+        に行く<strong>ストリーム</strong>タブをクリックして新しいストリームを作成します<strong>+ 新しいストリームを追加</strong>ボタン。
       </li>
       <li>
-        In the <strong>Stream Video ID</strong> field, paste the
-        <strong>Video ID</strong> from the Beacon Studio Event you previously
-        created. Also fill in the following information about the stream:
+        の中に<strong>ストリーム動画 ID</strong>フィールドに貼り付けます<strong>動画 ID</strong>以前に作成した Beacon Studio イベントから。ストリームに関する次の情報も入力します。
         <ul>
           <li>
-            Select the number of devices in which you can publish your video.
+            ビデオを公開できるデバイスの数を選択します。
           </li>
           <li>
-            Set the <strong>Stream Type</strong> to <strong>Live</strong> from
-            the dropdown menu.
+            をセットする<strong>ストリーム タイプ</strong>に<strong>ライブ</strong>ドロップダウンメニューから。
           </li>
           <li>
-            And click the <strong>Update event</strong> button before leaving
-            the page.
+            そして、<strong>更新イベント</strong>ページを離れる前に ボタンをクリックしてください。
           </li>
-        </ul>
-        <figure class="bcls-figure">
-          <img class="bcls-image--no-border" alt="" src="/assets/images/live/streaming-live-event/18-beacon-stream-id.png" />
-        </figure>
+        </ul>   <figure class="bcls-figure"><img class="bcls-image--no-border" alt="" src="/assets/images/live/streaming-live-event/18-beacon-stream-id.png" /></figure>
       </li>
 
       <li>
-        Click on the <strong>Tools</strong> (wrench) button in the upper right
-        of the screen. Then clear the cache.
-        <figure class="bcls-figure">
-          <img class="bcls-image--no-border" alt="" src="/assets/images/live/streaming-live-event/12-clear-cache.png" />
-        </figure>
+        クリックしてください<strong>ツール</strong>画面右上の（レンチ）ボタン。その後、キャッシュをクリアします。 <figure class="bcls-figure"> <img class="bcls-image--no-border" alt="" src="/assets/images/live/streaming-live-event/12-clear-cache.png" /> </figure>
       </li>
 
       <li>
-        Open your Beacon App and select your event (the event names
-        and pictures on the image are for example purposes only).
-        <figure class="bcls-figure">
-          <img class="bcls-image--no-border" alt="" width="400" height="700" src="/assets/images/live/streaming-live-event/18.5-app-event.png" />
-        </figure>
+        BeaconAppを開き、イベントを選択します(イメージ上のイベント名と写真は、例として使用するためのものです)。 <figure class="bcls-figure"> <img class="bcls-image--no-border" alt="" width="400" height="700" src="/assets/images/live/streaming-live-event/18.5-app-event.png" /> </figure>
       </li>
 
       <li>
-        Click on the <strong>Play</strong> button, and you should now be able to
-        see your Live Event streaming from Beacon Studio in the Beacon Classic
-        App.
-
-        <figure class="bcls-figure">
-          <img class="bcls-image--no-border" alt="" width="400" height="700" src="/assets/images/live/streaming-live-event/19-app-play.png" />
-        </figure>
+        クリックしてください<strong>遊ぶ</strong>ボタンをクリックすると、Beacon Classic アプリで Beacon Studio からのライブ イベント ストリーミングを確認できるようになります。 <figure class="bcls-figure"> <img class="bcls-image--no-border" alt="" width="400" height="700" src="/assets/images/live/streaming-live-event/19-app-play.png" /> </figure>
       </li>
     </ol>
     <p>
-      Once your event ends, you can save all or part of it as a clip that
-      becomes a video asset in Beacon Studio or a playable stream that can be
-      shown in Beacon Classic. The process is detailed in the next section of
-      this document.
-    </p>
-  </section>
-
-  <section class="bcls-section">
-    <h2 id="Clip">Creating a Clip from your Live event</h2>
-    <aside class="bcls-aside bcls-aside--information">
-      You have to create a clip of your Beacon Classic Live event if you want
-      to keep the video for streaming later on as a VOD recorded video.
-    </aside>
+      イベントが終了すると、BeaconStudioでビデオアセットになるクリップまたはBeaconClassicで表示できる再生可能なストリームとして、イベントのすべてまたは一部を保存できます。このプロセスの詳細については、このドキュメントの次のセクションで説明します。
+    </p>  </section><section class="bcls-section">
+    <h2 id="Clip">ライブイベントからクリップを作成する</h2> <aside class="bcls-aside bcls-aside--information"> 後でビデオを録画したビデオとしてストリーミングする場合は、BeaconClassicLiveイベントのクリップを作成する必要があります。 </aside>
     <p>
-      The Live module provides the ability to create video clips from completed
-      events. Clips can also be created while a live event is in progress.
+      ライブモジュールは、完了したイベントからビデオクリップを作成する機能を提供します。ライブイベントの進行中にクリップを作成することもできます。
     </p>
     <p>
-      For a complete Clipping feature list, please review the
-      <a href="https://live.support.brightcove.com/live-module/creating-video-clip-using-live-module.html">Creating a Video Clip Using the Live Module</a>
-      documentation.
+      クリッピング機能の完全なリストについては、<a href="https://live.support.brightcove.com/live-module/creating-video-clip-using-live-module.html"> Live モジュールを使用してビデオ クリップを作成する</a>ドキュメンテーション。
     </p>
 
     <ol class="bcls-tasklist-restart">
       <li>
-        In the Live module go to the <strong>Create Clip</strong> tab in the
-        left panel.
-        <figure class="bcls-figure">
-          <img class="bcls-image--no-border" alt="" src="/assets/images/live/streaming-live-event/20-create-clip.png" />
-        </figure>
+        Live モジュールで、<strong>クリップを作成</strong>左パネルのタブ。 <figure class="bcls-figure"> <img class="bcls-image--no-border" alt="" src="/assets/images/live/streaming-live-event/20-create-clip.png" /> </figure>
       </li>
       <li>
-        Using the clipping buttons or shortcut keys, set the start and endpoints
-        for the clip. You can also just click on the
-        <strong>Save</strong> button to keep the entire video.
+        クリップボタンまたはショートカットキーを使用して、クリップの開始点と終点を設定します。をクリックすることもできます。<strong>保存</strong>ボタンをクリックして、ビデオ全体を保持します。
       </li>
       <li>
-        Enter the clip video properties.
+        クリップビデオのプロパティを入力します。
         <ul>
-          <li><strong>Clip Name</strong> - Name of the clip</li>
-          <li><strong>Short Description</strong> - Description of the clip</li>
-          <li><strong>Tags</strong> - Tags to associate with the clip</li>
-          <li>
-            <strong>Reference ID</strong> - Reference ID to assign to the clip
+          <li><strong>クリップ名</strong>- クリップの名前</li>
+          <li><strong>簡単な説明</strong>- クリップの説明</li>
+          <li><strong>タグ</strong>- クリップに関連付けるタグ</li>
+          <li> <strong>参照ID</strong> - クリップに割り当てる参照 ID
           </li>
-          <li>
-            <strong>Remove Source Ad Break Content</strong> - This option
-            removes ad breaks triggered within the clip, keeping only program
-            content
-            <aside class="bcls-aside bcls-aside--information">
-              Note: The Remove Source Ad Break checkbox will only appear when
-              the stream is SSAI enabled.
-            </aside>
+          <li> <strong>ソースの広告ブレーク コンテンツを削除する</strong>- このオプションは、クリップ内でトリガーされた広告ブレークを削除し、プログラム コンテンツのみを保持します<aside class="bcls-aside bcls-aside--information">ノート：[ソース広告ブレークを削除] チェックボックスは、ストリームが SSAI が有効になっている場合にのみ表示されます。 </aside>
           </li>
-        </ul>
-        <figure class="bcls-figure">
-          <img class="bcls-image--no-border" alt="" src="/assets/images/live/streaming-live-event/21-create-clip-menu.png" />
-        </figure>
+        </ul>   <figure class="bcls-figure"><img class="bcls-image--no-border" alt="" src="/assets/images/live/streaming-live-event/21-create-clip-menu.png" /></figure>
       </li>
       <li>
-        Click <strong>Create Clip</strong>. The transcoding process for the clip
-        will begin. Clips are transcoded using the default ingest profile for
-        the account.
-        <figure class="bcls-figure">
-          <img class="bcls-image--no-border" alt="" src="/assets/images/live/streaming-live-event/22-clip-name.png" />
-        </figure>
+        クリック<strong>クリップを作成</strong>.クリップのトランスコーディングプロセスが開始されます。クリップは、アカウントのデフォルトの取り込みプロファイルを使用してトランスコードされます。 <figure class="bcls-figure"> <img class="bcls-image--no-border" alt="" src="/assets/images/live/streaming-live-event/22-clip-name.png" /> </figure>
       </li>
-    </ol>
-  </section>
-  <section class="bcls-section">
+    </ol>  </section><section class="bcls-section">
     <h2 id="ClipToBeacon">
-      Adding your Clip to Beacon Classic as a playable stream video
+      BeaconClassicに再生可能なストリームビデオとしてクリップを追加
     </h2>
     <p>
-      Here you will use the ID of your newly created clip video and make it a
-      stream that can be played in Beacon Classic.
+      ここでは、新しく作成したクリップビデオのIDを使用し、BeaconClassicで再生できるストリームにします。
     </p>
     <ol class="bcls-tasklist-restart">
       <li>
-        While still in Beacon Studio's Live module, copy the number
-        <strong>ID</strong> of your created clip.
-        <figure class="bcls-figure">
-          <img class="bcls-image--no-border" alt="" src="/assets/images/live/streaming-live-event/23-control-room-id.png" />
-        </figure>
+        Beacon Studio の Live モジュールにいる間に、番号をコピーします。<strong> ID</strong>作成したクリップの。 <figure class="bcls-figure"> <img class="bcls-image--no-border" alt="" src="/assets/images/live/streaming-live-event/23-control-room-id.png" /> </figure>
       </li>
       <li>
-        In the Beacon Classic platform, go to the <strong>Events</strong> tab
-        and select the <strong>Streams</strong> menu. You will see the following
-        form:
-        <figure class="bcls-figure">
-          <img class="bcls-image--no-border" alt="" src="/assets/images/live/streaming-live-event/24-beacon-stream-id.png" />
-        </figure>
+        Beacon Classic プラットフォームで、<strong>イベント</strong>タブをクリックして、<strong>ストリーム</strong>メニュー。次のフォームが表示されます。 <figure class="bcls-figure"> <img class="bcls-image--no-border" alt="" src="/assets/images/live/streaming-live-event/24-beacon-stream-id.png" /> </figure>
       </li>
       <li>
-        Paste the <strong>ID</strong> you just copied from Studio's Live
-        platform into the <strong>Stream Video ID</strong> field.
+        貼り付け<strong>ID</strong> Studio の Live プラットフォームから<strong>ストリーム動画 ID</strong>分野。
       </li>
       <li>
-        From the <strong>Stream Type</strong> dropdown change
-        <strong>Live</strong> to <strong>Stream</strong>.
+        から<strong>ストリーム タイプ</strong>ドロップダウンの変更<strong>ライブ</strong>に<strong>ストリーム</strong>.
       </li>
       <li>
-        Click in the <strong>Basic Data</strong> tab and change the
-        <strong>Status</strong> from <strong>Ended</strong> to
-        <strong>Finished</strong>.
+        をクリックします。<strong>基本データ</strong>タブを変更します<strong>状態</strong>から<strong>終了しました</strong>に<strong>終了した</strong>.
       </li>
       <li>
-        Before leaving, click the <strong>Update Event</strong> button at the
-        bottom of the page. This will make the <strong>Play</strong> button
-        available in the Beacon App to see the recording of the
-        event.
-        <figure class="bcls-figure">
-          <img class="bcls-image--no-border" alt="" width="400" height="700" src="/assets/images/live/streaming-live-event/25-beacon-app-play-button.png" />
-        </figure>
+        終了する前に、<strong>更新イベント</strong>ページ下部のボタン。これにより、<strong>遊ぶ</strong>ボタンをクリックして、イベントの記録を確認します。 <figure class="bcls-figure"> <img class="bcls-image--no-border" alt="" width="400" height="700" src="/assets/images/live/streaming-live-event/25-beacon-app-play-button.png" /> </figure>
       </li>
-    </ol>
-  </section>
-  <section class="bcls-section">
-    <h2 id="SEP">(Static Entry Point) SEP Live events</h2>
+    </ol>  </section><section class="bcls-section">
+    <h2 id="SEP">(静的エントリポイント) SEP ライブイベント</h2>
     <p>
-      SEP Live Events are recurring events that you can activated/deactivated
-      when your event starts over and over again as for a weekly program, for
-      example. This event can be used as a one for all
-      <strong>Live Job ID</strong> that can be transmitted to several channels
-      in the Beacon App.
-    </p>
-
-    <aside class="bcls-aside bcls-aside--information">
+      SEP ライブイベントは、毎週のプログラムなど、イベントが何度も繰り返し開始されたときにアクティブ化/非アクティブ化できる定期的なイベントです。どなたでもご利用いただけるイベントです<strong>ライブ ジョブ ID</strong>ビーコンアプリで複数のチャネルに送信できます。
+    </p> <aside class="bcls-aside bcls-aside--information">
       <ul>
         <li>
-          Note that when you create a recurring event, a video is automatically
-          created for it in the Media module. Do not delete this video, as it
-          will be needed every time the event recurs.
+          定期的なイベントを作成すると、Media モジュールでそのイベント用のビデオが自動的に作成されます。イベントが再発するたびに必要になるので、このビデオを削除しないでください。
         </li>
         <li>
-          The recurring event should be activated before the encoder is started.
+          繰り返しイベントは、エンコーダが起動する前にアクティブにする必要があります。
         </li>
-      </ul>
-    </aside>
+      </ul> </aside>
 
     <p>
-      Follow these steps to create a SEP (Static Entry Point) Live event in
-      Beacon Classic.
+      BeaconClassicでSEP(StaticEntryPoint)Liveイベントを作成する手順は、次のとおりです。
     </p>
     <ol class="bcls-tasklist-restart">
       <li>
-        In the Live Platform, <strong>Create a new Event</strong>. For more
-        information in how to create an event please read the
-        <a href="https://live.support.brightcove.com/live-module/creating-and-managing-live-events-using-live-module.html#create">
-          Creating a new event
-        </a>
-        section of the
-        <em>Creating and Managing Live Events using the Live Module</em>
-        document.
+        ライブプラットフォームでは、<strong>新しいイベントを作成する</strong>.イベントの作成方法の詳細については、<a href="https://live.support.brightcove.com/live-module/creating-and-managing-live-events-using-live-module.html#create">新しいイベントの作成</a>のセクション<em>Live モジュールを使用したライブ イベントの作成と管理</em>資料。
       </li>
       <li>
-        Expand the <strong>ADVANCED OPTIONS</strong>, and enable the
-        <strong>Create this as a recurring event using a Static Entry Point
-          (SEP)</strong>
-        option. For more information on SEP see the
-        <a href="https://live.support.brightcove.com/live-module/creating-and-managing-live-events-using-live-module.html#work_recurring">Working with recurring events
-        </a>
-        section of the
-        <em>Creating and Managing Live Events using the Live Module</em>
-        document .
-
-        <figure class="bcls-figure">
-          <img class="bcls-image--no-border" alt="" src="/assets/images/live/streaming-live-event/26-sep.png" />
-        </figure>
+        拡大する<strong>高度なオプション</strong>を有効にし、<strong>静的エントリ ポイント (SEP) を使用して、定期的なイベントとしてこれを作成します。</strong>オプション。SEP の詳細については、<a href="https://live.support.brightcove.com/live-module/creating-and-managing-live-events-using-live-module.html#work_recurring">定期的なイベントの操作</a>のセクション<em>Live モジュールを使用したライブ イベントの作成と管理</em>資料 。 <figure class="bcls-figure"> <img class="bcls-image--no-border" alt="" src="/assets/images/live/streaming-live-event/26-sep.png" /> </figure>
       </li>
 
       <li>
-        If you already have a SEP event, click on the
-        <strong>Standby</strong> tab, and you will be able to
-        <strong>activate/deactivate</strong> it from the Live Control Room.
-        <figure class="bcls-figure">
-          <img class="bcls-image--no-border" alt="" src="/assets/images/live/streaming-live-event/27-control-room-activate.png" />
-        </figure>
+        すでに SEP イベントがある場合は、<strong>待機する</strong>タブで、次のことができるようになります<strong>アクティブ化/非アクティブ化</strong>ライブコントロールルームから。 <figure class="bcls-figure"> <img class="bcls-image--no-border" alt="" src="/assets/images/live/streaming-live-event/27-control-room-activate.png" /> </figure>
       </li>
       <li>
-        Copy your <strong>Live Job ID</strong>.
-        <figure class="bcls-figure">
-          <img class="bcls-image--no-border" alt="" src="/assets/images/live/streaming-live-event/28-control-room-jobid.png" />
-        </figure>
+        あなたのコピー<strong>ライブ ジョブ ID</strong> . <figure class="bcls-figure"> <img class="bcls-image--no-border" alt="" src="/assets/images/live/streaming-live-event/28-control-room-jobid.png" /> </figure>
       </li>
       <li>
-        Return to the Beacon Classic platform and configure your event by
-        pasting the <strong>Job ID</strong> of the recurring event. Also supply
-        a <strong>Name</strong> and an <strong>Event Start Date</strong>.
-        <figure class="bcls-figure">
-          <img class="bcls-image--no-border" alt="" src="/assets/images/live/streaming-live-event/29-beacon-calendar.png" />
-        </figure>
+        Beacon Classic プラットフォームに戻り、<strong>ジョブID</strong>定期的なイベントの。また供給<strong>名前</strong>と<strong>イベント開始日</strong>. <figure class="bcls-figure"> <img class="bcls-image--no-border" alt="" src="/assets/images/live/streaming-live-event/29-beacon-calendar.png" /> </figure>
       </li>
       <li>
-        The date and time of your event must be in the following format.
-        <figure class="bcls-figure">
-          <img class="bcls-image--no-border" alt="" width="300" height="200" src="/assets/images/live/streaming-live-event/30-date-format.png" />
-        </figure>
+        イベントの日時は次の形式である必要があります。 <figure class="bcls-figure"> <img class="bcls-image--no-border" alt="" width="300" height="200" src="/assets/images/live/streaming-live-event/30-date-format.png" /> </figure>
       </li>
-      <li>Click in the <strong>Update event</strong> button.</li>
-    </ol>
-    <aside class="bcls-aside bcls-aside--warning">Beacon Classic CMS is automating the <strong>Status</strong> transitions for Live events, but in Static Entry Points, you may have multiple Beacon Classic events associated with the same SEP. If there are issues with the automation as one running late and is overlapping, you can adjust the CMS transition by manually changing the <strong>Status</strong>. For example, from <strong>Available</strong> to <strong>Finished</strong> in the <strong>Status</strong> field. </aside>
+      <li>をクリックします。<strong>更新イベント</strong>ボタン。</li>
+    </ol> <aside class="bcls-aside bcls-aside--warning">Beacon Classic CMS は、<strong>状態</strong>ライブ イベントの遷移ですが、静的エントリ ポイントでは、同じ SEP に関連付けられた複数のビーコン クラシック イベントが存在する場合があります。自動化が遅れて重複しているなどの問題がある場合は、CMS の移行を手動で変更して調整できます。<strong>状態</strong>.たとえば、<strong>利用可能</strong>に<strong>終了した</strong>の中に<strong>状態</strong>分野。 </aside>
 
     <p>
-      You can perform this process for all the Live events you want in the
-      Beacon Classic platform. All of them will be streaming from the same
-      Live transmission, but each one with the different date and time that you
-      adjusted in its event settings.
-    </p>
-
-  </section>
-</article>
+      このプロセスは、BeaconClassicプラットフォームで必要なすべてのライブイベントに対して実行できます。それらのすべては、同じライブ伝送からストリーミングされますが、イベント設定で調整した異なる日付と時刻を持つ各 1 つです。
+    </p>  </section></article>

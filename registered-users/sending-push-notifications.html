@@ -1,272 +1,153 @@
 ---
-title: Sending Push Notifications to Beacon App Viewers
-description: In this topic, you will learn how to create and send push notifications to the viewers of your Brightcove Beacon apps.
-parent: Registered Users
+title: BeaconAppViewerへのプッシュ通知の送信
+
+description:  このトピックでは、Brightcove Beaconアプリケーションの視聴者にプッシュ通知を作成して送信する方法について説明します。
+parent: 登録ユーザ
 ---
 
-<h1>{{ page.title }}</h1>
-<article class="bcls-article">
-  <summary>{{ page.description }}</summary>
-
-  <section class="bcls-section">
-    <h2 id="Introduction">Introduction</h2>
-    <p>Brightcove allows you to send text or rich media push notifications to the viewers of your Brightcove Beacon apps. This gives you the ability to communicate and engage directly with your viewers that use iOS and Android mobile devices.</p>
-    <p>In Beacon Studio's <strong>Registered Users</strong> module, you can create, schedule, or send push notifications right away.</p>
-    <figure class="bcls-figure">
-      <img
-        class="bcls-image--no-border"
-        alt="App Notifications"
-        src="/assets/images/registered-users/notifications/app-notifications.png"
-      /> 
-    </figure>
-   
-  </section>
-
-  <section class="bcls-section">
-    <h2 id="Creating_a_notification">Creating a notification</h2>
-    <p>Create a push notification to send now or to schedule it for a later time.</p>
+<h1>{{page.title}}</h1> <article class="bcls-article"> <summary>{{page.description}}</summary> <section class="bcls-section">
+    <h2 id="Introduction">はじめに</h2>
+    <p>Brightcoveを使用すると、Brightcove Beaconアプリケーションの視聴者にテキストまたはリッチメディアプッシュ通知を送信できます。これにより、iOSおよびAndroidモバイルデバイスを使用する視聴者と直接コミュニケーションを取り、参加することができます。</p>
+    <p>ビーコンスタジオでは<strong>登録ユーザー</strong>モジュールを使用すると、プッシュ通知をすぐに作成、スケジュール、または送信できます。</p> <figure class="bcls-figure">
+      <img         class="bcls-image--no-border"         alt="アプリケーション通知"         src="/assets/images/registered-users/notifications/app-notifications.png"       />   </figure></section><section class="bcls-section">
+    <h2 id="Creating_a_notification">通知の作成</h2>
+    <p>プッシュ通知を作成して、今すぐ送信するか、後でスケジュールします。</p>
     <ol class="bcls-tasklist">
-      <li>In Beacon Studio, in the primary navigation, click <strong>Registered Users</strong>.</li>
-      <li>Click <strong>App Notifications</strong>.</li>
+      <li>Beacon Studio のプライマリ ナビゲーションで、<strong>登録ユーザー</strong>.</li>
+      <li>クリック<strong>アプリの通知</strong>.</li>
       <li>
-        <p>Add values for each input field.</p>
-        <figure class="bcls-figure">
-          <img
-            class="bcls-image--no-border"
-            alt="Create messnotification"
-            src="/assets/images/registered-users/notifications/create-message.png"
-          />
-        </figure> 
+        <p>各入力フィールドの値を追加します。</p> <figure class="bcls-figure">
+          <img             class="bcls-image--no-border"             alt="メッセージ通知の作成"             src="/assets/images/registered-users/notifications/create-message.png"           /> </figure> 
       </li>
     </ol>
-    <h3>Input fields</h3>
-      <p>Enter values for the following fields:</p>
+    <h3>入力フィールド</h3>
+      <p>次のフィールドに値を入力します。</p>
       <ul>
-        <li><strong>Notification name</strong> - Internal name for the notification</li>
-        <li><strong>Title</strong> - Display name for the notification</li>
-        <li><strong>Text</strong> - Your notification text</li>
-        <li><strong>Delivery options</strong> - 
-          <p>For details, see the <a href="#Sending_a_notification">Sending a notification</a> section.</p>
+        <li><strong>通知名</strong>- 通知の内部名</li>
+        <li><strong>題名</strong>- 通知の表示名</li>
+        <li><strong>文章</strong>- 通知テキスト</li>
+        <li><strong>配送オプション</strong>- 
+          <p>詳細については、<a href="#Sending_a_notification">通知の送信</a>セクション。</p>
           <ul>
-            <li>
-              <strong>Send test now</strong> - Send a test notification now
+            <li> <strong>今すぐテストを送信</strong>- 今すぐテスト通知を送信
+            </li>
+            <li> <strong>今すぐ送信</strong>- 今すぐプッシュ通知を送信
             </li>
             <li>
-              <strong>Send now</strong> - Send the push notification now
-            </li>
-            <li>
-              <p><strong>Send later</strong> - Send later, by scheduling a date and time for notification delivery</p>
+              <p><strong>後で送信</strong>- 通知配信の日時をスケジュールして、後で送信する</p>
             </li>
           </ul>
         </li>
         <li>
-          <p><strong>Notification type</strong> - Specifies the action when the user clicks on the notification</p>
-          <figure class="bcls-figure">
-            <img
-              class="bcls-image--no-border"
-              alt="Notification type"
-              src="/assets/images/registered-users/notifications/notification-type.png"
-            />
-          </figure>
+          <p><strong>通知タイプ</strong>- ユーザーが通知をクリックしたときのアクションを指定します</p> <figure class="bcls-figure">
+            <img               class="bcls-image--no-border"               alt="通知タイプ"               src="/assets/images/registered-users/notifications/notification-type.png"             /> </figure>
         </li>
       </ul>
 
-    <h3>Additional input fields</h3>
-      <p>When you select a <strong>Notification type</strong> of either:</p>
+    <h3>その他の入力フィールド</h3>
+      <p>を選択すると<strong>通知タイプ</strong>いずれかの：</p>
       <ul>
-        <li><strong>Open asset details</strong></li>
-        <li><strong>Open asset in player</strong></li>
-      </ul>
-      <figure class="bcls-figure">
-        <img
-          class="bcls-image--no-border"
-          alt="Select open asset"
-          src="/assets/images/registered-users/notifications/select-asset.png"
-        />
-      </figure>
-      <p>you will see the following additional input fields:</p>
-      <figure class="bcls-figure">
-        <img
-          class="bcls-image--no-border"
-          alt="Additional input fields"
-          src="/assets/images/registered-users/notifications/asset-fields.png"
-        />
-      </figure>
-      <p>To fill in these additional fields, do the following:</p>
+        <li><strong>オープン資産の詳細</strong></li>
+        <li><strong>Playerのオープン資産</strong></li>
+      </ul> <figure class="bcls-figure">
+        <img           class="bcls-image--no-border"           alt="オープン資産の選択"           src="/assets/images/registered-users/notifications/select-asset.png"         /> </figure>
+      <p>次の追加入力フィールドが表示されます。</p> <figure class="bcls-figure">
+        <img           class="bcls-image--no-border"           alt="その他の入力フィールド"           src="/assets/images/registered-users/notifications/asset-fields.png"         /> </figure>
+      <p>これらの追加フィールドに入力するには、次の手順を実行します。</p>
       <ol class="bcls-tasklist-restart">
         <li>
-          <p>First, select an <strong>Asset type</strong>.</p>
-          <figure class="bcls-figure">
-            <img
-              class="bcls-image--no-border"
-              alt="Select asset type"
-              src="/assets/images/registered-users/notifications/select-asset-type.png"
-            />
-          </figure>
+          <p>まず、<strong>資産の種類</strong>.</p> <figure class="bcls-figure">
+            <img               class="bcls-image--no-border"               alt="資産タイプの選択"               src="/assets/images/registered-users/notifications/select-asset-type.png"             /> </figure>
         </li>
         <li>
-          <p>Then, select an <strong>Asset</strong> from your Beacon library.</p>
-          <figure class="bcls-figure">
-            <img
-              class="bcls-image--no-border"
-              alt="Select asset"
-              src="/assets/images/registered-users/notifications/select-asset-image.png"
-            />
-          </figure>
+          <p>次に、<strong>資産</strong>あなたのビーコンライブラリから。</p> <figure class="bcls-figure">
+            <img               class="bcls-image--no-border"               alt="資産の選択"               src="/assets/images/registered-users/notifications/select-asset-image.png"             /> </figure>
         </li>
         <li>
-         <p> The landscape or poster image associated with your asset will be automatically populated here. In the notification, the image will be cropped into a square.</p>
-          <figure class="bcls-figure">
-            <img
-              class="bcls-image--no-border"
-              alt="Asset image"
-              src="/assets/images/registered-users/notifications/asset-image.png"
-            />
-          </figure>
+         <p> 資産に関連付けられている風景またはポスターの画像は、ここに自動的に表示されます。通知では、画像が正方形に切り取られます。</p> <figure class="bcls-figure">
+            <img               class="bcls-image--no-border"               alt="資産イメージ"               src="/assets/images/registered-users/notifications/asset-image.png"             /> </figure>
         </li>
         <li>
-          <p>Select values for the following input fields:</p>
+          <p>次の入力フィールドの値を選択します。</p>
           <ul>
-            <li><strong>Display image in notification</strong> - Toggle to display the image in your notification</li>
-            <li><strong>Image orientation</strong> - Choose either the landscape or portrait image</li>
+            <li><strong>通知に画像を表示する</strong>- 通知に画像を表示するように切り替えます</li>
+            <li><strong>画像の向き</strong>- 横向きまたは縦向きの画像を選択してください</li>
           </ul>
-          <p>You will see a preview of the image in your notification.</p>
-          <figure class="bcls-figure">
-            <img
-              class="bcls-image--no-border"
-              alt="Notification preview"
-              src="/assets/images/registered-users/notifications/notification-preview.png"
-            />
-          </figure>
-          <aside class="bcls-aside bcls-aside--information">The image is cropped into a square in the notification.</aside>
+          <p>通知にイメージのプレビューが表示されます。</p> <figure class="bcls-figure">
+            <img               class="bcls-image--no-border"               alt="通知プレビュー"               src="/assets/images/registered-users/notifications/notification-preview.png"             /> </figure> <aside class="bcls-aside bcls-aside--information">通知でイメージが正方形に切り取られます。</aside>
         </li>
-      </ol>
-  </section>
+      </ol>  </section><section class="bcls-section">
+    <h2 id="Sending_a_notification">通知の送信</h2>
+    <p>今すぐテスト通知を送信するか、今プッシュ通知を送信するか、後でスケジュールを設定することができます。</p>
 
-  <section class="bcls-section">
-    <h2 id="Sending_a_notification">Sending a notification</h2>
-    <p>You can either send a test notification now, or you can send a push notification now or schedule it for a later time.</p>
-
-    <h3>Send test notification</h3>
-    <p>Send a test notification to your Beacon app now.</p>
-    <aside class="bcls-aside bcls-aside--tip">To enable testing mode on your device, navigate to the <strong>About this app</strong> view and tap the logo 5 times. Testing mode allows test notifications to be sent to this device. Restart the app to remove testing mode.</aside>
+    <h3>テスト通知の送信</h3>
+    <p>今すぐBeaconアプリケーションにテスト通知を送信します。</p> <aside class="bcls-aside bcls-aside--tip">デバイスでテスト モードを有効にするには、<strong>このアプリについて</strong>ロゴを表示して 5 回タップします。テストモードでは、テスト通知をこのデバイスに送信できます。アプリケーションを再起動してテストモードを削除します。</aside>
     <ol class="bcls-tasklist-restart">
       <li>
-        <p>In the notifications screen, set the <strong>Delivery options</strong> field to <strong>Send test now</strong>.</p>
-        <figure class="bcls-figure">
-          <img
-            class="bcls-image--no-border"
-            alt="Send test notification"
-            src="/assets/images/registered-users/notifications/send-test.png"
-          />
-        </figure> 
+        <p>通知画面で、<strong>配送オプション</strong>フィールドへ<strong>今すぐテストを送信</strong>.</p> <figure class="bcls-figure">
+          <img             class="bcls-image--no-border"             alt="テスト通知の送信"             src="/assets/images/registered-users/notifications/send-test.png"           /> </figure> 
       </li>
       <li>
-        <p> Click <strong>Send now</strong>.</p>
-         <figure class="bcls-figure">
-           <img
-             class="bcls-image--no-border"
-             alt="Send test now"
-             src="/assets/images/registered-users/notifications/send-test-screen.png"
-           />
-         </figure>
+        <p> クリック<strong>今すぐ送信</strong>.</p> <figure class="bcls-figure">
+           <img              class="bcls-image--no-border"              alt="今すぐテストを送信"              src="/assets/images/registered-users/notifications/send-test-screen.png"            /> </figure>
        </li>
     </ol>
 
-    <h3>Send notification now</h3>
-    <p>Send a push notification to your Beacon app now.</p>
+    <h3>今すぐ通知を送信</h3>
+    <p>今すぐビーコンアプリにプッシュ通知を送信してください。</p>
     <ol class="bcls-tasklist-restart">
       <li>
-        <p>In the notifications screen, set the <strong>Delivery options</strong> field to <strong>Send now</strong>.</p>
-        <figure class="bcls-figure">
-          <img
-            class="bcls-image--no-border"
-            alt="Send now"
-            src="/assets/images/registered-users/notifications/send-now.png"
-          />
-        </figure>
+        <p>通知画面で、<strong>配送オプション</strong>フィールドへ<strong>今すぐ送信</strong>.</p> <figure class="bcls-figure">
+          <img             class="bcls-image--no-border"             alt="今すぐ送信"             src="/assets/images/registered-users/notifications/send-now.png"           /> </figure>
       </li>
       <li>
-       <p> Click <strong>Send now</strong>.</p>
-        <figure class="bcls-figure">
-          <img
-            class="bcls-image--no-border"
-            alt="Send now"
-            src="/assets/images/registered-users/notifications/send-now-screen.png"
-          />
-        </figure>
+       <p> クリック<strong>今すぐ送信</strong>.</p> <figure class="bcls-figure">
+          <img             class="bcls-image--no-border"             alt="今すぐ送信"             src="/assets/images/registered-users/notifications/send-now-screen.png"           /> </figure>
       </li>
     </ol>
-    <h3>Send notification later</h3>
-    <p>Schedule a date and time to send your push notification later.</p>
+    <h3>後で通知を送信する</h3>
+    <p>プッシュ通知を後で送信する日時をスケジュールします。</p>
     <ol class="bcls-tasklist-restart">
       <li>
-        <p>In the notifications screen, set the <strong>Delivery options</strong> field to <strong>Send later</strong>.</p>
-        <figure class="bcls-figure">
-          <img
-            class="bcls-image--no-border"
-            alt="Schedule time to send"
-            src="/assets/images/registered-users/notifications/send-later.png"
-          />
-        </figure>
+        <p>通知画面で、<strong>配送オプション</strong>フィールドへ<strong>後で送信</strong>.</p> <figure class="bcls-figure">
+          <img             class="bcls-image--no-border"             alt="送信時間のスケジュール"             src="/assets/images/registered-users/notifications/send-later.png"           /> </figure>
       </li>
-      <li><p>Set the date and time for your notification delivery.</p></li>
+      <li><p>通知の配信日時を設定します。</p></li>
       <li>
-        <p>Click <strong>Schedule</strong>.</p>
-        <figure class="bcls-figure">
-          <img
-            class="bcls-image--no-border"
-            alt="Schedule notification"
-            src="/assets/images/registered-users/notifications/schedule-screen.png"
-          />
-        </figure>
+        <p>クリック<strong>スケジュール</strong>.</p> <figure class="bcls-figure">
+          <img             class="bcls-image--no-border"             alt="スケジュール通知"             src="/assets/images/registered-users/notifications/schedule-screen.png"           /> </figure>
       </li>
       
-    </ol>
-  </section>
+    </ol>  </section><section class="bcls-section">
+    <h2 id="Managing_notifications">通知の管理</h2>
+    <p>通知がスケジュールされると、通知リストに表示されます。</p> <figure class="bcls-figure">
+      <img         class="bcls-image--no-border"         alt="通知リスト"         src="/assets/images/registered-users/notifications/notification-list.png"       /> </figure>
 
-  <section class="bcls-section">
-    <h2 id="Managing_notifications">Managing notifications</h2>
-    <p>Once your notification has been scheduled, it will appear in the notification list.</p>
-    <figure class="bcls-figure">
-      <img
-        class="bcls-image--no-border"
-        alt="Notification list"
-        src="/assets/images/registered-users/notifications/notification-list.png"
-      />
-    </figure>
-
-    <h3>Actions</h3>
+    <h3>行動</h3>
     <ul>
-      <li>Click <strong>Create notification</strong> to send or schedule a push notification.</li>
-      <li>Enter text in <strong>Search notifications</strong> to search the notifications list.</li>
+      <li>クリック<strong>通知を作成する</strong>プッシュ通知を送信またはスケジュールします。</li>
+      <li>テキストを入力してください<strong>検索通知</strong>通知リストを検索します。</li>
     </ul>
 
-    <h4>Columns</h4>
+    <h4>列</h4>
     <ul>
-      <li><strong>Notification</strong> - Click the notification name to edit the notification</li>
+      <li><strong>通知</strong>- 通知名をクリックして、通知を編集します</li>
       <li>
-        <p><strong>Status</strong> - The current status of the notification</p>
+        <p><strong>状態</strong>- 通知の現在のステータス</p>
         <ul>
-          <li><img class="bcls-image-no-border" alt="status scheduled" src="/assets/images/registered-users/notifications/status-scheduled.png"/> - Scheduled</li>
-          <li><img class="bcls-image-no-border" alt="status sent" src="/assets/images/registered-users/notifications/status-sent.png"/> - Sent</li>
-          <li><p><img class="bcls-image-no-border" alt="status failed" src="/assets/images/registered-users/notifications/status-failed.png"/> - Failed</p></li>
+          <li><img class="bcls-image-no-border" alt="予定されているステータス" src="/assets/images/registered-users/notifications/status-scheduled.png"/> - スケジュール済み</li>
+          <li><img class="bcls-image-no-border" alt="ステータス送信" src="/assets/images/registered-users/notifications/status-sent.png"/> - 送信済み</li>
+          <li><p><img class="bcls-image-no-border" alt="ステータスが失敗しました" src="/assets/images/registered-users/notifications/status-failed.png"/> - 失敗</p></li>
 
         </ul>
       </li>
-      <li><strong>Send date</strong> - The date that the notification is scheduled to be sent</li>
+      <li><strong>送信日</strong>- 通知の送信予定日</li>
       <li>
-       <p><strong>Type</strong> - Notification type</p>
+       <p><strong>タイプ</strong>- 通知タイプ</p>
        <ul>
-        <li><strong>Actual</strong> - Real notification sent to app users</li>
-        <li><p><strong>Test</strong> - Test notification sent to app, viewable in test mode only</p></li>
+        <li><strong>実際</strong>- アプリユーザーに送信される実際の通知</li>
+        <li><p><strong>テスト</strong>- テスト通知がアプリに送信され、テスト モードでのみ表示可能</p></li>
        </ul>
       </li>
-      <li><strong>Delete</strong> - Click <img class="bcls-image-no-border" alt="delete icon" src="/assets/images/registered-users/notifications/delete.png"/> to delete the notification</li> 
-    </ul>
-
-    
-  </section>
-  
-
-</article>
+      <li><strong>消去</strong>- クリック <img class="bcls-image-no-border" alt="アイコンを削除" src="/assets/images/registered-users/notifications/delete.png"/> 通知を削除する</li> 
+    </ul>   </section></article>

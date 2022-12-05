@@ -31,6 +31,6 @@
       maxSuggestions: 5, // Maximum number of suggestions to show.
       results: {"showImages": false }, // Configure the results.
       values: {"q.override": true, "resultsPerPage": "10","q": getUrlParam("q")}, // Set default values.
-      tabFilters: {defaultTab:"This Site",tabs:[{title:"This Site",filter:filter}]}, // User selectable filters
+      tabFilters: {defaultTab:"This Site",tabs:[{title: "This Site",filter:filter}]}, // User selectable filters
       styling: { theme: { colors: { brand: { primary: "#333" }}}}
   });

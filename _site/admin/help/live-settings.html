@@ -7,7 +7,7 @@
   <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
   <meta name="description" content="">
   
-  <title>Live Settings</title>
+  <title>ライブ設定の</title>
   <!-- <link rel="apple-touch-icon" sizes="180x180" href="/apple-touch-icon.png">
   <link rel="icon" type="image/png" sizes="32x32" href="/favicon-32x32.png">
   <link rel="icon" type="image/png" sizes="16x16" href="/favicon-16x16.png">
@@ -28,86 +28,55 @@
 
 <body class="body">
 
-<h1>Live Settings</h1>
-<article class="bcls-article">
-    <section class="bcls-section"> 
-        <p>Manage fill slates and credentials for Brightcove Live streams. SSAI ad configurations are managed in <strong>Server-Side Ad Settings</strong>.</p>
-
-        <details class="details-item">
-          <summary>Add fill slate</summary>
-          <section class="bcls-section">
-            <p>Fill slates are content to be served when there are gaps in a live stream ad break.</p>
+<h1>ライブ設定</h1>  <article class="bcls-article"><section class="bcls-section"> 
+        <p>BrightcoveLiveストリームのフィルタリングプレートと資格情報を管理します。SSAI 広告構成は、<strong>サーバー側の広告設定</strong>.</p> <details class="details-item"> <summary>塗りつぶしスレートを追加</summary> <section class="bcls-section">
+            <p>フィルスレートは、ライブストリーム広告ブレークにギャップがある場合に提供されるコンテンツです。</p>
             <ol class="bcls-tasklist">
-              <li>Click <span class="button-blue"><i class="button-icon" data-feather="plus"></i>Add Fill Slate</span>.</li>
-              <li>Enter <strong>Name</strong> - a descriptive name for your fill slate.</li>
-              <li>Enter <strong>Source URL</strong> - full address of the fill slate.</li>
-              <li>Click <span class="button-blue">Save</span>.</li>
-            </ol>
-          </section>
-        </details>
-
-        <details class="details-item">
-          <summary>Delete Fill Slate</summary>
-          <section class="bcls-section">
+              <li>クリック<span class="button-blue">塗りつぶしスレートを追加</span>.</li>
+              <li>入る<strong>名前</strong>- 塗りつぶしスレートのわかりやすい名前。</li>
+              <li>入る<strong>ソース URL</strong> - フィル スレートの完全なアドレス。</li>
+              <li>クリック<span class="button-blue">保存</span>.</li>
+            </ol> </section> </details> <details class="details-item"> <summary>塗りつぶしスレートの削除</summary> <section class="bcls-section">
             <ol class="bcls-tasklist">
-              <li>Click <img class="ui-image" alt="Delete icon" src="/assets/images/admin/help/delete-icon.png" /> to delete the associated fill slate.</li>
-              <li>In the <strong>Delete</strong> dialog, click <span class="button-red-text">Delete</span> to confirm.</li>
-            </ol>
-          </section>
-        </details>
-
-        <details class="details-item">
-          <summary>Add credential</summary>
-          <section class="bcls-section">
-            <p>Live credentials are required when using either the Live module or the Live API.</p>
+              <li>クリック <img class="ui-image" alt="削除アイコン" src="/assets/images/admin/help/delete-icon.png" /> 関連付けられたフィルスレートを削除します。</li>
+              <li>の中に<strong>消去</strong>ダイアログ、クリック<span class="button-red-text">消去</span>確認するために。</li>
+            </ol> </section> </details> <details class="details-item"> <summary>資格情報の追加</summary> <section class="bcls-section">
+            <p>LiveモジュールまたはLiveAPIを使用する場合は、ライブクレデンシャルが必要です。</p>
             <ol class="bcls-tasklist">
-              <li>For Live Video Cloud credentials, start with <a href="https://live.support.brightcove.com/admin/managing-live-settings.html#credentials" target="_blank">API Authentication credentials <img src="/assets/images/feather/external-link-blue.svg" alt="external link" style="width: .8rem;"></a>. <br>
-              For S3, FTP or RTMP credentials, skip this step.</li>
-              <li>Enter <strong>Label</strong> - an internal name for this credential</li>
-              <li>Select a <strong>Type</strong>:
+              <li>Live Video Cloud 資格情報については、<a href="https://live.support.brightcove.com/admin/managing-live-settings.html#credentials" target="_blank"> API 認証資格情報 <img src="/assets/images/feather/external-link-blue.svg" alt="外部リンク" style="width: .8rem;"></a>。 <br>
+              S3、FTP、またはRTMPクレデンシャルの場合は、この手順をスキップします。</li>
+              <li>入る<strong>ラベル</strong>- このクレデンシャルの内部名</li>
+              <li>を選択<strong>タイプ</strong>:
                 <ul>
-                  <li><strong>FTP</strong> - Used to save the VOD asset to an ftp location (API use)</li>
-                  <li><strong>RTMP</strong> - Used to create RTMP credentials to be used by the encoder</li>
-                  <li><strong>S3</strong> - Used to save the VOD asset to an Amazon S3 account (API use)</li>
-                  <li><strong>Video Cloud</strong> - Used to save the VOD asset to a Video Cloud account (API use)</li>
+                  <li><strong>FTP</strong> - VOD アセットを ftp の場所に保存するために使用 (API 使用)</li>
+                  <li><strong>RTMP</strong> - エンコーダーが使用する RTMP クレデンシャルの作成に使用</li>
+                  <li><strong>S3</strong> - VOD アセットを Amazon S3 アカウントに保存するために使用 (API 使用)</li>
+                  <li><strong>ビデオクラウド</strong>- VOD アセットを Video Cloud アカウントに保存するために使用 (API 使用)</li>
                 </ul>
               </li>
-              <li>Enter <strong>Public Key / Username</strong>:
+              <li>入る<strong>公開鍵 / ユーザー名</strong>:
                 <ul>
-                  <li><strong>FTP</strong> - Enter the username for the FTP site</li>
-                  <li><strong>RTMP</strong> - Enter the username that the encoder will use to authenticate</li>
-                  <li><strong>S3</strong> - Enter the username for the S3 account</li>
-                  <li><strong>Video Cloud</strong> - Enter the Client ID generated for the API Authentication credential</li>
+                  <li><strong>FTP</strong> - FTP サイトのユーザー名を入力します</li>
+                  <li><strong>RTMP</strong> - エンコーダーが認証に使用するユーザー名を入力します</li>
+                  <li><strong>S3</strong> - S3 アカウントのユーザー名を入力します</li>
+                  <li><strong>ビデオクラウド</strong>- API 認証資格情報用に生成されたクライアント ID を入力します</li>
                 </ul>
               </li>
-              <li>Enter <strong>Private Key / Password</strong>:
+              <li>入る<strong>秘密鍵・パスワード</strong>:
                 <ul>
-                  <li><strong>FTP</strong> - Enter the password for the FTP site</li>
-                  <li><strong>RTMP</strong> - Enter the password that the encoder will use to authenticate</li>
-                  <li><strong>S3</strong> - Enter the password for the S3 account</li>
-                  <li><strong>Video Cloud</strong> - Enter the Client secret generated for the API Authentication credential</li>
+                  <li><strong>FTP</strong> - FTP サイトのパスワードを入力します</li>
+                  <li><strong>RTMP</strong> - エンコーダーが認証に使用するパスワードを入力します</li>
+                  <li><strong>S3</strong> - S3 アカウントのパスワードを入力します</li>
+                  <li><strong>ビデオクラウド</strong>- API 認証資格情報用に生成されたクライアント シークレットを入力します。</li>
                 </ul>
               </li>
-              <li>Click <span class="button-blue">Save</span>.</li>
-            </ol>
-          </section>
-        </details>
-
-        <details class="details-item">
-          <summary>Delete credential</summary>
-          <section class="bcls-section">
+              <li>クリック<span class="button-blue">保存</span>.</li>
+            </ol> </section> </details> <details class="details-item"> <summary>資格情報の削除</summary> <section class="bcls-section">
             <ol class="bcls-tasklist">
-              <li>Click <img class="ui-image" alt="Delete icon" src="/assets/images/admin/help/delete-icon.png" /> to delete the associated credential.</li>
-              <li>In the <strong>Delete</strong> dialog, click <span class="button-red-text">Delete</span> to confirm.</li>
-            </ol>
-          </section>
-        </details>
-      
-  </section>
-    <section class="bcls-section">
-       <h3><a href="https://live.support.brightcove.com/admin/managing-live-settings.html" target="_blank">Learn more <img src="/assets/images/feather/external-link-blue.svg" alt="external link" style="width: .8rem;"></a></h3>
-    </section>
-</article>
+              <li>クリック <img class="ui-image" alt="削除アイコン" src="/assets/images/admin/help/delete-icon.png" /> 関連付けられているクレデンシャルを削除します。</li>
+              <li>の中に<strong>消去</strong>ダイアログ、クリック<span class="button-red-text">消去</span>確認するために。</li>
+            </ol>    </section></details></section><section class="bcls-section">
+       <h3><a href="https://live.support.brightcove.com/admin/managing-live-settings.html" target="_blank">詳細はこちら <img src="/assets/images/feather/external-link-blue.svg" alt="外部リンク" style="width: .8rem;"></a></h3>  </section></article>
   <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.0/jquery.min.js" crossorigin="anonymous"></script>
   <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js" integrity="sha384-UO2eT0CpHqdSJQ6hJty5KVphtPhzWj9WO1clHTMGa3JDZwrnQq4sF86dIHNDz0W1" crossorigin="anonymous"></script>
   <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js" integrity="sha384-JjSmVgyd0p3pXB1rRibZUAYoIIy6OrQ6VrjIEaFf/nJGzIxFDsf4x0xIM+B07jRM" crossorigin="anonymous"></script>

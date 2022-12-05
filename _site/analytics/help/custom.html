@@ -7,7 +7,7 @@
   <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
   <meta name="description" content="">
   
-  <title>Custom Reports</title>
+  <title>カスタムレポート</title>
   <!-- <link rel="apple-touch-icon" sizes="180x180" href="/apple-touch-icon.png">
   <link rel="icon" type="image/png" sizes="32x32" href="/favicon-32x32.png">
   <link rel="icon" type="image/png" sizes="16x16" href="/favicon-16x16.png">
@@ -28,151 +28,114 @@
 
 <body class="body">
 
-<h1>Custom Reports</h1>
-<article class="bcls-article">
-    <section class="bcls-section">
-        <p>Create custom analytics reports that show selected data and metrics for a period of time.</p>
-   
-        <details class="details-item">
-          <summary>Report time zone</summary>
-          <section class="bcls-section">
-            <p>Data in custom reports is based on the account's reporting time zone; to configure your time zone:</p>
+<h1>カスタムレポート</h1>  <article class="bcls-article"><section class="bcls-section">
+        <p>選択したデータとメトリックを一定期間表示するカスタム分析レポートを作成します。</p> <details class="details-item"> <summary>レポートのタイムゾーン</summary> <section class="bcls-section">
+            <p>カスタムレポートのデータは、アカウントのレポート時間帯に基づいています。時間帯を設定するには、次の手順を実行します。</p>
             <ol class="bcls-tasklist-restart">
-              <li>In Beacon Studio, expand the <strong>Admin</strong> dropdown.</li>
-              <li>Select <strong>Account Settings</strong>.</li>
-              <li>Set your <strong>Current Time Zone</strong>.</li>
-              <li>Click <span class="button-blue">Save</span>.</li>
-            </ol>
-            <aside class="bcls-aside bcls-aside--information">Changing the reporting time zone only affects data going forward, and changes are not applied retroactively.</aside>
-            <p><a href="https://beacon-help.support.brightcove.com/analytics/creating-custom-analytics-reports.html#timezone" target="_blank">Learn more <img src="/assets/images/feather/external-link-blue.svg" alt="external link" style="width: .8rem;"></a></p>
-          </section>
-        </details>
-
-        <details class="details-item">
-          <summary>Report data</summary>
-          <section class="bcls-section">
+              <li>Beacon Studio で、<strong>管理者</strong>落ちる。</li>
+              <li>選択する<strong>アカウント設定</strong>.</li>
+              <li>あなたの<strong>現在のタイムゾーン</strong>.</li>
+              <li>クリック<span class="button-blue">保存</span>.</li>
+            </ol> <aside class="bcls-aside bcls-aside--information">レポートのタイムゾーンを変更すると、今後のデータだけに影響し、変更は遡って適用されません。</aside>
+            <p><a href="https://beacon-help.support.brightcove.com/analytics/creating-custom-analytics-reports.html#timezone" target="_blank">詳細はこちら <img src="/assets/images/feather/external-link-blue.svg" alt="外部リンク" style="width: .8rem;"></a></p> </section> </details> <details class="details-item"> <summary>レポートデータ</summary> <section class="bcls-section">
             <ul>
-              <li><strong>Include Accounts</strong> - Include data from the current Video Cloud account or select multiple accounts</li>
-              <li><strong>Report Type</strong> 
+              <li><strong>アカウントを含める</strong>- 現在の Video Cloud アカウントのデータを含めるか、複数のアカウントを選択します</li>
+              <li><strong>レポートタイプ</strong> 
                 <ul>
-                  <li><strong>One-time</strong> - Report is run once, immediately
-                  <li><strong>Date Range</strong> - For one-time reports, specify the time period for analytics data</li>
+                  <li><strong>一度</strong>- レポートは 1 回だけ実行され、すぐに実行されます
+                  <li><strong>日付範囲</strong>- 1 回限りのレポートの場合、分析データの期間を指定します</li>
                   </li>
-                  <li><strong>Recurring</strong> - Report can be scheduled to run on a daily, weekly or monthly basis
-                  <li><strong>Frequency</strong> - For recurring reports
+                  <li><strong>繰り返し</strong>- レポートは、毎日、毎週、または毎月実行するようにスケジュールできます
+                  <li><strong>周波数</strong>- 定期的なレポートの場合
                     <ul>
-                      <li><strong>Daily</strong> - Report covers an entire day</li>
-                      <li><strong>Weekly</strong> - Report covers an entire week, defined as Monday through Sunday</li>
-                      <li><strong>Monthly</strong> - Reports covers an entire month</li>
+                      <li><strong>毎日</strong>- レポートは丸一日</li>
+                      <li><strong>毎週</strong>- レポートは、月曜日から日曜日までと定義された 1 週間全体を対象としています</li>
+                      <li><strong>毎月</strong>- レポートは 1 か月分をカバーします</li>
                     </ul>
-                  </li>
-                  <aside class="bcls-aside bcls-aside--information">Recurring reports are executed after analytics reconciliation, usually 3 to 5 days after the end of a reporting period.</aside>
+                  </li> <aside class="bcls-aside bcls-aside--information">定期的なレポートは、通常、レポート期間が終了してから3~5日後に分析調整後に実行されます。</aside>
                   </li>
                 </ul>
               </li>
-              <li><strong>Data Groups</strong> - Data Groups determine the data fields included in the report
+              <li><strong>データ グループ</strong>- データ グループは、レポートに含まれるデータ フィールドを決定します
                 <ul>
-                  <li>Data Fields that appear are based upon the data groups you select</li>
-                  <li>You can select multiple data groups but some combinations are not valid</li>
-                  <li>At least one Data Group must be selected</li>
+                  <li>表示されるデータフィールドは、選択したデータグループに基づいています。</li>
+                  <li>複数のデータグループを選択することができますが、いくつかの組み合わせが有効ではありません。</li>
+                  <li>複数のデータグループを選択する必要があります。</li>
                 </ul>
               </li>
-              <li><strong>Data Fields</strong> - When you select a Data Group, the Data Fields that can be returned are selectable
+              <li><strong>データ フィールド</strong>- データ グループを選択すると、返されるデータ フィールドが選択可能になります。
                 <ul>
-                  <li>Grayed-out fields cannot be returned for the selected Data Group</li>
+                  <li>選択したデータグループの灰色のフィールドを返すことができません。</li>
                 </ul>
               </li>
             
               
-              <li>Click <span class="button-blue">Save</span> to save your changes</li> 
+              <li>クリック<span class="button-blue">保存</span>変更を保存するには</li> 
             </ul>
-            <p><a href="https://beacon-help.support.brightcove.com/analytics/creating-custom-analytics-reports.html" target="_blank">Learn more <img src="/assets/images/feather/external-link-blue.svg" alt="external link" style="width: .8rem;"></a></p>
-          </section>
-        </details>
-
-        <details class="details-item">
-          <summary>Add report filters</summary>
-          <section class="bcls-section">
-            <p>Filters can be added to limit the amount of data returned.</p>
+            <p><a href="https://beacon-help.support.brightcove.com/analytics/creating-custom-analytics-reports.html" target="_blank">詳細はこちら <img src="/assets/images/feather/external-link-blue.svg" alt="外部リンク" style="width: .8rem;"></a></p> </section> </details> <details class="details-item"> <summary>レポートフィルタの追加</summary> <section class="bcls-section">
+            <p>フィルターを追加し、返されるデータの量を制限できます。</p>
             <ul>
-              <li>When using multiple filters, an AND operation will be used</li>
-              <li>A filter will only display in your report if you have selected its matching data group
+              <li>複数のフィルタを使用する場合は、AND演算が使用されます。</li>
+              <li>フィルタは、一致するデータグループを選択した場合にのみレポートに表示されます。
                 <ul>
-                  <li>For example, if you want to filter on <strong>Video Tag</strong>, you must select the <strong>Video</strong> dimension</li>
+                  <li>たとえば、<strong>ビデオタグ</strong>を選択する必要があります。<strong>ビデオ</strong>寸法</li>
                 </ul>
               </li>
             </ul>
-            <p>You can filter on the following:</p>
+            <p>次の項目に基づいてフィルタリングできます。</p>
             <ul>
-              <li><strong>Video</strong> - One or more active video IDs in the account</li>
-              <li><strong>Video Tag</strong> - One or more video tags</li>
-              <li><strong>Custom Fields</strong> - One or more custom fields in the account</li>
-              <li><strong>Player</strong> - Enter one or more player IDs, separated by a comma</li>
-              <li><strong>Source Type</strong></li>
-              <li><strong>Device Type</strong></li>
-              <li><strong>Device OS</strong></li>
-              <li><strong>Device Manufacturer</strong></li>
-              <li><strong>Browser Type</strong></li>
-              <li><strong>Search Terms</strong></li>
-              <li><strong>Country</strong></li>
-              <li><strong>Destination Domain</strong></li>
-              <li><strong>Search Terms</strong></li>
+              <li><strong>ビデオ</strong>- アカウント内の 1 つ以上のアクティブな動画 ID</li>
+              <li><strong>ビデオタグ</strong>- 1 つ以上のビデオ タグ</li>
+              <li><strong>カスタムフィールド</strong>- アカウント内の 1 つ以上のカスタム フィールド</li>
+              <li><strong>プレーヤー</strong>- 1 つ以上のプレーヤー ID をコンマで区切って入力します</li>
+              <li><strong>ソースタイプ</strong></li>
+              <li><strong>デバイスタイプ</strong></li>
+              <li><strong>デバイスOS</strong></li>
+              <li><strong>デバイスメーカー</strong></li>
+              <li><strong>ブラウザの種類</strong></li>
+              <li><strong>検索語句</strong></li>
+              <li><strong>国</strong></li>
+              <li><strong>宛先ドメイン</strong></li>
+              <li><strong>検索語句</strong></li>
             </ul>
-            <p><a href="https://beacon-help.support.brightcove.com/analytics/creating-custom-analytics-reports.html#filter" target="_blank">Learn more <img src="/assets/images/feather/external-link-blue.svg" alt="external link" style="width: .8rem;"></a></p>
-          </section>
-        </details>
-
-        <details class="details-item">
-          <summary>Preview Report</summary>
-          <section class="bcls-section">
-            <p>The data displayed in the report preview is sample data, not actual data from your Video Cloud account.</p>
+            <p><a href="https://beacon-help.support.brightcove.com/analytics/creating-custom-analytics-reports.html#filter" target="_blank">詳細はこちら <img src="/assets/images/feather/external-link-blue.svg" alt="外部リンク" style="width: .8rem;"></a></p> </section> </details> <details class="details-item"> <summary>レポートのプレビュー</summary> <section class="bcls-section">
+            <p>レポートプレビューに表示されるデータはサンプルデータ、VideoCloudアカウントの実際のデータではありません。</p>
             <ul>
-              <li>The <strong>Preview Report</strong> section shows the data columns selected, populated with sample data</li>
-              <li>Click <img class="ui-image" alt="Delete icon" src="/assets/images/admin/help/delete-icon.png" /> to delete the associated data item</li>
-              <li>The sort order of the preview has no effect on the sort order of the downloaded report</li>
-              <li>You can use a spreadsheet application to sort the downloaded data</li>
+              <li>の<strong>プレビュー レポート</strong>セクションには、サンプル データが入力された、選択されたデータ列が表示されます</li>
+              <li>クリック <img class="ui-image" alt="削除アイコン" src="/assets/images/admin/help/delete-icon.png" /> 関連するデータ項目を削除する</li>
+              <li>プレビューのソート順序は、ダウンロードされたレポートのソート順序に影響を与えません。</li>
+              <li>スプレッドシートアプリケーションを使用して、ダウンロードしたデータをソートできます。</li>
             </ul>
            
-            <p><a href="https://beacon-help.support.brightcove.com/analytics/creating-custom-analytics-reports.html#preview" target="_blank">Learn more <img src="/assets/images/feather/external-link-blue.svg" alt="external link" style="width: .8rem;"></a></p>
-          </section>
-        </details>
-
-        <details class="details-item">
-          <summary>Configure and Deliver Report</summary>
-          <section class="bcls-section">
+            <p><a href="https://beacon-help.support.brightcove.com/analytics/creating-custom-analytics-reports.html#preview" target="_blank">詳細はこちら <img src="/assets/images/feather/external-link-blue.svg" alt="外部リンク" style="width: .8rem;"></a></p> </section> </details> <details class="details-item"> <summary>レポートの設定と配信</summary> <section class="bcls-section">
             <ul>
-              <li><strong>Report Name</strong> - Start by giving the report a meaningful name</li>
-              <li><strong>Format</strong> 
+              <li><strong>レポート名</strong>- レポートに意味のある名前を付けることから始めます</li>
+              <li><strong>[ 形式] </strong> 
                 <ul>
-                  <li><strong>CSV</strong> - Comma-separated values </li>
-                  <li><strong>XLSX</strong> - Microsoft Excel</li>
+                  <li><strong>CSV</strong> - コンマ区切り値 </li>
+                  <li><strong>XLSX</strong> - マイクロソフトエクセル</li>
                 </ul>
               </li>
-              <li><strong>Email me when my report is ready</strong> - Get an email notification to yourself when the report is complete</li>
-              <li><strong>Notify others</strong> - Enter email addresses separated by a comma</li>
-              <li>In the Brighcove email, the link to download the report is valid for 90 days</li>
+              <li><strong>レポートの準備ができたらメールで受け取る</strong>- レポートが完了すると、自分宛にメール通知が届きます</li>
+              <li><strong>他の人に通知する</strong>- 電子メール アドレスをカンマで区切って入力してください</li>
+              <li>BrightcoveEメールでは、レポートをダウンロードするリンクは90日間有効です。</li>
               
-              <li>For one-time reports, 
+              <li>ワンタイムレポートの場合は、 
                 <ul>
-                  <li>Click <span class="button-blue">Request Report</span></li>
-                  <li>The report will be downloaded when it is complete</li>
+                  <li>クリック<span class="button-blue">レポートのリクエスト</span></li>
+                  <li>レポートが完了すると、レポートがダウンロードされます。</li>
                 </ul>
               </li>
-              <li>For recurring reports, 
+              <li>繰り返しレポートの場合は、 
                 <ul>
-                  <li>Click <span class="button-blue">Schedule Report</span></li>
-                  <li>The report will be queued and run when the data is ready</li>
+                  <li>クリック<span class="button-blue">スケジュール レポート</span></li>
+                  <li>レポートはキューに入れられ、データの準備ができたら実行されます。</li>
                 </ul>
               </li>
             </ul>
-            <li>To see all scheduled reports, click <span class="button-blue">Scheduled Reports</span> in the left navigation</li>
+            <li>スケジュールされたすべてのレポートを表示するには、<span class="button-blue">定期レポート</span>左のナビゲーションで</li>
            
-            <p><a href="https://beacon-help.support.brightcove.com/analytics/creating-custom-analytics-reports.html#options" target="_blank">Learn more <img src="/assets/images/feather/external-link-blue.svg" alt="external link" style="width: .8rem;"></a></p>
-          </section>
-        </details> 
-   
-  </section>
-</article>
+            <p><a href="https://beacon-help.support.brightcove.com/analytics/creating-custom-analytics-reports.html#options" target="_blank">詳細はこちら <img src="/assets/images/feather/external-link-blue.svg" alt="外部リンク" style="width: .8rem;"></a></p>    </section></details></section></article>
   <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.0/jquery.min.js" crossorigin="anonymous"></script>
   <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js" integrity="sha384-UO2eT0CpHqdSJQ6hJty5KVphtPhzWj9WO1clHTMGa3JDZwrnQq4sF86dIHNDz0W1" crossorigin="anonymous"></script>
   <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js" integrity="sha384-JjSmVgyd0p3pXB1rRibZUAYoIIy6OrQ6VrjIEaFf/nJGzIxFDsf4x0xIM+B07jRM" crossorigin="anonymous"></script>

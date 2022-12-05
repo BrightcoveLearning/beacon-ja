@@ -1,24 +1,24 @@
-{
+﻿{
 	"info": {
-		"_postman_id": "8df2a31d-ef43-4303-8d2f-4372e434ea47",
-		"name": "MRSS OTT",
+		"_postman_id": "8df2a31d-ef43-vp3-8d2f-4372e434ea47",
+		"name": "MRSSOTT",
 		"schema": "https://schema.getpostman.com/json/collection/v2.1.0/collection.json"
 	},
 	"item": [
 		{
-			"name": "POST ott syndications",
+			"name": "POSTotシンジケーション",
 			"request": {
-				"method": "POST",
+				"method": "役職",
 				"header": [
 					{
-						"key": "Content-Type",
-						"value": "application/json",
-						"type": "text"
+						"key": "コンテンツタイプ",
+						"value": "アプリケーション/json",
+						"type": "テキスト"
 					}
 				],
 				"body": {
-					"mode": "raw",
-					"raw": "{\n    \"name\" : \"Series catalog\", \n    \"type\" : \"umcCatalogCsv\", \n    \"asset_type_filter\" : [ \"series\" ], \n    \"cms_account_id\" : \"{{cms_account_id}}\",\n    \"filename\": \"catalog_series.csv\"\n}"
+					"mode": "生の",
+					"raw": "{\n    \"name\":\"シリーズカタログ\", \n    \"type\":\"umcCatalogCsv\", \n    \"filter_type_filter\":[\"series\"], \n    \"cms_account_id\":\"{{cms_account_id}},\n    \"module\":\"module_series.csv\"\n}"
 				},
 				"url": {
 					"raw": "https://{{host}}/v1/accounts/{{account_id}}/mrss/ott-syndications",
@@ -27,20 +27,20 @@
 						"{{host}}"
 					],
 					"path": [
-						"v1",
-						"accounts",
+						"v1の値",
+						"勘定",
 						"{{account_id}}",
 						"mrss",
-						"ott-syndications"
+						"オット通信"
 					]
 				}
 			},
 			"response": []
 		},
 		{
-			"name": "GET ott syndications",
+			"name": "GETottシンジケーション",
 			"request": {
-				"method": "GET",
+				"method": "取得する",
 				"header": [],
 				"url": {
 					"raw": "https://{{host}}/v1/accounts/{{account_id}}/mrss/ott-syndications",
@@ -49,20 +49,20 @@
 						"{{host}}"
 					],
 					"path": [
-						"v1",
-						"accounts",
+						"v1の値",
+						"勘定",
 						"{{account_id}}",
 						"mrss",
-						"ott-syndications"
+						"オット通信"
 					]
 				}
 			},
 			"response": []
 		},
 		{
-			"name": "GET ott syndication",
+			"name": "GETottシンジケーション",
 			"request": {
-				"method": "GET",
+				"method": "取得する",
 				"header": [],
 				"url": {
 					"raw": "https://{{host}}/v1/accounts/{{account_id}}/mrss/ott-syndications/{{syndication_id}}",
@@ -71,11 +71,11 @@
 						"{{host}}"
 					],
 					"path": [
-						"v1",
-						"accounts",
+						"v1の値",
+						"勘定",
 						"{{account_id}}",
 						"mrss",
-						"ott-syndications",
+						"オット通信",
 						"{{syndication_id}}"
 					]
 				}
@@ -83,19 +83,19 @@
 			"response": []
 		},
 		{
-			"name": "PATCH ott syndication",
+			"name": "パッチオットシンジケーション",
 			"request": {
-				"method": "PATCH",
+				"method": "パッチ",
 				"header": [
 					{
-						"key": "Content-Type",
-						"value": "application/json",
-						"type": "text"
+						"key": "コンテンツタイプ",
+						"value": "アプリケーション/json",
+						"type": "テキスト"
 					}
 				],
 				"body": {
-					"mode": "raw",
-					"raw": "{\n    \"filename\": \"catalog_series.csv\"\n}"
+					"mode": "生の",
+					"raw": "{\n    \"module\":\"module_series.csv\"\n}"
 				},
 				"url": {
 					"raw": "https://{{host}}/v1/accounts/{{account_id}}/mrss/ott-syndications/{{syndication_id}}",
@@ -104,11 +104,11 @@
 						"{{host}}"
 					],
 					"path": [
-						"v1",
-						"accounts",
+						"v1の値",
+						"勘定",
 						"{{account_id}}",
 						"mrss",
-						"ott-syndications",
+						"オット通信",
 						"{{syndication_id}}"
 					]
 				}
@@ -116,19 +116,19 @@
 			"response": []
 		},
 		{
-			"name": "PUT ott syndication",
+			"name": "PUTTシンジケーション",
 			"request": {
-				"method": "PUT",
+				"method": "置きます",
 				"header": [
 					{
-						"key": "Content-Type",
-						"value": "application/json",
-						"type": "text"
+						"key": "コンテンツタイプ",
+						"value": "アプリケーション/json",
+						"type": "テキスト"
 					}
 				],
 				"body": {
-					"mode": "raw",
-					"raw": "{\n    \"id\": \"{{syndication_id}}\",\n    \"name\": \"Series catalog\",\n    \"type\": \"umcCatalogCsv\",\n    \"asset_type_filter\": [\n        \"series\"\n    ],\n    \"filename\": \"catalog_series.csv\",\n    \"cms_account_id\": \"{{cms_account_id}}\"\n}"
+					"mode": "生の",
+					"raw": "{\n    \"id\":\"{{authentication_id}},\n    \"name\":\"シリーズカタログ\",\n    \"type\":\"umcCatalogCsv\",\n    \"filter_type_filter\":[\n        シリーズ\n    ],\n    \"module\":\"module_series.csv\",\n    \"cms_account_id\":\"{{cms_account_id}}}\"\n}"
 				},
 				"url": {
 					"raw": "https://{{host}}/v1/accounts/{{account_id}}/mrss/ott-syndications/{{syndication_id}}",
@@ -137,11 +137,11 @@
 						"{{host}}"
 					],
 					"path": [
-						"v1",
-						"accounts",
+						"v1の値",
+						"勘定",
 						"{{account_id}}",
 						"mrss",
-						"ott-syndications",
+						"オット通信",
 						"{{syndication_id}}"
 					]
 				}
@@ -149,9 +149,9 @@
 			"response": []
 		},
 		{
-			"name": "DELETE ott syndication",
+			"name": "削除オットシンジケーション",
 			"request": {
-				"method": "DELETE",
+				"method": "削除",
 				"header": [],
 				"url": {
 					"raw": "https://{{host}}/v1/accounts/{{account_id}}/mrss/ott-syndications/SYND_ID",
@@ -160,11 +160,11 @@
 						"{{host}}"
 					],
 					"path": [
-						"v1",
-						"accounts",
+						"v1の値",
+						"勘定",
 						"{{account_id}}",
 						"mrss",
-						"ott-syndications",
+						"オット通信",
 						"SYND_ID"
 					]
 				}
@@ -172,19 +172,19 @@
 			"response": []
 		},
 		{
-			"name": "POST ott async job",
+			"name": "POSTott非同期ジョブ",
 			"request": {
-				"method": "POST",
+				"method": "役職",
 				"header": [
 					{
-						"key": "Content-Type",
-						"value": "application/json",
-						"type": "text"
+						"key": "コンテンツタイプ",
+						"value": "アプリケーション/json",
+						"type": "テキスト"
 					}
 				],
 				"body": {
-					"mode": "raw",
-					"raw": "{\n    \"name\" : \"Weekly feed\", \n    \"syndications\": [\"{{syndication_id}}\"]\n}"
+					"mode": "生の",
+					"raw": "{\n    \"name\":\"週1回のフィード\" \n    \"情報\":[\"{{{authentication_id}}}}]\n}"
 				},
 				"url": {
 					"raw": "https://{{host}}/v1/accounts/{{account_id}}/mrss/ott-async-jobs",
@@ -193,20 +193,20 @@
 						"{{host}}"
 					],
 					"path": [
-						"v1",
-						"accounts",
+						"v1の値",
+						"勘定",
 						"{{account_id}}",
 						"mrss",
-						"ott-async-jobs"
+						"ot-tvc-tvc-tvc-facebookの"
 					]
 				}
 			},
 			"response": []
 		},
 		{
-			"name": "GET ott async jobs",
+			"name": "非同期ジョブを取得する",
 			"request": {
-				"method": "GET",
+				"method": "取得する",
 				"header": [],
 				"url": {
 					"raw": "https://{{host}}/v1/accounts/{{account_id}}/mrss/ott-async-jobs",
@@ -215,11 +215,11 @@
 						"{{host}}"
 					],
 					"path": [
-						"v1",
-						"accounts",
+						"v1の値",
+						"勘定",
 						"{{account_id}}",
 						"mrss",
-						"ott-async-jobs"
+						"ot-tvc-tvc-tvc-facebookの"
 					]
 				}
 			},
@@ -230,71 +230,71 @@
 		"type": "oauth2",
 		"oauth2": [
 			{
-				"key": "clientSecret",
+				"key": "クライアントシークレット",
 				"value": "{{client_secret}}",
-				"type": "string"
+				"type": "文字列"
 			},
 			{
 				"key": "clientId",
 				"value": "{{client_id}}",
-				"type": "string"
+				"type": "文字列"
 			},
 			{
-				"key": "tokenName",
-				"value": "QA MRSS",
-				"type": "string"
+				"key": "トークン名",
+				"value": "QAMRSS",
+				"type": "文字列"
 			},
 			{
-				"key": "challengeAlgorithm",
+				"key": "チャレンジアルゴリズム",
 				"value": "S256",
-				"type": "string"
+				"type": "文字列"
 			},
 			{
 				"key": "grant_type",
-				"value": "client_credentials",
-				"type": "string"
+				"value": "client_資格情報",
+				"type": "文字列"
 			},
 			{
 				"key": "addTokenTo",
-				"value": "header",
-				"type": "string"
+				"value": "ヘッダ",
+				"type": "文字列"
 			},
 			{
-				"key": "client_authentication",
-				"value": "header",
-				"type": "string"
+				"key": "client_認証",
+				"value": "ヘッダ",
+				"type": "文字列"
 			},
 			{
 				"key": "accessTokenUrl",
 				"value": "https://oauth.qa.brightcove.com/v3/access_token?grant_type=client_credentials",
-				"type": "string"
+				"type": "文字列"
 			},
 			{
-				"key": "tokenType",
-				"value": "Bearer",
-				"type": "string"
+				"key": "トークンタイプ",
+				"value": "ベアラー",
+				"type": "文字列"
 			},
 			{
-				"key": "accessToken",
-				"value": "AG7xitxzHzhWvqzIjTn9hAkS41TiZBQYGVX9nsBpgdjT3rcVQtLJfzHdS2UfJO4VNSIcdQxjVN2QVpMsr-04QieVo1cxaKnt4b6wbcTKBoNwZVYa1-2C4r6Lp1evCmhgnCJt0E-1Q6uLToh5_wXq3hT0QAiiDAbC_mZNpXBCTAHwjv4_D59DJLC1DW2ycmXDI_wXob_LR1rbAJY5SPyHe5HR1fGbD9XtLU7Dk_Xgj4jFTSgpH2kj09K3dwfrsJroGz63O2Ic8Wnf-MWWns_Y_uZMxF_xutnRPsiXKy163tkT_-oUy-MikvfJNysdw51gWvBRyrhVrReCMgccI5NgMyv54kUowapIiA",
-				"type": "string"
+				"key": "アクセストークン",
+				"value": "AG7xitxzHzhWvqzIjTn9hAkS41TiZBQYGVX9nsBpgdjT3rcVQtLjfzHdS2UfJO4VNSIcdQxjVN2QVpMsr-04QieVo1cxaKnt4b6wbcTKBoNwZVIA1-2C4r6Lp1evCmhgnCJt0E-1Q6uLTOH5_wXq3hT0QAiiDAbC_mZNpXBCTAHwjv4_D59DJLC1DW2ycmXDI_wXob_LR1rbAJY5SPyHe5HR1fGbD9XtLU7Dk_Xgj4jFTSgpH2kj09K3dwfrsJroGz63O2Ic8Wnf-MWWns_Y_uZMxF_xutnRPSiXKy163tkT_-oUy-MikvfJNysdw51gWvBRyrhVrReCMgccI5NgMyv54kUowapIia",
+				"type": "文字列"
 			}
 		]
 	},
 	"event": [
 		{
-			"listen": "prerequest",
+			"listen": "前提条件",
 			"script": {
-				"type": "text/javascript",
+				"type": "テキスト/テキストスクリプト",
 				"exec": [
 					""
 				]
 			}
 		},
 		{
-			"listen": "test",
+			"listen": "テスト",
 			"script": {
-				"type": "text/javascript",
+				"type": "テキスト/テキストスクリプト",
 				"exec": [
 					""
 				]

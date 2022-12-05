@@ -1,367 +1,325 @@
 ---
-title: 'Images and Their Specifications'
-description: In this topic, you will learn of the images required for your Brightcove Beacon Experience. Also detailed are the required image sizes, aspect ratios, etc.
-parent: styling
+title: '画像とその仕様' 
+description:  このトピックでは、Brightcove ビーコンエクスペリエンスに必要な画像について説明します。また、必要な画像サイズ、アスペクト比なども詳細に記載されています。
+parent: スタイリング
 ---
 
-<h1>{{ page.title }}</h1>
-<article class="bcls-article">
-  <summary>{{ page.description }}</summary>
 
-  <section class="bcls-section">
-    <h2 id="Introduction">Introduction</h2>
-    <p>For you Brightcove Beacon apps there are five video images that can be used. You can find the image information when you click on a video and then from the details page click the <strong>Images</strong> link. You will see the following, but of course using your images:</p>
-    <figure class="bcls-figure">
-      <img class="bcls-image" src="/assets/images/styling/image-requirements/all-images-in-studio.png" alt="all images in studio">
-    </figure>
+<h1>{{page.title}}</h1> <article class="bcls-article"> <summary>{{page.description}}</summary> <section class="bcls-section">
+    <h2 id="Introduction">はじめに</h2>
+    <p>Brightcove Beaconアプリケーションには、5つのビデオイメージを使用できます。動画をクリックすると画像情報が表示され、詳細ページから<strong>画像</strong>リンク。次のように表示されますが、もちろんイメージを使用します。</p> <figure class="bcls-figure">
+      <img class="bcls-image" src="/assets/images/styling/image-requirements/all-images-in-studio.png" alt="スタジオ内のすべての画像"> </figure>
 
-    <p>There are hundreds of permutations of where the different images can be used. This is because there are:</p>
+    <p>異なる画像を使用できる場所には、何百もの順列があります。これは、次のようなものがあるためです。</p>
     <ul>
-      <li>Multiple platforms: Web, mobile, tablet, smart TV</li>
-      <li>Multiple entities: Movies, series, seasons, episode, playlists, etc., each which have images associated with them.</li>
-      <li>Multiple screens: Movie details, VOD player, favorites, recently watched, etc.</li>
-      <li>Multiple layouts for each screen: For example, there are four movie detail layouts</li>
-      <li>Different image ratios needed for different layouts: For example, a featured, wide banner carousel uses a different image ratio than a normal carousel.</li>
+      <li>複数のプラットフォーム:Web、モバイル、タブレット、スマートTV</li>
+      <li>複数のエンティティ:映画、シリーズ、シーズン、エピソード、プレイリストなど、それぞれにイメージが関連付けられています。</li>
+      <li>複数の画面:映画の詳細、VODプレーヤー、お気に入り、最近見たものなど。</li>
+      <li>各画面の複数のレイアウト:たとえば、4つのムービー詳細レイアウトがあります。</li>
+      <li>レイアウトによって必要なイメージの比率が異なります。例えば、特徴的なワイドバナーカルーセルは、通常のカルーセルとは異なる画像比率を使用します。</li>
     </ul>
-    <p>All those factors influence the image used, hence leading to the multitude of options where a specific image could be used.</p>
-    <p>The following provides a small insight on how images are used by showing four examples from a web app.</p>
+    <p>これらの要因はすべて、使用するイメージに影響を与えるため、特定のイメージを使用できる多数のオプションにつながります。</p>
+    <p>以下は、Webアプリケーションの4つの例を示すことによって、イメージがどのように使用されるかについての小さな洞察を提供します。</p>
     <ol class="bcls-tasklist-restart">
-      <li>The Video Cloud Poster used in Movie Details Layout G
-        <figure class="bcls-figure">
-          <img class="bcls-image" src="/assets/images/styling/image-requirements/movie-details-g.png" alt="movie details g">
-        </figure>
+      <li>ムービー詳細レイアウトGで使用されるビデオクラウドポスター <figure class="bcls-figure">
+          <img class="bcls-image" src="/assets/images/styling/image-requirements/movie-details-g.png" alt="映画の詳細g"> </figure>
       </li>
-      <li>A cropped version of the Beacon Landscape used in Movie Layout F
-        <figure class="bcls-figure">
-          <img class="bcls-image" src="/assets/images/styling/image-requirements/movie-details-f.png" alt="movie details f">
-        </figure>
+      <li>ムービーレイアウトFで使用されるビーコン風景のクロップドバージョン <figure class="bcls-figure">
+          <img class="bcls-image" src="/assets/images/styling/image-requirements/movie-details-f.png" alt="映画の詳細f"> </figure>
       </li>
-      <li>The Video Cloud Poster used in a related list.
-        <figure class="bcls-figure">
-          <img class="bcls-image" src="/assets/images/styling/image-requirements/crow-heceta-in-list.png" alt="related thumbnail">
-        </figure>
+      <li>関連リストで使用されているビデオクラウドポスター。 <figure class="bcls-figure">
+          <img class="bcls-image" src="/assets/images/styling/image-requirements/crow-heceta-in-list.png" alt="関連サムネイル"> </figure>
       </li>
-      <li>The Beacon Ultrawide used in a featured, wide banner carousel.
-        <figure class="bcls-figure">
-          <img class="bcls-image" src="/assets/images/styling/image-requirements/wide-banner.png" alt="wide banner">
-        </figure>
-        Note that this is the only time the Beacon Ultrawide image is used.
+      <li>ビーコンウルトラワイドは、特徴的なワイドバナーカルーセルで使用されます。 <figure class="bcls-figure">
+          <img class="bcls-image" src="/assets/images/styling/image-requirements/wide-banner.png" alt="ワイドバナー"> </figure> BeaconUltrawideイメージが使用されるのはこれだけであることに注意してください。
       </li>
-    </ol>
-  </section>
-
-  <section class="bcls-section">
-    <h2 id="Video_image_specifications">Video images</h2>
-    <aside class="bcls-aside bcls-aside--tip language-editable">For more information on managing images see the <a href="/media/uploading-video-images.html">Uploading Video Images</a> document.</aside>
-    <p>Following are details about each of the images, grouped by Video Cloud images then Beacon images:</p>
-    <h3>Video Cloud images</h3>
+    </ol>  </section><section class="bcls-section">
+    <h2 id="Video_image_specifications">ビデオイメージ</h2> <aside class="bcls-aside bcls-aside--tip language-editable">イメージの管理の詳細については、<a href="/media/uploading-video-images.html">ビデオ画像のアップロード</a>資料。</aside>
+    <p>次に、各イメージの詳細をVideoCloudイメージとBeaconイメージでグループ化します。</p>
+    <h3>ビデオクラウド画像</h3>
     <ul>
-      <li><strong>Video Cloud Poster</strong>
+      <li><strong>ビデオクラウドのポスター</strong>
         <ul>
-          <li>Created automatically by Beacon Studio</li>
-          <li>Use <strong>JPG</strong> or <strong>PNG</strong></li>
-          <li>Minimum 640px wide</li>
-          <li>Aspect ratio should match video, generally 16:9 or 4:3</li>
+          <li>BeaconStudioによって自動的に作成される</li>
+          <li>使用する<strong>JPG</strong>また<strong>PNG</strong></li>
+          <li>最小640px幅</li>
+          <li>アスペクト比はビデオと一致する必要があります（通常は16:9または4:3）。</li>
         </ul>
       </li>
-      <li><strong>Video Cloud Thumbnail</strong>: <ul>
-          <li>Created automatically by Beacon Studio</li>
-          <li>Use <strong>JPG</strong> or <strong>PNG</strong></li>
-          <li>Minimum 160px wide</li>
-          <li>Aspect ratio should match video, generally 16:9 or 4:3</li>
+      <li><strong>Video Cloud サムネイル</strong>: <ul>
+          <li>BeaconStudioによって自動的に作成される</li>
+          <li>使用する<strong>JPG</strong>また<strong>PNG</strong></li>
+          <li>最小幅160px</li>
+          <li>アスペクト比はビデオと一致する必要があります（通常は16:9または4:3）。</li>
         </ul>
       </li>
     </ul>
-    <h3>Beacon images</h3>
-    <p>The following are specifications for the Beacon video images:</p>
-    <p>Note: Images may be <strong>JPG</strong> for <strong>PNG</strong></p>
+    <h3>ビーコンイメージ</h3>
+    <p>ビーコンビデオイメージの仕様は次のとおりです。</p>
+    <p>注:画像は<strong>JPG</strong>為に<strong>PNG</strong></p>
     <table class="bcls-table">
       <thead class="bcls-table__head">
         <tr>
-          <th>Image</th>
-          <th>Requirements</th>
+          <th>イメージ</th>
+          <th>要件</th>
         </tr>
       </thead>
       <tbody class="bcls-table__body">
         <tr>
-          <td>Beacon Landscape</td>
+          <td>ビーコンの風景</td>
           <td>
-            Landscape image (16:9): <table>
+            風景画像 (16:9): <table>
               <tr>
-                <td>Minimum</td>
-                <td>Width: 1000px</td>
-                <td>Height: 563px</td>
+                <td>最小構成</td>
+                <td>幅:1000px</td>
+                <td>高さ:563px</td>
               </tr>
               <tr>
-                <td>Maximum</td>
-                <td>Width: 4000px</td>
-                <td>Height: 2250px</td>
+                <td>[最大]</td>
+                <td>幅:4000px</td>
+                <td>高さ:2250px</td>
               </tr>
             </table>
           </td>
         </tr>
         <tr>
-          <td>Beacon Portrait</td>
+          <td>ビーコンの肖像画</td>
           <td>
-            Poster image (2:3) <table>
+            ポスター画像 (2:3) <table>
               <tr>
-                <td>Minimum</td>
-                <td>Width: 1000px</td>
-                <td>Height: 1500px</td>
+                <td>最小構成</td>
+                <td>幅:1000px</td>
+                <td>高さ:1500px</td>
               </tr>
               <tr>
-                <td>Maximum</td>
-                <td>Width: 2000px</td>
-                <td>Height: 3000px</td>
+                <td>[最大]</td>
+                <td>幅:2000px</td>
+                <td>高さ:3000px</td>
               </tr>
             </table>
           </td>
         </tr>
         <tr>
-          <td>Beacon Ultrawide</td>
+          <td>ビーコンウルトラワイド</td>
           <td>
-            Landscape image (21:9): <table>
+            風景画像 (21:9): <table>
               <tr>
-                <td>Minimum</td>
-                <td>Width: 1000px</td>
-                <td>Height: 428px</td>
+                <td>最小構成</td>
+                <td>幅:1000px</td>
+                <td>高さ:428px</td>
               </tr>
               <tr>
-                <td>Maximum</td>
-                <td>Width: 4000px</td>
-                <td>Height: 1714px</td>
+                <td>[最大]</td>
+                <td>幅:4000px</td>
+                <td>高さ:1714px</td>
+              </tr>
+            </table>
+          </td>
+        </tr>
+      </tbody>
+    </table>  </section><section class="bcls-section">
+    <h2 id="Series_and_season_images">シリーズイメージとシーズンイメージ</h2>
+    <p>シリーズまたはシーズンを作成すると、次の3つのイメージが必要であることがわかります。</p> <figure class="bcls-figure">
+      <img class="bcls-image" src="/assets/images/styling/image-requirements/series-season-images.png" alt="シリーズシーズン画像"> </figure>
+    <p>これらのイメージは、ビーコンビデオイメージと同じ仕様に従います。</p>
+    <table class="bcls-table">
+      <thead class="bcls-table__head">
+        <tr>
+          <th>イメージ</th>
+          <th>要件</th>
+        </tr>
+      </thead>
+      <tbody class="bcls-table__body">
+        <tr>
+          <td>横長</td>
+          <td>
+            風景画像 (16:9): <table>
+              <tr>
+                <td>最小構成</td>
+                <td>幅:1000px</td>
+                <td>高さ:563px</td>
+              </tr>
+              <tr>
+                <td>[最大]</td>
+                <td>幅:4000px</td>
+                <td>高さ:2250px</td>
+              </tr>
+            </table>
+          </td>
+        </tr>
+        <tr>
+          <td>肖像画</td>
+          <td>
+            ポスター画像 (2:3) <table>
+              <tr>
+                <td>最小構成</td>
+                <td>幅:1000px</td>
+                <td>高さ:1500px</td>
+              </tr>
+              <tr>
+                <td>[最大]</td>
+                <td>幅:2000px</td>
+                <td>高さ:3000px</td>
+              </tr>
+            </table>
+          </td>
+        </tr>
+        <tr>
+          <td>ウルトラワイド</td>
+          <td>
+            風景画像 (21:9): <table>
+              <tr>
+                <td>最小構成</td>
+                <td>幅:1000px</td>
+                <td>高さ:428px</td>
+              </tr>
+              <tr>
+                <td>[最大]</td>
+                <td>幅:4000px</td>
+                <td>高さ:1714px</td>
               </tr>
             </table>
           </td>
         </tr>
       </tbody>
     </table>
-  </section>
-
-  <section class="bcls-section">
-    <h2 id="Series_and_season_images">Series and season images</h2>
-    <p>When creating a series or season you will see that three images are required:</p>
-    <figure class="bcls-figure">
-      <img class="bcls-image" src="/assets/images/styling/image-requirements/series-season-images.png" alt="series season images">
-    </figure>
-    <p>These images follow the same specifications as the Beacon video images:</p>
+    <p>カルーセルで使用されているLandscapeイメージを次に示します。</p> <figure class="bcls-figure">
+      <img class="bcls-image" src="/assets/images/styling/image-requirements/series-thumbnail.png" alt="シリーズサムネイル">   </figure></section><section class="bcls-section">
+    <h2 id="Hero_image">ヒーロー像</h2>
+    <p>ページレイアウトでヒーローイメージを使用している場合は、次の仕様を満たしている必要があります。</p>
     <table class="bcls-table">
       <thead class="bcls-table__head">
         <tr>
-          <th>Image</th>
-          <th>Requirements</th>
+          <th>仕様</th>
+          <th>値</th>
         </tr>
       </thead>
       <tbody class="bcls-table__body">
         <tr>
-          <td>Landscape</td>
-          <td>
-            Landscape image (16:9): <table>
-              <tr>
-                <td>Minimum</td>
-                <td>Width: 1000px</td>
-                <td>Height: 563px</td>
-              </tr>
-              <tr>
-                <td>Maximum</td>
-                <td>Width: 4000px</td>
-                <td>Height: 2250px</td>
-              </tr>
-            </table>
-          </td>
-        </tr>
-        <tr>
-          <td>Portrait</td>
-          <td>
-            Poster image (2:3) <table>
-              <tr>
-                <td>Minimum</td>
-                <td>Width: 1000px</td>
-                <td>Height: 1500px</td>
-              </tr>
-              <tr>
-                <td>Maximum</td>
-                <td>Width: 2000px</td>
-                <td>Height: 3000px</td>
-              </tr>
-            </table>
-          </td>
-        </tr>
-        <tr>
-          <td>Ultrawide</td>
-          <td>
-            Landscape image (21:9): <table>
-              <tr>
-                <td>Minimum</td>
-                <td>Width: 1000px</td>
-                <td>Height: 428px</td>
-              </tr>
-              <tr>
-                <td>Maximum</td>
-                <td>Width: 4000px</td>
-                <td>Height: 1714px</td>
-              </tr>
-            </table>
-          </td>
-        </tr>
-      </tbody>
-    </table>
-    <p>Here is the Landscape image used in a carousel:</p>
-    <figure class="bcls-figure">
-      <img class="bcls-image" src="/assets/images/styling/image-requirements/series-thumbnail.png" alt="series thumbnail">
-    </figure>
-  </section>
-
-  <section class="bcls-section">
-    <h2 id="Hero_image">Hero image</h2>
-    <p>If you are using a hero image in your page layout, it must meet these specifications:</p>
-    <table class="bcls-table">
-      <thead class="bcls-table__head">
-        <tr>
-          <th>Specification</th>
-          <th>Value</th>
-        </tr>
-      </thead>
-      <tbody class="bcls-table__body">
-        <tr>
-          <td>Format</td>
+          <td>[ 形式] </td>
           <td>.jpg</td>
         </tr>
         <tr>
-          <td>Aspect Ratio</td>
+          <td>アスペクト比</td>
           <td>16:9</td>
         </tr>
         <tr>
-          <td>Maximum Size</td>
-          <td>Width: 4000px x Height: 2250px</td>
+          <td>最大サイズ</td>
+          <td>幅:4000pxx高さ:2250px</td>
         </tr>
         <tr>
-          <td>Minimum Size</td>
-          <td>Width: 2000px x Height: 1125px</td>
+          <td>最小サイズ</td>
+          <td>幅:2000pxx高さ:1125px</td>
         </tr>
       </tbody>
-    </table>
-  </section>
-
-  <section class="bcls-section">
-    <h2 id="Corporate_logo">Corporate logo</h2>
+    </table>  </section><section class="bcls-section">
+    <h2 id="Corporate_logo">コーポレートロゴ</h2>
     <p>
-      You will need to supply your corporate logo for use in the Brightcove Beacon Experience. Follow these guidelines for the image: </p>
+      Brightcoveビーコンエクスペリエンスで使用するには、企業ロゴを提供する必要があります。画像については、次のガイドラインに従ってください。 </p>
     <table class="bcls-table">
       <thead class="bcls-table__head">
         <tr>
-          <th>Specification</th>
-          <th>Value</th>
+          <th>仕様</th>
+          <th>値</th>
         </tr>
       </thead>
       <tbody class="bcls-table__body">
         <tr>
-          <td>Format</td>
-          <td>.png</td>
+          <td>[ 形式] </td>
+          <td>png</td>
         </tr>
         <tr>
-          <td>Aspect Ratio</td>
+          <td>アスペクト比</td>
           <td>1:1</td>
         </tr>
         <tr>
-          <td>Size</td>
-          <td>1500px x 1500px</td>
+          <td>サイズ</td>
+          <td>1500px 1500px</td>
         </tr>
       </tbody>
-    </table>
-  </section>
-  <section class="bcls-section">
-    <h2 id="Working_in_Brightcove_Beacon">Working in Beacon Classic</h2>
+    </table>  </section><section class="bcls-section">
+    <h2 id="Working_in_Brightcove_Beacon">ビーコンクラシックでの作業</h2>
     <p>
-      When entering information in Beacon Classic, you will be asked for <strong>Non-Textual Data</strong>. This means images for the assets you are currently creating. These images can be broken down into three groups, those being:
+      Beacon Classic に情報を入力する際に、<strong>非テキストデータ</strong>.これは、現在作成しているアセットの画像を意味します。これらのイメージは、次の 3 つのグループに分けることができます。
     </p>
-    <h3>Live Events</h3>
+    <h3>ライブイベント</h3>
     <p>
-      For live events a page will appear similar to the following (without the red <strong>OPTIONAL</strong> text over the <strong>Thumbnail</strong> and <strong>Wide Banner</strong>, for which you do not need to supply images): </p>
-    <figure class="bcls-figure"> <img class="bcls-image" src="/assets/images/styling/image-requirements/live-event-images.png" alt="studio images UI" />
-    </figure>
+      ライブ イベントの場合、次のようなページが表示されます (赤い<strong>オプション</strong>上のテキスト<strong>サムネイル</strong>と<strong>ワイドバナー</strong>、画像を提供する必要はありません): </p> <figure class="bcls-figure"> <img class="bcls-image" src="/assets/images/styling/image-requirements/live-event-images.png" alt="スタジオイメージ UI" /> </figure>
     <p>
-      When you encounter this screen, supply a <strong>JPEG</strong> image for the <strong>Portrait Poster</strong> and <strong>Landscape Poster</strong> matching the requirements below. You DO NOT need to supply images for <strong>Thumbnail</strong> and <strong>Wide banner</strong>. If not provided, the Thumbnail image will be generated from the Portrait Poster and the Wide banner from the Landscape Poster.
+      この画面が表示されたら、<strong> JPEG</strong>のイメージ<strong>肖像ポスター</strong>と<strong>風景ポスター</strong>以下の要件に一致します。の画像を提供する必要はありません<strong>サムネイル</strong>と<strong>ワイドバナー</strong>.指定しない場合、サムネイル画像はポートレートポスター、ワイドバナーはランドスケープポスターから生成されます。
     </p>
     <table class="bcls-table">
       <thead class="bcls-table__head">
         <tr>
-          <th>Image</th>
-          <th>Requirements</th>
+          <th>イメージ</th>
+          <th>要件</th>
         </tr>
       </thead>
       <tbody class="bcls-table__body">
         <tr>
-          <td>Portrait Poster</td>
+          <td>ポートレートポスター</td>
           <td>
-            Poster image (2:3) <table>
+            ポスター画像 (2:3) <table>
               <tr>
-                <td>Minimum</td>
-                <td>Width: 1000px</td>
-                <td>Height: 1500px</td>
+                <td>最小構成</td>
+                <td>幅:1000px</td>
+                <td>高さ:1500px</td>
               </tr>
               <tr>
-                <td>Maximum</td>
-                <td>Width: 2000px</td>
-                <td>Height: 3000px</td>
+                <td>[最大]</td>
+                <td>幅:2000px</td>
+                <td>高さ:3000px</td>
               </tr>
             </table>
           </td>
         </tr>
         <tr>
-          <td>Landscape Poster</td>
+          <td>風景ポスター</td>
           <td>
-            Landscape image (16:9): <table>
+            風景画像 (16:9): <table>
               <tr>
-                <td>Minimum</td>
-                <td>Width: 1000px</td>
-                <td>Height: 563px</td>
+                <td>最小構成</td>
+                <td>幅:1000px</td>
+                <td>高さ:563px</td>
               </tr>
               <tr>
-                <td>Maximum</td>
-                <td>Width: 4000px</td>
-                <td>Height: 2250px</td>
+                <td>[最大]</td>
+                <td>幅:4000px</td>
+                <td>高さ:2250px</td>
               </tr>
             </table>
           </td>
         </tr>
       </tbody>
     </table>
-    <h3>Channel logos</h3>
+    <h3>チャンネルロゴ</h3>
     <p>
-      Channel logo images are composed of a thumbnail background and an image (with or without transparency), both with a 16:9 aspect ratio. The following diagram shows how channel logos are created: </p>
-    <figure class="bcls-figure"> <img class="bcls-image" src="/assets/images/styling/image-requirements/channel-logo.png" alt="channel logo creation" />
-    </figure>
+      チャンネルロゴ画像は、サムネールの背景とイメージ（透明の有無にかかわらず）で構成され、どちらもアスペクト比 16:9 です。次の図は、チャネルロゴの作成方法を示しています。 </p> <figure class="bcls-figure"> <img class="bcls-image" src="/assets/images/styling/image-requirements/channel-logo.png" alt="チャンネルロゴの作成" /> </figure>
     <p>
-      This is the
-      <strong>Non-Textual Data</strong> form you will see for when creating a new channel:
-    </p>
-    <figure class="bcls-figure"> <img class="bcls-image" src="/assets/images/styling/image-requirements/channel-logo-form.png" alt="channel logo creation" />
-    </figure>
+      これは<strong>非テキストデータ</strong>新しいチャネルを作成するときに表示されるフォーム:
+    </p> <figure class="bcls-figure"> <img class="bcls-image" src="/assets/images/styling/image-requirements/channel-logo-form.png" alt="チャンネルロゴの作成" /> </figure>
     <p>
-      The size requirements are detailed in the table.
+      サイズ要件は表に記載されています。
     </p>
     <table class="bcls-table">
       <thead class="bcls-table__head">
         <tr>
-          <th>Image</th>
-          <th>Requirements</th>
+          <th>イメージ</th>
+          <th>要件</th>
         </tr>
       </thead>
       <tbody class="bcls-table__body">
         <tr>
-          <td>Channel logo images</td>
+          <td>チャンネルロゴ画像</td>
           <td>
-            Landscape image (16:9): <table>
+            風景画像 (16:9): <table>
               <tr>
-                <td>Required Size</td>
-                <td>Width: 1000px</td>
-                <td>Height: 563px</td>
+                <td>必要なサイズ</td>
+                <td>幅:1000px</td>
+                <td>高さ:563px</td>
               </tr>
             </table>
           </td>
         </tr>
       </tbody>
-    </table>
-  </section>
-</article>
+    </table>  </section></article>

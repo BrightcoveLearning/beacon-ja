@@ -6,7 +6,7 @@ var appID = "{{ site.talla_appID }}";
 // token for anonymous profile
 var token =
 '{{ site.talla_token }}';
-// -----
+// ----
   Talla.config = Talla.init(
     appID,
     Talla.OptionJWTCredentials(token),
@@ -20,7 +20,7 @@ var token =
     Talla.OptionOpenIcon('https://support.brightcove.com/site-assets/images/site/search.png'),
     Talla.OptionBotIcon('https://support.brightcove.com/site-assets/images/site/search.png'),
     Talla.OptionAutodetectSession,
-    //---- NEW-----Redirects to portal
+    //--- NEW----Redirects to portal
     Talla.OptionRequestSubmittedCallback( function(widget, data) {
       window.open("https://supportportal.brightcove.com/s/login/?language=en_US&startURL=%2Fs%2F&ec=302")
     })

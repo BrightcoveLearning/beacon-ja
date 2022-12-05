@@ -1,147 +1,108 @@
 ---
-title: Auto Sync
-layout: help
+title: 自動同期
+layout: help 
 ---
-<h1>Auto Sync</h1>
-<article class="bcls-article">
-    <section class="bcls-section">
-        <p>Automatically synchronize videos to social media channels based upon tags associated with a video.</p>
-        <p>Before you can publish videos, you must create destinations for your social accounts. In the left navigation, click <strong>Destinations</strong>.</p>
-        <aside class="bcls-aside bcls-aside--information">Manually publishing videos is independent from Auto Sync. If a video is tagged to be published with Auto Sync, it will do so even if you have manually published the video.</aside> 
-   
-        <details class="details-item">
-          <summary>Configure Auto Sync</summary>
-          <section class="bcls-section">
+<h1>自動同期</h1>  <article class="bcls-article"><section class="bcls-section">
+        <p>ビデオに関連付けられたタグに基づいて、ビデオをソーシャルメディアチャネルに自動的に同期します。</p>
+        <p>ビデオを公開する前に、ソーシャルアカウントの宛先を作成する必要があります。左側のナビゲーションで、<strong>行き先</strong>.</p> <aside class="bcls-aside bcls-aside--information">ビデオを手動でパブリッシュすることは、自動同期とは無関係です。ビデオに自動同期でパブリッシュするタグが付いている場合は、ビデオを手動でパブリッシュしてもパブリッシュされます。</aside> <details class="details-item"> <summary>自動同期の設定</summary> <section class="bcls-section">
             <ol class="bcls-tasklist-restart">
-              <li>Click <span class="button-blue">Set up Auto Sync</span>.</li>
-              <li>Enter a <strong>Name</strong> for the sync.</li>
-              <li><strong>Select the videos to distribute</strong>
+              <li>クリック<span class="button-blue">自動同期を設定する</span>.</li>
+              <li>入力します<strong>名前</strong>同期のために。</li>
+              <li><strong>配信するビデオを選択します。</strong>
                 <ul>
-                  <li><strong>Videos with all these tags</strong> -  Videos with ALL of the tags listed should be synced</li>
-                  <li><strong>Videos with any of these tags</strong> - Videos with ANY of the tags listed should be synced</li>
-                  <li><strong>All videos in this account</strong> - All videos in the account should be synced</li>
+                  <li><strong>これらすべてのタグを含む動画</strong>- リストされているすべてのタグを含む動画を同期する必要があります</li>
+                  <li><strong>これらのタグのいずれかを含む動画</strong>- リストされているタグのいずれかを持つビデオは同期する必要があります</li>
+                  <li><strong>このアカウントのすべての動画</strong>- アカウント内のすべての動画を同期する必要があります</li>
                 </ul>
               </li>
-              <li>Unless <strong>All videos in this account</strong> was selected, enter a comma separated list of tags.</li>
-              <li><strong>Exclude videos that are</strong>
+              <li>そうでもなければ<strong>このアカウントのすべての動画</strong>が選択されている場合、タグのカンマ区切りリストを入力します。</li>
+              <li><strong>次のようなビデオは除外します。</strong>
                 <ul>
-                  <li><strong>Inactive</strong> -  Inactive videos will not be synced (default)</li>
-                  <li><strong>Schedule restricted</strong> - Scheduled videos will not be synced</li>
-                  <li><strong>Geographically restricted</strong> - Videos with geo-restrictions will not be synced</li>
+                  <li><strong>非活性</strong>- 非アクティブな動画は同期されません (デフォルト)</li>
+                  <li><strong>スケジュール制限あり</strong>- スケジュールされたビデオは同期されません</li>
+                  <li><strong>地理的に制限された</strong>- 地域制限のある動画は同期されません</li>
                 </ul>
               </li>
-              <li>Click <span class="button-blue">Next</span>.</li>
-              <li>Choose a publishing destination to synchronize the videos to.</li>
-              <li>To create new destinations or edit any existing ones, click <strong>Manage Destinations</strong>.</li>
-              <li>Click a destination to display the destination defaults.</li>
-              <li>Click <span class="button-blue">Next</span>.</li>
-            </ol>
-          </section>
-        </details>
-
-        <details class="details-item">
-          <summary>Define YouTube rules</summary>
-          <section class="bcls-section">
-            <p>Rules can be defined to handle what to do when a video is deleted from Video Cloud, when tags change, or when video metadata changes.</p>
-            <p>Rules are based upon the social media platform.</p>
+              <li>クリック<span class="button-blue">次</span>.</li>
+              <li>ビデオを同期する公開先を選択します。</li>
+              <li>新しい宛先を作成するか、既存の宛先を編集するには、<strong>宛先の管理</strong>.</li>
+              <li>宛先をクリックすると、宛先のデフォルトが表示されます。</li>
+              <li>クリック<span class="button-blue">次</span>.</li>
+            </ol> </section> </details> <details class="details-item"> <summary>YouTubeのルールを定義する</summary> <section class="bcls-section">
+            <p>ビデオクラウドからビデオが削除されたとき、タグが変更されたとき、またはビデオメタデータが変更されたときに実行する処理を処理するルールを定義できます。</p>
+            <p>ルールはソーシャルメディアプラットフォームに基づいています。</p>
 
             <ol class="bcls-tasklist-restart">
-              <li>Select what happens when a video is untagged or deleted from Video Cloud.
+              <li>ビデオがタグなしまたはVideoCloudから削除された場合に発生する動作を選択します。
                 <ul>
-                  <li><strong>Delete distributed video on YouTube</strong> - The video will be removed from YouTube</li>
-                  <li><strong>Make distributed video</strong> - Make the YouTube video <strong>Private</strong> or <strong>Unlisted</strong></li>
-                  <li><strong>No action</strong> - Nothing happens to the YouTube video</li>
+                  <li><strong>YouTubeで配信した動画を削除</strong>- 動画は YouTube から削除されます</li>
+                  <li><strong>配信動画を作る</strong>- YouTube 動画を作成する<strong>プライベート</strong>また<strong>未公開</strong></li>
+                  <li><strong>何もしない</strong>- YouTube 動画には何も起こりません</li>
                 </ul>
               </li>
-              <li>Select what happens when the video metadata is changed.
+              <li>ビデオメタデータを変更したときに何が起こるかを選択します。
                 <ul>
-                  <li><strong>Update video metadata on YouTube</strong> - Changes to video metadata in Video Cloud will be synchronized to YouTube</li>
-                  <li><strong>No action</strong> - No action is taken</li>
+                  <li><strong>YouTube の動画メタデータを更新する</strong>- Video Cloud のビデオ メタデータへの変更は、YouTube に同期されます</li>
+                  <li><strong>何もしない</strong>- アクションは実行されません</li>
                 </ul>
               </li>
-              <li>Click <span class="button-blue">Next</span>.</li>
-              <li>Confirm the Auto Sync settings and click <span class="button-blue">Finish</span>.</li>
+              <li>クリック<span class="button-blue">次</span>.</li>
+              <li>自動同期の設定を確認し、<span class="button-blue">終了</span>.</li>
               
-            </ol>
-          </section>
-        </details>
-
-        <details class="details-item">
-          <summary>Define Facebook rules</summary>
-          <section class="bcls-section">
-            <p>Rules can be defined to handle what to do when a video is deleted from Video Cloud, when tags change, or when video metadata changes.</p>
-            <p>Rules are based upon the social media platform.</p>
+            </ol> </section> </details> <details class="details-item"> <summary>Facebookのルールを定義する</summary> <section class="bcls-section">
+            <p>ビデオクラウドからビデオが削除されたとき、タグが変更されたとき、またはビデオメタデータが変更されたときに実行する処理を処理するルールを定義できます。</p>
+            <p>ルールはソーシャルメディアプラットフォームに基づいています。</p>
 
             <ol class="bcls-tasklist-restart">
-              <li>Select what happens when a video is untagged or deleted from Video Cloud.
+              <li>ビデオがタグなしまたはVideoCloudから削除された場合に発生する動作を選択します。
                 <ul>
-                  <li><strong>Delete distributed video on Facebook</strong> - The video will be deleted from Facebook</li>
-                  <li><strong>Expire distributed video on Facebook</strong> - The video will be expired on Facebook</li>
-                  <li><strong>No action</strong> - Nothing happens to the Facebook video</li>
+                  <li><strong>Facebookで配信した動画を削除する</strong>- 動画は Facebook から削除されます</li>
+                  <li><strong>Facebook で配信された動画を期限切れにする</strong>- 動画は Facebook で期限切れになります</li>
+                  <li><strong>何もしない</strong>- Facebookのビデオには何も起こりません</li>
                 </ul>
               </li>
-              <li>Select what happens when the video metadata is changed.
+              <li>ビデオメタデータを変更したときに何が起こるかを選択します。
                 <ul>
-                  <li><strong>Update video metadata on Facebook</strong> - Changes to video metadata in Video Cloud will be synchronized to Facebook</li>
-                  <li><strong>No action</strong> - No action is taken</li>
+                  <li><strong>Facebook で動画のメタデータを更新する</strong>- Video Cloud のビデオ メタデータへの変更は、Facebook に同期されます</li>
+                  <li><strong>何もしない</strong>- アクションは実行されません</li>
                 </ul>
               </li>
-              <li>Click <span class="button-blue">Next</span>.</li>
-              <li>Confirm the Auto Sync settings and click <span class="button-blue">Finish</span>.</li>
+              <li>クリック<span class="button-blue">次</span>.</li>
+              <li>自動同期の設定を確認し、<span class="button-blue">終了</span>.</li>
               
-            </ol>
-          </section>
-        </details>
-
-        <details class="details-item">
-          <summary>Define Twitter rules</summary>
-          <section class="bcls-section">
-            <p>Rules can be defined to handle what to do when a video is deleted from Video Cloud, when tags change, or when video metadata changes.</p>
-            <p>Rules are based upon the social media platform.</p>
+            </ol> </section> </details> <details class="details-item"> <summary>Twitterのルールを定義する</summary> <section class="bcls-section">
+            <p>ビデオクラウドからビデオが削除されたとき、タグが変更されたとき、またはビデオメタデータが変更されたときに実行する処理を処理するルールを定義できます。</p>
+            <p>ルールはソーシャルメディアプラットフォームに基づいています。</p>
 
             <ol class="bcls-tasklist-restart">
-              <li>Select what happens when a video is untagged or deleted from Video Cloud.
+              <li>ビデオがタグなしまたはVideoCloudから削除された場合に発生する動作を選択します。
                 <ul>
-                  <li><strong>Delete distributed video on Twitter</strong> - The video will be removed from Twitter</li>
-                  <li><strong>No action</strong> - Nothing happens to the Twitter video</li>
+                  <li><strong>Twitterで配信した動画を削除</strong>- 動画は Twitter から削除されます</li>
+                  <li><strong>何もしない</strong>- Twitterの動画には何も起こりません</li>
                 </ul>
               </li>
-              <li>Click <span class="button-blue">Next</span>.</li>
-              <li>Confirm the Auto Sync settings and click <span class="button-blue">Finish</span>.</li>
+              <li>クリック<span class="button-blue">次</span>.</li>
+              <li>自動同期の設定を確認し、<span class="button-blue">終了</span>.</li>
               
-            </ol>
-          </section>
-        </details>
-
-        <details class="details-item">
-          <summary>View/edit Auto Sync jobs</summary>
-          <section class="bcls-section">
-            <p>You can view and edit the Auto Sync jobs that you have created.</p>
+            </ol> </section> </details> <details class="details-item"> <summary>自動同期ジョブの表示/編集</summary> <section class="bcls-section">
+            <p>作成した自動同期ジョブを表示および編集できます。</p>
             <ul>
-              <li><strong>Auto Sync Name & ID</strong> - Click a link in this column to open the sync properties</li>
-              <li><strong>Tags</strong> - Click a link in this column to open the Media module with a list of videos that has the tag</li>
-              <li><strong>Destination</strong> - Click a link in this column to see the destination details</li>
-              <li><strong>Delete</strong> - Delete the associated sync job</li>
+              <li><strong>名前とIDを自動同期</strong>- この列のリンクをクリックして同期プロパティを開きます</li>
+              <li><strong>タグ</strong>- この列のリンクをクリックすると、Media モジュールが開き、 タグを持つ動画のリストが表示されます</li>
+              <li><strong>行き先</strong>- この列のリンクをクリックすると、宛先の詳細が表示されます</li>
+              <li><strong>消去</strong>- 関連する同期ジョブを削除します</li>
             </ul>
 
-            <p><strong>Sync properties</strong></p>
+            <p><strong>同期プロパティ</strong></p>
             <ul>
-              <li><strong>Status</strong>
+              <li><strong>ステータス</strong>
                 <ul>
-                  <li><strong>ACTIVE</strong> - Videos will be synchronized</li>
-                  <li><strong>PAUSED</strong> - No videos will be synchronized</li>
+                  <li><strong>アクティブ</strong>- ビデオが同期されます</li>
+                  <li><strong>一時停止</strong>- ビデオは同期されません</li>
                 </ul>
               </li>
-              <li><strong>Show</strong> - Filter the display list</li>
-              <li><strong>Settings</strong> - Edit the Sync Settings; click <strong>Update</strong> to save changes</li>
-              <li><strong>Delete</strong> - Delete the sync job</li> 
-            </ul>
-          </section>
-        </details>
-
-        
-  </section>
-  <section class="bcls-section">
-    <h3><a href="https://beacon-help.support.brightcove.com/social/using-auto-sync-synchronize-videos-social-media-accounts.html" target="_blank">Learn more <img src="/assets/images/feather/external-link-blue.svg" alt="external link" style="width: .8rem;"></a></h3>
-  </section>
-</article>
+              <li><strong>見せる</strong>- 表示リストのフィルタリング</li>
+              <li><strong>設定</strong>- 同期設定を編集します。クリック<strong>アップデート</strong>変更を保存するには</li>
+              <li><strong>消去</strong>- 同期ジョブを削除します</li> 
+            </ul>    </section></details></section><section class="bcls-section">
+    <h3><a href="https://beacon-help.support.brightcove.com/social/using-auto-sync-synchronize-videos-social-media-accounts.html" target="_blank">詳細はこちら <img src="/assets/images/feather/external-link-blue.svg" alt="外部リンク" style="width: .8rem;"></a></h3>  </section></article>

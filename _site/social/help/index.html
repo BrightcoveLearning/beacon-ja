@@ -7,7 +7,7 @@
   <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
   <meta name="description" content="">
   
-  <title>Published</title>
+  <title>公開</title>
   <!-- <link rel="apple-touch-icon" sizes="180x180" href="/apple-touch-icon.png">
   <link rel="icon" type="image/png" sizes="32x32" href="/favicon-32x32.png">
   <link rel="icon" type="image/png" sizes="16x16" href="/favicon-16x16.png">
@@ -28,101 +28,63 @@
 
 <body class="body">
 
-<h1>Published</h1> 
-<article class="bcls-article">
-    <section class="bcls-section">
-        <p>This section displays a list of videos scheduled and published using Brightcove Social.</p>
-        <p>With Auto Sync, you may see multiple entries for the same video:</p>
+<h1>公開済み</h1>  <article class="bcls-article"><section class="bcls-section">
+        <p>このセクションには、BrightcoveSocialを使用してスケジュールおよび公開されたビデオのリストが表示されます。</p>
+        <p>自動同期を使用すると、同じビデオに複数のエントリが表示される場合があります。</p>
         <ul>
-          <li>One for initial sync</li>
-          <li>Additional for video metadata syncs</li>
+          <li>最初の同期用の1つ</li>
+          <li>ビデオメタデータ同期用の追加機能</li>
         </ul>
-        <p>Click the video name link to see video details in the <strong>Media</strong> module.</p>
-        <p>Click the social media link to see the social platform page.</p> 
-
-        <details class="details-item">
-          <summary>List data</summary>
-          <section class="bcls-section">
-            <p>For each published video, you will see the following data:</p>
+        <p>ビデオ名のリンクをクリックすると、ビデオの詳細が表示されます。<strong>メディア</strong>モジュール。</p>
+        <p>ソーシャルメディアのリンクをクリックすると、ソーシャルプラットフォームのページが表示されます。</p> <details class="details-item"> <summary>リストデータ</summary> <section class="bcls-section">
+            <p>公開されたビデオごとに、次のデータが表示されます。</p>
             <ul>
-              <li>Status</li>
-              <li>Time of the event</li>
-              <li>Video thumbnail</li>
-              <li>Video name and short description</li>
-              <li>Link to social media account and site where the video was published</li>
-            </ul>
-          </section>
-        </details>
-
-        <details class="details-item">
-          <summary>Publish videos</summary>
-          <section class="bcls-section">
+              <li>ステータス</li>
+              <li>イベントの時刻</li>
+              <li>動画サムネイル</li>
+              <li>動画名と簡単な説明</li>
+              <li>動画が公開されたソーシャルメディアアカウントとサイトへのリンク</li>
+            </ul> </section> </details> <details class="details-item"> <summary>ビデオを公開する</summary> <section class="bcls-section">
             <ol class="bcls-tasklist">
-              <li>Click <span class="button-blue">Choose Videos to Publish</span></li>
-              <li>This takes you to the <strong>Videos</strong> section.</li>
-              <li>From there, you can select and publish videos.</li>
-            </ol> 
-          </section>
-        </details>
-
-        <details class="details-item">
-          <summary>Filter by status</summary>
-          <section class="bcls-section">
-            <p>Filter the list by status:</p>
+              <li>クリック<span class="button-blue">公開する動画を選択</span></li>
+              <li>これにより、<strong>動画</strong>セクション。</li>
+              <li>そこから動画を選択して公開することができます。</li>
+            </ol> </section> </details> <details class="details-item"> <summary>ステータス別にフィルタリング</summary> <section class="bcls-section">
+            <p>ステータス別にリストをフィルタリングします。</p>
             <ul>
-              <li><strong>All Status Types</strong> - Display all status types</li>
-              <li><strong>Deleted</strong> - Display videos that have been published and deleted from a social platform</li>
-              <li><strong>Error</strong> - Display posts that resulted in an error</li>
-              <li><strong>Hidden</strong> - Display posts where the video is private, unlisted or expired on social media</li>
-              <li><strong>Processing</strong> - Display videos that are in the process of being posted to a social platform</li>
-              <li><strong>Published</strong> - Display videos that were successfully posted to a social platform</li>
-              <li><strong>Scheduled</strong> - Display videos that are scheduled to be posted to a social platform</li>
-              <li><strong>Synced</strong> - Display videos that were synced with Auto Sync</li>
-              <li><strong>Abandoned</strong> - Display videos that were Auto Synced out to a social platform and then either
+              <li><strong>すべてのステータス タイプ</strong>- すべてのステータスタイプを表示</li>
+              <li><strong>削除しました</strong>- ソーシャル プラットフォームから公開および削除された動画を表示する</li>
+              <li><strong>エラー</strong>- エラーになった投稿を表示する</li>
+              <li><strong>隠れた</strong>- 動画が非公開、限定公開、期限切れの投稿をソーシャル メディアに表示する</li>
+              <li><strong>処理</strong>- ソーシャル プラットフォームに投稿中の動画を表示する</li>
+              <li><strong>公開済み</strong>- ソーシャル プラットフォームへの投稿に成功した動画を表示する</li>
+              <li><strong>予定</strong>- SNSに投稿予定の動画を表示</li>
+              <li><strong>同期済み</strong>- 自動同期で同期されたビデオを表示</li>
+              <li><strong>放棄された</strong>- ソーシャル プラットフォームに自動同期された動画を表示してから、
                 <ul>
-                  <li>Deleted from Video Cloud without deleting on the social platform; Auto Sync was configured to take no action when a video is deleted</li>
-                  <li>Untagged so that it doesn’t match the Auto Sync any more without deleting on the social platform; Auto Sync was configured to take no action when video metadata changes</li>
+                  <li>ソーシャルプラットフォームで削除せずにVideoCloudから削除。AutoSyncは、ビデオが削除されたときに何もしないように設定されています。</li>
+                  <li>タグなし-ソーシャルプラットフォーム上で削除せずに自動同期と一致しないように™自動同期は、ビデオメタデータが変更されたときにアクションを実行しないように設定されています。</li>
                 </ul>
               </li>
-            </ul>
-          </section>
-        </details>
-
-        <details class="details-item">
-          <summary>Filter by destination</summary>
-          <section class="bcls-section">
-            <p>Filter the list by social platform destination:</p>
+            </ul> </section> </details> <details class="details-item"> <summary>宛先別にフィルタリング</summary> <section class="bcls-section">
+            <p>ソーシャルプラットフォームの宛先ごとにリストをフィルタリングします。</p>
             <ul>
-              <li><strong>All Destinations</strong> - Display videos published to all social platforms</li>
-              <li><strong>Facebook</strong> - Display videos published to Facebook</li>
-              <li><strong>Twitter</strong> - Display videos published to Twitter</li>
-              <li><strong>YouTube</strong> - Display videos published to YouTube</li>
-            </ul>
-          </section>
-        </details>
-
-        <details class="details-item">
-          <summary>Search videos</summary>
-          <section class="bcls-section">
-            <p>Use the search field to find videos in your account; the following fields are searched:</p>
+              <li><strong>すべての目的地</strong>- すべてのソーシャル プラットフォームに公開された動画を表示する</li>
+              <li><strong>フェイスブック</strong>- Facebookに公開されたビデオを表示する</li>
+              <li><strong>ツイッター</strong>・Twitterに投稿した動画を表示する</li>
+              <li><strong>ユーチューブ</strong>- YouTube に公開された動画を表示する</li>
+            </ul> </section> </details> <details class="details-item"> <summary>動画を検索する</summary> <section class="bcls-section">
+            <p>検索フィールドを使用してアカウント内のビデオを検索します。次のフィールドが検索されます。</p>
             <ul>
-              <li>Video ID</li>
-              <li>Name</li>
-              <li>Short description</li>
-              <li>Long description</li>
-              <li>Tags</li>
-              <li>Reference ID</li>
-              <li>Custom fields</li>
-            </ul>
-          </section>
-        </details>
-    
-  </section>
-
-  <section class="bcls-section">
-    <h3><a href="https://beacon-help.support.brightcove.com/social/viewing-videos-published-social-media.html" target="_blank">Learn more <img src="/assets/images/feather/external-link-blue.svg" alt="external link" style="width: .8rem;"></a></h3>
-  </section>
-</article>
+              <li>動画ID</li>
+              <li>名前</li>
+              <li>簡単な説明</li>
+              <li>長い説明</li>
+              <li>タグ</li>
+              <li>参照ID</li>
+              <li>カスタムフィールド</li>
+            </ul>    </section></details></section><section class="bcls-section">
+    <h3><a href="https://beacon-help.support.brightcove.com/social/viewing-videos-published-social-media.html" target="_blank">詳細はこちら <img src="/assets/images/feather/external-link-blue.svg" alt="外部リンク" style="width: .8rem;"></a></h3>  </section></article>
   <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.0/jquery.min.js" crossorigin="anonymous"></script>
   <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js" integrity="sha384-UO2eT0CpHqdSJQ6hJty5KVphtPhzWj9WO1clHTMGa3JDZwrnQq4sF86dIHNDz0W1" crossorigin="anonymous"></script>
   <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js" integrity="sha384-JjSmVgyd0p3pXB1rRibZUAYoIIy6OrQ6VrjIEaFf/nJGzIxFDsf4x0xIM+B07jRM" crossorigin="anonymous"></script>

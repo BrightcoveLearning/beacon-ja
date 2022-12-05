@@ -1,18 +1,10 @@
 ---
-title: Reviewing Analytics
-parent: Home
-description: Learn how to use video analytics to check the performance and engagement of your videos.
+title: アナリティクスの親のレビュー
+parent: 家 
+description:  ビデオ分析を使用して、ビデオのパフォーマンスとエンゲージメントを確認する方法をご紹介します。
 ---
-<h1>Reviewing Analytics</h1>
-<article class="bcls-article">
-  <summary>{{ page.description }}</summary>
-  <section class="bcls-section">
-    <h2 id="Topics_in_this_section">Topics</h2>
-      <section class="card-wrapper">
-    {% for item in site.data.navigation %}
-    {% if item.name == page.title %}
-    {% for subsection in item.docs %}
-    <section class="bcls-card-small" onclick="window.location.href='{{subsection.url}}'">
+<h1>アナリティクスの確認</h1> <article class="bcls-article"> <summary>{{page.description}}</summary> <section class="bcls-section">
+    <h2 id="Topics_in_this_section">トピック</h2> <section class="card-wrapper"> {% for item in site.data.navigation %} {% if item.name == page.title %} {% for subsection in item.docs %} <section class="bcls-card-small" onclick="window.location.href='{{subsection.url}}'">
       <div class="card-content">
         <h2>{{ subsection.name }}</h2>
         <ul  class="bcls-topic-list">
@@ -20,11 +12,4 @@ description: Learn how to use video analytics to check the performance and engag
           <li><a href="{{ doc.url }}">{{ doc.name }}</a></li>
           {% endfor %}
         </ul>
-      </div>
-    </section>
-    {% endfor %}
-    {% endif %}
-    {% endfor %}
-  </section>
-  </section>
-</article>
+      </div> </section> {% endfor %} {% endif %} {% endfor %} </section> </section> </article> 

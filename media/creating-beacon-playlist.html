@@ -1,10 +1,9 @@
 ---
-title: Creating a Beacon Classic Playlist
-description: 'In this topic, you will learn how to create a Beacon Classic playlist using the Playlists tab.'
-parent: Media
+title: BeaconClassicPlaylistの作成
+description: 'このトピックでは、[Playlists]タブを使用してBeaconClassicプレイリストを作成する方法を学習します。' 
+parent: メディア
 ---
-
-<style translate="no">
+ <style translate="no">
   .imageWithText {
     width: auto;
     vertical-align: text-bottom;
@@ -12,214 +11,168 @@ parent: Media
   }
 </style>
 
-<h1>{{ page.title }}</h1>
-<article class="bcls-article">
-  <summary>{{ page.description }}</summary>
-  <aside class="bcls-aside bcls-aside--information">NOTE: In this topic, all of the steps are performed in Beacon Classic.</aside>
-
-  <section class="bcls-section">
-    <h2 id="Overview">Overview</h2>
+<h1>{{page.title}}</h1> <article class="bcls-article"> <summary>{{ page.description }}</summary> <aside class="bcls-aside bcls-aside--information">ノート：このトピックでは、すべての手順をBeaconClassicで実行します。</aside> <section class="bcls-section">
+    <h2 id="Overview">概要</h2>
     <p>
-      Playlists are a collection of videos and other entities that are created one of two ways for Brightcove Beacon: </p>
+      再生リストは、Brightcove Beaconの2つの方法のいずれかで作成されたビデオおよびその他のエンティティのコレクションです。 </p>
     <ol>
       <li>
-        Imported into Brightcove Beacon from your Video Cloud library. In this case, the items in the playlist will ONLY be videos.
+        VideoCloudライブラリからBrightcoveビーコンにインポートされます。この場合、再生リストのアイテムは動画のみになります。
       </li>
       <li>
-        Created in Brightcove Beacon using the <strong>Playlists</strong> tab. When creating the playlist in Brightcove Beacon, you can use the videos imported from Video Cloud (movies / episodes), and in addition you can also add series, seasons, channels and live events. This method is the focus of this document.
+        を使用して Brightcove Beacon で作成された<strong>プレイリスト</strong>タブ。Brightcove Beaconで再生リストを作成するときは、Video Cloudからインポートしたビデオ（映画/エピソード）を使用できます。さらに、シリーズ、シーズン、チャンネル、ライブイベントを追加することもできます。この方法がこのドキュメントの焦点です。
       </li>
-    </ol>
-    <aside class="bcls-aside bcls-aside--warning">Note the following:
+    </ol> <aside class="bcls-aside bcls-aside--warning">次の点にご注意ください。
       <ul>
-        <li>Brightcove recommends playlists that contain only videos should be created in Video Cloud.</li>
-        <li>Not all the functionality shown in the <strong>Playlists</strong> tab is usable at this time. It is made clear in this document what form items you should complete.</li>
-      </ul>
-    </aside>
-  </section>
-  <section class="bcls-section">
-    <h2 id="Basic_Data">Basic Data section</h2>
-    <p>To create a playlist in Brightcove Beacon, follow these steps:</p>
+        <li>Brightcoveは、ビデオクラウドでビデオのみを含むプレイリストを作成することを推奨しています。</li>
+        <li>に示されているすべての機能ではありません。<strong>プレイリスト</strong>タブはこの時点で使用できます。このドキュメントでは、どのフォーム項目に入力する必要があるかが明確になっています。</li>
+      </ul>   </aside></section><section class="bcls-section">
+    <h2 id="Basic_Data">基礎データセクション</h2>
+    <p>Brightcove Beaconでプレイリストを作成するには、次の手順に従います。</p>
     <ol class="bcls-tasklist">
-      <li>Login to Brightcove Beacon.</li>
-      <li>In the top navigation, select <strong>Playlists</strong>.</li>
+      <li>Brightcoveビーコンにログインします。</li>
+      <li>上部のナビゲーションで、<strong>プレイリスト</strong>.</li>
       <li>
-        <p>Click the <strong>Add new playlist</strong> button.</p>
-        <figure class="bcls-figure">
-          <img class="bcls-image--no-border" src="/assets/images/media/creating-beacon-playlists/playlist-button.png" alt="Playlist button" />
-          <figcaption class="bcls-caption--image">Playlist button</figcaption>
-        </figure>
+        <p>クリック<strong>新しいプレイリストを追加</strong>ボタン。</p> <figure class="bcls-figure">
+          <img class="bcls-image--no-border" src="/assets/images/media/creating-beacon-playlists/playlist-button.png" alt="プレイリストボタン" /> <figcaption class="bcls-caption--image">プレイリストボタン</figcaption> </figure>
       </li>
       <li>
         <p>
-          From the <strong>Basic Data</strong> tab, you will define the name and display type of playlist, then add content. Note that most of the functionality in this section is not usable at this time. Of course, the steps below will only address the usable items.
-        </p>
-        <figure class="bcls-figure">
-          <img class="bcls-image--no-border" src="/assets/images/media/creating-beacon-playlists/not-usable-basic-data.png" alt="Basic Data" />
-          <figcaption class="bcls-caption--image">Basic Data</figcaption>
-        </figure>
+          から<strong>基本データ</strong>タブで、プレイリストの名前と表示タイプを定義し、コンテンツを追加します。このセクションのほとんどの機能は、現時点では使用できないことに注意してください。もちろん、以下の手順では、使用可能なアイテムのみを扱います。
+        </p> <figure class="bcls-figure">
+          <img class="bcls-image--no-border" src="/assets/images/media/creating-beacon-playlists/not-usable-basic-data.png" alt="基礎データ" /> <figcaption class="bcls-caption--image">基礎データ</figcaption> </figure>
       </li>
       <li>
-        In the <strong>Name</strong> field, add an internal system name for your playlist. This is also the name used for analytics. Note that you will add the viewable title for the playlist in a later step.
-        <aside class="bcls-aside bcls-aside--tip"> It is a recommended best practice to somehow designate the playlists created in Brightcove Beacon vs. Video Cloud. For instance, simply place an asterisk (<strong>*</strong>) in front of playlist name when the playlist is created in Brightcove Beacon. Of course, it does not have to be an asterisk, but choose some notation so that when it comes time to update a playlist you know to go to Brightcove Beacon <strong>Playlists</strong> tab or Video Cloud Studio to make alterations.
-        </aside>
+        の中に<strong>名前</strong>フィールドに、プレイリストの内部システム名を追加します。これは、分析に使用される名前でもあります。後の手順で、プレイリストの表示可能なタイトルを追加することに注意してください。 <aside class="bcls-aside bcls-aside--tip"> Brightcove Beacon vs. VideoCloudで作成されたプレイリストを何らかの方法で指定することをお勧めします。たとえば、アスタリスク (<strong> *</strong> ) は、プレイリストが Brightcove Beacon で作成されるときに、プレイリスト名の前に付けられます。もちろん、アスタリスクである必要はありませんが、プレイリストを更新するときに Brightcove Beacon に移動するように、何らかの表記を選択してください。<strong>プレイリスト</strong>タブまたは Video Cloud Studio で変更を加えます。 </aside>
       </li>
       <li>
-        Select a layout from <strong>View All Playlist Layout</strong>. This is the layout used when viewers click the <strong>View All</strong> button in the apps. As a best practice choose a grid of some kind.
+        からレイアウトを選択<strong>すべてのプレイリスト レイアウトを表示</strong>.これは、視聴者が<strong>すべて見る</strong>アプリのボタン。ベストプラクティスとして、ある種のグリッドを選択します。
       </li>
       <li>
-        To begin the process of adding content to your playlist, click the <strong>Assets</strong> tab. You see you have six asset types to choose from.
-        <figure class="bcls-figure">
-          <img class="bcls-image--no-border" src="/assets/images/media/creating-beacon-playlists/asset-types.png" alt="Basic Data" />
-          <figcaption class="bcls-caption--image">Asset Types</figcaption>
-        </figure>
-        <aside class="bcls-aside bcls-aside--information"> You are now at the point where you see playlist options, those being <strong>Movies</strong>, <strong>Series</strong>, <strong>Seasons</strong>, <strong>Events</strong> and <strong>Channels</strong>, that you cannot choose in Video Cloud Studio. These types are NOT accessible in Video Cloud Studio, so you must create the playlist in Brightcove Beacon.
-        </aside>
+        プレイリストにコンテンツを追加するプロセスを開始するには、<strong>資産</strong>タブ。選択できるアセットタイプが6つあることがわかります。 <figure class="bcls-figure">
+          <img class="bcls-image--no-border" src="/assets/images/media/creating-beacon-playlists/asset-types.png" alt="基礎データ" /> <figcaption class="bcls-caption--image">資産の種類</figcaption> </figure> <aside class="bcls-aside bcls-aside--information">プレイリストのオプションが表示されるところまで来ました。<strong>映画</strong>、<strong>シリーズ</strong>、<strong>季節</strong>、<strong>イベント</strong>と<strong>チャネル</strong>、Video Cloud Studio では選択できません。これらのタイプはVideoCloud Studioではアクセスできないため、Brightcove Beaconでプレイリストを作成する必要があります。 </aside>
       </li>
       <li>
-        To select the desired asset, click first on the asset type, then click the
-        <img class="imageWithText" src="/assets/images/media/creating-beacon-playlists/plus-action.png" alt="plus button" />
-        next to the actual asset.
+        目的の資産を選択するには、まず資産タイプをクリックし、次に
+        <img class="imageWithText" src="/assets/images/media/creating-beacon-playlists/plus-action.png" alt="プラスボタン" /> 実際の資産の横に表示されます。
       </li>
-    </ol>
-  </section>
-  <section class="bcls-section">
-    <h2 id="Textual_Data">Textual Data</h2>
+    </ol>  </section><section class="bcls-section">
+    <h2 id="Textual_Data">テキストデータ</h2>
     <p>
-      The <strong>Textual Data</strong> section allows you to add displayable text for your playlist.
+      の<strong>テキストデータ</strong>セクションでは、プレイリストに表示可能なテキストを追加できます。
     </p>
     <ol class="bcls-tasklist-restart">
       <li>
-        <p>Select the <strong>Textual Data</strong> tab.</p>
-        <figure class="bcls-figure">
-          <img class="bcls-image--no-border" src="/assets/images/media/creating-beacon-playlists/textual-data.png" alt="Textual Data" />
-          <figcaption class="bcls-caption--image">Textual Data</figcaption>
-        </figure>
+        <p>を選択<strong>テキストデータ</strong>タブ。</p> <figure class="bcls-figure">
+          <img class="bcls-image--no-border" src="/assets/images/media/creating-beacon-playlists/textual-data.png" alt="テキストデータ" /> <figcaption class="bcls-caption--image">テキストデータ</figcaption> </figure>
       </li>
       <li>
         <p>
-          Add values for the following fields: </p>
+          次のフィールドの値を追加します。 </p>
         <table class="bcls-table">
           <thead class="bcls-table__head">
             <tr>
-              <th>Field</th>
-              <th>Required</th>
-              <th>Notes</th>
+              <th>フィールド</th>
+              <th>必須</th>
+              <th>注</th>
             </tr>
           </thead>
           <tbody class="bcls-table__body">
             <tr>
-              <td>Title</td>
-              <td>Yes</td>
-              <td>The displayed title for your playlist.</td>
+              <td>タイトル</td>
+              <td>はい</td>
+              <td>プレイリストに表示されるタイトル。</td>
             </tr>
             <tr>
-              <td>Description</td>
-              <td>Not applicable</td>
-              <td>This field is not currently used.</td>
+              <td>説明</td>
+              <td>該当しない</td>
+              <td>このフィールドは現在使用されていません。</td>
             </tr>
             <tr>
-              <td>Subtitle</td>
-              <td>Not applicable</td>
-              <td>This field is not currently used.</td>
+              <td>サブタイトル</td>
+              <td>該当しない</td>
+              <td>このフィールドは現在使用されていません。</td>
             </tr>
           </tbody>
         </table>
       </li>
-    </ol>
-  </section>
-  <section class="bcls-section">
-    <h2 id="Non_Textual_Data">Non-Textual Data</h2>
+    </ol>  </section><section class="bcls-section">
+    <h2 id="Non_Textual_Data">テキスト以外のデータ</h2>
     <p>
-      The <strong>Non-Textual Data</strong> tab is not functional at this time.
-    </p>
-  </section>
-  <section class="bcls-section">
-    <h2 id="Tags">Tags</h2>
-    <p>The <strong>Tags</strong> tab is not functional at this time.</p>
-  </section>
-  <section class="bcls-section">
-    <h2 id="Rights_and_Scheduling">Rights & Scheduling</h2>
+      の<strong>非テキストデータ</strong>タブは現時点では機能しません。
+    </p>  </section><section class="bcls-section">
+    <h2 id="Tags">タグ</h2>
+    <p>の<strong>タグ</strong>タブは現時点では機能しません。</p>  </section><section class="bcls-section">
+    <h2 id="Rights_and_Scheduling">権利とスケジュール</h2>
     <p>
-      The <strong>Rights & Scheduling</strong> section is where you set the publish status and availability.
+      の<strong>権利とスケジュール</strong>セクションでは、公開ステータスと可用性を設定します。
     </p>
     <ol class="bcls-tasklist-restart">
       <li>
-        <p>Select the <strong>Rights & Scheduling</strong> tab.</p>
-        <figure class="bcls-figure">
-          <img class="bcls-image--no-border" src="/assets/images/media/creating-beacon-playlists/rights-and-scheduling.png" alt="Rights & Scheduling" />
-          <figcaption class="bcls-caption--image"> Rights & Scheduling
-          </figcaption>
-        </figure>
+        <p>を選択<strong>権利とスケジュール</strong>タブ。</p> <figure class="bcls-figure">
+          <img class="bcls-image--no-border" src="/assets/images/media/creating-beacon-playlists/rights-and-scheduling.png" alt="権利とスケジュール" /> <figcaption class="bcls-caption--image"> 権利とスケジュール </figcaption> </figure>
       </li>
       <li>
-        Be sure the <strong>Status</strong> is set to <strong>Published</strong> for your playlists.
+        必ず<strong>状態</strong>に設定されています<strong>公開済み</strong>あなたのプレイリストのために。
       </li>
       <li>
-        For the <strong>Availability Details</strong>, use the following as a guide to complete the information: <table class="bcls-table">
+        のために<strong>空室状況の詳細</strong>、情報を完成させるためのガイドとして以下を使用してください。 <table class="bcls-table">
           <thead class="bcls-table__head">
             <tr>
-              <th>Field</th>
-              <th>Required</th>
-              <th>Notes</th>
+              <th>フィールド</th>
+              <th>必須</th>
+              <th>注</th>
             </tr>
           </thead>
           <tbody class="bcls-table__body">
             <tr>
-              <td>Rights Type</td>
-              <td>Yes</td>
-              <td>Select <strong>Free</strong>.</td>
+              <td>権利タイプ</td>
+              <td>はい</td>
+              <td>選択する<strong>無料</strong>.</td>
             </tr>
             <tr>
-              <td>Start Time</td>
-              <td>Yes</td>
-              <td>Schedule a starting time for your playlist.</td>
+              <td>開始時刻</td>
+              <td>はい</td>
+              <td>プレイリストの開始時間をスケジュールします。</td>
             </tr>
             <tr>
-              <td>End Time</td>
-              <td>Yes</td>
-              <td>Schedule an end time for your playlist.</td>
+              <td>終了時刻</td>
+              <td>はい</td>
+              <td>プレイリストの終了時間をスケジュールします。</td>
             </tr>
             <tr>
-              <td>Max Streams</td>
-              <td>N/A</td>
-              <td>Not functional at this time.</td>
+              <td>最大ストリーム数</td>
+              <td>該当なし</td>
+              <td>現時点では機能しません。</td>
             </tr>
             <tr>
-              <td>Devices to publish</td>
-              <td>Yes</td>
+              <td>公開するデバイス</td>
+              <td>はい</td>
               <td>
-                Add the devices you wish to publish to. Select the <strong>Select/ Unselect All Devices</strong> to see a list of available devices.
+                公開するデバイスを追加します。を選択<strong>すべてのデバイスを選択/選択解除</strong>使用可能なデバイスのリストを表示します。
               </td>
             </tr>
             <tr>
-              <td>Permitted locations</td>
-              <td>Yes</td>
+              <td>許可された場所</td>
+              <td>はい</td>
               <td>
-                <p>Select the locations where you want to stream your content, if no restrictions enter <em>World</em>.</p>
-                <aside class="bcls-aside bcls-aside--information">
-                  <p>If you don't specify at least 1 permitted location, then you may see this message from your app:</p>
-                  <figure class="bcls-figure">
-                    <img class="bcls-image" src="/assets/images/media/creating-beacon-playlists/no-content.jpg" alt="No content" />
-                  </figure>
-                </aside>
+                <p>制限がない場合は、コンテンツをストリーミングする場所を選択します<em>世界</em>.</p> <aside class="bcls-aside bcls-aside--information">
+                  <p>許可された場所を 1 つ以上指定しないと、アプリから次のメッセージが表示されることがあります。</p> <figure class="bcls-figure">
+                    <img class="bcls-image" src="/assets/images/media/creating-beacon-playlists/no-content.jpg" alt="コンテンツなし" />  </figure></aside>
               </td>
             </tr>
             <tr>
-              <td>Denied locations</td>
-              <td>No</td>
+              <td>拒否された場所</td>
+              <td>いいえ</td>
               <td>
-                Select the locations where you DO NOT want to stream your content.
+                コンテンツをストリーミングしない場所を選択します。
               </td>
             </tr>
           </tbody>
         </table>
-        <br />
-        <aside class="bcls-aside bcls-aside--tip"> To add or edit geographic locations, navigate to <strong>Settings</strong> and then <strong>Locations</strong>.
-        </aside>
+        <br /> <aside class="bcls-aside bcls-aside--tip"> 地理的な場所を追加または編集するには、次の場所に移動します<strong>設定</strong>その後<strong>場所</strong>. </aside>
       </li>
       <li>
-        Be sure to click the <strong>Create New Playlist</strong> button to save your work.
+        必ずクリックしてください<strong>新しいプレイリストを作成</strong>ボタンをクリックして作業を保存します。
       </li>
-    </ol>
-  </section>
-</article>
+    </ol>  </section></article>
