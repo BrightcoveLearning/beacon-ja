@@ -1,13 +1,8 @@
-        /* html {
-  scroll-behavior: smooth;
-} */
-        
-        @import url('https://fonts.googleapis.com/css2?family=Public+Sans:ital,wght@0,400;0,500;0,600;0,700;0,800;0,900;1,400;1,500;1,600;1,700;1,800;1,900&display=swap');
-        /* site styles */
+
         
         body,
         .body {
-            font-family: 'Public Sans', sans-serif;
+            font-family: 'articulat-cf', sans-serif;
             font-size: 16px;
             counter-reset: figure 0 table 0 step 0;
             background-color: white;
@@ -49,38 +44,55 @@
         }
         
         .bc-orange {
-            color: #FF5000;
+            color: #F76531;
         }
         
         .bcbk-orange {
-            background-color: #FF5000;
+            background-color: #F76531;
         }
         
         .bc-yellow {
-            color: rgb(255, 186, 0);
+            color: #EFD900;
         }
         
         .bcbk-yellow {
-            background-color: rgb(255, 186, 0);
+            background-color: #EFD900;
+        }
+
+        .bc-purple {
+          color: #AA6c7E;
+        }
+
+        .bcbk-purple {
+          background-color: #AA6c7E;
+        }
+        
+        .bc-blue {
+          color: #4EA9D1;
+        }
+
+        .bcbk-blue {
+          background-color: #4EA9D1;
         }
         
         a,
         .a,
         a::visited,
         a::hover {
-            color: rgb(8, 8, 140) !important;
+            color: #306680 !important;
         }
         /* article should contain all content that we edit */
         
         article,
         bcls-article {
             padding: 1em;
+            max-width: 1200px;
         }
         
         article a,
         .bcls-article a {
-            color: #08088c;
-            border-bottom: 1px #9999FF solid;
+            color: #306680;
+            border-bottom: 1px #306680 solid;
         }
         
         article li>a,
@@ -97,13 +109,17 @@
         article>summary {
             display: block !important;
         }
+
+        #main_content, #side_nav {
+            transition: margin-left 0.5s;
+        }
         
         header a {
-            color: #08088c;
+            color: #306680;
         }
         
         ul>li a {
-            color: #08088c;
+            color: #306680;
         }
         /* bootstrap container */
         
@@ -206,6 +222,7 @@
         
         td>code {
             white-space: nowrap;
+            font-size: inherit;
         }
         
         td>ul {
@@ -321,7 +338,7 @@
         
         .bcls-tasklist-restart>li::before {
             color: #a1a1a1;
-            content: counters(rstep, ".") " ";
+            content: counter(rstep, ".") " ";
             /* counter-increment: rstep; */
             font-size: 1.5em;
             font-weight: bold;
@@ -451,34 +468,38 @@
             padding: 1em 2em 1em 3.5em;
         }
         
+        .bcls-aside code {
+            font-size: inherit;
+        }
+        
         .bcls-aside--information {
-            background-color: #f2f4f9;
+            background-color: #c9e2ef;
             border: none;
-            border-left: 4px solid #092dbd;
+            border-left: 4px solid #4EA9D1;
         }
         
         .bcls-aside--information:before {
-            content: url(https://support.brightcove.com/site-assets/images/site/aside-icons/info-aqua.svg);
+            content: url(/assets/s-site-assets-images/asides/info.svg);
             float: left;
             margin-left: -2.5em;
         }
         
         .bcls-aside--tip {
-            background-color: #d7f6e6;
-            border-left: 4px solid #009e4f;
+            background-color: #fdfcf2;
+            border-left: 4px solid #EFD900;
         }
         
         .bcls-aside--tip:before {
-            content: url(https://support.brightcove.com/site-assets/images/site/aside-icons/lightbulb-blue.svg);
-            float: left;
+          content: url(/assets/s-site-assets-images/asides/lightbulb-green.webp);
+          float: left;
             /* color: rgb(8, 8, 139);
   height: 28px; */
-            margin-left: -2.5em;
+            margin-left: -3em;
         }
         
         .bcls-aside--warning {
-            background-color: #ebd8d0;
-            border-left: 4px solid #FF5000;
+            background-color: #f2e2e6;
+            border-left: 4px solid #AA6C7E;
         }
         
         .bcls-aside--warning code {
@@ -486,7 +507,7 @@
         }
         
         .bcls-aside--warning:before {
-            content: url(https://support.brightcove.com/site-assets/images/site/aside-icons/alert-triangle-orange.svg);
+            content: url(/assets/s-site-assets-images/asides/alert-triangle-orange.svg);
             float: left;
             margin-left: -2.5em;
         }
@@ -605,60 +626,6 @@
         }
         /**** general element styles and classes *********= */
         
-        details {
-            border: 1px rgb(249, 249, 249) solid;
-            border-radius: 1rem;
-            padding: .4rem;
-            background-color: rgb(249, 249, 249);
-        }
-        
-        details>summary {
-            border: .1rem rgb(249, 249, 249) solid;
-            font-size: 1.8rem;
-            color: rgb(8, 8, 140);
-            padding: .4rem;
-            outline: none;
-        }
-        
-        details>summary>* {
-            /* font-size: 1.9rem; */
-            color: rgb(8, 8, 140);
-            display: inline;
-        }
-        
-        details>summary:focus {
-            border: .1rem rgb(249, 249, 249) solid;
-            outline: none;
-        }
-        
-        details>summary::-webkit-details-marker,
-        details>summary::marker {
-            display: none;
-            color: rgb(249, 249, 249);
-        }
-        
-        details>summary::before {
-            float: left;
-            height: .5rem;
-            width: .5rem;
-            margin-right: 1rem;
-            padding-right: 2rem;
-            content: url(https://support.brightcove.com/site-assets/images/site/aside-icons/chevron-down-blue.svg);
-        }
-        
-        details[open]>summary::before {
-            float: left;
-            height: .5rem;
-            width: .5rem;
-            margin-right: 1rem;
-            padding-right: 2rem;
-            content: url(https://support.brightcove.com/site-assets/images/site/aside-icons/chevron-up-blue.svg);
-        }
-        
-        details[open]>summary {
-            border: none;
-            outline: none;
-        }
         
         ol.integer {
             list-style-type: none;
@@ -846,11 +813,13 @@
             margin: 0 auto;
             border-radius: 40px;
             overflow: hidden;
+            background-color: white;
         }
         
-        .bcls-active {
-            color: #01050e !important;
-            font-weight: 800;
+        [aria-current="page"], .bcls-active {
+            /* color: #EFD900 !important;
+            background-color: #4EA9D1; */
+            font-weight: bold;
         }
         /* docs header */
         
@@ -908,12 +877,12 @@
         
         .secondary-nav a {
             vertical-align: middle;
-            color: #08088c i !important;
+            /* color: #08088c i !important; */
         }
         /* breadcrumb */
         
         .breadcrumb-wrapper {
-            background-color: #092DBD;
+            background-color: #4EA9D1;
             font-size: .8125rem;
         }
         /* navigation */
@@ -1069,6 +1038,11 @@
             color: #4D5056;
             padding-left: 3px;
         }
+
+        #in_page_nav li.in-view,
+        #centered_in_page_toc li.in-view {
+            font-weight: bold;
+        }
         
         #in_page_nav li a,
         #centered_in_page_toc li a {
@@ -1093,25 +1067,30 @@
             text-align: right;
             font-size: 2rem;
         }
-        /* .fab {
-  margin-left: 1rem;
-  margin-right: 2rem;
-  margin-bottom: 1rem;
-} */
+        
+        /* main content  */
+        #main_content {
+            color: #333333;
+            margin-top: -1em;
+            margin-bottom: -1em;
+            padding-bottom:1em;
+        }
         
         h5.landing-page-item-header {
             font-size: 1rem;
         }
         
-        .landing-page-item li {
+        /* .landing-page-item li {
             font-size: .9rem;
-        }
+        } */
         
         span.product-logo {
-            font-family: 'Public Sans';
             white-space: nowrap;
-            /* font-size: 3.5em;
-  font-weight: 800; */
+            height: 3rem;
+        }
+
+        span.product-logo img {
+            height: 100%;
         }
         /* headings */
         
@@ -1128,7 +1107,7 @@
         
         h1 {
             font-size: 3.157rem;
-            font-family: 'Public Sans', sans-serif;
+            font-family: 'articulat-cf', sans-serif;
             font-weight: 800;
             /* margin-left: 12px; */
             letter-spacing: -1px;
@@ -1318,7 +1297,7 @@
         }
         
         .bcls-topic-list a {
-            color: #08088c;
+            color: #306680;
         }
         
         .card-wrapper {
@@ -1328,7 +1307,7 @@
         }
         
         .card-wrapper a {
-            color: #08088c;
+            color: #306680;
         }
         
         .card-wrapper ul {
@@ -1467,7 +1446,7 @@
         
         .breadcrumb {
             padding-left: 2rem;
-            background-color: #092DBD;
+            background-color: #4EA9D1;
         }
         
         .breadcrumb-item {
@@ -1497,13 +1476,13 @@
         
         .breadcrumb-item a,
         .breadcrumb-item.first-item a {
-            color: #00EAE4 !important;
+            color: #FFFFFF !important;
             font-weight: normal;
         }
         
         .breadcrumb-item.active,
         .breadcrumb-item.first-item.active {
-            color: #ffffff;
+            color:#EFD900;
         }
         
         body>header>nav {
@@ -1621,7 +1600,7 @@
             .button-red,
             .button-red-text,
             .button-gray {
-                /* font-family: 'Public Sans'; */
+                /* font-family: 'articulat-cf'; */
                 font-weight: bold;
                 font-size: .9rem;
                 padding: .4rem;

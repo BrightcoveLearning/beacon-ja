@@ -1,5 +1,6 @@
-var BCLS_toc = (function (window, document) {
-  var side_nav_created = false,
+
+let BCLS_toc = (function (window, document) {
+  let side_nav_created = false,
     in_page_nav_right = true,
     side_nav = document.getElementById('side_nav'),
     bc_veggie_burger_wrapper = document.getElementById(
@@ -16,7 +17,45 @@ var BCLS_toc = (function (window, document) {
     product_logo = document.querySelector('.product-logo'),
     product_logo_full_path = product_logo.getAttribute('src'),
     product_logo_small_path =
-      'https://support.brightcove.com/site-assets/images/site/product-logos/b-white-on-black.svg';
+      'https://support.brightcove.com/site-assets/images/site/product-logos/b-white-on-black.svg',
+    h2s = document.querySelectorAll('h2[id]'),
+    toc_items,
+    toc_links;
+
+  /**
+   * Add a class to an element
+   * @param {node} el the element
+   * @param {string} cls the class to add
+   */
+  function addClass (el, cls) {
+    el.classList.add(cls);
+  }
+  
+  /**
+   * Remove a class from an element
+   * @param {node} el the element
+   * @param {string} cls the class to add
+   */
+  function removeClass (el, cls) {
+    el.classList.remove(cls);
+  }
+
+  /**
+   * Check to see if an element is in the viewport
+   * @param {node} el the element to check
+   */
+  function isScrolledIntoView(el) {
+    let rect = el.getBoundingClientRect();
+    let elemTop = rect.top;
+    let elemBottom = rect.bottom;
+
+    // Only completely visible elements return true:
+    let isVisible = (elemTop >= 0) && (elemBottom <= window.innerHeight);
+    // Partially visible elements return true:
+    //isVisible = elemTop < window.innerHeight && elemBottom >= 0;
+    return isVisible;
+  }
+
 
   /**
    * Removes all child elements (eg the items in a list)
@@ -52,8 +91,7 @@ var BCLS_toc = (function (window, document) {
       i,
       iMax,
       frag = document.createDocumentFragment(),
-      parent,
-			toc_items;
+      parent;
 
     // check window width to set the elements to use
     if (window.innerWidth < 1650) {
@@ -132,6 +170,9 @@ var BCLS_toc = (function (window, document) {
 
 			// make whole LI clickable
 			toc_items = document.querySelectorAll('li.toc-item');
+      console.log('toc_items', toc_items);
+      toc_links = document.querySelectorAll('li.toc-item a');
+      console.log('toc_links', toc_links);
 			iMax = toc_items.length;
 			for (i = 0; i < iMax; i++) {
 				toc_items[i].setAttribute('style', 'cursor:pointer;')
@@ -139,6 +180,9 @@ var BCLS_toc = (function (window, document) {
 					location.hash = this.firstElementChild.getAttribute('href');
 				});
 			}
+
+      // get collection of in-page links
+      let in_page_links = document.querySelectorAll('#in_page_nav>li');
     }
 
     /**
@@ -160,14 +204,15 @@ var BCLS_toc = (function (window, document) {
           document.querySelector(linkTarget).scrollIntoView({
             behavior: 'smooth'
           })
-          jMax = navItems.length
-          for (j = 0; j < jMax; j++) {
-            navItems[j].removeAttribute('style')
-          }
-          this.setAttribute(
-            'style',
-            'font-weight:bold;'
-          )
+          // the lines below are no longer needed - scroll event handler now take care of this
+          // jMax = navItems.length
+          // for (j = 0; j < jMax; j++) {
+          //   navItems[j].removeAttribute('style')
+          // }
+          // this.setAttribute(
+          //   'style',
+          //   'font-weight:bold;'
+          // )
         })
       }
     }
@@ -178,22 +223,21 @@ var BCLS_toc = (function (window, document) {
    */
   function toggle_nav_menu () {
     if (nav_menu_collapsed) {
-      if (bc_veggie_burger_wrapper) {
-        bc_veggie_burger_wrapper.setAttribute('style', 'display:none;')
-        side_nav.setAttribute('style', 'display:block;')
-        nav_menu_collapsed = false
-      }
+      side_nav.setAttribute('style', 'margin-left: 1em;display: inline-block;border-right: 1px solid #e5e5e6;padding-right: 1em;');
+      document.querySelector('#main_content').removeAttribute('style');
+      nav_menu_collapsed = false;
+      bc_veggie_burger.setAttribute('src', '/assets/images/s-feather-img/x.svg');
     } else {
-      if (bc_veggie_burger_wrapper) {
-        bc_veggie_burger_wrapper.setAttribute(
-          'style',
-          'display:block;background:none;'
-        )
-        side_nav.setAttribute('style', 'display:none;')
-        nav_menu_collapsed = true
+      side_nav.setAttribute('style', 'margin-left: -500px; margin-right: 6em;display: inline-block;border-right: 1px solid #e5e5e6; padding-right: 1em;')
+      nav_menu_collapsed = true;
+      bc_veggie_burger.setAttribute('src', '/assets/images/s-feather-img/menu.svg');
+      if (window.innerWidth > 800) {
+        document.querySelector('#main_content').setAttribute('style', 'margin-left: 20em;');
+      } else {
+        document.querySelector('#main_content').setAttribute('style', 'margin-left: 10em;');
       }
     }
-  }
+}
 
   // run the function
   if (pathname !== '/' || pathname.indexOf('/index.html') < 0) {
@@ -253,20 +297,47 @@ console.log('nav_menu_collapsed', nav_menu_collapsed);
 
   // listener for burger click
   if (bc_veggie_burger_wrapper) {
-    bc_veggie_burger.addEventListener('click', function () {
-      if (nav_menu_collapsed) {
-        side_nav.setAttribute('style', 'display:block;')
-        nav_menu_collapsed = false
-      } else {
-        side_nav.setAttribute('style', 'display:none;')
-        nav_menu_collapsed = true
-      }
-    })
+    bc_veggie_burger.addEventListener('click', toggle_nav_menu);
   }
+
+  // listener for scroll events
+  window.addEventListener('scroll',(event) => {
+    let i = 0,
+      iMax = h2s.length;
+    for (i; i<iMax; i++) {
+      let thisID = h2s[i].getAttribute('id');
+      if (isScrolledIntoView(h2s[i])) {
+        if (toc_links) {
+          let i = 0,
+          iMax = toc_links.length;
+          for (i; i < iMax; i++) {
+            if (toc_links[i].getAttribute('href') === '#' + thisID) {
+              addClass(toc_items[i], 'in-view');
+            }
+          }
+        }
+      } else {
+        if (toc_links) {
+          let i = 0,
+          iMax = toc_links.length;
+          for (i; i < iMax; i++) {
+            if (toc_links[i].getAttribute('href') === '#' + thisID) {
+              removeClass(toc_items[i], 'in-view');
+            }
+          }
+        }
+      }
+    }
+  });
 
   // if inside iframe, hide appropriate elements
   if (window.location !== window.parent.location) {
     bc_veggie_burger_wrapper.setAttribute('style', 'display:none');
+  }
+  // hide nav by default on landing pages
+  if (location.pathname.substring(location.pathname.lastIndexOf('/')) === '/index.html' || location.pathname.substring(location.pathname.lastIndexOf('/')) === '/') {
+    console.log('turning off nav menu');
+    toggle_nav_menu();
   }
 
   // this creates a public method, allow it to be run again (imported content for example)
