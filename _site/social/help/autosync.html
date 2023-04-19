@@ -1,0 +1,159 @@
+<!doctype html>
+<html lang="en-US">
+
+<head>
+  <meta charset="utf-8">
+  <meta name="robots" content="noindex,nofollow"> 
+  <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+  <meta name="description" content="">
+  
+  <title>自動同期</title>
+  <!-- <link rel="apple-touch-icon" sizes="180x180" href="/apple-touch-icon.png">
+  <link rel="icon" type="image/png" sizes="32x32" href="/favicon-32x32.png">
+  <link rel="icon" type="image/png" sizes="16x16" href="/favicon-16x16.png">
+  <link rel="manifest" href="/site.webmanifest">   -->
+  <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css" integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">  
+  <!-- <link rel="stylesheet" href="assets/css/site/styles.css"> -->
+  <!-- <link rel="stylesheet" href="assets/css/site/landing-page.css">
+  <link rel="stylesheet" href="assets/css/site/tabs.css"> -->
+  <link rel="stylesheet" href="/assets/s-site-assets-stylesheets/help.css">
+  <!-- <link rel="stylesheet" href="/assets/css/details.css"> -->
+  <link rel="preconnect" href="https://fonts.gstatic.com">
+  <link href="https://fonts.googleapis.com/css2?family=Public+Sans:ital,wght@0,400;0,500;0,700;0,800;1,400;1,500;1,700;1,800&display=swap" rel="stylesheet">
+    
+  <script src="/assets/s-site-assets-scripts/google-analytics.js"></script>
+  <!-- <script src="/assets/js/sajari-head.js"></script> -->
+  <script src="https://unpkg.com/feather-icons"></script>
+</head>
+
+<body class="body">
+
+<h1>自動同期</h1>  <article class="bcls-article"><section class="bcls-section">
+        <p>ビデオに関連付けられたタグに基づいて、ビデオをソーシャルメディアチャネルに自動的に同期します。</p>
+        <p>ビデオを公開する前に、ソーシャルアカウントの宛先を作成する必要があります。左側のナビゲーションで、<strong>行き先</strong>.</p> <aside class="bcls-aside bcls-aside--information">ビデオを手動でパブリッシュすることは、自動同期とは無関係です。ビデオに自動同期でパブリッシュするタグが付いている場合は、ビデオを手動でパブリッシュしてもパブリッシュされます。</aside> <details class="details-item"> <summary>自動同期の設定</summary> <section class="bcls-section">
+            <ol class="bcls-tasklist-restart">
+              <li>クリック<span class="button-blue">自動同期を設定する</span>.</li>
+              <li>入力します<strong>名前</strong>同期のために。</li>
+              <li><strong>配信するビデオを選択します。</strong>
+                <ul>
+                  <li><strong>これらすべてのタグを含む動画</strong>- リストされているすべてのタグを含む動画を同期する必要があります</li>
+                  <li><strong>これらのタグのいずれかを含む動画</strong>- リストされているタグのいずれかを持つビデオは同期する必要があります</li>
+                  <li><strong>このアカウントのすべての動画</strong>- アカウント内のすべての動画を同期する必要があります</li>
+                </ul>
+              </li>
+              <li>そうでもなければ<strong>このアカウントのすべての動画</strong>が選択されている場合、タグのカンマ区切りリストを入力します。</li>
+              <li><strong>次のようなビデオは除外します。</strong>
+                <ul>
+                  <li><strong>非活性</strong>- 非アクティブな動画は同期されません (デフォルト)</li>
+                  <li><strong>スケジュール制限あり</strong>- スケジュールされたビデオは同期されません</li>
+                  <li><strong>地理的に制限された</strong>- 地域制限のある動画は同期されません</li>
+                </ul>
+              </li>
+              <li>クリック<span class="button-blue">次</span>.</li>
+              <li>ビデオを同期する公開先を選択します。</li>
+              <li>新しい宛先を作成するか、既存の宛先を編集するには、<strong>宛先の管理</strong>.</li>
+              <li>宛先をクリックすると、宛先のデフォルトが表示されます。</li>
+              <li>クリック<span class="button-blue">次</span>.</li>
+            </ol> </section> </details> <details class="details-item"> <summary>YouTubeのルールを定義する</summary> <section class="bcls-section">
+            <p>ビデオクラウドからビデオが削除されたとき、タグが変更されたとき、またはビデオメタデータが変更されたときに実行する処理を処理するルールを定義できます。</p>
+            <p>ルールはソーシャルメディアプラットフォームに基づいています。</p>
+
+            <ol class="bcls-tasklist-restart">
+              <li>ビデオがタグなしまたはVideoCloudから削除された場合に発生する動作を選択します。
+                <ul>
+                  <li><strong>YouTubeで配信した動画を削除</strong>- 動画は YouTube から削除されます</li>
+                  <li><strong>配信動画を作る</strong>- YouTube 動画を作成する<strong>プライベート</strong>また<strong>未公開</strong></li>
+                  <li><strong>何もしない</strong>- YouTube 動画には何も起こりません</li>
+                </ul>
+              </li>
+              <li>ビデオメタデータを変更したときに何が起こるかを選択します。
+                <ul>
+                  <li><strong>YouTube の動画メタデータを更新する</strong>- Video Cloud のビデオ メタデータへの変更は、YouTube に同期されます</li>
+                  <li><strong>何もしない</strong>- アクションは実行されません</li>
+                </ul>
+              </li>
+              <li>クリック<span class="button-blue">次</span>.</li>
+              <li>自動同期の設定を確認し、<span class="button-blue">終了</span>.</li>
+              
+            </ol> </section> </details> <details class="details-item"> <summary>Facebookのルールを定義する</summary> <section class="bcls-section">
+            <p>ビデオクラウドからビデオが削除されたとき、タグが変更されたとき、またはビデオメタデータが変更されたときに実行する処理を処理するルールを定義できます。</p>
+            <p>ルールはソーシャルメディアプラットフォームに基づいています。</p>
+
+            <ol class="bcls-tasklist-restart">
+              <li>ビデオがタグなしまたはVideoCloudから削除された場合に発生する動作を選択します。
+                <ul>
+                  <li><strong>Facebookで配信した動画を削除する</strong>- 動画は Facebook から削除されます</li>
+                  <li><strong>Facebook で配信された動画を期限切れにする</strong>- 動画は Facebook で期限切れになります</li>
+                  <li><strong>何もしない</strong>- Facebookのビデオには何も起こりません</li>
+                </ul>
+              </li>
+              <li>ビデオメタデータを変更したときに何が起こるかを選択します。
+                <ul>
+                  <li><strong>Facebook で動画のメタデータを更新する</strong>- Video Cloud のビデオ メタデータへの変更は、Facebook に同期されます</li>
+                  <li><strong>何もしない</strong>- アクションは実行されません</li>
+                </ul>
+              </li>
+              <li>クリック<span class="button-blue">次</span>.</li>
+              <li>自動同期の設定を確認し、<span class="button-blue">終了</span>.</li>
+              
+            </ol> </section> </details> <details class="details-item"> <summary>Twitterのルールを定義する</summary> <section class="bcls-section">
+            <p>ビデオクラウドからビデオが削除されたとき、タグが変更されたとき、またはビデオメタデータが変更されたときに実行する処理を処理するルールを定義できます。</p>
+            <p>ルールはソーシャルメディアプラットフォームに基づいています。</p>
+
+            <ol class="bcls-tasklist-restart">
+              <li>ビデオがタグなしまたはVideoCloudから削除された場合に発生する動作を選択します。
+                <ul>
+                  <li><strong>Twitterで配信した動画を削除</strong>- 動画は Twitter から削除されます</li>
+                  <li><strong>何もしない</strong>- Twitterの動画には何も起こりません</li>
+                </ul>
+              </li>
+              <li>クリック<span class="button-blue">次</span>.</li>
+              <li>自動同期の設定を確認し、<span class="button-blue">終了</span>.</li>
+              
+            </ol> </section> </details> <details class="details-item"> <summary>自動同期ジョブの表示/編集</summary> <section class="bcls-section">
+            <p>作成した自動同期ジョブを表示および編集できます。</p>
+            <ul>
+              <li><strong>名前とIDを自動同期</strong>- この列のリンクをクリックして同期プロパティを開きます</li>
+              <li><strong>タグ</strong>- この列のリンクをクリックすると、Media モジュールが開き、 タグを持つ動画のリストが表示されます</li>
+              <li><strong>行き先</strong>- この列のリンクをクリックすると、宛先の詳細が表示されます</li>
+              <li><strong>消去</strong>- 関連する同期ジョブを削除します</li>
+            </ul>
+
+            <p><strong>同期プロパティ</strong></p>
+            <ul>
+              <li><strong>ステータス</strong>
+                <ul>
+                  <li><strong>アクティブ</strong>- ビデオが同期されます</li>
+                  <li><strong>一時停止</strong>- ビデオは同期されません</li>
+                </ul>
+              </li>
+              <li><strong>見せる</strong>- 表示リストのフィルタリング</li>
+              <li><strong>設定</strong>- 同期設定を編集します。クリック<strong>アップデート</strong>変更を保存するには</li>
+              <li><strong>消去</strong>- 同期ジョブを削除します</li> 
+            </ul>    </section></details></section><section class="bcls-section">
+    <h3><a href="https://beacon-help.support.brightcove.com/social/using-auto-sync-synchronize-videos-social-media-accounts.html" target="_blank">詳細はこちら <img src="/assets/images/feather/external-link-blue.svg" alt="外部リンク" style="width: .8rem;"></a></h3>  </section></article>
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.0/jquery.min.js" crossorigin="anonymous"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js" integrity="sha384-UO2eT0CpHqdSJQ6hJty5KVphtPhzWj9WO1clHTMGa3JDZwrnQq4sF86dIHNDz0W1" crossorigin="anonymous"></script>
+  <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js" integrity="sha384-JjSmVgyd0p3pXB1rRibZUAYoIIy6OrQ6VrjIEaFf/nJGzIxFDsf4x0xIM+B07jRM" crossorigin="anonymous"></script>
+  <!-- <script src="https://support.brightcove.com/site-assets/js/sitehttps-fix.js"></script> -->
+  <script src="/assets/s-site-assets-scripts/setDate.js"></script>
+  
+  <script src="/assets/s-site-assets-scripts/prism.js"></script>
+  
+  <script src="/assets/s-site-assets-scripts/site.js"></script>
+  <script src="/assets/js/details.js"></script>
+  <!-- <script src="/assets/js/expand-dl.js"></script> -->
+
+  <!-- <script src="https://support.brightcove.com/site-assets/js/sitetabs.js"></script> -->
+  <!-- <script src="https://support.brightcove.com/site-assets/js/sitetoc.js"></script> -->
+  <!-- <script src="/assets/js/sites_nav.js"></script> -->
+  <script src="/assets/s-site-assets-scripts/bcls-utils.js"></script>
+  <!-- <script src="https://support.brightcove.com/site-assets/js/sitelocal-link-fix.js"></script> -->
+  <!-- <script src="/assets/js/feedback.js"></script> -->
+  <!-- <script src="/assets/js/local.js"></script> -->
+	<script translate="no">
+		feather.replace()
+	</script>
+</body>
+
+</html>

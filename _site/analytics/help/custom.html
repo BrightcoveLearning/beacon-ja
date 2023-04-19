@@ -1,0 +1,163 @@
+<!doctype html>
+<html lang="en-US">
+
+<head>
+  <meta charset="utf-8">
+  <meta name="robots" content="noindex,nofollow"> 
+  <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+  <meta name="description" content="">
+  
+  <title>カスタムレポート</title>
+  <!-- <link rel="apple-touch-icon" sizes="180x180" href="/apple-touch-icon.png">
+  <link rel="icon" type="image/png" sizes="32x32" href="/favicon-32x32.png">
+  <link rel="icon" type="image/png" sizes="16x16" href="/favicon-16x16.png">
+  <link rel="manifest" href="/site.webmanifest">   -->
+  <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css" integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">  
+  <!-- <link rel="stylesheet" href="assets/css/site/styles.css"> -->
+  <!-- <link rel="stylesheet" href="assets/css/site/landing-page.css">
+  <link rel="stylesheet" href="assets/css/site/tabs.css"> -->
+  <link rel="stylesheet" href="/assets/s-site-assets-stylesheets/help.css">
+  <!-- <link rel="stylesheet" href="/assets/css/details.css"> -->
+  <link rel="preconnect" href="https://fonts.gstatic.com">
+  <link href="https://fonts.googleapis.com/css2?family=Public+Sans:ital,wght@0,400;0,500;0,700;0,800;1,400;1,500;1,700;1,800&display=swap" rel="stylesheet">
+    
+  <script src="/assets/s-site-assets-scripts/google-analytics.js"></script>
+  <!-- <script src="/assets/js/sajari-head.js"></script> -->
+  <script src="https://unpkg.com/feather-icons"></script>
+</head>
+
+<body class="body">
+
+<h1>カスタムレポート</h1>  <article class="bcls-article"><section class="bcls-section">
+        <p>選択したデータとメトリックを一定期間表示するカスタム分析レポートを作成します。</p> <details class="details-item"> <summary>レポートのタイムゾーン</summary> <section class="bcls-section">
+            <p>カスタムレポートのデータは、アカウントのレポート時間帯に基づいています。時間帯を設定するには、次の手順を実行します。</p>
+            <ol class="bcls-tasklist-restart">
+              <li>Beacon Studio で、<strong>管理者</strong>落ちる。</li>
+              <li>選択する<strong>アカウント設定</strong>.</li>
+              <li>あなたの<strong>現在のタイムゾーン</strong>.</li>
+              <li>クリック<span class="button-blue">保存</span>.</li>
+            </ol> <aside class="bcls-aside bcls-aside--information">レポートのタイムゾーンを変更すると、今後のデータだけに影響し、変更は遡って適用されません。</aside>
+            <p><a href="https://beacon-help.support.brightcove.com/analytics/creating-custom-analytics-reports.html#timezone" target="_blank">詳細はこちら <img src="/assets/images/feather/external-link-blue.svg" alt="外部リンク" style="width: .8rem;"></a></p> </section> </details> <details class="details-item"> <summary>レポートデータ</summary> <section class="bcls-section">
+            <ul>
+              <li><strong>アカウントを含める</strong>- 現在の Video Cloud アカウントのデータを含めるか、複数のアカウントを選択します</li>
+              <li><strong>レポートタイプ</strong> 
+                <ul>
+                  <li><strong>一度</strong>- レポートは 1 回だけ実行され、すぐに実行されます
+                  <li><strong>日付範囲</strong>- 1 回限りのレポートの場合、分析データの期間を指定します</li>
+                  </li>
+                  <li><strong>繰り返し</strong>- レポートは、毎日、毎週、または毎月実行するようにスケジュールできます
+                  <li><strong>周波数</strong>- 定期的なレポートの場合
+                    <ul>
+                      <li><strong>毎日</strong>- レポートは丸一日</li>
+                      <li><strong>毎週</strong>- レポートは、月曜日から日曜日までと定義された 1 週間全体を対象としています</li>
+                      <li><strong>毎月</strong>- レポートは 1 か月分をカバーします</li>
+                    </ul>
+                  </li> <aside class="bcls-aside bcls-aside--information">定期的なレポートは、通常、レポート期間が終了してから3~5日後に分析調整後に実行されます。</aside>
+                  </li>
+                </ul>
+              </li>
+              <li><strong>データ グループ</strong>- データ グループは、レポートに含まれるデータ フィールドを決定します
+                <ul>
+                  <li>表示されるデータフィールドは、選択したデータグループに基づいています。</li>
+                  <li>複数のデータグループを選択することができますが、いくつかの組み合わせが有効ではありません。</li>
+                  <li>複数のデータグループを選択する必要があります。</li>
+                </ul>
+              </li>
+              <li><strong>データ フィールド</strong>- データ グループを選択すると、返されるデータ フィールドが選択可能になります。
+                <ul>
+                  <li>選択したデータグループの灰色のフィールドを返すことができません。</li>
+                </ul>
+              </li>
+            
+              
+              <li>クリック<span class="button-blue">保存</span>変更を保存するには</li> 
+            </ul>
+            <p><a href="https://beacon-help.support.brightcove.com/analytics/creating-custom-analytics-reports.html" target="_blank">詳細はこちら <img src="/assets/images/feather/external-link-blue.svg" alt="外部リンク" style="width: .8rem;"></a></p> </section> </details> <details class="details-item"> <summary>レポートフィルタの追加</summary> <section class="bcls-section">
+            <p>フィルターを追加し、返されるデータの量を制限できます。</p>
+            <ul>
+              <li>複数のフィルタを使用する場合は、AND演算が使用されます。</li>
+              <li>フィルタは、一致するデータグループを選択した場合にのみレポートに表示されます。
+                <ul>
+                  <li>たとえば、<strong>ビデオタグ</strong>を選択する必要があります。<strong>ビデオ</strong>寸法</li>
+                </ul>
+              </li>
+            </ul>
+            <p>次の項目に基づいてフィルタリングできます。</p>
+            <ul>
+              <li><strong>ビデオ</strong>- アカウント内の 1 つ以上のアクティブな動画 ID</li>
+              <li><strong>ビデオタグ</strong>- 1 つ以上のビデオ タグ</li>
+              <li><strong>カスタムフィールド</strong>- アカウント内の 1 つ以上のカスタム フィールド</li>
+              <li><strong>プレーヤー</strong>- 1 つ以上のプレーヤー ID をコンマで区切って入力します</li>
+              <li><strong>ソースタイプ</strong></li>
+              <li><strong>デバイスタイプ</strong></li>
+              <li><strong>デバイスOS</strong></li>
+              <li><strong>デバイスメーカー</strong></li>
+              <li><strong>ブラウザの種類</strong></li>
+              <li><strong>検索語句</strong></li>
+              <li><strong>国</strong></li>
+              <li><strong>宛先ドメイン</strong></li>
+              <li><strong>検索語句</strong></li>
+            </ul>
+            <p><a href="https://beacon-help.support.brightcove.com/analytics/creating-custom-analytics-reports.html#filter" target="_blank">詳細はこちら <img src="/assets/images/feather/external-link-blue.svg" alt="外部リンク" style="width: .8rem;"></a></p> </section> </details> <details class="details-item"> <summary>レポートのプレビュー</summary> <section class="bcls-section">
+            <p>レポートプレビューに表示されるデータはサンプルデータ、VideoCloudアカウントの実際のデータではありません。</p>
+            <ul>
+              <li>の<strong>プレビュー レポート</strong>セクションには、サンプル データが入力された、選択されたデータ列が表示されます</li>
+              <li>クリック <img class="ui-image" alt="削除アイコン" src="/assets/images/admin/help/delete-icon.png" /> 関連するデータ項目を削除する</li>
+              <li>プレビューのソート順序は、ダウンロードされたレポートのソート順序に影響を与えません。</li>
+              <li>スプレッドシートアプリケーションを使用して、ダウンロードしたデータをソートできます。</li>
+            </ul>
+           
+            <p><a href="https://beacon-help.support.brightcove.com/analytics/creating-custom-analytics-reports.html#preview" target="_blank">詳細はこちら <img src="/assets/images/feather/external-link-blue.svg" alt="外部リンク" style="width: .8rem;"></a></p> </section> </details> <details class="details-item"> <summary>レポートの設定と配信</summary> <section class="bcls-section">
+            <ul>
+              <li><strong>レポート名</strong>- レポートに意味のある名前を付けることから始めます</li>
+              <li><strong>[ 形式] </strong> 
+                <ul>
+                  <li><strong>CSV</strong> - コンマ区切り値 </li>
+                  <li><strong>XLSX</strong> - マイクロソフトエクセル</li>
+                </ul>
+              </li>
+              <li><strong>レポートの準備ができたらメールで受け取る</strong>- レポートが完了すると、自分宛にメール通知が届きます</li>
+              <li><strong>他の人に通知する</strong>- 電子メール アドレスをカンマで区切って入力してください</li>
+              <li>BrightcoveEメールでは、レポートをダウンロードするリンクは90日間有効です。</li>
+              
+              <li>ワンタイムレポートの場合は、 
+                <ul>
+                  <li>クリック<span class="button-blue">レポートのリクエスト</span></li>
+                  <li>レポートが完了すると、レポートがダウンロードされます。</li>
+                </ul>
+              </li>
+              <li>繰り返しレポートの場合は、 
+                <ul>
+                  <li>クリック<span class="button-blue">スケジュール レポート</span></li>
+                  <li>レポートはキューに入れられ、データの準備ができたら実行されます。</li>
+                </ul>
+              </li>
+            </ul>
+            <li>スケジュールされたすべてのレポートを表示するには、<span class="button-blue">定期レポート</span>左のナビゲーションで</li>
+           
+            <p><a href="https://beacon-help.support.brightcove.com/analytics/creating-custom-analytics-reports.html#options" target="_blank">詳細はこちら <img src="/assets/images/feather/external-link-blue.svg" alt="外部リンク" style="width: .8rem;"></a></p>    </section></details></section></article>
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.0/jquery.min.js" crossorigin="anonymous"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js" integrity="sha384-UO2eT0CpHqdSJQ6hJty5KVphtPhzWj9WO1clHTMGa3JDZwrnQq4sF86dIHNDz0W1" crossorigin="anonymous"></script>
+  <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js" integrity="sha384-JjSmVgyd0p3pXB1rRibZUAYoIIy6OrQ6VrjIEaFf/nJGzIxFDsf4x0xIM+B07jRM" crossorigin="anonymous"></script>
+  <!-- <script src="https://support.brightcove.com/site-assets/js/sitehttps-fix.js"></script> -->
+  <script src="/assets/s-site-assets-scripts/setDate.js"></script>
+  
+  <script src="/assets/s-site-assets-scripts/prism.js"></script>
+  
+  <script src="/assets/s-site-assets-scripts/site.js"></script>
+  <script src="/assets/js/details.js"></script>
+  <!-- <script src="/assets/js/expand-dl.js"></script> -->
+
+  <!-- <script src="https://support.brightcove.com/site-assets/js/sitetabs.js"></script> -->
+  <!-- <script src="https://support.brightcove.com/site-assets/js/sitetoc.js"></script> -->
+  <!-- <script src="/assets/js/sites_nav.js"></script> -->
+  <script src="/assets/s-site-assets-scripts/bcls-utils.js"></script>
+  <!-- <script src="https://support.brightcove.com/site-assets/js/sitelocal-link-fix.js"></script> -->
+  <!-- <script src="/assets/js/feedback.js"></script> -->
+  <!-- <script src="/assets/js/local.js"></script> -->
+	<script translate="no">
+		feather.replace()
+	</script>
+</body>
+
+</html>
