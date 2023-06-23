@@ -4,9 +4,9 @@
 <head>
   <meta charset="utf-8">
   <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
-  <meta name="description" content="このトピックでは、DRMの使用方法の概要について説明します。">
+  <meta name="description" content="このトピックでは、ビデオ SVOD (サブスクリプション ビデオ オン デマンド) プランを商業ブライトコーブ ビーコンのタブ。SVOD計画はマネタイズを実施する。動画に SVOD プランを適用する方法については、 SVOD プランの使用資料。">
   
-  <title>概要：DigitalRightsManagement（DRM）</title>
+  <title>TVOD プランの作成</title>
   <link rel="apple-touch-icon" sizes="180x180" href="/assets/s-site-assets-favicons/apple-touch-icon.png">
   <link rel="icon" type="image/png" sizes="32x32" href="/assets/s-site-assets-favicons/favicon-32x32.png">
   <link rel="icon" type="image/png" sizes="16x16" href="/assets/s-site-assets-favicons/favicon-16x16.png">
@@ -51,105 +51,105 @@
       
       <li class="breadcrumb-item first-item"><a href="/">ホーム</a></li>
         
-      <li class="breadcrumb-item"><a href="/general/">一般情報</a></li>
+      <li class="breadcrumb-item"><a href="/monetization/general/">マネタイズ</a></li>
       
-      <li class="breadcrumb-item active" aria-current="page">概要：DigitalRightsManagement（DRM）</li>
+      <li class="breadcrumb-item active" aria-current="page">CreatinganSVODPlan</li>
     </ol>  </nav></header>
 <div class="container">
     <div class="row">
       <div class="col-sm-3 left-side-bar">
-				<select id="site_select" class="bcls-select" style="margin-left: 1rem;">
-					<option value="">Other Brightcove Docs</option>
-					
-						
-							<option value="https://support.brightcove.com">Documentation Home</option>
-						
-					
-						
-							<option value="https://support.brightcove.com/">-- VIDEO CLOUD --</option>
-						
-					
-						
-							<option value="https://studio.support.brightcove.com">&nbsp;&nbsp;&nbsp;&nbsp;Video Cloud Studio</option>
-						
-					
-						
-							<option value="https://player.support.brightcove.com">&nbsp;&nbsp;&nbsp;&nbsp;Brightcove Player Development</option>
-						
-					
-						
-							<option value="https://apis.support.brightcove.com">&nbsp;&nbsp;&nbsp;&nbsp;Video Cloud Platform APIs</option>
-						
-					
-						
-							<option value="https://sdks.support.brightcove.com">&nbsp;&nbsp;&nbsp;&nbsp;Video Cloud Device SDKs</option>
-						
-					
-						
-							<option value="https://integrations.support.brightcove.com">&nbsp;&nbsp;&nbsp;&nbsp;Integrations and CMS Connectors</option>
-						
-					
-						
-							<option value="https://general.support.brightcove.com">&nbsp;&nbsp;&nbsp;&nbsp;Video Cloud General Information</option>
-						
-					
-						
-							<option value="https://support.brightcove.com/">-- VIDEO ESSENTIALS --</option>
-						
-					
-						
-							<option value="https://audience-insights.support.brightcove.com">&nbsp;&nbsp;&nbsp;&nbsp;Brightcove Audience Insights</option>
-						
-					
-						
-							<option value="https://beacon-help.support.brightcove.com">&nbsp;&nbsp;&nbsp;&nbsp;Brightcove Beacon Studio</option>
-						
-					
-						
-							<option value="https://beacon.support.brightcove.com">&nbsp;&nbsp;&nbsp;&nbsp;Brightcove Beacon Classic</option>
-						
-					
-						
-							<option value="https://corptv.support.brightcove.com">&nbsp;&nbsp;&nbsp;&nbsp;CorpTV</option>
-						
-					
-						
-							<option value="https://live.support.brightcove.com">&nbsp;&nbsp;&nbsp;&nbsp;Brightcove Live</option>
-						
-					
-						
-							<option value="https://zencoder.support.brightcove.com">&nbsp;&nbsp;&nbsp;&nbsp;Zencoder</option>
-						
-					
-						
-							<option value="https://support.brightcove.com/">-- VIDEO CLOUD ADD-ONS --</option>
-						
-					
-						
-							<option value="https://gallery.support.brightcove.com">&nbsp;&nbsp;&nbsp;&nbsp;Brightcove Gallery</option>
-						
-					
-						
-							<option value="https://studio.support.brightcove.com/social/index.html">&nbsp;&nbsp;&nbsp;&nbsp;Brightcove Social</option>
-						
-					
-						
-							<option value="https://interactivity.support.brightcove.com/index.html">&nbsp;&nbsp;&nbsp;&nbsp;Brightcove Interactivity</option>
-						
-					
-						
-							<option value="https://ssai.support.brightcove.com">&nbsp;&nbsp;&nbsp;&nbsp;Brightcove SSAI</option>
-						
-					
-						
-							<option value="https://campaign.support.brightcove.com">&nbsp;&nbsp;&nbsp;&nbsp;Brightcove Campaign</option>
-						
-					
-						
-							<option value="https://engage.support.brightcove.com">&nbsp;&nbsp;&nbsp;&nbsp;Brightcove Engage</option>
-						
-					
-				</select>
+        <select id="site_select" class="bcls-select" style="margin-left: 1rem;">
+          <option value="">Other Brightcove Docs</option>
+          
+            
+              <option value="https://support.brightcove.com">Documentation Home</option>
+            
+          
+            
+              <option value="https://support.brightcove.com/">-- VIDEO CLOUD --</option>
+            
+          
+            
+              <option value="https://studio.support.brightcove.com">&nbsp;&nbsp;&nbsp;&nbsp;Video Cloud Studio</option>
+            
+          
+            
+              <option value="https://player.support.brightcove.com">&nbsp;&nbsp;&nbsp;&nbsp;Brightcove Player Development</option>
+            
+          
+            
+              <option value="https://apis.support.brightcove.com">&nbsp;&nbsp;&nbsp;&nbsp;Video Cloud Platform APIs</option>
+            
+          
+            
+              <option value="https://sdks.support.brightcove.com">&nbsp;&nbsp;&nbsp;&nbsp;Video Cloud Device SDKs</option>
+            
+          
+            
+              <option value="https://integrations.support.brightcove.com">&nbsp;&nbsp;&nbsp;&nbsp;Integrations and CMS Connectors</option>
+            
+          
+            
+              <option value="https://general.support.brightcove.com">&nbsp;&nbsp;&nbsp;&nbsp;Video Cloud General Information</option>
+            
+          
+            
+              <option value="https://support.brightcove.com/">-- VIDEO ESSENTIALS --</option>
+            
+          
+            
+              <option value="https://audience-insights.support.brightcove.com">&nbsp;&nbsp;&nbsp;&nbsp;Brightcove Audience Insights</option>
+            
+          
+            
+              <option value="https://beacon-help.support.brightcove.com">&nbsp;&nbsp;&nbsp;&nbsp;Brightcove Beacon Studio</option>
+            
+          
+            
+              <option value="https://beacon.support.brightcove.com">&nbsp;&nbsp;&nbsp;&nbsp;Brightcove Beacon Classic</option>
+            
+          
+            
+              <option value="https://corptv.support.brightcove.com">&nbsp;&nbsp;&nbsp;&nbsp;CorpTV</option>
+            
+          
+            
+              <option value="https://live.support.brightcove.com">&nbsp;&nbsp;&nbsp;&nbsp;Brightcove Live</option>
+            
+          
+            
+              <option value="https://zencoder.support.brightcove.com">&nbsp;&nbsp;&nbsp;&nbsp;Zencoder</option>
+            
+          
+            
+              <option value="https://support.brightcove.com/">-- VIDEO CLOUD ADD-ONS --</option>
+            
+          
+            
+              <option value="https://gallery.support.brightcove.com">&nbsp;&nbsp;&nbsp;&nbsp;Brightcove Gallery</option>
+            
+          
+            
+              <option value="https://studio.support.brightcove.com/social/index.html">&nbsp;&nbsp;&nbsp;&nbsp;Brightcove Social</option>
+            
+          
+            
+              <option value="https://interactivity.support.brightcove.com/index.html">&nbsp;&nbsp;&nbsp;&nbsp;Brightcove Interactivity</option>
+            
+          
+            
+              <option value="https://ssai.support.brightcove.com">&nbsp;&nbsp;&nbsp;&nbsp;Brightcove SSAI</option>
+            
+          
+            
+              <option value="https://campaign.support.brightcove.com">&nbsp;&nbsp;&nbsp;&nbsp;Brightcove Campaign</option>
+            
+          
+            
+              <option value="https://engage.support.brightcove.com">&nbsp;&nbsp;&nbsp;&nbsp;Brightcove Engage</option>
+            
+          
+        </select>
         <nav class="sidenav" id="side_nav">
           
             
@@ -2053,315 +2053,408 @@
     
 
 
+<h1>TVOD プランの作成</h1>
 <article class="bcls-article">
-  <h1>概要：DigitalRightsManagement（DRM）</h1> <summary>このトピックでは、DRMの使用方法の概要について説明します。</summary> <section class="bcls-section">
+  <summary>このトピックでは、TVODマネタイズパッケージの作成方法を学びます。</summary>
+
+  <section class="bcls-section">
     <h2 id="Introduction">はじめに</h2>
-    <p>デジタル著作権管理（DRM）は、許可されたクライアントを除いて、ビデオの再生を防止します。DRMの実装はさまざまですが、通常使用されるメカニズムは、クライアントが再生を承認するための何らかのキーを持っている場合にのみ、ビデオを暗号化して復号化することです。</p>
-    <p>サポートされているすべてのDRMパッケージには、画面記録の検出とブロックも組み込まれています。</p>
-    <p>参照：</p>
+    <p>トランザクション型ビデオ・オン・デマンド（TVOD）は、視聴者がOTTアセットを購入またはレンタルするために1回限りの料金を支払うことができる収益化パッケージです。TVODパッケージは、1つのアセットに関連付けることも、シリーズやシーズンなどのアセットのバンドルに関連付けることもできます。視聴者にアセットの視聴に一定の期間を割り当てたり、無制限にすることもできます。 </p>
+    <p>視聴者がビデオコンテンツにアクセスするために定額料金を支払うSVODとは異なり、TVODの視聴者は、視聴したいコンテンツごとに料金を支払う形になります。</p>
+    <p>TVODパッケージは、視聴者に以下のような視聴オプションを提供できます：</p>
     <ul>
-      <li><a href="https://apis.support.brightcove.com/dynamic-ingest/ingest-guides/ingesting-content-drm.html">DRM によるコンテンツの取り込み</a></li>
-      <li><a href="https://player.support.brightcove.com/plugins/configuring-brightcove-player-drm.html">BrightcoveプレーヤーをDRM用に構成する</a></li>
-      <li><a href="https://sdks.support.brightcove.com/features/content-security-drm-native-player-sdks.html">ネイティブプレーヤーSDKを使用したコンテンツセキュリティ（DRM）</a></li>
-      <li><a href="/general/drm-output-protection-settings.html">DRM 出力保護の設定</a></li>
+      <li>Rent(レンタル)</li>
+      <li>Buy(購入)</li>
     </ul>
-    <p>プレーヤー構成またはビデオプロパティのいずれかで設定できる追加のコンテンツセキュリティメカニズムについては、以下を参照してください。</p>
-    <ul>
-      <li><a href="/players/configuring-player-content-restrictions.html">プレーヤーコンテンツ制限の設定</a></li>
-      <li><a href="/media/configuring-video-availability.html">ビデオ可用性の設定</a></li>
-      <li><a href="/general/protecting-videos-hls-encryption.html">HLS 暗号化によるビデオの保護</a></li>
-    </ul> <aside class="bcls-aside bcls-aside--information"><strong>注意:</strong>
-      <ul>
-        <li>DRMまたはHLS暗号化を使用するには、アカウントでこれらの機能を有効にする必要があります。詳しい情報はアカウントマネージャにお問い合わせください。</li>
-        <li>ビデオでDRMが有効になっている場合、MP4ソース/レンディションはStudio、CMS API、およびPlayback APIで自動的に非表示になります（つまり、存在しますが、ソースとしてプレーヤーに送信されません）。</li>
-        <li>Brightcoveは現在、ビデオのみまたはオーディオのみのDRM再生をサポートしていません。</li>
-      </ul>   </aside></section><section class="bcls-section">
-    <h2 id="Supported_DRM_types">サポートされているDRMタイプ</h2>
-    <p>Beacon}はDRMを幅広くサポートしています。</p>
-    <ul>
-      <li>パッケージ化、ライセンス提供、および再生の包括的なサポート</li>
-      <li>指定のデバイスに対する適切なDRMの適応使用は次のとおりです。
-        <ul>
-          <li>Beacon}はプラグインへの依存を最小限に抑えるためにネイティブデバイスDRMを使用します。</li>
-          <li>Beacon}は、クロスプラットフォームソリューションを提供するために必要なレンディションの数を削減するために標準を活用します。</li>
-        </ul>
-      </li>
-    </ul>
-    <p>Brightcoveは、HTML5ビデオ用の最も一般的な3つのタイプのDRMをサポートしています。</p>
-    <ul>
-      <li><a href="#fairplay">Apple FairPlay</a></li>
-      <li><a href="#widevine">グーグルワイドバインモジュラー</a></li>
-      <li><a href="#playready">Microsoft PlayReady</a></li>
-    </ul>
-    <p>複数のDRMタイプにサインアップして、すべてのデバイスとプラットフォームでコンテンツを保護できます。</p>  </section><section class="bcls-section">
-    <h2 id="Summary_of_DRM_support">DRMサポートの概要</h2>
-    <p>DRMのサポートは、以下の表にあるように動画形式によって異なります。</p>
-    <table class="bcls-table">
-      <thead class="bcls-table__head">
-        <tr>
-          <th>ブラウザー</th>
-          <th>最小OSバージョン</th>
-          <th>ダッシュ<br>
-            Widevine</th>
-          <th>ダッシュ<br>
-            Playready</th>
-          <th>HLS<br>
-            FairPlay</th>
-          <!-- <th>
-            HLS<br>
-            Widevine<br>
-            (Live only<sup><strong><a href="#note1-1">[1-1]</a></strong></sup>)
-          </th> -->
-          <th>
-            HLS<br>
-            Widevine<br>
-            (ライブ)
-          </th>
-          <th>
-            HLS<br>
-            Widevine<br>
-            (VOD)
-          </th>
-        </tr>
-      </thead>
-      <tbody class="bcls-table__body">
-        <tr>
-          <th colspan="6">デスクトップ デバイスのウェブ プレーヤー<sup><strong><a href="#note1-1">[1-1]</a></strong></sup></th>
-        </tr>
-        <tr>
-          <td>Chrome 35+</td>
-          <td>ChromeでサポートされているWindowsおよびMacOSのバージョン</td>
-          <td><img alt="はい" src="/assets/images/s-apis-general-img/node18436-check16.png" /></td>
-          <td><img alt="いいえ" src="/assets/images/s-apis-general-img/node18436-x16.png" /></td>
-          <td><img alt="いいえ" src="/assets/images/s-apis-general-img/node18436-x16.png" /></td>
-          <td><img alt="はい" src="/assets/images/s-apis-general-img/node18436-check16.png" /></td>
-          <td><img alt="いいえ" src="/assets/images/s-apis-general-img/node18436-x16.png" /></td>
-        </tr>
-        <tr>
-          <td>Firefox 47+</td>
-          <td>FirefoxでサポートされているWindowsおよびMacOSのバージョン</td>
-          <td><img alt="はい" src="/assets/images/s-apis-general-img/node18436-check16.png" /></td>
-          <td><img alt="いいえ" src="/assets/images/s-apis-general-img/node18436-x16.png" /></td>
-          <td><img alt="いいえ" src="/assets/images/s-apis-general-img/node18436-x16.png" /></td>
-          <td><img alt="はい" src="/assets/images/s-apis-general-img/node18436-check16.png" /></td>
-          <td><img alt="いいえ" src="/assets/images/s-apis-general-img/node18436-x16.png" /></td>
-        </tr>
-        <tr>
-          <td>Safari 8+</td>
-          <td>MacOS Sierra +</td>
-          <td><img alt="いいえ" src="/assets/images/s-apis-general-img/node18436-x16.png" /></td>
-          <td><img alt="いいえ" src="/assets/images/s-apis-general-img/node18436-x16.png" /></td>
-          <td><img alt="はい" src="/assets/images/s-apis-general-img/node18436-check16.png" /></td>
-          <td><img alt="いいえ" src="/assets/images/s-apis-general-img/node18436-x16.png" /></td>
-          <td><img alt="いいえ" src="/assets/images/s-apis-general-img/node18436-x16.png" /></td>
-        </tr>
-        <tr>
-          <td>クロムエッジ</td>
-          <td>Windows 7、8.1、MacOS</td>
-          <td><img alt="いいえ" src="/assets/images/s-apis-general-img/node18436-check16.png" /></td>
-          <td><img alt="はい" src="/assets/images/s-apis-general-img/node18436-x16.png" /></td>
-          <td><img alt="いいえ" src="/assets/images/s-apis-general-img/node18436-x16.png" /></td>
-          <td><img alt="いいえ" src="/assets/images/s-apis-general-img/node18436-check16.png" /></td>
-          <td><img alt="いいえ" src="/assets/images/s-apis-general-img/node18436-x16.png" /></td>
-        </tr>
-        <tr>
-          <td>クロムエッジ</td>
-          <td>ウィンドウズ10</td>
-          <td><img alt="いいえ" src="/assets/images/s-apis-general-img/node18436-check16.png" /></td>
-          <td><img alt="はい" src="/assets/images/s-apis-general-img/node18436-check16.png" /></td>
-          <td><img alt="いいえ" src="/assets/images/s-apis-general-img/node18436-x16.png" /></td>
-          <td><img alt="いいえ" src="/assets/images/s-apis-general-img/node18436-check16.png" /></td>
-          <td><img alt="いいえ" src="/assets/images/s-apis-general-img/node18436-x16.png" /></td>
-        </tr>
-        <tr>
-          <td>レガシーエッジ</td>
-          <td>ウィンドウズ10</td>
-          <td><img alt="いいえ" src="/assets/images/s-apis-general-img/node18436-x16.png" /></td>
-          <td><img alt="はい" src="/assets/images/s-apis-general-img/node18436-check16.png" /></td>
-          <td><img alt="いいえ" src="/assets/images/s-apis-general-img/node18436-x16.png" /></td>
-          <td><img alt="いいえ" src="/assets/images/s-apis-general-img/node18436-x16.png" /></td>
-          <td><img alt="いいえ" src="/assets/images/s-apis-general-img/node18436-x16.png" /></td>
-        </tr>
-        <tr>
-          <th colspan="6">モバイルデバイス上のWebプレーヤー</th>
-        </tr>
-        <tr>
-          <td>Chrome<br>
-            最新の3つの主要バージョン</td>
-          <td>Android 6+</td>
-          <td><img alt="はい" src="/assets/images/s-apis-general-img/node18436-check16.png" /></td>
-          <td><img alt="いいえ" src="/assets/images/s-apis-general-img/node18436-x16.png" /></td>
-          <td><img alt="いいえ" src="/assets/images/s-apis-general-img/node18436-x16.png" /></td>
-          <td><img alt="いいえ" src="/assets/images/s-apis-general-img/node18436-check16.png" /></td>
-          <td><img alt="いいえ" src="/assets/images/s-apis-general-img/node18436-x16.png" /></td>
-        </tr>
-        <tr>
-          <td>Safari</td>
-          <td>iOS 11.2 +</td>
-          <td><img alt="いいえ" src="/assets/images/s-apis-general-img/node18436-x16.png" /></td>
-          <td><img alt="いいえ" src="/assets/images/s-apis-general-img/node18436-x16.png" /></td>
-          <td><img alt="はい" src="/assets/images/s-apis-general-img/node18436-check16.png" /></td>
-          <td><img alt="いいえ" src="/assets/images/s-apis-general-img/node18436-x16.png" /></td>
-          <td><img alt="いいえ" src="/assets/images/s-apis-general-img/node18436-x16.png" /></td>
-        </tr>
-        <tr>
-          <th colspan="6">セットトップデバイス上のWebプレーヤー</th>
-        </tr>
-        <tr>
-          <td>Chrome</td>
-          <td>Android TV、Chromecast</td>
-          <td><img alt="はい" src="/assets/images/s-apis-general-img/node18436-check16.png" /></td>
-          <td><img alt="いいえ" src="/assets/images/s-apis-general-img/node18436-x16.png" /></td>
-          <td><img alt="いいえ" src="/assets/images/s-apis-general-img/node18436-x16.png" /></td>
-          <td><img alt="いいえ" src="/assets/images/s-apis-general-img/node18436-check16.png" /></td>
-          <td><img alt="いいえ" src="/assets/images/s-apis-general-img/node18436-x16.png" /></td>
-        </tr>
-        <tr>
-          <td>Chrome</td>
-          <td>アマゾン火災テレビ、グーグルテレビ、ろく</td>
-          <td><img alt="いいえ" src="/assets/images/s-apis-general-img/node18436-x16.png" /></td>
-          <td><img alt="はい" src="/assets/images/s-apis-general-img/node18436-check16.png" /></td>
-          <td><img alt="いいえ" src="/assets/images/s-apis-general-img/node18436-x16.png" /></td>
-          <td><img alt="いいえ" src="/assets/images/s-apis-general-img/node18436-x16.png" /></td>
-          <td><img alt="いいえ" src="/assets/images/s-apis-general-img/node18436-x16.png" /></td>
-        </tr>
-        <tr>
-          <td>Safari</td>
-          <td>Apple TV（Airplay経由）</td>
-          <td><img alt="いいえ" src="/assets/images/s-apis-general-img/node18436-x16.png" /></td>
-          <td><img alt="いいえ" src="/assets/images/s-apis-general-img/node18436-x16.png" /></td>
-          <td><img alt="はい" src="/assets/images/s-apis-general-img/node18436-check16.png" /></td>
-          <td><img alt="いいえ" src="/assets/images/s-apis-general-img/node18436-x16.png" /></td>
-          <td><img alt="いいえ" src="/assets/images/s-apis-general-img/node18436-x16.png" /></td>
-        </tr>
-        <tr>
-          <th colspan="6">モバイルデバイス上のAndroidSDK（ネイティブプレーヤー）</th>
-        </tr>
-        <tr>
-          <td>該当しません</td>
-          <td>AndroidOS6.0.1+（すべてのデバイス）</td>
-          <td><img alt="はい" src="/assets/images/s-apis-general-img/node18436-check16.png" /></td>
-          <td><img alt="いいえ" src="/assets/images/s-apis-general-img/node18436-x16.png" /></td>
-          <td><img alt="いいえ" src="/assets/images/s-apis-general-img/node18436-x16.png" /></td>
-          <td><img alt="はい" src="/assets/images/s-apis-general-img/node18436-check16.png" /></td>
-          <td><img alt="はい" src="/assets/images/s-apis-general-img/node18436-check16.png" /></td>
-        </tr>
-        <tr>
-          <td>該当しません</td>
-          <td>AndroidTV、AmazonFireTV</td>
-          <td><img alt="はい" src="/assets/images/s-apis-general-img/node18436-check16.png" /></td>
-          <td><img alt="いいえ" src="/assets/images/s-apis-general-img/node18436-x16.png" /></td>
-          <td><img alt="いいえ" src="/assets/images/s-apis-general-img/node18436-x16.png" /></td>
-          <td><img alt="はい" src="/assets/images/s-apis-general-img/node18436-check16.png" /></td>
-          <td><img alt="はい" src="/assets/images/s-apis-general-img/node18436-check16.png" /></td>
-        </tr>
-        <tr>
-          <th colspan="6">モバイルデバイス上のiOSSDK（ネイティブプレーヤー）</th>
-        </tr>
-        <tr>
-          <td>該当しません</td>
-          <td>iOS 11.2+（すべてのデバイス）</td>
-          <td><img alt="いいえ" src="/assets/images/s-apis-general-img/node18436-x16.png" /></td>
-          <td><img alt="いいえ" src="/assets/images/s-apis-general-img/node18436-x16.png" /></td>
-          <td><img alt="はい" src="/assets/images/s-apis-general-img/node18436-check16.png" /></td>
-          <td><img alt="いいえ" src="/assets/images/s-apis-general-img/node18436-x16.png" /></td>
-          <td><img alt="いいえ" src="/assets/images/s-apis-general-img/node18436-x16.png" /></td>
-        </tr>
-        <tr>
-          <th colspan="6">モバイルデバイス上のtvOSSDK（ネイティブプレーヤー）</th>
-        </tr>
-        <tr>
-          <td>該当しません</td>
-          <td>tvOS（Apple TV）</td>
-          <td><img alt="いいえ" src="/assets/images/s-apis-general-img/node18436-x16.png" /></td>
-          <td><img alt="いいえ" src="/assets/images/s-apis-general-img/node18436-x16.png" /></td>
-          <td><img alt="はい" src="/assets/images/s-apis-general-img/node18436-check16.png" /></td>
-          <td><img alt="いいえ" src="/assets/images/s-apis-general-img/node18436-x16.png" /></td>
-          <td><img alt="いいえ" src="/assets/images/s-apis-general-img/node18436-x16.png" /></td>
-        </tr>
-      </tbody>
-    </table>
-    <h3>注</h3>
-    <!-- <li id="note1-1" style="list-style: none;"><sup><strong>[1-1]</strong></sup> <aside class="bcls-aside bcls-aside--warning">Widevine + HLS is supported for Live streams only, <strong>not</strong> for VOD content.</aside></li> -->
-    <li id="note1-1" style="list-style: none;"><sup><strong>[1-1]</strong></sup> DRM の再生には TLS 1.2 が必要ですが、古いブラウザーや OS バージョンでは無効になっている可能性があります。 <a href="https://knowledge.digicert.com/generalinformation/INFO3297.html#Chrome">このページ</a>有効にする方法を示します。</li>  </section><section class="bcls-section">
-    <h2 id="DRM_support_details">DRMサポートの詳細</h2>
-    <h3>ブラウザ</h3>
-    <p>ブラウザ用のDRMは、デスクトップまたはモバイルWeb用です（Android 6以降のデバイスではChrome、iOS 11.2以降のデバイスではSafari）。Brightcoveは、MPEG-DASHと一般的な暗号化を、Widevine Modular、Apple Fairplay、およびMicrosoft PlayReadyとともに使用して、デスクトップにDRMを提供します。使用されるタイプはブラウザーによって異なります。これにより、最新のブラウザーと利用できるネイティブのDRMを活用しつつ異なるブラウザーで再生できる、アセット1セットが提供されます。</p>
-    <h3>iOSおよびAndroidアプリケーション</h3>
-    <p>以下の情報は、<a href="https://sdks.support.brightcove.com"> Brightcove ネイティブ プレーヤー SDK</a> .通常の再生に加えて、SDK もサポートしていることに注意してください。<a href="#Offline_Playback_with_DRM"> DRMによるオフライン再生</a>.</p>
-    <h4>iOS</h4>
-    <p>iOS デバイスの場合、現在の DRM ソリューションは<a href="https://sdks.support.brightcove.com/features/content-security-drm-native-player-sdks.html">FairPlay ストリーミングによる HLS</a> .</p>
-    <p>AppleのFairPlayStreaming（FPS）テクノロジーは、HTTP Live Streaming（HLS）ビデオをiPhone、iPad、AppleTVなどのAppleデバイスに配信するための安全なソリューションを提供します。確立されたセキュアキープロトコルを使用し、モバイルデバイスの消費電力を最小限に抑えます。</p>
-    <h4>Android</h4>
-    <p>Androidデバイスについては、ソリューションはMPEG-DASH + CENC（Widevine Modular）です。</p>
-    <p>Google Widevineはマルチプラットフォーム、マルチフォーマットのDRMおよび動画最適化ソリューションを提供しています。このソリューションにより、コンテンツの所有者、インターネット動画プロバイダー、リテーラー、および動画のオペレーターはブランディングされた高品質のエンターテインメントコンテンツを、インターネットに接続しているエンターテインメントプラットフォームに配信することができます。</p>
-    <h5>AndroidデバイスでのDRMセキュリティレベル</h5>
-    <p>Widevineは、CENC暗号化、ライセンスキー交換、ビデオ保護を管理するためのアダプティブストリーミング品質など、一連の業界標準を実装しています。Widevineは、受信デバイスのセキュリティ機能に基づいて、複数レベルのストリーミング品質をサポートします。</p>
-    <p>セキュリティのレベルには、L1、L2、およびL3という名前が付けられています。</p>
-    <ul>
-      <li><strong>レベル1</strong> - 最高のセキュリティレベル
-        <ul>
-          <li>クリアキーはセキュリティプロセッサによってのみ表示されます</li>
-          <li>保護されたビデオパス。クリアビデオは公開されません。</li>
-        </ul>
-      </li>
-      <li><strong>レベル2</strong> - 安全性が低い
-        <ul>
-          <li>クリアキーはセキュリティプロセッサによってのみ表示されます</li>
-          <li>保護されたビデオパスがありません。クリアビデオが露出している。</li>
-        </ul>
-      </li>
-      <li><strong>レベル3</strong> - 最低のセキュリティ レベル
-        <ul>
-          <li>メインCPUによるキー処理</li>
-          <li>保護されたビデオパスがありません。クリアビデオが露出している。</li>
-        </ul>
-      </li>
-    </ul>
-    <p>Androidデバイスは、ハードウェアとソフトウェアの構成に基づいて、L1またはL3のセキュリティレベルをサポートします。Widevineで保護されたサーバーからHD以上の品質のコンテンツをストリーミングできるのは、L1仕様を満たすデバイスのみです。デバイスがL3にのみ準拠している場合、DRMで保護されたHDコンテンツをストリーミングすることはできません。</p>
-    <p>詳細については、以下を参照してください。</p>
-    <ul>
-      <li><a href="https://www.widevine.com/solutions/widevine-drm">WidevineのDRMソリューションドキュメント</a></li>
-      <li><a href="https://source.android.com/devices/drm.html">Androidデジタル著作権管理（DRM）ドキュメント</a></li>
-      <li><a href="https://support.google.com/widevine/answer/6072714?hl=en">Androidデバイスのセキュリティレベルを決定する</a></li>
-    </ul>
-    <h4 id="Offline_Playback_with_DRM">DRMによるオフライン再生</h4>
-    <p>オフライン再生を使用すると、ユーザーは接続中にコンテンツをダウンロードし、オフラインで視聴できます。コンテンツを保護するために、ネイティブSDKは以下を使用します。</p>
-    <ul>
-      <li>Android用ネイティブSDKはGoogleWidevineを使用しています</li>
-      <li>iOS用ネイティブSDKはFairPlayストリーミングを使用します</li>
-    </ul>
-    <p>詳細については、<a href="https://sdks.support.brightcove.com/features/offline-playback-native-player-sdks.html"> Native Player SDK を使用したオフライン再生の概要</a>.</p>
-    <h3>その他のデバイス</h3>
-    <p>MPEG-DASHはAndroid TVやChromecastを含め、多くのデバイスによってサポートされています。デスクトップブラウザー用にDRMとパッケージ化されている動画も、これらのデバイスで再生することができます。</p>
-    <p>多くの電子機器はDRMの古い形式、Smooth Streaming用PlayReadyに対応しています</p>  </section><section class="bcls-section">
-    <h2 id="Signing_up_for_DRM">DRMにサインアップする</h2>
-    <p>DRMには追加料金が必要です。再生場所を問わずコンテンツを保護するためにDRM保護を組み込むことについては、アカウントマネージャーまでお問い合わせください。</p>  </section><section class="bcls-section">
-    <h2 id="fairplay">Apple FairPlay</h2>
-    <p>FairPlay Streamingは、HLS形式のビデオコンテンツ用にAppleが開発したDRMシステムです。</p>
-    <p>アカウントでFairPlayを有効にするには、次のことを行う必要があります。</p>
+    <p>メディアコンテンツに TVOD プランを割り当てる方法については <a href="/monetization/general/using-tvod-plan.html">TVOD プランを使用する</a> を参照して下さい。</p>
+  </section>
+
+  <section class="bcls-section">
+    <h2 id="Setup">セットアップ</h2>
+    <p>Beacon ClassicでTVODプランを作成する前に、以下の設定手順に従ってください:</p>
     <ol class="bcls-tasklist">
-      <li><a href="https://developer.apple.com/streaming/fps/">AppleからFairPlayライセンスを取得する</a></li>
-      <li>アカウントを設定するには、サポートにお問い合わせください。</li>
-    </ol>
-    <h3>既知の問題</h3>
-    <ul>
-      <li>モバイルデバイスでのフェアプレイ再生の場合、外部画面が使用されていると、オーディオは再生されますが、ビデオは単なる黒い画像です。
-        <p>詳細については、次を参照してください。<a href="https://sdks.support.brightcove.com/features/content-security-drm-native-player-sdks.html">ネイティブ プレーヤー SDK を使用したコンテンツ セキュリティ (DRM)</a></p>
+      <li>
+        <p>新しいTVODプランを作成する、またはTVODプランの料金を変更するには、決済代行業者に連絡する必要があります。</p>
+        <aside class="bcls-aside bcls-aside--information">Beacon Classicでプラン価格を設定または変更しても、決済代行業者での価格には影響しません。</aside>
       </li>
-    </ul>  </section><section class="bcls-section">
-    <h2 id="widevine">グーグルワイドバインモジュラー</h2>
-    <p>Widevine Modularは、MPEGDASH形式のビデオコンテンツを保護するためにGoogleが開発したシステムです。</p>
-    <p>デフォルトでは、Beacon}はBrightcoveのWidevineライセンスサーバーを使用します。</p>  </section><section class="bcls-section">
-    <h2 id="playready">Microsoft PlayReady</h2>
-    <p>PlayReadyは、Microsoftによって開発されたDRMシステムです。Playreadyには2つの形式があります。</p>
-    <ul>
-      <li><strong>スムーズなプレイ対応</strong>- Smooth Streaming コンテンツに DRM 保護を提供</li>
-      <li><strong>プレイレディ</strong>- MPEG-DASH コンテンツに DRM 保護を提供</li>
-    </ul>
-    <p>Beacon}はBrightcoveのPlayReadyライセンスサーバーを使用します。</p> <aside class="bcls-aside bcls-aside--information">マイクロソフトとのサービス契約では、PlayReady の同時実行制限が定義されていることに注意してください。見る<a href="https://docs.microsoft.com/en-us/playready/features/concurrency-limiting">このマイクロソフトのドキュメント</a>同時実行の管理については。動画の同時実行制限を超えた場合、最大数を超える視聴者には再生できません。</aside> </section> <section class="bcls-section">
-    <h2 id="Configure_your_Video_Cloud_account">Beacon}アカウントを設定します。</h2>
-    <p>ブライトコーブサポートとアカウントマネージャーがDRMをアカウントに設定する必要があります。詳細については、アカウントマネージャーにお問い合わせください。</p>   </section></article>
+      <li>
+        <p><a href="https://supportportal.brightcove.com/s/login/">Brightcove のサポートチケット</a>を開きます。そうすることで、Brightcove OTT デリバリー チームが、プロセスや利用可能なオプションについてサポートします。セットアッププロセスを行うには時間がかかることがります。</p>
+      </li>
+    </ol>
+  </section>
+
+  <section class="bcls-section">
+    <h2 id="Creating_TVOD_plans_in_Beacon_Classic">Beacon ClassicでTVODプランを作成する</h2>
+    <p>上記のようにBrightcoveのサポート チケットを開くと、Brightcove OTT 配信チームが、Brightcove Beacon Classic CMSで、以下の手順を説明します。</p>
+    <ol class="bcls-tasklist-restart">
+      <li>
+        <p>Beacon Classic CMSにログインします。</p>
+        <ol>
+          <li>上部のナビゲーションで、<strong>Commerce</strong> を選択します。</li>
+          <li>左側のナビゲーションで、<strong>TVOD Plans</strong> を選択します。</li>
+          <li><strong>Add New TVOD Plan</strong> をクリックします。</li>
+        </ol>
+        <figure class="bcls-figure">
+          <img class="bcls-image" src="/assets/images/s-monetization-img/implementing-tvod/commerce.png" alt="Commerce top navigation">
+        </figure>
+      </li>
+      <li>
+        <p><strong>Package</strong> タブで、TVODプランの詳細を入力します。</p>
+        <figure class="bcls-figure">
+          <img class="bcls-image" src="/assets/images/s-monetization-img/implementing-tvod/package-tab-rent.png" alt="Package tab">
+        </figure>
+        <p>お客様のアカウントがEvergentに設定されている場合、以下のようにお支払い方法が表示されます:</p>
+        <figure class="bcls-figure">
+          <img class="bcls-image" src="/assets/images/s-monetization-img/implementing-tvod/evergen-payment-option.webp" width="50%" alt="Evergent payment method">
+        </figure>
+        <aside class="bcls-aside bcls-aside--information">Brightcove アプリは、Stripe または Evergent のいずれかを使用するように設定できますが、双方を使用する事はできません。</aside>
+        <br />
+
+        <p>この表は <strong>Package</strong> タブにあるフィールドを含んでいます: </p>
+        <table class="bcls-table">
+          <thead class="bcls-table__head">
+            <tr>
+              <th>フィールド</th>
+              <th>必須</th>
+              <th>説明</th>
+            </tr>
+          </thead>
+          <tbody class="bcls-table__body">
+            <tr>
+              <td><strong>Name</strong></td>
+              <td>はい</td>
+              <td>TVOD パッケージ名</td>
+            </tr>
+            <tr>
+              <td><strong>TVOD Plan Type</strong></td>
+              <td>はい</td>
+              <td>
+                以下から選択して下さい:
+                <ul>
+                  <li><strong>複数アセット</strong> - このプランにアセットバンドルを関連付けます。例えば、視聴者はシリーズまたはシーズン全体を購入/レンタルできます。</li>
+                  <li><strong>個別アセット</strong> - 視聴者は1つのアセットを購入またはレンタルできます。</li>
+                </ul>
+              </td>
+            </tr>
+            <tr>
+              <td><strong>Purchase Type</strong></td>
+              <td>はい</td>
+              <td>
+                以下から選択して下さい:
+                <ul>
+                  <li><strong>Buy</strong> - 視聴者がアセットまたはアセットのバンドルを購入できるようにします。</li>
+                  <li><strong>Rent</strong> - 視聴者が一定期間、アセットまたはアセットのバンドルをレンタルできるようにします。</li>
+                </ul>
+              </td>
+            </tr>
+            <tr>
+              <td><strong>Rent period</strong></td>
+              <td>いいえ</td>
+              <td>
+                アセットがレンタルされてから閲覧可能な日数。このフィールドは <strong>Purchase Type</strong> が <strong>Rent</strong> に設定されている場合に表示されます。
+              </td>
+            </tr>
+            <tr>
+              <td><strong>Status</strong></td>
+              <td>はい</td>
+              <td>
+                以下のタイプのいずれかを選択してください:
+                <ul>
+                  <li>
+                    Published (公開)
+                  </li>
+                  <li>
+                    Unpublished (非公開)
+                  </li>
+                </ul>
+              </td>
+            </tr>
+            <tr>
+              <td><strong>Allow Downloads</strong></td>
+              <td>はい</td>
+              <td>
+                このシリーズをオフライン再生のためにユーザーがダウンロードできるようにするには <strong>Yes</strong> を設定します。詳細については、<a href="https://beacon-help.support.brightcove.com/media/offline-playback-beacon.html">Offline Playback with Brightcove Beacon Apps</a> を参照して下さい。
+              </td>
+            </tr>
+            <tr>
+              <td><strong>Payment methods to use</strong></td>
+              <td>はい</td>
+              <td>
+                以下のタイプから選択してください:
+                <ul>
+                  <li>
+                    Stripe
+                  </li>
+                  <li>
+                    Evergent
+                  </li>
+                  <li>
+                    Beacon Store
+                  </li>
+                </ul>
+                <aside class="bcls-aside bcls-aside--information">
+                  TVOD ライブイベントでは、 Stripe および Evergent の支払い方法がサポートされています。
+                </aside>
+              </td>
+            </tr>
+          </tbody>
+        </table>
+      </li>
+      <li>
+        <p>Stripeをご利用の場合は、<strong>Stripe</strong> を選択し、 <strong>Payment methods details</strong> をご覧ください。</p>
+        <aside class="bcls-aside bcls-aside--tip">Availabilityは、TVOD パッケージのためのものです。 例えば <strong>Permitted locations</strong> が米国に設定されている場合、すべての視聴者はこのパッケージに関連する映画やアセットを再生できますが、米国の視聴者だけがアセットを購入/レンタルできます。</aside>
+        <figure class="bcls-figure">
+          <img class="bcls-image" src="/assets/images/s-monetization-img/implementing-tvod/stripe-details.png" alt="Stripe payment details">
+        </figure>
+        <p>
+          このテーブルには、Stripe支払詳細フィールドが含まれます: </p>
+        <table class="bcls-table">
+          <thead class="bcls-table__head">
+            <tr>
+              <th>フィールド</th>
+              <th>必須</th>
+              <th>説明</th>
+            </tr>
+          </thead>
+          <tbody class="bcls-table__body">
+            <tr>
+              <td><strong>Start Time</strong></td>
+              <td>はい</td>
+              <td>このパッケージの利用開始日をスケジュールします</td>
+            </tr>
+            <tr>
+              <td><strong>End Time</strong></td>
+              <td>はい</td>
+              <td>
+                このパッケージが利用できなくなる終了日をスケジュールします
+              </td>
+            </tr>
+            <tr>
+              <td><strong>Devices to publish</strong></td>
+              <td>はい</td>
+              <td>
+                <p>公開したいデバイスを追加します。利用可能なデバイスのリストを表示するには、<strong>Select / Unselect All Devices</strong> を選択します。</p>
+                <aside class="bcls-aside bcls-aside--information">
+                  <p>現在、TVODでサポートされているデバイスは <strong>web</strong> のみになります。</p>
+                  <p>TVODプランでは、視聴者はコンテンツを <strong>Webプラットフォーム上でのみ</strong> 購入またはレンタルすることができます。一度購入したコンテンツは、視聴可能であればすべてのプラットフォームで視聴できます。</p>
+                </aside>
+              </td>
+            </tr>
+            <tr>
+              <td><strong>Permitted locations</strong></td>
+              <td>はい</td>
+              <td>
+                <p>コンテンツをストリーミングしたい場所を選択し、制限がなければ <strong>World</strong> を入力します。</p>
+                <aside class="bcls-aside bcls-aside--information">
+                  <p>少なくとも1つの許可された場所を指定しないと、アプリからこのようなメッセージが表示されることがあります:</p>
+                  <figure class="bcls-figure">
+                    <img class="bcls-image" src="/assets/images/s-general-img/series-seasons-episodes/no-content.jpg" alt="No content" />
+                  </figure>
+                </aside>
+              </td>
+            </tr>
+            <tr>
+              <td><strong>Denied locations</strong></td>
+              <td>いいえ</td>
+              <td>
+                コンテンツをストリーミングさせたくない場所を選択します。
+              </td>
+            </tr>
+            <tr>
+              <td><strong>Price</strong></td>
+              <td>はい</td>
+              <td>
+                <p>このパッケージに関連するコンテンツを視聴するためにユーザーが支払わなければならない価格を指定します。</p>
+                <aside class="bcls-aside bcls-aside--warning">Beacon Classicでプラン価格を設定および変更しても、決済代行業者での価格には影響しません。Beacon Classicの価格と一致するようにプランの価格を設定または変更するには、決済代行業者に連絡してください。</aside>
+              </td>
+            </tr>
+            <tr>
+              <td><strong>Currency</strong></td>
+              <td>はい</td>
+              <td>
+                パッケージ価格の通貨タイプを指定します。
+              </td>
+            </tr>
+            <tr>
+              <td><strong>Product Description</strong></td>
+              <td>はい</td>
+              <td>
+                商品説明がStripeに送信され、パッケージを識別できるようになります。
+              </td>
+            </tr>
+          </tbody>
+        </table>
+      </li>
+      <li>
+        <p>Evergentをご利用の場合は、<strong>Evergent</strong> を選択して、<strong>Payment methods details</strong> をご覧ください。</p>
+        <aside class="bcls-aside bcls-aside--tip">Availabilityは、TVOD パッケージのためのものです。 例えば <strong>Permitted locations</strong> が米国に設定されている場合、すべての視聴者はこのパッケージに関連する映画やアセットを再生できますが、米国の視聴者だけがアセットを購入/レンタルできます。</aside>
+        <figure class="bcls-figure">
+          <img class="bcls-image" src="/assets/images/s-monetization-img/implementing-tvod/evergent-details.webp" alt="Evergent payment details">
+        </figure>
+        <p>
+          このテーブルには、Evergentの支払詳細フィールドが含まれています: </p>
+        <table class="bcls-table">
+          <thead class="bcls-table__head">
+            <tr>
+              <th>フィールド</th>
+              <th>必須</th>
+              <th>説明</th>
+            </tr>
+          </thead>
+          <tbody class="bcls-table__body">
+            <tr>
+              <td><strong>Start Time</strong></td>
+              <td>はい</td>
+              <td>このパッケージの利用開始日をスケジュールします。</td>
+            </tr>
+            <tr>
+              <td><strong>End Time</strong></td>
+              <td>はい</td>
+              <td>
+                このパッケージが利用できなくなる終了日をスケジュールします。
+              </td>
+            </tr>
+            <tr>
+              <td><strong>Devices to publish</strong></td>
+              <td>はい</td>
+              <td>
+                <p>公開したいデバイスを追加します。利用可能なデバイスのリストを表示するには、 <strong>Select / Unselect All Devices</strong> を選択します。</p>
+                <aside class="bcls-aside bcls-aside--information">
+                  現在、TVODでサポートされているデバイスは <strong>web</strong> のみになります。
+                </aside>
+              </td>
+            </tr>
+            <tr>
+              <td><strong>Permitted locations</strong></td>
+              <td>はい</td>
+              <td>
+                <p>コンテンツをストリーミングしたい場所を選択し、制限がなければ <strong>World</strong> を入力します。</p>
+                <aside class="bcls-aside bcls-aside--information">
+                  <p>少なくとも1つの許可された場所を指定しないと、アプリからこのようなメッセージが表示されることがあります:</p>
+                  <figure class="bcls-figure">
+                    <img class="bcls-image" src="/assets/images/s-general-img/series-seasons-episodes/no-content.jpg" alt="No content" />
+                  </figure>
+                </aside>
+              </td>
+            </tr>
+            <tr>
+              <td><strong>Denied locations</strong></td>
+              <td>いいえ</td>
+              <td>
+                コンテンツをストリーミングさせたくない場所を選択します。
+              </td>
+            </tr>
+            <tr>
+              <td><strong>Price</strong></td>
+              <td>はい</td>
+              <td>
+                このパッケージに関連するコンテンツを視聴するためにユーザーが支払わなければならない価格を指定します。
+              </td>
+            </tr>
+            <tr>
+              <td><strong>Currency</strong></td>
+              <td>はい</td>
+              <td>
+                パッケージ価格の通貨タイプを指定します。
+              </td>
+            </tr>
+            <tr>
+              <td><strong>Evergent ID</strong></td>
+              <td>Yes</td>
+              <td>
+                <!-- Evergent ID is sent to Evergent so that you can identify the package. -->
+                Evergent は、Evergent ID を Brightcove に送信して接続を行います。
+              </td>
+            </tr>
+          </tbody>
+        </table>
+      </li>
+      <li>
+        <p>Beaconストアをご利用の場合は、<strong>Beacon Store</strong> を選択して <strong>Payment methods details</strong> をご覧ください。</p>
+        <figure class="bcls-figure">
+          <img class="bcls-image" src="/assets/images/s-monetization-img/implementing-tvod/beacon-store-details.png" alt="Beacon Store payment details">
+        </figure>
+        <p>
+          このテーブルには、Beacon Storeの支払いに関する詳細情報が含まれています: </p>
+        <table class="bcls-table">
+          <thead class="bcls-table__head">
+            <tr>
+              <th>フィールド</th>
+              <th>必須</th>
+              <th>説明</th>
+            </tr>
+          </thead>
+          <tbody class="bcls-table__body">
+            <tr>
+              <td><strong>Beacon Store ID</strong></td>
+              <td>はい</td>
+              <td>Beacon StoreでのTVODにはSKUの設定が必要です。<strong>Beacon Store ID</strong> は、APIを使用してBeacon Storeに送信された <strong>package_name</strong> です。</td>
+            </tr>
+          </tbody>
+        </table>
+      </li>
+      <li>
+        <p><strong>Textual Data</strong> タブでは、プランの詳細を入力します。</p>
+        <figure class="bcls-figure">
+          <img class="bcls-image" src="/assets/images/s-monetization-img/implementing-tvod/textual-data.png" alt="Textual Data tab">
+        </figure>
+        <p>
+          このテーブルには、<strong>Textual Data</strong> タブにあるフィールドに含まれています: </p>
+        <table class="bcls-table">
+          <thead class="bcls-table__head">
+            <tr>
+              <th>フィールド</th>
+              <th>必須</th>
+              <th>説明</th>
+            </tr>
+          </thead>
+          <tbody class="bcls-table__body">
+            <tr>
+              <td><strong>Pack Name</strong></td>
+              <td>はい</td>
+              <td>視聴者に表示される表示名</td>
+            </tr>
+            <tr>
+              <td><strong>Headline</strong></td>
+              <td>はい</td>
+              <td><em>ホリデー スペシャル!</em>などのように、視聴者に表示される説明文</td>
+            </tr>
+          </tbody>
+        </table>
+      </li>
+      <li>
+        <p><strong>Non-Textual Data</strong> タブでは、プランの詳細を入力します。</p>
+        <figure class="bcls-figure">
+          <img class="bcls-image" src="/assets/images/s-monetization-img/implementing-tvod/non-textual-data.png" alt="Non-Textual Data tab">
+        </figure>
+        <p>
+          このテーブルには <strong>Non-Textual Data</strong> タブにあるフィールドが含まれています: </p>
+        <table class="bcls-table">
+          <thead class="bcls-table__head">
+            <tr>
+              <th>フィールド</th>
+              <th>必須</th>
+              <th>説明</th>
+            </tr>
+          </thead>
+          <tbody class="bcls-table__body">
+            <tr>
+              <td><strong>Package Image</strong></td>
+              <td>いいえ</td>
+              <td>パッケージ名の横に使用する画像を指定します。</td>
+            </tr>
+          </tbody>
+        </table>
+      </li>
+      <li><strong>Create Package</strong> クリックします。</li>
+      <li>
+       <p>パッケージが作成されたら、Brightcove Beacon Classicを使用して更新できます。</p>
+        <aside class="bcls-aside bcls-aside--warning">Beacon Classicでプラン価格を設定または変更しても、決済代行業者での価格には影響しません。Beacon Classicの価格と一致するようにプランの価格を設定または変更するには、決済代行業者に連絡してください。</aside>
+      </li>
+    </ol>
+  </section>
+
+</article>
 <!-- complete bootstrap layout -->
     </div>
     <div class="col-sm-2 right-side-bar">
@@ -2377,7 +2470,7 @@
 
 <hr>
 <div class="last-updated">
-  Page last updated on 05 Dec 2022
+  Page last updated on 23 June 2023
 </div>
 
 
