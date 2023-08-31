@@ -2053,33 +2053,33 @@
     
 
 
-<h1>概要:中国配送</h1> <article class="bcls-article"> <summary>このトピックでは、BrightcoveのChinaDelivery機能に関する概要を説明します。</summary> <section class="bcls-section">
+<h1>概要:中国への配信</h1> <article class="bcls-article"> <summary>このトピックでは、Brightcove の China Deliverly (中国への配信)に関する概要を説明します。</summary> <section class="bcls-section">
     <h2 id="Introduction">はじめに</h2>
-    <p>広大な新しい市場に到達し、Eコマースの機会を大幅に拡大するために、Brightcoveは、グローバルなEコマース大手Alibabaとのパートナーシップを通じて中国にビデオを配信する能力を紹介することに興奮している。</p>
-    <p>海外から中国に映像を配信することは、規制や規制のために困難です。歴史的に、Brightcoveサービスが国内のコンテンツ配信ネットワークを通じてビデオコンテンツを配信できるソリューションを提供しました。ただし、Playback APIのリクエストとレスポンス、Analyticsビーコンなどの重要な通信は信頼性が低く、機能しない場合もありました。</p>
-    <p>Brightcove™のChinaDeliveryソリューションは、これらの問題に対処し、次の2つの部分から構成されます。</p>
+    <p>広大な新しい市場に到達し、Eコマースの機会を大幅に拡大するために、Brightcoveは、世界的なEコマース大手Alibabaとのパートナーシップを通じて、中国への動画配信機能を紹介します。</p>
+    <p>海外から中国に動画配信することは、規制や管理により困難です。これまでは、Brightcoveのサービスが中国国内のコンテンツ配信ネットワークを通じて動画コンテンツを配信できるソリューションを提供していました。しかし、Playback API リクエストとレスポンス、Analytics ビーコンなどの重要な通信は信頼性が低く、機能しないこともありました。</p>
+    <p>Brightcove™のChina Delivery ソリューションは、このような問題に対処するもので、次の 2 からで構成されています</p>
     <ul>
       <li>中国内でホストされているプロキシサーバー</li>
-      <li>接続された中国固有のCDN</li>
+      <li>接続された中国専用のCDN</li>
     </ul>
-    <p>プロキシは、ビデオ以外のトラフィック（Playback APIリクエスト、Analyticsビーコン、およびWebプレーヤー自体）を中国の視聴者との間で、外部にあるBrightcoveインフラストラクチャにルーティングします。</p>
+    <p>プロキシは、中国国内の視聴者との間でやり取りされる動画以外のトラフィック（再生 API リクエスト、アナリティクス ビーコン、Web プレーヤ自体）を、中国国外にある Brightcove のインフラストラクチャにルーティングします。</p>
     <p>CDNはプロキシに接続され、ビデオと画像のコンテンツを処理します。</p> <figure class="bcls-figure"><img class="bcls-image--no-border" alt="中国のデリバリアーキテクチャ" src="/assets/images/s-general-img/china-delivery.png" />   </figure></section><section class="bcls-section">
     <h2 id="Setup">セットアップ</h2>
-    <p>BrightcoveのChinaDeliveryソリューションをサポートするには、次の設定が必要です。</p>
+    <p>Brightcoveの China Delivery ソリューションをサポートするには、次の設定が必要です。</p>
     <ol class="bcls-tasklist-restart">
-      <li>アカウントマネージャーに連絡してください：
+      <li>アカウントマネージャーにご連絡ください：
         <ul>
-          <li>BrightcoveEnterpriseアカウントを持っていることを確認してください</li>
-          <li>ChinaDeliveryアカウントを有効にします。 Beacon}の有料アドオンです。</li>
+          <li>Brightcove Enterprise アカウントを持っていることを確認してください。</li>
+          <li>中国への配信をアカウントで有効にします。 Beaconの有料アドオンです。</li>
         </ul> <aside class="bcls-aside bcls-aside--information">このアカウントは、中国の内外に配信できます。別のアカウントはオプションですが、必須ではありません。</aside>
       </li>
-      <li>ChinaDelivery用のプレーヤーを構成します。BrightcoveWebプレーヤーまたはネイティブSDKプレーヤーのいずれかを使用できます。
+      <li>中国配信用のプレーヤーを設定します。Brightcove WebプレーヤーまたはネイティブSDKプレーヤーのいずれかを使用できます：
         <ul>
-          <li><a href="https://player.support.brightcove.com/playback/china-delivery-with-bcp.html">Brightcoveプレーヤーによる中国配送</a></li>
-          <li><a href="https://sdks.support.brightcove.com/features/china-delivery-sdks.html">ネイティブSDKを使用した中国での配信</a></li>
+          <li><a href="https://player.support.brightcove.com/playback/china-delivery-with-bcp.html">Brightcoveプレーヤーによる中国への配信</a></li>
+          <li><a href="https://sdks.support.brightcove.com/features/china-delivery-sdks.html">ネイティブSDKを使用した中国への配信</a></li>
         </ul>
       </li>
-      <li>有効な<a href="https://en.wikipedia.org/wiki/ICP_license">インターネット コンテンツ プロバイダー (ICP) ライセンス</a>
+      <li>有効な<a href="https://en.wikipedia.org/wiki/ICP_license">インターネット コンテンツ プロバイダー (ICP) ライセンス</a>の取得
         <ul>
           <li>ICPライセンスに記載されている承認済みドメインまたはサブドメイン名</li>
           <li>承認されたドメインでホストされている、プレーヤーを公開するためのWebサイト</li>
@@ -2087,31 +2087,31 @@
       </li>
     </ol>  </section><section class="bcls-section">
     <h2 id="FAQ">よくある質問</h2>
-    <p>次に、一般的な質問をいくつか示します。</p>
+    <p>次に、よくある質問をいくつか示します。</p>
     <ul>
       <li>
-        <p><strong>ICP免許証はいくらですか？</strong></p>
-        <p>ICPライセンスのコストは異なる場合があります。ネイティブスピーカーがプロセスを翻訳·管理できるのであれば、ライセンスの申請に余分な費用はかかりません。そうでない場合は、翻訳者にお金を払ってプロセスを管理する必要があります。</p>
+        <p><strong>ICPライセンスはいくらですか？</strong></p>
+        <p>ICPライセンス取得にかかる費用は様々です。翻訳とプロセス管理ができるネイティブ・スピーカーがいれば、ライセンス申請に追加費用はかかりません。そうでない場合は、翻訳とプロセスの管理を誰かに依頼する必要があるかもしれません。</p>
       </li>
       <li>
         <p><strong>BrightはICPライセンスの取得を支援できますか?</strong></p>
-        <p>いいえ、Brightcoveはあなたがライセンスを取得するのを助けるための仲介者として法的に行動することはできません。</p>
+        <p>いいえ、Brightcoveは、お客様がライセンスを取得するのを助けるための仲介者として法的に行動することはできません。</p>
       </li>
     </ul>  </section><section class="bcls-section">
     <h2 id="Limitations">制約事項</h2>
-    <p>以下は、ChinaDeliveryの既知の制限です。</p>
+    <p>以下は、中国への配信の既知の制限になります：</p>
     <h3>現在の制限</h3>
     <ul>
-      <li>プレーヤーの設定には、JSONの編集や、プレーヤー管理APIの使用が必要です。Studioを使用したワンクリックのプレーヤー設定は、将来のためのものです。</li>
-      <li>ChinaDeliveryをサポートするBrightcoveネイティブAndroidSDKは、2022年第1四半期に利用可能になります。</li>
+      <li>プレーヤーの設定には、JSONの編集や、プレーヤー管理APIの使用が必要です。Studioを使用したワンクリックのプレーヤー設定は、将来リリースされるかもしれません。</li>
+      <li>中国への配信をサポートするBrightcove ネイティブ AndroidSDKは、後日利用可能になる予定です。</li>
     </ul>
     <h3>サポートされていない機能:</h3>
     <ul>
-      <li>BrightcoveLiveStreamingおよびCloudPlayoutはサポートされていません。</li>
+      <li>Brightcove Live ストリーミング および Cloud Playout はサポートされていません。</li>
       <li>動的配信ルールと静的URLはサポートされていません。</li>
-      <li>中国のデータプライバシー法では、視聴者/キャンペーンプラグインおよびユーザー固有の分析の使用が禁止されています。最新バージョンのプラグインは、ChinaDelivery対応プレーヤーで自動的に無効になります。</li>
+      <li>中国のデータプライバシーに関する法律では、Audience/Campaign プラグインおよびユーザー固有の分析の使用が禁止されています。中国への配信対応プレーヤーでは、このプラグインの最新バージョンが自動的に無効になります。</li>
     </ul>
-    <p>PlayerとSDKのプラグインは正常に使用できますが、中国国内から外部サービスに接続できない場合があり、Brightcoveはこれらのプラグインをサポートできません。たとえば、次のような事項が挙げられます。</p>
+    <p>プレーヤーとSDKのプラグインは正常に使用できますが、外部サービスは中国国内からアクセスできない可能性があり、Brightcove はそれらに対するサポートを提供できません。これには以下が含まれます：</p>
     <ul>
       <li>DRM</li>
       <li>広告（CSAI + SSAI）</li>
